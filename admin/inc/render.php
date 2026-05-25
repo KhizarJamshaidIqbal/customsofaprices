@@ -41,7 +41,7 @@ tailwind.config = { theme: { extend: {
 }}};
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>body{font-family:Inter,system-ui,sans-serif}.font-display{font-family:'Playfair Display',Georgia,serif}</style>
+<style>html,body{overflow-x:hidden;max-width:100%}body{font-family:Inter,system-ui,sans-serif}.font-display{font-family:'Playfair Display',Georgia,serif}</style>
 </head>
 <body class="<?= e($bodyClass) ?>">
 <?php
@@ -154,7 +154,7 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
     ?>
 <div class="min-h-screen flex">
   <!-- Sidebar -->
-  <aside id="sidebar" class="flex flex-col w-64 bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
+  <aside id="sidebar" class="flex flex-col w-64 max-w-[80vw] bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
     <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10">
       <img src="/images/logo.png" alt="" class="w-9 h-9 rounded-lg">
       <div>
