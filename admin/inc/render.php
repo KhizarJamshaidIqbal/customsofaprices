@@ -154,7 +154,7 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
     ?>
 <div class="min-h-screen flex">
   <!-- Sidebar -->
-  <aside class="hidden lg:flex flex-col w-64 bg-charcoal-dark text-white/80 fixed inset-y-0 left-0">
+  <aside id="sidebar" class="flex flex-col w-64 bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
     <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10">
       <img src="/images/logo.png" alt="" class="w-9 h-9 rounded-lg">
       <div>
@@ -186,10 +186,16 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
     </div>
   </aside>
 
+  <!-- Backdrop shown when the sidebar is open -->
+  <div id="sidebar-backdrop" class="hidden fixed inset-0 bg-black/40 z-30"></div>
+
   <!-- Main -->
-  <div class="flex-1 lg:ml-64 w-full">
+  <div class="flex-1 w-full">
     <header class="h-16 bg-white border-b border-gray-100 flex items-center justify-between px-5 lg:px-8 sticky top-0 z-10">
       <div class="flex items-center gap-3">
+        <button id="sidebar-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" class="w-9 h-9 -ml-1 rounded-lg flex items-center justify-center text-charcoal hover:bg-cream-dark transition">
+          <i class="fas fa-bars"></i>
+        </button>
         <h1 class="font-display text-lg font-bold text-charcoal">Deployment</h1>
         <span class="hidden sm:inline-flex items-center gap-1.5 text-xs bg-cream-dark text-charcoal-light px-2.5 py-1 rounded-full"><i class="fas fa-code-branch text-gold text-[10px]"></i> <?= e($cfg['deploy_branch']) ?></span>
       </div>
@@ -302,6 +308,28 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
     </main>
   </div>
 </div>
+
+<script>
+  (function () {
+    var sb = document.getElementById('sidebar');
+    var bd = document.getElementById('sidebar-backdrop');
+    var btn = document.getElementById('sidebar-toggle');
+    if (!sb || !bd || !btn) return;
+    function setOpen(open) {
+      sb.classList.toggle('-translate-x-full', !open);
+      bd.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+      try { localStorage.setItem('csp_sidebar_open', open ? '1' : '0'); } catch (e) {}
+    }
+    var open = false;
+    try { open = localStorage.getItem('csp_sidebar_open') === '1'; } catch (e) {}
+    setOpen(open);
+    btn.addEventListener('click', function () { setOpen(sb.classList.contains('-translate-x-full')); });
+    bd.addEventListener('click', function () { setOpen(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  })();
+</script>
     <?php
     render_foot();
 }
