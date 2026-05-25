@@ -37,13 +37,13 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: 46.28.46.55
-          username: u606995444
+          username: u606995444.deploy
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          # Hostinger FTP logs in chrooted INSIDE public_html, so the web root
-          # is the login dir itself. Use ./ (not /public_html/, which would
-          # upload into public_html/public_html/ and never be served).
+          # Dedicated FTP account chrooted to the site's real docroot
+          # (/home/u606995444/domains/cutomsofaprices.com/public_html), so the
+          # login root IS the web root -> upload straight into ./.
           server-dir: ./
           # Dev-only files and runtime data must never be uploaded.
           exclude: |
