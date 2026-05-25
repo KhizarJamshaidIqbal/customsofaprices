@@ -213,7 +213,7 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
       </div>
     </header>
 
-    <main class="p-5 lg:p-8 max-w-5xl">
+    <main class="p-5 lg:p-8 w-full">
       <?php render_flash($flash); ?>
 
       <!-- Status cards -->
