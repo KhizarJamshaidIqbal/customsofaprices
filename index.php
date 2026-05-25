@@ -1,3 +1,9 @@
+<?php
+require __DIR__ . '/embed/lib.php';
+$cd = embed_load();
+$H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
+$F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -343,95 +349,7 @@
     <!-- ============================================ -->
     <!-- TOP BAR -->
     <!-- ============================================ -->
-    <div id="top-bar" class="bg-charcoal-dark text-white/90 text-sm py-2.5 relative z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-            <div class="flex items-center gap-4 sm:gap-6">
-                <a href="tel:+923007131249" class="flex items-center gap-2 hover:text-gold transition-colors duration-300" aria-label="Call us">
-                    <i class="fas fa-phone-alt text-gold text-xs"></i>
-                    <span>0300 7131249</span>
-                </a>
-                <a href="mailto:info@cutomsofaprices.com" class="hidden sm:flex items-center gap-2 hover:text-gold transition-colors duration-300" aria-label="Email us">
-                    <i class="fas fa-envelope text-gold text-xs"></i>
-                    <span>info@cutomsofaprices.com</span>
-                </a>
-            </div>
-            <div class="flex items-center gap-2 pulse-gentle">
-                <i class="fas fa-tags text-gold text-xs"></i>
-                <span class="text-gold-light font-medium">Sasta aur acha sofa set — Direct from Factory!</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================================ -->
-    <!-- HEADER / STICKY NAVIGATION -->
-    <!-- ============================================ -->
-    <header id="main-header" class="navbar-glass sticky top-0 z-40 border-b border-gray-100/60 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-18 py-3">
-                <!-- Logo -->
-                <a href="#" id="logo" class="flex items-center gap-3 group" aria-label="Custom Sofa Prices - Home">
-                    <img src="images/logo.png" alt="Custom Sofa Prices Pakistan - Luxury Sofa Brand Logo" class="w-11 h-11 lg:w-12 lg:h-12 object-cover rounded-xl shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0" width="48" height="48">
-                    <div class="flex flex-col">
-                        <span class="font-display text-xl font-bold text-charcoal leading-tight tracking-tight">Custom Sofa</span>
-                        <span class="text-[11px] text-gold-dark font-semibold uppercase tracking-[0.15em] -mt-0.5">Prices Pakistan</span>
-                    </div>
-                </a>
-
-                <!-- Desktop Navigation -->
-                <nav id="desktop-nav" class="hidden lg:flex items-center gap-8" aria-label="Main navigation">
-                    <a href="#hero" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Home</a>
-                    <a href="#collections" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Collections</a>
-                    <a href="#materials" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Materials</a>
-                    <a href="#reviews" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Reviews</a>
-                    <a href="#faq" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="nav-link text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Contact</a>
-                </nav>
-
-                <!-- CTA + Mobile Toggle -->
-                <div class="flex items-center gap-4">
-                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 btn-shine">
-                        <i class="fas fa-comments text-xs"></i>
-                        Get Prices
-                    </a>
-                    <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-cream-dark transition-colors duration-300" aria-label="Toggle navigation menu" aria-expanded="false">
-                        <span class="w-6 h-0.5 bg-charcoal rounded-full transition-transform duration-300 origin-center" id="bar1"></span>
-                        <span class="w-6 h-0.5 bg-charcoal rounded-full transition-opacity duration-300" id="bar2"></span>
-                        <span class="w-4 h-0.5 bg-charcoal rounded-full transition-transform duration-300 origin-center" id="bar3"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Navigation Overlay -->
-        <div id="mobile-menu" class="mobile-overlay fixed inset-0 top-[calc(72px+40px)] z-50 lg:hidden">
-            <div class="absolute inset-0 bg-black/30" id="mobile-backdrop"></div>
-            <nav class="relative bg-white shadow-2xl rounded-b-2xl mx-4 mt-2 p-6 space-y-1" aria-label="Mobile navigation">
-                <a href="#hero" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-home text-gold w-5 text-center"></i> Home
-                </a>
-                <a href="#collections" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-th-large text-gold w-5 text-center"></i> Collections
-                </a>
-                <a href="#materials" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-palette text-gold w-5 text-center"></i> Materials
-                </a>
-                <a href="#reviews" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-star text-gold w-5 text-center"></i> Reviews
-                </a>
-                <a href="#faq" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-question-circle text-gold w-5 text-center"></i> FAQ
-                </a>
-                <a href="#contact" class="mobile-link flex items-center gap-3 p-3 rounded-xl hover:bg-cream-dark transition-colors duration-200 text-charcoal font-medium">
-                    <i class="fas fa-envelope text-gold w-5 text-center"></i> Contact
-                </a>
-                <div class="pt-3">
-                    <a href="#contact" class="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-sm px-5 py-3 rounded-xl w-full">
-                        <i class="fas fa-comments text-xs"></i> Get Latest Prices
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <?= $H ?>
 
     <main id="main-content">
 
@@ -1267,108 +1185,7 @@
     <!-- ============================================ -->
     <!-- FOOTER -->
     <!-- ============================================ -->
-    <footer id="site-footer" class="bg-charcoal-dark text-white/80 pt-16 pb-8" role="contentinfo">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-14">
-
-                <!-- Column 1: Brand Info -->
-                <div>
-                    <div class="flex items-center gap-3 mb-6">
-                        <img src="images/logo.png" alt="Custom Sofa Prices Pakistan Logo" class="w-11 h-11 object-cover rounded-xl shadow-sm flex-shrink-0" width="44" height="44">
-                        <div>
-                            <span class="font-display text-lg font-bold text-white">Custom Sofa</span>
-                            <span class="block text-[10px] text-gold-light uppercase tracking-[0.15em] -mt-0.5">Prices Pakistan</span>
-                        </div>
-                    </div>
-                    <p class="text-white/50 text-sm leading-relaxed mb-6">
-                        Pakistan's most trusted destination for luxury sofa sets, handcrafted furniture, and modern designs. Factory-direct pricing with nationwide delivery.
-                    </p>
-                    <!-- Social Icons -->
-                    <div class="flex items-center gap-3">
-                        <a href="#" aria-label="Facebook" class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gold hover:text-white transition-all duration-300">
-                            <i class="fab fa-facebook-f text-sm"></i>
-                        </a>
-                        <a href="#" aria-label="Instagram" class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gold hover:text-white transition-all duration-300">
-                            <i class="fab fa-instagram text-sm"></i>
-                        </a>
-                        <a href="#" aria-label="YouTube" class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gold hover:text-white transition-all duration-300">
-                            <i class="fab fa-youtube text-sm"></i>
-                        </a>
-                        <a href="#" aria-label="Pinterest" class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-gold hover:text-white transition-all duration-300">
-                            <i class="fab fa-pinterest-p text-sm"></i>
-                        </a>
-                        <a href="https://wa.me/923007131249" aria-label="WhatsApp" class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-green-600 hover:text-white transition-all duration-300" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-whatsapp text-sm"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Column 2: Quick Links -->
-                <div>
-                    <h3 class="font-semibold text-white text-base mb-5">Quick Links</h3>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#hero" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Home</a></li>
-                        <li><a href="#collections" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Sofa Collections</a></li>
-                        <li><a href="#materials" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Materials & Quality</a></li>
-                        <li><a href="#about-us" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> About Us</a></li>
-                        <li><a href="#faq" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> FAQ</a></li>
-                        <li><a href="#contact" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Popular Categories -->
-                <div>
-                    <h3 class="font-semibold text-white text-base mb-5">Popular Categories</h3>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#card-lshape" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> L-Shape Sofas</a></li>
-                        <li><a href="#card-chinyoti" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Chinyoti Sofa Sets</a></li>
-                        <li><a href="#card-velvet" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Velvet Sofas</a></li>
-                        <li><a href="#card-chinyoti" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Chesterfield Sofas</a></li>
-                        <li><a href="#card-wooden" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Wooden Sofa Frames</a></li>
-                        <li><a href="#collections" class="text-white/50 hover:text-gold transition-colors duration-200 flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-gold/50"></i> Sofa Cum Beds</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: NAP (Name, Address, Phone) for Local SEO -->
-                <div>
-                    <h3 class="font-semibold text-white text-base mb-5">Contact Info</h3>
-                    <address class="not-italic space-y-4 text-sm">
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-store text-gold mt-1 w-4 text-center"></i>
-                            <div>
-                                <strong class="text-white block">Custom Sofa Prices Pakistan</strong>
-                                <span class="text-white/50">Furniture Market, GT Road<br>Lahore, Punjab 54000<br>Pakistan</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-phone-alt text-gold w-4 text-center"></i>
-                            <a href="tel:+923007131249" class="text-white/50 hover:text-gold transition-colors">0300 7131249</a>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-phone text-gold w-4 text-center"></i>
-                            <a href="tel:+923107923290" class="text-white/50 hover:text-gold transition-colors">0310 7923290</a>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-envelope text-gold w-4 text-center"></i>
-                            <a href="mailto:info@cutomsofaprices.com" class="text-white/50 hover:text-gold transition-colors">info@cutomsofaprices.com</a>
-                        </div>
-                    </address>
-                </div>
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-white/40 text-sm">
-                    &copy; 2026 Custom Sofa Prices Pakistan. All rights reserved.
-                </p>
-                <div class="flex items-center gap-6 text-white/40 text-sm">
-                    <a href="#" class="hover:text-gold transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-gold transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-gold transition-colors">Sitemap</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?= $F ?>
 
     <!-- ============================================ -->
     <!-- FLOATING WHATSAPP BUTTON -->
@@ -1383,44 +1200,6 @@
     <!-- JAVASCRIPT -->
     <!-- ============================================ -->
     <script>
-        // ===== Mobile Menu Toggle =====
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileBackdrop = document.getElementById('mobile-backdrop');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-        const bar1 = document.getElementById('bar1');
-        const bar2 = document.getElementById('bar2');
-        const bar3 = document.getElementById('bar3');
-        let menuOpen = false;
-
-        function toggleMenu() {
-            menuOpen = !menuOpen;
-            mobileMenu.classList.toggle('active');
-            mobileMenuBtn.setAttribute('aria-expanded', menuOpen);
-
-            if (menuOpen) {
-                bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
-                bar2.style.opacity = '0';
-                bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
-                bar3.style.width = '1.5rem';
-                document.body.style.overflow = 'hidden';
-            } else {
-                bar1.style.transform = '';
-                bar2.style.opacity = '1';
-                bar3.style.transform = '';
-                bar3.style.width = '1rem';
-                document.body.style.overflow = '';
-            }
-        }
-
-        mobileMenuBtn.addEventListener('click', toggleMenu);
-        mobileBackdrop.addEventListener('click', toggleMenu);
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (menuOpen) toggleMenu();
-            });
-        });
-
         // ===== FAQ Accordion =====
         const faqToggles = document.querySelectorAll('.faq-toggle');
 
