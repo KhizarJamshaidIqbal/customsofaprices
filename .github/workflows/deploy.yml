@@ -1,0 +1,53 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Never run two deployments at once.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Upload to live server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Lets the first push succeed (green) even before the FTP password
+      # secret has been added. Once FTP_PASSWORD is set, deploys run for real.
+      - name: Check FTP secret is configured
+        id: check
+        env:
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          if [ -z "$FTP_PASSWORD" ]; then
+            echo "::warning::FTP_PASSWORD secret is not set yet — skipping deploy. Add it under Settings → Secrets and variables → Actions, then re-run this workflow."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy via FTP
+        if: steps.check.outputs.ready == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: 46.28.46.55
+          username: u606995444
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          server-dir: /public_html/
+          # Dev-only files and runtime data must never be uploaded.
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            crop_logo.py
+            .gitignore
+            **/*.md
+            admin/data/*.json

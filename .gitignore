@@ -12,3 +12,6 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Admin panel runtime data (NEVER commit secrets: password hash, GitHub token)
+admin/data/*.json
