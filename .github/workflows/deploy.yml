@@ -41,7 +41,10 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          server-dir: /public_html/
+          # Hostinger FTP logs in chrooted INSIDE public_html, so the web root
+          # is the login dir itself. Use ./ (not /public_html/, which would
+          # upload into public_html/public_html/ and never be served).
+          server-dir: ./
           # Dev-only files and runtime data must never be uploaded.
           exclude: |
             **/.git*
