@@ -10,6 +10,15 @@ require __DIR__ . '/inc/auth.php';
 require __DIR__ . '/inc/github.php';
 require __DIR__ . '/inc/render.php';
 
+// Load the shared header/footer chrome (admin/data/embed.json -> embed/defaults fallback).
+function chrome_defaults_path(string $f): string { return __DIR__ . '/../embed/defaults/' . $f; }
+function chrome_load(): array {
+    $d = read_json('embed.json');
+    $hdr = ($d['header_html'] ?? '') !== '' ? $d['header_html'] : (@file_get_contents(chrome_defaults_path('header.html')) ?: '');
+    $ftr = ($d['footer_html'] ?? '') !== '' ? $d['footer_html'] : (@file_get_contents(chrome_defaults_path('footer.html')) ?: '');
+    return ['header_html' => $hdr, 'footer_html' => $ftr, 'allow_scripts' => !empty($d['allow_scripts']), 'version' => (int)($d['version'] ?? 0)];
+}
+
 start_secure_session((int)$cfg['session_idle_minutes']);
 
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
@@ -107,10 +116,24 @@ if ($method === 'POST') {
             }
             write_json('deploy_log.json', array_slice($log, 0, 20));
         }
+    } elseif ($action === 'save_chrome') {
+        $c = read_json('embed.json');
+        $c['header_html']   = (string)($_POST['header_html'] ?? '');
+        $c['footer_html']   = (string)($_POST['footer_html'] ?? '');
+        $c['allow_scripts'] = isset($_POST['allow_scripts']);
+        $c['version']       = time();
+        $c['updated_at']    = date('c');
+        write_json('embed.json', $c);
+        $flash = ['type' => 'success', 'msg' => 'Header & Footer saved. Live on all embedded sites within ~1 minute.'];
     }
 }
 
-/* ============ 4. DASHBOARD ============ */
-$runs = gh_configured() ? gh_recent_runs($cfg, 6) : [];
-$log  = read_json('deploy_log.json');
-render_dashboard($cfg, $flash, $runs, $log);
+/* ============ 4. ROUTING ============ */
+$page = $_GET['page'] ?? 'deploy';
+if ($page === 'chrome') {
+    render_chrome($cfg, $flash, chrome_load());
+} else {
+    $runs = gh_configured() ? gh_recent_runs($cfg, 6) : [];
+    $log  = read_json('deploy_log.json');
+    render_dashboard($cfg, $flash, $runs, $log);
+}

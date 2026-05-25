@@ -1,0 +1,14 @@
+# Pretty URLs: /embed/header -> header.php, /embed/footer -> footer.php
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^header/?$ header.php [L]
+  RewriteRule ^footer/?$ footer.php [L]
+</IfModule>
+
+# Allow these pages to be embedded on any site, and keep them fresh
+# so header/footer edits go live immediately.
+<IfModule mod_headers.c>
+  Header always unset X-Frame-Options
+  Header always set Content-Security-Policy "frame-ancestors *"
+  Header always set Cache-Control "no-cache, no-store, must-revalidate"
+</IfModule>

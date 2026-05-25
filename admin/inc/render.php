@@ -163,8 +163,11 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
       </div>
     </div>
     <nav class="flex-1 px-3 py-5 space-y-1">
-      <a href="" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-gold/15 text-white font-medium text-sm">
+      <a href="?page=deploy" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-gold/15 text-white font-medium text-sm">
         <i class="fas fa-rocket w-5 text-center text-gold"></i> Deployment
+      </a>
+      <a href="?page=chrome" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/70 hover:bg-white/10 hover:text-white font-medium text-sm transition">
+        <i class="fas fa-code w-5 text-center"></i> Header &amp; Footer
       </a>
       <span class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/30 text-sm cursor-not-allowed">
         <i class="fas fa-box w-5 text-center"></i> Products
@@ -328,6 +331,183 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
     btn.addEventListener('click', function () { setOpen(sb.classList.contains('-translate-x-full')); });
     bd.addEventListener('click', function () { setOpen(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  })();
+</script>
+    <?php
+    render_foot();
+}
+
+/* ===================== HEADER & FOOTER (shared chrome) ===================== */
+function render_chrome(array $cfg, ?array $flash, array $data): void {
+    render_head($cfg, 'Header & Footer', 'bg-cream');
+    $csrf  = csrf_token();
+    $user  = $_SESSION['user'] ?? 'admin';
+    $base  = rtrim($cfg['live_url'], '/');
+    $allow = !empty($data['allow_scripts']);
+    $ver   = (int)($data['version'] ?? 0);
+
+    $headerSnippet = '<iframe src="' . $base . '/embed/header" id="csp-header" title="Custom Sofa Prices Header" scrolling="no" loading="eager" style="width:100%;border:0;display:block;min-height:120px"></iframe>' . "\n"
+        . '<script>window.addEventListener("message",function(e){if(e.data&&e.data.cspEmbed==="header"){var f=document.getElementById("csp-header");if(f)f.style.height=e.data.height+"px";}});</script>';
+    $footerSnippet = '<iframe src="' . $base . '/embed/footer" id="csp-footer" title="Custom Sofa Prices Footer" scrolling="no" loading="lazy" style="width:100%;border:0;display:block;min-height:200px"></iframe>' . "\n"
+        . '<script>window.addEventListener("message",function(e){if(e.data&&e.data.cspEmbed==="footer"){var f=document.getElementById("csp-footer");if(f)f.style.height=e.data.height+"px";}});</script>';
+    ?>
+<div class="min-h-screen flex">
+  <aside id="sidebar" class="flex flex-col w-64 max-w-[80vw] bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10">
+      <img src="/images/logo.png" alt="" class="w-9 h-9 rounded-lg">
+      <div>
+        <div class="font-display font-bold text-white text-sm leading-tight"><?= e($cfg['site_name']) ?></div>
+        <div class="text-gold-light text-[10px] uppercase tracking-[0.18em]"><?= e($cfg['panel_name']) ?></div>
+      </div>
+    </div>
+    <nav class="flex-1 px-3 py-5 space-y-1">
+      <a href="?page=deploy" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/70 hover:bg-white/10 hover:text-white font-medium text-sm transition">
+        <i class="fas fa-rocket w-5 text-center"></i> Deployment
+      </a>
+      <a href="?page=chrome" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-gold/15 text-white font-medium text-sm">
+        <i class="fas fa-code w-5 text-center text-gold"></i> Header &amp; Footer
+      </a>
+      <span class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/30 text-sm cursor-not-allowed">
+        <i class="fas fa-box w-5 text-center"></i> Products
+        <span class="ml-auto text-[10px] bg-white/10 px-2 py-0.5 rounded-full">soon</span>
+      </span>
+    </nav>
+    <div class="px-3 py-4 border-t border-white/10">
+      <form method="post" action="">
+        <input type="hidden" name="action" value="logout">
+        <input type="hidden" name="csrf" value="<?= e($csrf) ?>">
+        <button class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/70 hover:bg-white/10 hover:text-white text-sm transition">
+          <i class="fas fa-arrow-right-from-bracket w-5 text-center"></i> Sign out
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <div id="sidebar-backdrop" class="hidden fixed inset-0 bg-black/40 z-30"></div>
+
+  <div class="flex-1 w-full">
+    <header class="h-16 bg-white border-b border-gray-100 flex items-center justify-between px-5 lg:px-8 sticky top-0 z-10">
+      <div class="flex items-center gap-3">
+        <button id="sidebar-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" class="w-9 h-9 -ml-1 rounded-lg flex items-center justify-center text-charcoal hover:bg-cream-dark transition">
+          <i class="fas fa-bars"></i>
+        </button>
+        <h1 class="font-display text-lg font-bold text-charcoal">Header &amp; Footer</h1>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="<?= e($cfg['live_url']) ?>" target="_blank" rel="noopener" class="text-sm text-charcoal-light hover:text-gold-dark transition hidden sm:inline-flex items-center gap-1.5"><i class="fas fa-up-right-from-square text-xs"></i> View live site</a>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark text-white flex items-center justify-center text-xs font-bold"><?= e(strtoupper(substr($user, 0, 2))) ?></div>
+          <span class="text-sm text-charcoal font-medium hidden sm:inline"><?= e($user) ?></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="p-5 lg:p-8 w-full">
+      <?php render_flash($flash); ?>
+
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm mb-6">
+        <h2 class="font-display text-lg font-bold text-charcoal mb-1">Shared Header &amp; Footer</h2>
+        <p class="text-gray-500 text-sm">Edit your header and footer here, then embed them on any other site with the code below. Whatever you <strong>Save</strong> applies <strong>live</strong> on every embedded site &mdash; no re-deploy needed.</p>
+      </div>
+
+      <form method="post" action="?page=chrome" class="space-y-6">
+        <input type="hidden" name="action" value="save_chrome">
+        <input type="hidden" name="csrf" value="<?= e($csrf) ?>">
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-semibold text-charcoal">Header HTML</h3>
+            <a href="/embed/header.php" target="_blank" rel="noopener" class="text-xs text-gold-dark hover:underline"><i class="fas fa-up-right-from-square"></i> Open raw</a>
+          </div>
+          <textarea name="header_html" rows="12" spellcheck="false" class="w-full font-mono text-xs leading-relaxed p-3 rounded-xl border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/30 outline-none"><?= e($data['header_html']) ?></textarea>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-semibold text-charcoal">Footer HTML</h3>
+            <a href="/embed/footer.php" target="_blank" rel="noopener" class="text-xs text-gold-dark hover:underline"><i class="fas fa-up-right-from-square"></i> Open raw</a>
+          </div>
+          <textarea name="footer_html" rows="12" spellcheck="false" class="w-full font-mono text-xs leading-relaxed p-3 rounded-xl border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/30 outline-none"><?= e($data['footer_html']) ?></textarea>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input type="checkbox" name="allow_scripts" value="1" <?= $allow ? 'checked' : '' ?> class="mt-1 w-4 h-4 accent-gold">
+            <span class="text-sm text-charcoal">
+              <span class="font-semibold">Allow Custom Scripts</span>
+              <span class="block text-gray-400 text-xs mt-0.5">Let &lt;script&gt; (GTM, Pixel, analytics) run inside the header/footer. Off = scripts stripped (safer). Inline on* handlers and javascript: URLs are always stripped.</span>
+            </span>
+          </label>
+          <button class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold px-6 py-3 rounded-xl shadow hover:shadow-lg transition whitespace-nowrap"><i class="fas fa-floppy-disk"></i> Save changes</button>
+        </div>
+      </form>
+
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm mt-6">
+        <h3 class="font-semibold text-charcoal mb-1">Embed code</h3>
+        <p class="text-gray-500 text-sm mb-4">Paste into any site where you want this header / footer to appear.</p>
+        <div class="space-y-4">
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-charcoal uppercase tracking-wide">Header</span>
+              <button type="button" class="copy-btn inline-flex items-center gap-1 text-xs text-gold-dark hover:underline" data-target="code-header"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <textarea id="code-header" readonly rows="3" class="w-full font-mono text-[11px] p-3 rounded-xl border border-gray-200 bg-cream"><?= e($headerSnippet) ?></textarea>
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="text-xs font-semibold text-charcoal uppercase tracking-wide">Footer</span>
+              <button type="button" class="copy-btn inline-flex items-center gap-1 text-xs text-gold-dark hover:underline" data-target="code-footer"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <textarea id="code-footer" readonly rows="3" class="w-full font-mono text-[11px] p-3 rounded-xl border border-gray-200 bg-cream"><?= e($footerSnippet) ?></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm mt-6">
+        <h3 class="font-semibold text-charcoal mb-4">Live preview</h3>
+        <div class="text-xs text-gray-400 mb-1.5 uppercase tracking-wide">Header</div>
+        <iframe id="prev-header" src="/embed/header.php?t=<?= $ver ?>" scrolling="no" class="w-full border border-gray-100 rounded-xl mb-6 block" style="height:150px"></iframe>
+        <div class="text-xs text-gray-400 mb-1.5 uppercase tracking-wide">Footer</div>
+        <iframe id="prev-footer" src="/embed/footer.php?t=<?= $ver ?>" scrolling="no" class="w-full border border-gray-100 rounded-xl block" style="height:320px"></iframe>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var sb = document.getElementById('sidebar');
+    var bd = document.getElementById('sidebar-backdrop');
+    var btn = document.getElementById('sidebar-toggle');
+    function setOpen(open) {
+      sb.classList.toggle('-translate-x-full', !open);
+      bd.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+      try { localStorage.setItem('csp_sidebar_open', open ? '1' : '0'); } catch (e) {}
+    }
+    if (sb && bd && btn) {
+      var open = false;
+      try { open = localStorage.getItem('csp_sidebar_open') === '1'; } catch (e) {}
+      setOpen(open);
+      btn.addEventListener('click', function () { setOpen(sb.classList.contains('-translate-x-full')); });
+      bd.addEventListener('click', function () { setOpen(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+    }
+    window.addEventListener('message', function (e) {
+      if (!e.data || !e.data.cspEmbed) return;
+      var f = document.getElementById(e.data.cspEmbed === 'footer' ? 'prev-footer' : 'prev-header');
+      if (f && e.data.height) f.style.height = e.data.height + 'px';
+    });
+    document.querySelectorAll('.copy-btn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var t = document.getElementById(b.dataset.target);
+        if (!t) return;
+        t.select();
+        try { navigator.clipboard.writeText(t.value); } catch (e) { try { document.execCommand('copy'); } catch (e2) {} }
+        var prev = b.innerHTML; b.innerHTML = '<i class="fas fa-check"></i> Copied'; setTimeout(function () { b.innerHTML = prev; }, 1500);
+      });
+    });
   })();
 </script>
     <?php
