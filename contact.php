@@ -17,7 +17,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="keywords" content="contact custom sofa prices, sofa shop Gujrat Pakistan, custom sofa order, sofa price quote Pakistan, furniture shop Punjab">
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://cutomsofaprices.com/contact.php">
+    <link rel="canonical" href="https://cutomsofaprices.com/contact">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
@@ -27,7 +27,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cutomsofaprices.com/contact.php">
+    <meta property="og:url" content="https://cutomsofaprices.com/contact">
     <meta property="og:title" content="Contact Us – Custom Sofa Prices Pakistan">
     <meta property="og:description" content="Get in touch for custom sofa orders, price quotes & inquiries. Call 0300 7131249 or visit our showroom in Gujrat, Punjab.">
     <meta property="og:image" content="https://cutomsofaprices.com/images/hero-banner.webp">

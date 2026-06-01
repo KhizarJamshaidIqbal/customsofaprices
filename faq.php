@@ -17,7 +17,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="keywords" content="sofa set FAQ, sofa price Pakistan FAQ, sofa delivery Pakistan, sofa warranty, custom sofa questions, 7 seater sofa set price, L shape sofa price, Chinyoti sofa set, velvet sofa set, sofa poshish design">
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://cutomsofaprices.com/faq.php">
+    <link rel="canonical" href="https://cutomsofaprices.com/faq">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
@@ -27,7 +27,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cutomsofaprices.com/faq.php">
+    <meta property="og:url" content="https://cutomsofaprices.com/faq">
     <meta property="og:title" content="FAQ - Sofa Set Questions | Custom Sofa Prices Pakistan">
     <meta property="og:description" content="Find answers to frequently asked questions about sofa set prices, delivery, warranty, customization, and payment methods in Pakistan.">
     <meta property="og:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
