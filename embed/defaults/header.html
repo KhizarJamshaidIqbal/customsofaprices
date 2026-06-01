@@ -17,26 +17,101 @@
 </div>
 
 <!-- Header / navigation -->
-<header id="main-header" class="bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm sticky top-0 z-40">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center gap-4 flex-wrap py-3">
-    <a href="https://cutomsofaprices.com/" target="_top" class="flex items-center gap-3 group" aria-label="Custom Sofa Prices - Home">
-      <img src="https://cutomsofaprices.com/images/logo.webp" alt="Custom Sofa Prices Pakistan" class="w-11 h-11 object-cover rounded-xl shadow-sm" width="44" height="44">
-      <div class="flex flex-col">
-        <span class="font-display text-xl font-bold text-charcoal leading-tight tracking-tight">Custom Sofa</span>
-        <span class="text-[11px] text-gold-dark font-semibold uppercase tracking-[0.15em] -mt-0.5">Prices Pakistan</span>
+<header id="main-header" class="bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm sticky top-0 z-40 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 sm:h-20">
+      
+      <!-- Brand Logo -->
+      <a href="https://cutomsofaprices.com/" target="_top" class="flex items-center gap-3 group flex-shrink-0" aria-label="Custom Sofa Prices - Home">
+        <img src="https://cutomsofaprices.com/images/logo.webp" alt="Custom Sofa Prices Pakistan" class="w-10 h-10 sm:w-11 sm:h-11 object-cover rounded-xl shadow-sm" width="44" height="44">
+        <div class="flex flex-col">
+          <span class="font-display text-lg sm:text-xl font-bold text-charcoal leading-tight tracking-tight">Custom Sofa</span>
+          <span class="text-[10px] sm:text-[11px] text-gold-dark font-semibold uppercase tracking-[0.15em] -mt-0.5">Prices Pakistan</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-5 lg:gap-8" aria-label="Main navigation">
+        <a href="https://cutomsofaprices.com/#hero" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Home</a>
+        <a href="https://cutomsofaprices.com/#collections" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Collections</a>
+        <a href="https://cutomsofaprices.com/#sofa-packages" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Exclusive Deals</a>
+        <a href="https://cutomsofaprices.com/#materials" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Materials</a>
+        <a href="https://cutomsofaprices.com/#reviews" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Reviews</a>
+        <a href="https://cutomsofaprices.com/faq.php" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">FAQ</a>
+        <a href="https://cutomsofaprices.com/contact.php" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Contact</a>
+      </nav>
+
+      <!-- Desktop Call to Action -->
+      <div class="hidden md:flex items-center">
+        <a href="https://cutomsofaprices.com/contact.php" target="_top" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+          <i class="fas fa-comments text-xs"></i> Get Prices
+        </a>
       </div>
-    </a>
-    <nav class="flex-1 flex items-center justify-center gap-5 lg:gap-8 flex-wrap" aria-label="Main navigation">
-      <a href="https://cutomsofaprices.com/#hero" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Home</a>
-      <a href="https://cutomsofaprices.com/#collections" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Collections</a>
-      <a href="https://cutomsofaprices.com/#sofa-packages" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Exclusive Deals</a>
-      <a href="https://cutomsofaprices.com/#materials" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Materials</a>
-      <a href="https://cutomsofaprices.com/#reviews" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Reviews</a>
-      <a href="https://cutomsofaprices.com/faq.php" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">FAQ</a>
-      <a href="https://cutomsofaprices.com/contact.php" target="_top" class="text-charcoal font-medium text-sm hover:text-gold-dark transition-colors duration-300">Contact</a>
-    </nav>
-    <a href="https://cutomsofaprices.com/contact.php" target="_top" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
-      <i class="fas fa-comments text-xs"></i> Get Prices
-    </a>
+
+      <!-- Hamburger Button (Mobile Only) -->
+      <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded-xl text-charcoal hover:bg-gray-100 hover:text-gold-dark transition-all duration-200" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars text-xl" id="menu-icon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-dropdown" class="hidden md:hidden border-t border-gray-100 py-4 pb-6 transition-all duration-300">
+      <nav class="flex flex-col gap-4 text-left px-2" aria-label="Mobile navigation">
+        <a href="https://cutomsofaprices.com/#hero" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Home</a>
+        <a href="https://cutomsofaprices.com/#collections" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Collections</a>
+        <a href="https://cutomsofaprices.com/#sofa-packages" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Exclusive Deals</a>
+        <a href="https://cutomsofaprices.com/#materials" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Materials</a>
+        <a href="https://cutomsofaprices.com/#reviews" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Reviews</a>
+        <a href="https://cutomsofaprices.com/faq.php" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">FAQ</a>
+        <a href="https://cutomsofaprices.com/contact.php" target="_top" class="mobile-nav-link text-charcoal font-medium text-base py-2 border-b border-gray-50 hover:text-gold-dark transition-colors duration-200">Contact</a>
+        <a href="https://cutomsofaprices.com/contact.php" target="_top" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-base py-3.5 rounded-xl shadow-md mt-4">
+          <i class="fas fa-comments text-sm"></i> Get Prices
+        </a>
+      </nav>
+    </div>
+
   </div>
+
+  <!-- Inline Self-Contained Toggle JS -->
+  <script>
+    (function() {
+      const btn = document.getElementById('mobile-menu-btn');
+      const dropdown = document.getElementById('mobile-dropdown');
+      const icon = document.getElementById('menu-icon');
+      if (btn && dropdown && icon) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isHidden = dropdown.classList.contains('hidden');
+          if (isHidden) {
+            dropdown.classList.remove('hidden');
+            icon.className = 'fas fa-times text-xl'; // Close icon
+          } else {
+            dropdown.classList.add('hidden');
+            icon.className = 'fas fa-bars text-xl'; // Bars icon
+          }
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function() {
+          dropdown.classList.add('hidden');
+          icon.className = 'fas fa-bars text-xl';
+        });
+
+        // Prevent dropdown closure when clicking inside the dropdown
+        dropdown.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+
+        // Close on nav link click
+        const links = document.querySelectorAll('.mobile-nav-link');
+        links.forEach(function(link) {
+          link.addEventListener('click', function() {
+            dropdown.classList.add('hidden');
+            icon.className = 'fas fa-bars text-xl';
+          });
+        });
+      }
+    })();
+  </script>
 </header>
