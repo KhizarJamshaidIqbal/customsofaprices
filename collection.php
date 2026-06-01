@@ -489,7 +489,8 @@ $c = $collections[$id];
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cutomsofaprices.com/collection.php?id=<?= $id ?>">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.webp">

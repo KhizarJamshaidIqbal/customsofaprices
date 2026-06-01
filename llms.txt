@@ -1,0 +1,51 @@
+# Custom Sofa Prices Pakistan
+
+Pakistan's premier direct-factory manufacturer of premium, bespoke, and affordable custom sofa sets. Located on the historic GT Road in Gujrat, Punjab, the brand provides custom furniture crafted by traditional local master artisans and delivered securely nationwide.
+
+## Core Coordinates & Trust Signals
+- **Primary Website**: https://cutomsofaprices.com
+- **Physical Address**: GT Road, Gujrat, Punjab, Pakistan (Postal Code: 50700)
+- **Geographic Coordinates**: Latitude 32.5048799, Longitude 74.5254195
+- **Primary Phone & WhatsApp**: +92 300 7131249
+- **Email**: info@cutomsofaprices.com
+- **Opening Hours**: Monday-Saturday 10:00 AM - 8:00 PM, Sunday 12:00 PM - 6:00 PM
+- **Trust Score**: 4.9/5 stars based on 1000+ verified customer purchases.
+
+## Key Product Catalog & Pricing Overview
+Custom Sofa Prices offers 13 primary sofa collections and 4 highly discounted living room combo packages. All models are 100% customizable in dimensions, fabric, and cushion foam densities (featuring high-density seasoned solid Sheesham frames with 10-year warranties and Master MoltyFoam cushion cores).
+
+### Dynamic Sofa Categories
+1. **L-Shape & Corner Sofas**: Starting from PKR 65,000 (1 Seater price). Highly modular alignments.
+2. **Chinyoti & Chesterfield**: Starting from PKR 80,000 (1 Seater price). Solid carved Sheesham combined with deep British tufting.
+3. **Velvet & Leather Sofas**: Starting from PKR 65,000 (1 Seater price). Breathable, stain-resistant premium imports.
+4. **Wooden Sofa Frames**: Starting from PKR 80,000 (1 Seater price). Natural wood lacquer finish and removable zip cushion covers.
+5. **Turkish Sofa Sets**: Starting from PKR 80,000 (1 Seater price). Modern European contours with metallic trim highlights.
+6. **Victorian & Classic**: Starting from PKR 85,000 (1 Seater price). Royal palace-style crown carving.
+7. **Modular & Sectional**: Starting from PKR 55,000 (1 Seater price). Customizable alignments.
+8. **Drawing Room Sofa Sets**: Starting from PKR 85,000 (1 Seater price). Formal heavy-duty seasoned frames.
+9. **Accent & Single Seater**: Starting from PKR 40,000 (1 Seater price). Statement chairs.
+10. **Office & Reception Sofas**: Starting from PKR 30,000 (1 Seater price). Commercial-grade leathers.
+11. **Dewan & Diwan Sofas**: Full-set starting from PKR 195,000. Traditional royal lounging.
+12. **Chaise Lounge**: Full-set starting from PKR 65,000. Contemporary accent daybeds.
+13. **Ottoman & Poufs**: Full-set starting from PKR 170,000. Multifunctional seating and footrests.
+
+### Exclusive Combo Deals (Up to 25% Savings)
+- **Living Room Complete Set**: PKR 330,000 (Valued at PKR 415,000) - 7-Seater + Center Table + 2 Side Tables.
+- **Drawing Room Royal Package**: PKR 395,000 (Valued at PKR 495,000) - 5-Seater Chesterfield + Marble Coffee Table + Ottoman.
+- **TV Lounge Comfort Pack**: PKR 325,000 (Valued at PKR 410,000) - L-Shape + TV Console + 4 Cushions.
+- **Luxury Lounge Bundle**: PKR 415,000 (Valued at PKR 520,000) - Turkish 7-Seater + Carved Coffee Table + Rug.
+
+## Main Navigation Maps
+- **Home**: https://cutomsofaprices.com/
+- **Contact & Location**: https://cutomsofaprices.com/contact
+- **Frequently Asked Questions**: https://cutomsofaprices.com/faq
+- **Category Detail Path**: `https://cutomsofaprices.com/collection?id=[category_id]`
+  - IDs: `lshape`, `chinyoti`, `velvet`, `wooden`, `turkish`, `victorian`, `modular`, `dewan`, `drawingroom`, `accent`, `office`, `chaise`, `ottoman`.
+
+## Social Mappings (sameAs)
+- **Facebook**: https://www.facebook.com/share/18cs6gZryW/
+- **Instagram**: https://www.instagram.com/customsofamaker
+- **Pinterest**: https://pin.it/2FKxBiazu
+- **YouTube**: https://youtube.com/@customsofamaker
+- **TikTok**: https://www.tiktok.com/@custom.sofa
+- **Facebook Profile**: https://www.facebook.com/profile.php?id=61590109367846

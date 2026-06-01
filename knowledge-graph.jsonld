@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FurnitureStore",
+      "@id": "https://cutomsofaprices.com/#organization",
+      "name": "Custom Sofa Prices Pakistan",
+      "legalName": "Custom Sofa Prices Gujrat",
+      "alternateName": "Custom Sofa Prices",
+      "description": "Pakistan's premier direct-factory manufacturer of premium, bespoke, and affordable custom sofa sets. Handcrafted by local master artisans in Gujrat and delivered securely nationwide.",
+      "url": "https://cutomsofaprices.com",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://cutomsofaprices.com/#logo",
+        "url": "https://cutomsofaprices.com/images/logo.webp",
+        "caption": "Custom Sofa Prices Pakistan Logo"
+      },
+      "image": "https://cutomsofaprices.com/images/hero-banner.webp",
+      "telephone": "+923007131249",
+      "email": "info@cutomsofaprices.com",
+      "priceRange": "PKR 17,000 - 415,000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GT Road",
+        "addressLocality": "Gujrat",
+        "addressRegion": "Punjab",
+        "postalCode": "50700",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.5048799,
+        "longitude": 74.5254195
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/18cs6gZryW/",
+        "https://www.instagram.com/customsofamaker",
+        "https://pin.it/2FKxBiazu",
+        "https://youtube.com/@customsofamaker",
+        "https://www.facebook.com/profile.php?id=61590109367846",
+        "https://www.tiktok.com/@custom.sofa"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Khizar Jamshaid Iqbal",
+        "jobTitle": "Founder & Managing Director",
+        "sameAs": [
+          "https://github.com/KhizarJamshaidIqbal"
+        ]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Pakistan"
+      },
+      "hasMap": "https://share.google/vWTLTD6slemi5nnGT"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cutomsofaprices.com/#website",
+      "url": "https://cutomsofaprices.com",
+      "name": "Custom Sofa Prices Pakistan",
+      "publisher": {
+        "@id": "https://cutomsofaprices.com/#organization"
+      }
+    }
+  ]
+}
