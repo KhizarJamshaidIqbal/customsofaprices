@@ -935,7 +935,7 @@ $c = $collections[$id];
                 <!-- ============================================ -->
                 <!-- COLLECTION SPECIFIC FAQ SECTION (SEO & AEO) -->
                 <!-- ============================================ -->
-                <div class="mt-12 lg:mt-16 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100/80 reveal">
+                <div class="mt-12 lg:mt-16 reveal">
                     <div class="text-center max-w-3xl mx-auto mb-10">
                         <span class="text-xs text-gold-dark font-bold uppercase tracking-widest block mb-2">Frequently Asked Questions</span>
                         <h2 class="font-display text-2xl sm:text-3xl font-bold text-charcoal">
@@ -948,15 +948,15 @@ $c = $collections[$id];
 
                     <div class="max-w-4xl mx-auto space-y-4">
                         <?php foreach ($c['faqs'] as $index => $faq): ?>
-                        <div class="border border-gray-100 rounded-xl overflow-hidden bg-cream/30">
+                        <div class="border border-gold/15 bg-white rounded-xl overflow-hidden shadow-sm">
                             <button onclick="toggleCollectionFaq(<?= $index ?>)" 
-                                    class="w-full text-left px-5 py-4 flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-charcoal hover:bg-cream/70 transition-colors duration-300 focus:outline-none"
+                                    class="w-full text-left px-5 py-4 flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-charcoal hover:bg-cream transition-colors duration-300 focus:outline-none"
                                     aria-expanded="false" 
                                     aria-controls="faq-ans-<?= $index ?>">
                                 <span><?= $faq['q'] ?></span>
                                 <i id="faq-icon-<?= $index ?>" class="fas fa-chevron-down text-gold-dark text-xs transition-transform duration-300"></i>
                             </button>
-                            <div id="faq-ans-<?= $index ?>" class="hidden px-5 pb-5 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50/50 pt-3 bg-white">
+                            <div id="faq-ans-<?= $index ?>" class="hidden px-5 pb-5 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gold/10 pt-3 bg-white">
                                 <?= $faq['a'] ?>
                             </div>
                         </div>
@@ -1129,6 +1129,22 @@ $c = $collections[$id];
             const buttonEl = answerEl.previousElementSibling;
             
             const isHidden = answerEl.classList.contains('hidden');
+            
+            // Close all other open FAQ items first
+            if (isHidden) {
+                const allAnswers = document.querySelectorAll('[id^="faq-ans-"]');
+                allAnswers.forEach(ans => {
+                    if (ans.id !== `faq-ans-${index}`) {
+                        ans.classList.add('hidden');
+                        const otherBtn = ans.previousElementSibling;
+                        otherBtn.setAttribute('aria-expanded', 'false');
+                        const otherIcon = otherBtn.querySelector('i');
+                        if (otherIcon) {
+                            otherIcon.classList.remove('rotate-180');
+                        }
+                    }
+                });
+            }
             
             if (isHidden) {
                 answerEl.classList.remove('hidden');
