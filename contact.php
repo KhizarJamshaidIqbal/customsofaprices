@@ -18,6 +18,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://cutomsofaprices.com/contact.php">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.webp">

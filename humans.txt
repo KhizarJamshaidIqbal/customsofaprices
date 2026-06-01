@@ -1,0 +1,16 @@
+/* TEAM */
+Chef Craftsman: Master Artisans of Gujrat
+Contact: info@cutomsofaprices.com
+From: Gujrat, Punjab, Pakistan
+Web: https://cutomsofaprices.com
+
+/* THANKS */
+AI Pair Programmer: Antigravity AI (DeepMind Team)
+Web: https://deepmind.google/
+
+/* SITE INFO */
+Last update: 2026-06-01
+Standards: HTML5, CSS3, Schema.org LocalBusiness, FAQPage, Product
+Components: PHP 8.x, Tailwind CSS, Vanilla JS, FontAwesome 6.5.1
+Software: Custom Sofa Catalog System
+Google Fonts: Playfair Display, Inter

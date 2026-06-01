@@ -1,0 +1,105 @@
+# ==========================================
+# Technical SEO & Performance Optimization
+# Custom Sofa Prices Pakistan - GT Road, Gujrat
+# ==========================================
+
+# 1. ENFORCE SECURITY & DIRECTORY LAWS
+Options -Indexes
+ServerSignature Off
+
+# 2. ENABLE REWRITE ENGINE
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Enforce Non-WWW Canonical Host (www.cutomsofaprices.com -> cutomsofaprices.com)
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+    # Enforce HTTPS Secure Connection
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    # Clean URL: Redirect external requests for .php files to their extensionless equivalents
+    # e.g. /contact.php -> /contact, /faq.php -> /faq
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php\ HTTP/ [NC]
+    RewriteRule ^([^/]+)\.php$ /$1 [R=301,L]
+
+    # Clean URL: Internally map extensionless paths to their actual PHP files
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^([^/]+)$ $1.php [L]
+
+    # Custom 404 handler
+    ErrorDocument 404 /404.php
+</IfModule>
+
+# 3. GZIP COMPRESSION & SPEED OPTIMIZATION
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+
+    # Remove browser bugs for older browsers
+    Header append Vary User-Agent
+</IfModule>
+
+# 4. BROWSER CACHING (LEVERAGE BROWSER CACHING)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # CSS & JavaScript (1 Year for caching efficiency)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+
+    # Images & WebP (1 Year - perfect for rich galleries)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Webfonts (1 Year)
+    ExpiresByType font/truetype "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+
+    # Data files & XMLs (1 Week)
+    ExpiresByType text/xml "access plus 1 week"
+    ExpiresByType application/xml "access plus 1 week"
+    ExpiresByType application/json "access plus 1 week"
+    ExpiresByType application/ld+json "access plus 1 week"
+</IfModule>
+
+# 5. SECURITY HEADERS FOR MAXIMUM TRUST
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
