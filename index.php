@@ -460,7 +460,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 L-Shape & Corner Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Maximize your living space with our premium corner sofa designs. Available in fabric, leather & velvet. L shape sofa 1 seater price starts from PKR 15,000.
+                                Maximize your living space with our premium corner sofa designs. Available in fabric, leather & velvet. L shape sofa 1 seater price starts from PKR 65,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -482,7 +482,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Chinyoti & Chesterfield
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Timeless Chinyoti sofa set designs with hand-carved frames & the iconic Chesterfield sofa design with deep button tufting. 1 seater price from PKR 18,500.
+                                Timeless Chinyoti sofa set designs with hand-carved frames & the iconic Chesterfield sofa design with deep button tufting. 1 seater price from PKR 80,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -504,7 +504,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Velvet & Leather Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Elevate your space with our luxury velvet sofa set designs and genuine leather sofas. Rich textures, premium comfort. 1 seater price from PKR 16,000.
+                                Elevate your space with our luxury velvet sofa set designs and genuine leather sofas. Rich textures, premium comfort. 1 seater price from PKR 65,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -513,7 +513,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     </article>
 
                     <!-- Card 4: Wooden Sofa Frames -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-wooden" style="transition-delay: 0.1s;">
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-wooden">
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-amber-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
@@ -526,51 +526,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Wooden Sofa Frames
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Explore lakri ka sofa design - handcrafted Sheesham & Rosewood frames with your choice of sofa poshish ke design. 1 seater price from PKR 12,500.
-                            </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Card 5: Sofa Cum Bed -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-sofabed" style="transition-delay: 0.2s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/sofa-cum-bed.webp" alt="Modern sofa cum bed design in grey fabric - Convertible sofa bed price in Pakistan for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-teal-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Space Saver
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Sofa Cum Bed
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Multi-functional convertible sofa beds - perfect for apartments & guest rooms. Easy pull-out mechanism with storage. 1 seater price from PKR 36,500.
-                            </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Card 6: Recliner Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-recliner">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/recliner-sofa.webp" alt="Premium brown leather recliner sofa with footrest - Recliner sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-orange-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Comfort+
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Recliner Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Ultimate relaxation with manual & powered recliner mechanisms. Premium leather, ergonomic design. 1 seater price from PKR 46,000.
+                                Explore lakri ka sofa design - handcrafted Sheesham & Rosewood frames with your choice of sofa poshish ke design. 1 seater price from PKR 80,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -592,7 +548,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Turkish Sofa Sets
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Opulent Turkish-style sofas with intricate carved frames and premium upholstery. A statement piece for your drawing room. 1 seater price from PKR 24,000.
+                                Opulent Turkish-style sofas with intricate carved frames and premium upholstery. A statement piece for your drawing room. 1 seater price from PKR 80,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -614,7 +570,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Victorian & Classic Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Elegant Victorian designs with gold-leaf wood carving and luxurious velvet upholstery. Timeless beauty for royal drawing rooms. 1 seater price from PKR 22,000.
+                                Elegant Victorian designs with gold-leaf wood carving and luxurious velvet upholstery. Timeless beauty for royal drawing rooms. 1 seater price from PKR 85,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -636,7 +592,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Modular & Sectional Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Flexible modular sofas that you can rearrange to fit any space. U-shape & multi-section configurations available. 1 seater price from PKR 49,000.
+                                Flexible modular sofas that you can rearrange to fit any space. U-shape & multi-section configurations available. 1 seater price from PKR 55,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -658,7 +614,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Dewan & Diwan Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Classic day-bed style divans with bolster cushions - a Pakistani living room staple. Sheesham frames with premium poshish. 1 seater price from PKR 40,000.
+                                Classic day-bed style divans with bolster cushions - a Pakistani living room staple. Sheesham frames with premium poshish. Full price from PKR 195,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -680,7 +636,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Drawing Room Sofa Sets
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Complete 7-seater drawing room sets (3+2+1+1) in coordinated designs. Formal elegance for your mehman khana. 1 seater price from PKR 33,000.
+                                Complete 7-seater drawing room sets (3+2+1+1) in coordinated designs. Formal elegance for your mehman khana. 1 seater price from PKR 85,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -702,7 +658,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Accent & Single Seater
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Stylish accent chairs and single seaters for bedrooms, corners & reading nooks. Contemporary designs with gold metal legs. 1 seater price from PKR 35,000.
+                                Stylish accent chairs and single seaters for bedrooms, corners & reading nooks. Contemporary designs with gold metal legs. 1 seater price from PKR 40,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -724,7 +680,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Office & Reception Sofas
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Professional-grade sofas for offices, waiting areas & reception lounges. Durable leather & fabric options. 1 seater price from PKR 20,000.
+                                Professional-grade sofas for offices, waiting areas & reception lounges. Durable leather & fabric options. 1 seater price from PKR 30,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -746,7 +702,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Chaise Lounge
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Luxurious chaise lounges for bedrooms, reading nooks & living rooms. Tufted designs with premium velvet upholstery. 1 piece price from PKR 57,500.
+                                Luxurious chaise lounges for bedrooms, reading nooks & living rooms. Tufted designs with premium velvet upholstery. Full price from PKR 65,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -768,7 +724,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Ottoman & Poufs
                             </h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Complement your sofas with matching ottomans, poufs & settees. Storage options available. Perfect footrests & extra seating. 1 piece price from PKR 23,000.
+                                Complement your sofas with matching ottomans, poufs & settees. Storage options available. Perfect footrests & extra seating. Full price from PKR 170,000.
                             </p>
                             <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
@@ -823,8 +779,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             </ul>
                             <div class="flex items-end justify-between border-t border-gray-50 pt-3">
                                 <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 235,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 185,000</div>
+                                    <div class="text-gray-400 text-xs line-through">PKR 415,000</div>
+                                    <div class="text-charcoal font-bold text-lg">PKR 330,000</div>
                                 </div>
                                 <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
                                     Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
@@ -838,7 +794,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/combo-drawing-room.webp" alt="Royal drawing room package with Chesterfield sofa, marble coffee table and ottoman - Premium sofa combo in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                <i class="fas fa-tag mr-1"></i> Save 22%
+                                <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                         </div>
@@ -853,8 +809,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             </ul>
                             <div class="flex items-end justify-between border-t border-gray-50 pt-3">
                                 <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 320,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 250,000</div>
+                                    <div class="text-gray-400 text-xs line-through">PKR 495,000</div>
+                                    <div class="text-charcoal font-bold text-lg">PKR 395,000</div>
                                 </div>
                                 <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
                                     Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
@@ -868,7 +824,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/combo-tv-lounge.webp" alt="TV lounge package with L-shape sofa, TV console and decorative cushions - Sofa package deal for TV lounge" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                <i class="fas fa-tag mr-1"></i> Save 18%
+                                <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                         </div>
@@ -883,8 +839,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             </ul>
                             <div class="flex items-end justify-between border-t border-gray-50 pt-3">
                                 <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 258,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 210,000</div>
+                                    <div class="text-gray-400 text-xs line-through">PKR 410,000</div>
+                                    <div class="text-charcoal font-bold text-lg">PKR 325,000</div>
                                 </div>
                                 <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
                                     Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
@@ -893,38 +849,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                     </article>
 
-                    <!-- Package 4: Guest Room Starter Kit -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-guest">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-guest-room.webp" alt="Guest room starter kit with sofa cum bed, side table and lamp - Affordable sofa package for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-blue-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                <i class="fas fa-star mr-1"></i> Popular
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-lg font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Guest Room Starter Kit
-                            </h3>
-                            <ul class="text-gray-500 text-xs leading-relaxed mb-3 space-y-1">
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Convertible Sofa Cum Bed</li>
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Wooden Side Table</li>
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Modern Floor Lamp</li>
-                            </ul>
-                            <div class="flex items-end justify-between border-t border-gray-50 pt-3">
-                                <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 185,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 145,000</div>
-                                </div>
-                                <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
-                                    Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Package 5: Luxury Lounge Bundle -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-luxury" style="transition-delay: 0.1s;">
+                    <!-- Package 4: Luxury Lounge Bundle -->
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-luxury">
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/combo-luxury-lounge.webp" alt="Luxury lounge bundle with Turkish 7-seater sofa, carved center table and Persian rug - Premium sofa package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-amber-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
@@ -939,12 +865,11 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <ul class="text-gray-500 text-xs leading-relaxed mb-3 space-y-1">
                                 <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Turkish 7-Seater Sofa Set</li>
                                 <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Carved Sheesham Center Table</li>
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Premium Area Rug</li>
                             </ul>
                             <div class="flex items-end justify-between border-t border-gray-50 pt-3">
                                 <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 485,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 380,000</div>
+                                    <div class="text-gray-400 text-xs line-through">PKR 520,000</div>
+                                    <div class="text-charcoal font-bold text-lg">PKR 415,000</div>
                                 </div>
                                 <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
                                     Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
@@ -953,8 +878,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                     </article>
 
-                    <!-- Package 6: Modern Minimal Set -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-minimal" style="transition-delay: 0.2s;">
+                    <!-- Package 5: Modern Minimal Set -->
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-minimal" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/combo-modern-minimal.webp" alt="Modern minimalist sofa set with modular sofa and glass coffee table - Contemporary sofa package deal" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
@@ -983,8 +908,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                     </article>
 
-                    <!-- Package 7: Wedding Sofa Package -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-wedding">
+                    <!-- Package 6: Wedding Sofa Package -->
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-wedding" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
                             <img src="images/combo-wedding.webp" alt="Premium Pakistani wedding sofa package with ornate carved golden sofa set and center table - Shaadi furniture package" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-rose-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
@@ -1006,36 +931,6 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 <div>
                                     <div class="text-gray-400 text-xs line-through">PKR 550,000</div>
                                     <div class="text-charcoal font-bold text-lg">PKR 425,000</div>
-                                </div>
-                                <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
-                                    Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Package 8: Apartment Starter Package -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-apartment" style="transition-delay: 0.1s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-apartment.webp" alt="Budget-friendly apartment sofa starter pack with L-shape sofa and coffee table - Apartment furniture package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-cyan-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                <i class="fas fa-building mr-1"></i> Budget
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-lg font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Apartment Starter Pack
-                            </h3>
-                            <ul class="text-gray-500 text-xs leading-relaxed mb-3 space-y-1">
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Compact 5-Seater L-Shape</li>
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> Small Coffee Table</li>
-                                <li class="flex items-center gap-1.5"><i class="fas fa-check text-gold text-[10px]"></i> 2 Floor Cushions</li>
-                            </ul>
-                            <div class="flex items-end justify-between border-t border-gray-50 pt-3">
-                                <div>
-                                    <div class="text-gray-400 text-xs line-through">PKR 195,000</div>
-                                    <div class="text-charcoal font-bold text-lg">PKR 155,000</div>
                                 </div>
                                 <a href="#contact" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-gold-dark text-white text-xs font-semibold px-4 py-2 rounded-lg hover:shadow-md transition-all duration-300">
                                     Get Quote <i class="fas fa-arrow-right text-[10px]"></i>
