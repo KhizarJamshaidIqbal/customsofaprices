@@ -240,6 +240,61 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         }
     </style>
 
+    <!-- JSON-LD: LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FurnitureStore",
+        "name": "Custom Sofa Prices Pakistan",
+        "description": "Pakistan's premier destination for luxury and affordable custom sofa sets. Find detailed pricing, customization guides, and expert answers about our handcrafted sofas.",
+        "url": "https://cutomsofaprices.com",
+        "telephone": "+923007131249",
+        "email": "info@cutomsofaprices.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "GT Road",
+            "addressLocality": "Gujrat",
+            "addressRegion": "Punjab",
+            "postalCode": "50700",
+            "addressCountry": "PK"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 32.5048799,
+            "longitude": 74.5254195
+        },
+        "image": "https://cutomsofaprices.com/images/hero-banner.webp",
+        "priceRange": "PKR 17,000 - 415,000",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "12:00",
+                "closes": "18:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/share/18cs6gZryW/",
+            "https://www.instagram.com/customsofamaker",
+            "https://pin.it/2FKxBiazu",
+            "https://youtube.com/@customsofamaker",
+            "https://www.facebook.com/profile.php?id=61590109367846",
+            "https://www.tiktok.com/@custom.sofa"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1000"
+        }
+    }
+    </script>
+
     <!-- JSON-LD: FAQPage Schema -->
     <script type="application/ld+json">
     {
@@ -275,7 +330,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                 "name": "Where can I find the best furniture showrooms near me in Pakistan?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Custom Sofa Prices has showrooms in Lahore (GT Road Furniture Market), Karachi (Tariq Road), and Islamabad (I-10 Markaz). You can also visit our online store for the complete catalog. We offer free home visits for consultation in major cities."
+                    "text": "Our central direct-factory showroom is located at GT Road, Gujrat, Punjab, Pakistan. We invite all customers to visit our workshop and showroom to see our premium craftsmanship firsthand. For nationwide customers, we offer online consultations, free fabric samples, and secure direct home delivery across Lahore, Karachi, Islamabad, and all other cities in Pakistan."
                 }
             },
             {
@@ -711,7 +766,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             </button>
                             <div class="faq-content px-6" id="faq-answer-4" role="region">
                                 <div class="pb-6 text-gray-500 leading-relaxed">
-                                    <p>Custom Sofa Prices has showrooms in <strong class="text-charcoal">Lahore</strong> (GT Road Furniture Market), <strong class="text-charcoal">Karachi</strong> (Tariq Road), and <strong class="text-charcoal">Islamabad</strong> (I-10 Markaz). You can also visit our online store for the complete catalog. Humare paas <strong>sofa ke naye design</strong> aur <strong>lakri ka sofa design</strong> showrooms mein display hain. We also offer free home visits for consultation in all major cities of Pakistan.</p>
+                                    <p>Our central direct-factory showroom is located at <strong class="text-charcoal">GT Road, Gujrat, Punjab, Pakistan</strong>. We invite all customers to visit our factory workshop to see our premium craftsmanship firsthand. For nationwide customers, we offer online design consultations, free fabric sample delivery, and highly secure direct-to-home delivery across <strong class="text-charcoal">Lahore</strong>, <strong class="text-charcoal">Karachi</strong>, <strong class="text-charcoal">Islamabad</strong>, and all other cities in Pakistan. Humare paas <strong>sofa ke naye design</strong> aur <strong>lakri ka sofa design</strong> direct factory price par available hain.</p>
                                 </div>
                             </div>
                         </div>

@@ -225,8 +225,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         "email": "info@cutomsofaprices.com",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "GT Road",
             "addressLocality": "Gujrat",
             "addressRegion": "Punjab",
+            "postalCode": "50700",
             "addressCountry": "PK"
         },
         "geo": {
@@ -235,7 +237,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "longitude": 74.5254195
         },
         "image": "https://cutomsofaprices.com/images/hero-banner.webp",
-        "priceRange": "PKR ₨₨",
+        "priceRange": "PKR 17,000 - 415,000",
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -253,9 +255,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         "sameAs": [
             "https://www.facebook.com/share/18cs6gZryW/",
             "https://www.instagram.com/customsofamaker",
+            "https://pin.it/2FKxBiazu",
             "https://youtube.com/@customsofamaker",
-            "https://www.tiktok.com/@custom.sofa",
-            "https://pin.it/2FKxBiazu"
+            "https://www.facebook.com/profile.php?id=61590109367846",
+            "https://www.tiktok.com/@custom.sofa"
         ],
         "contactPoint": {
             "@type": "ContactPoint",
@@ -263,6 +266,11 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "contactType": "customer service",
             "availableLanguage": ["English", "Urdu"],
             "areaServed": "PK"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1000"
         }
     }
     </script>

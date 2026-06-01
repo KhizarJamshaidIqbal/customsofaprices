@@ -678,7 +678,8 @@ $c = $collections[$id];
             "@type": "AggregateOffer",
             "priceCurrency": "PKR",
             "lowPrice": "<?= preg_replace('/[^0-9]/', '', $c['price_text']) ?>",
-            "priceRange": "PKR ₨₨",
+            "highPrice": "<?= (int)preg_replace('/[^0-9]/', '', $c['price_text']) * 4 ?>",
+            "offerCount": "12",
             "offers": [
                 {
                     "@type": "Offer",

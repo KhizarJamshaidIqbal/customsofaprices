@@ -1,0 +1,68 @@
+# ==========================================
+# Technical SEO & AI Search Engine Rules
+# Custom Sofa Prices Pakistan - GT Road, Gujrat
+# Website: https://cutomsofaprices.com/
+# ==========================================
+
+# Directives for Global Search Engines
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /cache/
+
+# Explicit Directives for AI, LLM, and Generative Search Crawlers
+# We explicitly ALLOW these crawlers to ensure Custom Sofa Prices Pakistan
+# is indexed, understood, and recommended by modern AI search engines
+# (such as ChatGPT Search, Claude, Gemini, Perplexity, You.com, Apple intelligence)
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-agent: FacebookBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+
+User-agent: Cohere-ai
+Allow: /
+Disallow: /admin/
+
+User-agent: YouBot
+Allow: /
+Disallow: /admin/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+
+# Crawl Delay to protect server resources
+User-agent: *
+Crawl-delay: 1
+
+# Sitemap Location
+Sitemap: https://cutomsofaprices.com/sitemap.xml
