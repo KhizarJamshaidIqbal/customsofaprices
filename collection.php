@@ -34,7 +34,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/chesterfield-sofa.webp',
         'images' => [
-            'images/chesterfield-sofa.webp'
+            'images/chesterfield-sofa.webp',
+            'images/chesterfield-angle1.webp',
+            'images/chesterfield-angle2.webp'
         ],
         'tagline' => 'Traditional hand-carved heritage meets royal British tufting',
         'badge' => 'Classic',
@@ -54,7 +56,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/velvet-sofa.webp',
         'images' => [
-            'images/velvet-sofa.webp'
+            'images/velvet-sofa.webp',
+            'images/velvet-angle1.webp',
+            'images/velvet-angle2.webp'
         ],
         'tagline' => 'Immersive textures and ultra-premium modern aesthetics',
         'badge' => 'Luxury',
@@ -74,7 +78,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/wooden-sofa.webp',
         'images' => [
-            'images/wooden-sofa.webp'
+            'images/wooden-sofa.webp',
+            'images/wooden-angle1.webp',
+            'images/wooden-angle2.webp'
         ],
         'tagline' => 'Rustic seasoned wood elegance with premium custom poshish',
         'badge' => 'Handcrafted',
@@ -94,7 +100,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/turkish-sofa.webp',
         'images' => [
-            'images/turkish-sofa.webp'
+            'images/turkish-sofa.webp',
+            'images/turkish-angle1.webp',
+            'images/turkish-angle2.webp'
         ],
         'tagline' => 'Modern European sophistication with classical gold accents',
         'badge' => 'Premium',
@@ -114,7 +122,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/victorian-sofa.webp',
         'images' => [
-            'images/victorian-sofa.webp'
+            'images/victorian-sofa.webp',
+            'images/victorian-angle1.webp',
+            'images/victorian-angle2.webp'
         ],
         'tagline' => 'Royal historical grandeur with ornate hand-painted detailing',
         'badge' => 'Royal',
@@ -134,7 +144,9 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/modular-sofa.webp',
         'images' => [
-            'images/modular-sofa.webp'
+            'images/modular-sofa.webp',
+            'images/modular-angle1.webp',
+            'images/modular-angle2.webp'
         ],
         'tagline' => 'Infinitely adaptable seating plans for smart modern living',
         'badge' => 'Customizable',
@@ -154,7 +166,9 @@ $collections = [
         'price_type' => 'Full Price',
         'image' => 'images/dewan-sofa.webp',
         'images' => [
-            'images/dewan-sofa.webp'
+            'images/dewan-sofa.webp',
+            'images/dewan-angle1.webp',
+            'images/dewan-angle2.webp'
         ],
         'tagline' => 'Traditional single-armed luxury daybeds for ultimate relaxation',
         'badge' => 'Traditional',
@@ -174,7 +188,8 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/drawing-room-set.webp',
         'images' => [
-            'images/drawing-room-set.webp'
+            'images/drawing-room-set.webp',
+            'images/drawingroom-angle1.webp'
         ],
         'tagline' => 'Complete formal sofa arrangements (3+2+1+1) for hosting guests',
         'badge' => 'Best Seller',
