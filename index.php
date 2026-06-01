@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require __DIR__ . '/embed/lib.php';
 $cd = embed_load();
 $H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
@@ -1640,7 +1640,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 </div>
                                 <div>
                                     <div class="font-semibold text-charcoal mb-1">Main Showroom & Factory</div>
-                                    <div class="text-gray-500 text-sm">Furniture Market, GT Road, Lahore, Punjab 54000, Pakistan</div>
+                                    <div class="text-gray-500 text-sm">Gujrat, Punjab, Pakistan</div>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4 p-5 bg-cream rounded-xl border border-brand-100">
@@ -1660,7 +1660,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 </div>
                                 <div>
                                     <div class="font-semibold text-charcoal mb-1">Email</div>
-                                    <a href="mailto:info@cutomsofaprices.com" class="text-gray-500 text-sm hover:text-gold-dark transition-colors">info@cutomsofaprices.com</a>
+                                    <a href="mailto:info@cutomsofaprices.com" class="text-gray-500 text-sm hover:text-gold-dark transition-colors block">info@cutomsofaprices.com</a>
+                                    <a href="mailto:customsofaprice@gmail.com" class="text-gray-500 text-sm hover:text-gold-dark transition-colors block">customsofaprice@gmail.com</a>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4 p-5 bg-cream rounded-xl border border-brand-100">
@@ -1675,6 +1676,16 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             </div>
                         </div>
 
+                        <!-- Social Media Links -->
+                        <div class="flex items-center gap-3 mb-8">
+                            <a href="https://www.facebook.com/share/18cs6gZryW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/customsofamaker" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/@customsofamaker" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-youtube"></i></a>
+                            <a href="https://pin.it/2FKxBiazu" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="https://www.tiktok.com/@custom.sofa" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://share.google/vWTLTD6slemi5nnGT" target="_blank" rel="noopener noreferrer" aria-label="Google Business" class="w-11 h-11 bg-cream rounded-xl border border-brand-100 flex items-center justify-center hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 text-charcoal-light"><i class="fab fa-google"></i></a>
+                        </div>
+
                         <!-- WhatsApp CTA -->
                         <a href="https://wa.me/923007131249?text=Hi!%20I%20want%20to%20know%20the%20sofa%20set%20price.%20Please%20share%20the%20catalog." id="whatsapp-cta" class="inline-flex items-center gap-3 bg-green-600 text-white font-semibold text-base px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 hover:shadow-xl hover:scale-[1.02] transition-all duration-300" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-whatsapp text-xl"></i>
@@ -1687,7 +1698,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <div class="bg-cream rounded-3xl p-3 border border-brand-100 shadow-md h-full min-h-[450px]">
                             <iframe
                                 id="google-map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.897!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMxJzEzLjQiTiA3NMKwMjEnMzEuMyJF!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.796047531272!2d74.5254195!3d32.5048799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391eebd5c957bb31%3A0xb604d6e70f7e3df7!2scustom%20sofa%20price!5e0!3m2!1sen!2s!4v1780327643004!5m2!1sen!2s"
                                 width="100%"
                                 height="100%"
                                 style="border:0; border-radius: 1.25rem; min-height: 430px;"
