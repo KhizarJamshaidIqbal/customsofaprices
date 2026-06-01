@@ -4,13 +4,18 @@ $cd = embed_load();
 $H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
 $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
-// All 13 collections in Our Collections section
+// All 13 collections in Our Collections section with multiple angles/configurations
 $collections = [
     'lshape' => [
         'title' => 'L-Shape & Corner Sofas',
         'price_text' => 'Starts from PKR 65,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/lshape-sofa.webp',
+        'images' => [
+            'images/lshape-sofa.webp',
+            'images/combo-tv-lounge.webp',
+            'images/combo-living-room.webp'
+        ],
         'tagline' => 'Maximize your living space with modern custom alignments',
         'badge' => 'Trending',
         'desc' => 'Our L-Shape & Corner Sofas are specifically designed to optimize your living space without compromising on luxury. These modular configurations can be set up in left-hand or right-hand alignments. Perfectly suited for contemporary Pakistani homes, they are available in premium velvet, high-durability fabrics, and premium imported leathers. The high-density Master MoltyFoam core ensures that your sofa retains its shape and unmatched comfort for years to come.',
@@ -28,6 +33,11 @@ $collections = [
         'price_text' => 'Starts from PKR 80,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/chesterfield-sofa.webp',
+        'images' => [
+            'images/chesterfield-sofa.webp',
+            'images/combo-drawing-room.webp',
+            'images/combo-wedding.webp'
+        ],
         'tagline' => 'Traditional hand-carved heritage meets royal British tufting',
         'badge' => 'Classic',
         'desc' => 'A majestic fusion of two legendary furniture styles. The detailed, hand-carved wooden frames crafted by the heritage artisans of Chinyot combined with the deep, hand-tufted diamond buttons of the iconic British Chesterfield design. Using seasoned solid Sheesham (Rosewood) finished in antique gold, silver leaf, or premium walnut polish, this collection brings a sense of palace-like grandeur and prestige to any formal drawing room.',
@@ -45,6 +55,11 @@ $collections = [
         'price_text' => 'Starts from PKR 65,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/velvet-sofa.webp',
+        'images' => [
+            'images/velvet-sofa.webp',
+            'images/hero-banner.webp',
+            'images/combo-tv-lounge.webp'
+        ],
         'tagline' => 'Immersive textures and ultra-premium modern aesthetics',
         'badge' => 'Luxury',
         'desc' => 'Indulge in absolute luxury with our Velvet and Leather Sofa collection. Featuring rich, plush velvets that catch the room lighting beautifully, and premium imported leathers that offer a sleek, sophisticated finish. These sofas utilize stain-resistant, easy-to-clean fabrics and extra-thick padding to provide a luxurious, deep-sitting comfort that instantly elevates modern urban living spaces.',
@@ -62,6 +77,11 @@ $collections = [
         'price_text' => 'Starts from PKR 80,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/wooden-sofa.webp',
+        'images' => [
+            'images/wooden-sofa.webp',
+            'images/combo-drawing-room.webp',
+            'images/dewan-sofa.webp'
+        ],
         'tagline' => 'Rustic seasoned wood elegance with premium custom poshish',
         'badge' => 'Handcrafted',
         'desc' => 'Celebrate the timeless beauty of organic woodwork. Made entirely from hand-selected, seasoned local Sheesham wood, these sofa frames boast delicate hand-carved detailing and premium polished coats that accentuate the natural grain of the wood. Custom-fitted with the upholstery fabric and foam density of your choice, this collection represents the perfect balance of lifetime structural durability and sitting comfort.',
@@ -79,6 +99,11 @@ $collections = [
         'price_text' => 'Starts from PKR 80,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/turkish-sofa.webp',
+        'images' => [
+            'images/turkish-sofa.webp',
+            'images/combo-luxury-lounge.webp',
+            'images/combo-drawing-room.webp'
+        ],
         'tagline' => 'Modern European sophistication with classical gold accents',
         'badge' => 'Premium',
         'desc' => 'Inspired by the high-end furniture showrooms of Istanbul, our Turkish Sofa Sets bring modern European elegance to your home. Characterized by sleek, flowing silhouettes, curved armrests, and exquisite gold or silver metallic borders, this collection represents a lighter, contemporary approach to luxury. It features deep comfort, high-density backrest support, and sophisticated fabric contrasts.',
@@ -96,6 +121,11 @@ $collections = [
         'price_text' => 'Starts from PKR 85,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/victorian-sofa.webp',
+        'images' => [
+            'images/victorian-sofa.webp',
+            'images/combo-wedding.webp',
+            'images/combo-drawing-room.webp'
+        ],
         'tagline' => 'Royal historical grandeur with ornate hand-painted detailing',
         'badge' => 'Royal',
         'desc' => 'Step into a world of royal heritage. Our Victorian and Classic Sofa collection features high arched backs, curved cabriole legs, and highly intricate floral carvings. Finished in hand-applied antique gold leafing or silver highlights, and upholstered in premium heavy brocades or rich velvets, these sofas are designed for homes that appreciate the grand elements of classical European nobility.',
@@ -113,6 +143,11 @@ $collections = [
         'price_text' => 'Starts from PKR 55,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/modular-sofa.webp',
+        'images' => [
+            'images/modular-sofa.webp',
+            'images/combo-modern-minimal.webp',
+            'images/lshape-sofa.webp'
+        ],
         'tagline' => 'Infinitely adaptable seating plans for smart modern living',
         'badge' => 'Customizable',
         'desc' => 'Designed to adapt to your shifting lifestyle, our Modular and Sectional Sofas can be rearranged, expanded, or customized to fit any room shape. Each seating block acts as a standalone unit, allowing you to configure straight lines, L-shapes, or comprehensive U-shape layouts. Boasting low-profile designs and modern block stitching, this collection is perfect for open-plan houses.',
@@ -130,6 +165,11 @@ $collections = [
         'price_text' => 'Starts from PKR 195,000',
         'price_type' => 'Full Price',
         'image' => 'images/dewan-sofa.webp',
+        'images' => [
+            'images/dewan-sofa.webp',
+            'images/wooden-sofa.webp',
+            'images/accent-chair.webp'
+        ],
         'tagline' => 'Traditional single-armed luxury daybeds for ultimate relaxation',
         'badge' => 'Traditional',
         'desc' => 'The Dewan (or Diwan) is a beloved, timeless staple of classic South Asian home decor. Featuring an elegant single curved armrest, a beautifully carved wooden back support, and matching cylindrical bolster pillows (Gao-Takya), our Dewans are perfect for reading, relaxing, or afternoon naps. Made from seasoned wood and premium fabrics, they combine cultural heritage with versatile seating utility.',
@@ -147,6 +187,11 @@ $collections = [
         'price_text' => 'Starts from PKR 85,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/drawing-room-set.webp',
+        'images' => [
+            'images/drawing-room-set.webp',
+            'images/combo-living-room.webp',
+            'images/combo-wedding.webp'
+        ],
         'tagline' => 'Complete formal sofa arrangements (3+2+1+1) for hosting guests',
         'badge' => 'Best Seller',
         'desc' => 'Our Drawing Room Sofa Sets are designed to provide complete, coordinated formal seating plans. Upholstered in grand 7-seater arrangements (3-seater + 2-seater + two single chairs), this collection focuses on elegant symmetry, formal high backrests, and upright sitting comfort. Built with seasoned wood frames and luxurious fabrics to make a lasting impression on your guests.',
@@ -164,6 +209,11 @@ $collections = [
         'price_text' => 'Starts from PKR 40,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/accent-chair.webp',
+        'images' => [
+            'images/accent-chair.webp',
+            'images/combo-modern-minimal.webp',
+            'images/velvet-sofa.webp'
+        ],
         'tagline' => 'Stunning standalone design pieces to add color and character',
         'badge' => 'Compact',
         'desc' => 'Inject a burst of color, texture, and creative shape into any empty room corner. Our Accent and Single Seater collection features statement chairs with architectural profiles, slender gold metal legs, and premium upholstery in vibrant shades. Perfect as a contrasting element to your main sofa set, or as a cozy standalone reading spot.',
@@ -181,6 +231,11 @@ $collections = [
         'price_text' => 'Starts from PKR 30,000',
         'price_type' => '1 Seater Price',
         'image' => 'images/office-sofa.webp',
+        'images' => [
+            'images/office-sofa.webp',
+            'images/hero-banner.webp',
+            'images/velvet-sofa.webp'
+        ],
         'tagline' => 'Professional-grade high-durability seating for corporate cabins',
         'badge' => 'Commercial',
         'desc' => 'Create a powerful, professional first impression in your corporate cabin, reception lobby, or waiting lounge. Engineered to withstand heavy everyday use, our Office & Reception Sofas feature sleek modern linear profiles, easy-to-clean commercial leathers or synthetic fabrics, and reinforced frames that maintain their neat, firm appearance for years.',
@@ -198,6 +253,11 @@ $collections = [
         'price_text' => 'Starts from PKR 65,000',
         'price_type' => 'Full Price',
         'image' => 'images/chaise-lounge.webp',
+        'images' => [
+            'images/chaise-lounge.webp',
+            'images/accent-chair.webp',
+            'images/velvet-sofa.webp'
+        ],
         'tagline' => 'Elongated luxury seating for reclining in absolute style',
         'badge' => 'Elegant',
         'desc' => 'The absolute pinnacle of luxury lounging. Our Chaise Lounges feature an elongated seat designed specifically for stretching out your legs and relaxing in style. Upholstered in premium button-tufted velvet and supported by slender polished legs, this collection adds a touch of classic Hollywood glamour and elegant relaxation to any luxury home.',
@@ -215,12 +275,17 @@ $collections = [
         'price_text' => 'Starts from PKR 170,000',
         'price_type' => 'Full Price',
         'image' => 'images/ottoman-poufs.webp',
+        'images' => [
+            'images/ottoman-poufs.webp',
+            'images/combo-modern-minimal.webp',
+            'images/chesterfield-sofa.webp'
+        ],
         'tagline' => 'Highly versatile footrests, coffee table alternatives, and extra seats',
         'badge' => 'Accessory',
         'desc' => 'The ultimate multi-functional accessories for a complete living space. Our Ottoman and Poufs collection includes premium tufted storage benches, cylindrical poufs, and settees that serve as comfortable footrests, chic coffee table alternatives, or extra guest seating. Made with the exact same high-density foam and fabric ranges as our main sofas.',
         'features' => [
             'Set includes matching multi-functional seating pieces',
-            'Optional deep built-in storage compartment inside benches',
+            'Optional built-in deep storage space compartment inside benches',
             'Solid, lightweight seasoned internal wood frame framing',
             'Luxurious tufted velvet fabric with gold-plated metallic base rings',
             'Extremely easy to move around for flexible seating layouts'
@@ -417,7 +482,7 @@ $c = $collections[$id];
             border: 1px solid rgba(201, 169, 110, 0.15);
         }
         .img-zoom-container img {
-            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s ease-in-out;
         }
         .img-zoom-container:hover img {
             transform: scale(1.05);
@@ -505,11 +570,22 @@ $c = $collections[$id];
                 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                     
-                    <!-- LEFT COLUMN: Product Image & Customization Guide (5 Columns) -->
+                    <!-- LEFT COLUMN: Product Image Gallery & Customization Guide (5 Columns) -->
                     <div class="lg:col-span-5 space-y-6 reveal">
-                        <!-- Image Container -->
-                        <div class="img-zoom-container aspect-[4/3] shadow-md">
-                            <img src="<?= $c['image'] ?>" alt="Bespoke <?= strtolower($c['title']) ?> custom design - Custom Sofa Prices Pakistan" class="w-full h-full object-cover" width="600" height="450">
+                        <!-- Main Zoomable Image -->
+                        <div class="img-zoom-container aspect-[4/3] shadow-md rounded-2xl overflow-hidden border border-gold/15 bg-white">
+                            <img id="primary-image" src="<?= $c['images'][0] ?>" alt="Bespoke <?= strtolower($c['title']) ?> custom design - Custom Sofa Prices Pakistan" class="w-full h-full object-cover" width="600" height="450" style="transition: opacity 0.15s ease-in-out;">
+                        </div>
+
+                        <!-- Thumbnail Gallery Row -->
+                        <div class="grid grid-cols-3 gap-3">
+                            <?php foreach ($c['images'] as $index => $img): ?>
+                            <button onclick="changeActiveImage('<?= $img ?>', this)" 
+                                    class="aspect-[4/3] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none <?= $index === 0 ? 'border-gold shadow-md scale-[1.02]' : 'border-gray-200 hover:border-gold/50' ?>"
+                                    aria-label="View layout option <?= $index + 1 ?>">
+                                <img src="<?= $img ?>" alt="Layout option view <?= $index + 1 ?>" class="w-full h-full object-cover">
+                            </button>
+                            <?php endforeach; ?>
                         </div>
 
                         <!-- Special Customization Banner -->
@@ -796,6 +872,28 @@ $c = $collections[$id];
             rootMargin: '0px 0px -40px 0px'
         });
         revealElements.forEach(el => revealObserver.observe(el));
+
+        // Image Gallery Swapping Handler
+        function changeActiveImage(imgSrc, buttonEl) {
+            const primaryImg = document.getElementById('primary-image');
+            primaryImg.style.opacity = '0.1';
+            
+            setTimeout(() => {
+                primaryImg.src = imgSrc;
+                primaryImg.style.opacity = '1';
+            }, 150);
+
+            // Reset borders for all thumbnails in this row
+            const thumbnails = buttonEl.parentElement.querySelectorAll('button');
+            thumbnails.forEach(btn => {
+                btn.classList.remove('border-gold', 'shadow-md', 'scale-[1.02]');
+                btn.classList.add('border-gray-200');
+            });
+
+            // Set active styles on clicked thumbnail
+            buttonEl.classList.remove('border-gray-200');
+            buttonEl.classList.add('border-gold', 'shadow-md', 'scale-[1.02]');
+        }
     </script>
 
 </body>
