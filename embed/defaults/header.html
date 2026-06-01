@@ -17,9 +17,26 @@
 </div>
 
 <!-- Header / navigation -->
+<style>
+  /* Pure CSS Hamburger Toggle Mechanics */
+  #mobile-menu-toggle:checked ~ #mobile-dropdown {
+    display: block !important;
+  }
+  #mobile-menu-toggle:checked ~ .flex-container-nav .menu-open-icon {
+    display: none !important;
+  }
+  #mobile-menu-toggle:checked ~ .flex-container-nav .menu-close-icon {
+    display: inline-block !important;
+  }
+</style>
+
 <header id="main-header" class="bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm sticky top-0 z-40 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 sm:h-20">
+    
+    <!-- Hidden Checkbox Sibling for Pure CSS Toggle -->
+    <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+
+    <div class="flex-container-nav flex items-center justify-between h-16 sm:h-20">
       
       <!-- Brand Logo -->
       <a href="https://cutomsofaprices.com/" target="_top" class="flex items-center gap-3 group flex-shrink-0" aria-label="Custom Sofa Prices - Home">
@@ -48,10 +65,11 @@
         </a>
       </div>
 
-      <!-- Hamburger Button (Mobile Only) -->
-      <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded-xl text-charcoal hover:bg-gray-100 hover:text-gold-dark transition-all duration-200" aria-label="Toggle Navigation Menu">
-        <i class="fas fa-bars text-xl" id="menu-icon"></i>
-      </button>
+      <!-- Hamburger Button (Mobile Only, mapped to label) -->
+      <label for="mobile-menu-toggle" class="md:hidden flex items-center justify-center p-2 rounded-xl text-charcoal hover:bg-gray-100 hover:text-gold-dark transition-all duration-200 cursor-pointer select-none" aria-label="Toggle Navigation Menu">
+        <span class="menu-open-icon"><i class="fas fa-bars text-xl"></i></span>
+        <span class="menu-close-icon hidden"><i class="fas fa-times text-xl"></i></span>
+      </label>
 
     </div>
 
@@ -72,46 +90,4 @@
     </div>
 
   </div>
-
-  <!-- Inline Self-Contained Toggle JS -->
-  <script>
-    (function() {
-      const btn = document.getElementById('mobile-menu-btn');
-      const dropdown = document.getElementById('mobile-dropdown');
-      const icon = document.getElementById('menu-icon');
-      if (btn && dropdown && icon) {
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          const isHidden = dropdown.classList.contains('hidden');
-          if (isHidden) {
-            dropdown.classList.remove('hidden');
-            icon.className = 'fas fa-times text-xl'; // Close icon
-          } else {
-            dropdown.classList.add('hidden');
-            icon.className = 'fas fa-bars text-xl'; // Bars icon
-          }
-        });
-
-        // Close when clicking outside
-        document.addEventListener('click', function() {
-          dropdown.classList.add('hidden');
-          icon.className = 'fas fa-bars text-xl';
-        });
-
-        // Prevent dropdown closure when clicking inside the dropdown
-        dropdown.addEventListener('click', function(e) {
-          e.stopPropagation();
-        });
-
-        // Close on nav link click
-        const links = document.querySelectorAll('.mobile-nav-link');
-        links.forEach(function(link) {
-          link.addEventListener('click', function() {
-            dropdown.classList.add('hidden');
-            icon.className = 'fas fa-bars text-xl';
-          });
-        });
-      }
-    })();
-  </script>
 </header>
