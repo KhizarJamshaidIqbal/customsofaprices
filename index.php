@@ -462,7 +462,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Maximize your living space with our premium corner sofa designs. Available in fabric, leather & velvet. L shape sofa 1 seater price starts from PKR 65,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=lshape" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -484,7 +484,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Timeless Chinyoti sofa set designs with hand-carved frames & the iconic Chesterfield sofa design with deep button tufting. 1 seater price from PKR 80,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=chinyoti" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -506,7 +506,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Elevate your space with our luxury velvet sofa set designs and genuine leather sofas. Rich textures, premium comfort. 1 seater price from PKR 65,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=velvet" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -528,7 +528,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Explore lakri ka sofa design - handcrafted Sheesham & Rosewood frames with your choice of sofa poshish ke design. 1 seater price from PKR 80,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=wooden" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -550,7 +550,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Opulent Turkish-style sofas with intricate carved frames and premium upholstery. A statement piece for your drawing room. 1 seater price from PKR 80,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=turkish" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -572,7 +572,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Elegant Victorian designs with gold-leaf wood carving and luxurious velvet upholstery. Timeless beauty for royal drawing rooms. 1 seater price from PKR 85,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=victorian" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -594,7 +594,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Flexible modular sofas that you can rearrange to fit any space. U-shape & multi-section configurations available. 1 seater price from PKR 55,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=modular" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -616,7 +616,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Classic day-bed style divans with bolster cushions - a Pakistani living room staple. Sheesham frames with premium poshish. Full price from PKR 195,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=dewan" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -638,7 +638,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Complete 7-seater drawing room sets (3+2+1+1) in coordinated designs. Formal elegance for your mehman khana. 1 seater price from PKR 85,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=drawingroom" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -660,7 +660,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Stylish accent chairs and single seaters for bedrooms, corners & reading nooks. Contemporary designs with gold metal legs. 1 seater price from PKR 40,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=accent" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -682,7 +682,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Professional-grade sofas for offices, waiting areas & reception lounges. Durable leather & fabric options. 1 seater price from PKR 30,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=office" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -704,7 +704,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Luxurious chaise lounges for bedrooms, reading nooks & living rooms. Tufted designs with premium velvet upholstery. Full price from PKR 65,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=chaise" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
@@ -726,7 +726,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <p class="text-gray-500 text-sm leading-relaxed mb-4">
                                 Complement your sofas with matching ottomans, poufs & settees. Storage options available. Perfect footrests & extra seating. Full price from PKR 170,000.
                             </p>
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
+                            <a href="collection.php?id=ottoman" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
                                 View Collection <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
