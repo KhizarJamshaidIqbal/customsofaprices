@@ -34,11 +34,11 @@ $collections = [
             ],
             [
                 'q' => 'Can the alignment of the L-shape corner be changed later?',
-                'a' => 'Yes, if you choose a **reversible modular L-shape**, you can change the alignment from Left-Hand to Right-Hand yourself. For fixed layouts, please specify your preferred corner orientation during order booking.'
+                'a' => 'Yes, if you choose a <strong>reversible modular L-shape</strong>, you can change the alignment from Left-Hand to Right-Hand yourself. For fixed layouts, please specify your preferred corner orientation during order booking.'
             ],
             [
                 'q' => 'How do you prevent the corner seat of the L-Shape sofa from sagging?',
-                'a' => 'We use premium double-ply heavy-duty webbing support combined with a high-density **Master MoltyFoam core** to ensure the corner seat retains its firm shape and never sags.'
+                'a' => 'We use premium double-ply heavy-duty webbing support combined with a high-density <strong>Master MoltyFoam core</strong> to ensure the corner seat retains its firm shape and never sags.'
             ]
         ]
     ],
@@ -66,7 +66,7 @@ $collections = [
         'faqs' => [
             [
                 'q' => 'Is the wood used in Chinyoti & Chesterfield sofas 100% solid Sheesham?',
-                'a' => 'Yes, we use 100% seasoned, grade-A **Sheesham (Rosewood)** for all carved frames. *Hum local wood mix nahi karte, aur frame par lifetime structural warranty dete hain.*'
+                'a' => 'Yes, we use 100% seasoned, grade-A <strong>Sheesham (Rosewood)</strong> for all carved frames. <em>Hum local wood mix nahi karte, aur frame par lifetime structural warranty dete hain.</em>'
             ],
             [
                 'q' => 'What polishing options are available for the hand-carved wood frame?',
@@ -102,7 +102,7 @@ $collections = [
         'faqs' => [
             [
                 'q' => 'Is the velvet fabric stain-resistant and easy to clean?',
-                'a' => 'Yes, we use premium **stain-resistant imported velvet** (Jute-velvet or Korean velvet). Liquid spills can be easily wiped away with a dry cloth or mild upholstery cleaner.'
+                'a' => 'Yes, we use premium <strong>stain-resistant imported velvet</strong> (Jute-velvet or Korean velvet). Liquid spills can be easily wiped away with a dry cloth or mild upholstery cleaner.'
             ],
             [
                 'q' => 'Will genuine leather get hot during summer in Pakistan?',
@@ -138,7 +138,7 @@ $collections = [
         'faqs' => [
             [
                 'q' => 'How do you protect the seasoned wood frames from termites?',
-                'a' => 'Every seasoned Sheesham wood board undergoes a specialized **chemical anti-termite treatment** and kiln-drying process to ensure 100% lifetime resistance against pests and moisture warping.'
+                'a' => 'Every seasoned Sheesham wood board undergoes a specialized <strong>chemical anti-termite treatment</strong> and kiln-drying process to ensure 100% lifetime resistance against pests and moisture warping.'
             ],
             [
                 'q' => 'Can the cushions on wooden sofa frames be removed for washing?',
@@ -178,7 +178,7 @@ $collections = [
             ],
             [
                 'q' => 'What type of metal is used in the gold trim borders?',
-                'a' => 'We use premium electroplated, rust-proof **stainless steel trims** (gold, rose gold, or silver) that do not tarnish, lose shine, or peel over time.'
+                'a' => 'We use premium electroplated, rust-proof <strong>stainless steel trims</strong> (gold, rose gold, or silver) that do not tarnish, lose shine, or peel over time.'
             ],
             [
                 'q' => 'Can the Turkish sofa sets be customized in dynamic pastel colors?',
@@ -210,7 +210,7 @@ $collections = [
         'faqs' => [
             [
                 'q' => 'What polishes and leafing techniques are used for Victorian sofas?',
-                'a' => 'We use premium hand-applied **antique gold leafing** (deco leaf) or silver leafing, finished with an ultra-thin dust-resistant protective seal to prevent discoloration over the years.'
+                'a' => 'We use premium hand-applied <strong>antique gold leafing</strong> (deco leaf) or silver leafing, finished with an ultra-thin dust-resistant protective seal to prevent discoloration over the years.'
             ],
             [
                 'q' => 'Are Victorian sofas suitable for regular everyday TV lounge use?',
@@ -250,7 +250,7 @@ $collections = [
             ],
             [
                 'q' => 'Do modular sofa pieces slide apart when sitting down?',
-                'a' => 'No, we install heavy-duty hidden **interlocking steel alligator clips** beneath each module to secure them firmly together. They only separate when lifted and unhooked intentionally.'
+                'a' => 'No, we install heavy-duty hidden <strong>interlocking steel alligator clips</strong> beneath each module to secure them firmly together. They only separate when lifted and unhooked intentionally.'
             ],
             [
                 'q' => 'Is modular block-stitched fabric easy to maintain?',
@@ -290,7 +290,7 @@ $collections = [
             ],
             [
                 'q' => 'Can a Dewan be used as an extra bed for overnight guests?',
-                'a' => 'Absolutely. Because we use a flat-bed style, high-density **Master MoltyFoam mattress top**, it provides excellent orthopaedic back support and comfort for sleeping.'
+                'a' => 'Absolutely. Because we use a flat-bed style, high-density <strong>Master MoltyFoam mattress top</strong>, it provides excellent orthopaedic back support and comfort for sleeping.'
             ]
         ]
     ],
@@ -317,7 +317,7 @@ $collections = [
         'faqs' => [
             [
                 'q' => 'What is the standard configuration of a Drawing Room Sofa Set in Pakistan?',
-                'a' => 'The standard formal guest hosting arrangement is a **7-seater set (3-seater + 2-seater + 2 single chairs)**. We also offer 5-seater, 6-seater, or grand 9-seater configurations based on your space.'
+                'a' => 'The standard formal guest hosting arrangement is a <strong>7-seater set (3-seater + 2-seater + 2 single chairs)</strong>. We also offer 5-seater, 6-seater, or grand 9-seater configurations based on your space.'
             ],
             [
                 'q' => 'Why are drawing room seats designed to be firmer and more upright?',
@@ -792,7 +792,7 @@ $c = $collections[$id];
                                 <div>
                                     <h3 class="font-display text-base font-bold text-charcoal mb-1">Aapki Pasand Ka Sofa</h3>
                                     <p class="text-xs text-gray-500 leading-relaxed">
-                                        Yeh product **100% custom-made** hai. Aap apni marzi ke mutabik is ka color, fabric (Velvet, Leatherette, Jute), aur dimensions change karwa sakte hain.
+                                        Yeh product <strong>100% custom-made</strong> hai. Aap apni marzi ke mutabik is ka color, fabric (Velvet, Leatherette, Jute), aur dimensions change karwa sakte hain.
                                     </p>
                                 </div>
                             </div>
@@ -926,7 +926,7 @@ $c = $collections[$id];
                         <div class="space-y-1 text-center sm:text-left">
                             <h4 class="text-xs font-bold text-amber-800 uppercase tracking-wider">Expert Recommendation Guarantee:</h4>
                             <p class="text-xs text-amber-900/80 leading-relaxed">
-                                **Aapki styling, hamara tajruba!** Aap humein apne room ki clear video ya dimensions send karein. Humare experienced designers aap ko bilkul free guide karenge ke aap ke space ke liye kaun sa design aur scale perfect match rahe ga. Ham fully transparent design solutions recommend karte hain.
+                                <strong>Aapki styling, hamara tajruba!</strong> Aap humein apne room ki clear video ya dimensions send karein. Humare experienced designers aap ko bilkul free guide karenge ke aap ke space ke liye kaun sa design aur scale perfect match rahe ga. Ham fully transparent design solutions recommend karte hain.
                             </p>
                         </div>
                     </div>
