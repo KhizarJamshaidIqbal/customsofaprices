@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require __DIR__ . '/embed/lib.php';
 $cd = embed_load();
 $H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
@@ -12,26 +12,26 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
-    <title>Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs — Custom Sofa Prices</title>
-    <meta name="description" content="Explore the best sofa set prices in Pakistan. Shop 7 seater sofa sets, L shape sofas, Chinyoti designs, Chesterfield sofas & velvet sofa sets. Sasta aur acha sofa set — direct from factory. Free delivery across Pakistan.">
+    <title>Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs â€” Custom Sofa Prices</title>
+    <meta name="description" content="Explore the best sofa set prices in Pakistan. Shop 7 seater sofa sets, L shape sofas, Chinyoti designs, Chesterfield sofas & velvet sofa sets. Sasta aur acha sofa set â€” direct from factory. Free delivery across Pakistan.">
     <meta name="keywords" content="sofa set price in Pakistan, 7 seater sofa set price, L shape sofa price, sofa set for sale, Chinyoti sofa set price, modern sofa design for living room, luxury sofa set designs, corner sofa design, sofa cum bed design, velvet sofa set design, Chesterfield sofa design">
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://cutomsofaprices.com/">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.webp">
+    <link rel="apple-touch-icon" href="images/favicon.webp">
 
     <!-- Preload Hero Image for LCP -->
-    <link rel="preload" as="image" href="images/hero-banner.png">
+    <link rel="preload" as="image" href="images/hero-banner.webp">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cutomsofaprices.com/">
     <meta property="og:title" content="Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs">
     <meta property="og:description" content="Pakistan's trusted source for premium sofa sets. Explore 7 seater, L-shape, Chesterfield, velvet & Chinyoti sofa designs with factory-direct prices.">
-    <meta property="og:image" content="https://cutomsofaprices.com/images/hero-banner.png">
+    <meta property="og:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
     <meta property="og:locale" content="en_PK">
 
     <!-- Twitter -->
@@ -257,8 +257,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "latitude": 31.5204,
             "longitude": 74.3587
         },
-        "image": "https://cutomsofaprices.com/images/hero-banner.png",
-        "priceRange": "PKR ₨₨",
+        "image": "https://cutomsofaprices.com/images/hero-banner.webp",
+        "priceRange": "PKR â‚¨â‚¨",
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -359,7 +359,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         <section id="hero" class="relative min-h-[85vh] lg:min-h-[92vh] flex items-center overflow-hidden">
             <!-- Background Image -->
             <div class="absolute inset-0">
-                <img src="images/hero-banner.png" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="1920" height="1080" loading="eager">
+                <img src="images/hero-banner.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="1920" height="1080" loading="eager">
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
 
@@ -381,7 +381,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
                     <!-- Sub-headline with keywords -->
                     <p class="text-lg sm:text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
-                        Discover premium <strong class="text-white">7 seater sofa sets</strong>, elegant <strong class="text-white">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
+                        Discover premium <strong class="text-white">7 seater sofa sets</strong>, elegant <strong class="text-white">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture â€” all at factory-direct prices.
                     </p>
 
                     <!-- CTAs -->
@@ -439,7 +439,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         Premium <span class="text-gold-dark">Sofa Set</span> for Sale
                     </h2>
                     <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Browse our curated collection of modern sofa designs for your living room. From classic wooden frames to contemporary L-shapes — every piece is crafted for comfort and elegance.
+                        Browse our curated collection of modern sofa designs for your living room. From classic wooden frames to contemporary L-shapes â€” every piece is crafted for comfort and elegance.
                     </p>
                 </div>
 
@@ -449,7 +449,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 1: L-Shape & Corner Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-lshape">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/lshape-sofa.png" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/lshape-sofa.webp" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-gold/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Trending
                             </div>
@@ -471,7 +471,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 2: Classic Chinyoti & Chesterfield -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-chinyoti" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/chesterfield-sofa.png" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/chesterfield-sofa.webp" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-charcoal/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Classic
                             </div>
@@ -493,7 +493,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 3: Velvet & Leather Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-velvet" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/velvet-sofa.png" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/velvet-sofa.webp" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-purple-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Luxury
                             </div>
@@ -515,7 +515,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 4: Wooden Sofa Frames -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-wooden" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/wooden-sofa.png" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-amber-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Handcrafted
                             </div>
@@ -537,7 +537,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 5: Sofa Cum Bed -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-sofabed" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/sofa-cum-bed.png" alt="Modern sofa cum bed design in grey fabric - Convertible sofa bed price in Pakistan for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/sofa-cum-bed.webp" alt="Modern sofa cum bed design in grey fabric - Convertible sofa bed price in Pakistan for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-teal-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Space Saver
                             </div>
@@ -559,7 +559,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 6: Recliner Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-recliner">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/recliner-sofa.png" alt="Premium brown leather recliner sofa with footrest - Recliner sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/recliner-sofa.webp" alt="Premium brown leather recliner sofa with footrest - Recliner sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-orange-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Comfort+
                             </div>
@@ -581,7 +581,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 7: Turkish Sofa Sets -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-turkish" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/turkish-sofa.png" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/turkish-sofa.webp" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-yellow-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Premium
                             </div>
@@ -603,7 +603,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 8: Victorian & Classic Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-victorian" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/victorian-sofa.png" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/victorian-sofa.webp" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-rose-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Royal
                             </div>
@@ -625,7 +625,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 9: Modular & Sectional Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-modular">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/modular-sofa.png" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/modular-sofa.webp" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-indigo-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Customizable
                             </div>
@@ -647,7 +647,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 10: Dewan & Diwan Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-dewan" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/dewan-sofa.png" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/dewan-sofa.webp" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-emerald-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Traditional
                             </div>
@@ -669,7 +669,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 11: Drawing Room Sofa Sets -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-drawingroom" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/drawing-room-set.png" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/drawing-room-set.webp" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-gold-dark/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Best Seller
                             </div>
@@ -691,7 +691,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 12: Accent & Single Seater -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-accent">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/accent-chair.png" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/accent-chair.webp" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-pink-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Compact
                             </div>
@@ -713,7 +713,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 13: Office & Reception Sofas -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-office" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/office-sofa.png" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/office-sofa.webp" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-slate-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Commercial
                             </div>
@@ -735,7 +735,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 14: Chaise Lounge -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-chaise" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/chaise-lounge.png" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/chaise-lounge.webp" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-fuchsia-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Elegant
                             </div>
@@ -757,7 +757,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Card 15: Ottoman & Poufs -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-ottoman">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/ottoman-poufs.png" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/ottoman-poufs.webp" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-amber-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 Accessory
                             </div>
@@ -796,7 +796,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         Complete <span class="text-gold-dark">Sofa Packages</span>
                     </h2>
                     <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Save more with our curated sofa packages — everything you need for a stunning living room, bundled at exclusive prices. Up to 25% savings versus buying separately.
+                        Save more with our curated sofa packages â€” everything you need for a stunning living room, bundled at exclusive prices. Up to 25% savings versus buying separately.
                     </p>
                 </div>
 
@@ -806,7 +806,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 1: Living Room Complete Set -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-living">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-living-room.png" alt="Complete living room sofa package with 7-seater sofa set, center table and side tables - Best sofa combo deal in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-living-room.webp" alt="Complete living room sofa package with 7-seater sofa set, center table and side tables - Best sofa combo deal in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
@@ -836,7 +836,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 2: Drawing Room Royal Package -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-drawing" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-drawing-room.png" alt="Royal drawing room package with Chesterfield sofa, marble coffee table and ottoman - Premium sofa combo in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-drawing-room.webp" alt="Royal drawing room package with Chesterfield sofa, marble coffee table and ottoman - Premium sofa combo in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 22%
                             </div>
@@ -866,7 +866,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 3: TV Lounge Comfort Pack -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-tvlounge" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-tv-lounge.png" alt="TV lounge package with L-shape sofa, TV console and decorative cushions - Sofa package deal for TV lounge" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-tv-lounge.webp" alt="TV lounge package with L-shape sofa, TV console and decorative cushions - Sofa package deal for TV lounge" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 18%
                             </div>
@@ -896,7 +896,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 4: Guest Room Starter Kit -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-guest">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-guest-room.png" alt="Guest room starter kit with sofa cum bed, side table and lamp - Affordable sofa package for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-guest-room.webp" alt="Guest room starter kit with sofa cum bed, side table and lamp - Affordable sofa package for guest rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-blue-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-star mr-1"></i> Popular
                             </div>
@@ -926,7 +926,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 5: Luxury Lounge Bundle -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-luxury" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-luxury-lounge.png" alt="Luxury lounge bundle with Turkish 7-seater sofa, carved center table and Persian rug - Premium sofa package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-luxury-lounge.webp" alt="Luxury lounge bundle with Turkish 7-seater sofa, carved center table and Persian rug - Premium sofa package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-amber-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-crown mr-1"></i> Premium
                             </div>
@@ -956,7 +956,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 6: Modern Minimal Set -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-minimal" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-modern-minimal.png" alt="Modern minimalist sofa set with modular sofa and glass coffee table - Contemporary sofa package deal" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-modern-minimal.webp" alt="Modern minimalist sofa set with modular sofa and glass coffee table - Contemporary sofa package deal" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 25%
                             </div>
@@ -986,7 +986,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 7: Wedding Sofa Package -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-wedding">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-wedding.png" alt="Premium Pakistani wedding sofa package with ornate carved golden sofa set and center table - Shaadi furniture package" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-wedding.webp" alt="Premium Pakistani wedding sofa package with ornate carved golden sofa set and center table - Shaadi furniture package" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-rose-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-heart mr-1"></i> Wedding
                             </div>
@@ -1017,7 +1017,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                     <!-- Package 8: Apartment Starter Package -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-apartment" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-apartment.png" alt="Budget-friendly apartment sofa starter pack with L-shape sofa and coffee table - Apartment furniture package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-apartment.webp" alt="Budget-friendly apartment sofa starter pack with L-shape sofa and coffee table - Apartment furniture package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
                             <div class="absolute top-4 left-4 bg-cyan-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-building mr-1"></i> Budget
                             </div>
@@ -1076,7 +1076,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             Crafted with Premium <span class="text-gold-dark">Materials</span> & Master Workmanship
                         </h2>
                         <p class="text-gray-500 text-lg leading-relaxed mb-8">
-                            Every sofa set we create is built with carefully selected materials — from kiln-dried hardwood frames to high-resilience foam and premium fabrics. Our master craftsmen bring decades of experience to deliver furniture that lasts a lifetime.
+                            Every sofa set we create is built with carefully selected materials â€” from kiln-dried hardwood frames to high-resilience foam and premium fabrics. Our master craftsmen bring decades of experience to deliver furniture that lasts a lifetime.
                         </p>
 
                         <!-- Features Grid -->
@@ -1200,10 +1200,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Kiya aap apne <strong class="text-charcoal">drawing room ke liye sofa</strong> dhoond rahe hain? Aap bilkul sahi jagah par hain! <strong class="text-charcoal">Custom Sofa Prices</strong> Pakistan ka ek leading furniture brand hai jo 15 saal se zyada arsay se premium quality ke sofa sets bana raha hai. Humare paas behtareen <strong class="text-charcoal">lakri ka sofa design</strong> aur <strong class="text-charcoal">sofa poshish ke design</strong> maujood hain jo aapke ghar ko ek naya look dein ge.
                             </p>
                             <p>
-                                Humare <strong class="text-charcoal">sofa ke naye design</strong> har hafte update hote hain taake aapko latest trends mil sakein. Chahay aap <strong class="text-charcoal">modern sofa design for living room</strong> dhoond rahe hon ya phir traditional Chinyoti craftsmanship — hum aapki har zaroorat poori karte hain. Humare <strong class="text-charcoal">luxury sofa set designs</strong> mein L-shape, Chesterfield, velvet, aur sofa cum bed shamil hain.
+                                Humare <strong class="text-charcoal">sofa ke naye design</strong> har hafte update hote hain taake aapko latest trends mil sakein. Chahay aap <strong class="text-charcoal">modern sofa design for living room</strong> dhoond rahe hon ya phir traditional Chinyoti craftsmanship â€” hum aapki har zaroorat poori karte hain. Humare <strong class="text-charcoal">luxury sofa set designs</strong> mein L-shape, Chesterfield, velvet, aur sofa cum bed shamil hain.
                             </p>
                             <p>
-                                Humari factory Chiniot, Punjab mein hai jahan se hum <strong class="text-charcoal">sasta aur acha sofa set</strong> seedha aapke ghar tak pohancha te hain — koi middleman nahi! Is liye humari prices market se 30-40% kam hain. Aap humari website par <strong class="text-charcoal">sofa set price in Pakistan</strong> check kar sakte hain ya phir hum se seedha baat kar ke apna custom order de sakte hain.
+                                Humari factory Chiniot, Punjab mein hai jahan se hum <strong class="text-charcoal">sasta aur acha sofa set</strong> seedha aapke ghar tak pohancha te hain â€” koi middleman nahi! Is liye humari prices market se 30-40% kam hain. Aap humari website par <strong class="text-charcoal">sofa set price in Pakistan</strong> check kar sakte hain ya phir hum se seedha baat kar ke apna custom order de sakte hain.
                             </p>
                         </div>
 
@@ -1299,11 +1299,11 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <!-- Product Tag -->
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            7-Seater L-Shape Sofa — Velvet
+                            7-Seater L-Shape Sofa â€” Velvet
                         </div>
                         <!-- Review Text -->
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Ordered a 7 seater L-shape sofa set in dark green velvet for our drawing room. The quality honestly surprised me — the wood frame is solid Sheesham and the cushions still feel firm after 4 months. Delivery was on time and the installation team was very professional. My wife is very happy with it. Bilkul paison ki value mil gayi."
+                            "Ordered a 7 seater L-shape sofa set in dark green velvet for our drawing room. The quality honestly surprised me â€” the wood frame is solid Sheesham and the cushions still feel firm after 4 months. Delivery was on time and the installation team was very professional. My wife is very happy with it. Bilkul paison ki value mil gayi."
                         </p>
                         <!-- Footer -->
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
@@ -1336,7 +1336,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Chesterfield 5-Seater — Brown Leather
+                            Chesterfield 5-Seater â€” Brown Leather
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
                             "I searched everywhere for a good Chesterfield sofa design in Pakistan and most showrooms were overpriced. Found Custom Sofa Prices through Google and decided to take a chance. So glad I did! The tufting is deep and even, the leather smells genuine, and the nailhead trim is beautifully done. It's become the centerpiece of our lounge."
@@ -1371,10 +1371,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Sofa Cum Bed — Grey Fabric
+                            Sofa Cum Bed â€” Grey Fabric
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Bought the sofa cum bed for my apartment guest room. The pull-out mechanism works smoothly and the mattress is decent for occasional use. Build quality is solid. Only reason for 4 stars — delivery took 3 extra days because of Eid rush, but they called and kept me updated. Overall a good buy for the price, aur colour bhi room se match karta hai perfectly."
+                            "Bought the sofa cum bed for my apartment guest room. The pull-out mechanism works smoothly and the mattress is decent for occasional use. Build quality is solid. Only reason for 4 stars â€” delivery took 3 extra days because of Eid rush, but they called and kept me updated. Overall a good buy for the price, aur colour bhi room se match karta hai perfectly."
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">April 5, 2026</span>
@@ -1406,7 +1406,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Chinyoti Carved Sofa — 7 Seater
+                            Chinyoti Carved Sofa â€” 7 Seater
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
                             "Humne Chinyoti sofa set liya hai 7 seater wala jis ki carving itni detailed hai ke sab log poochte hain kahan se liya. Sheesham wood ki quality behtareen hai aur poshish ka fabric bhi premium lagta hai. Drawing room ke liye sofa yeh best choice tha humari. Highly recommended for anyone who wants traditional Pakistani craftsmanship."
@@ -1441,10 +1441,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Corner Sofa — Cream Fabric
+                            Corner Sofa â€” Cream Fabric
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Was comparing L shape sofa prices across Pindi and Lahore for weeks. These guys were 25-30% cheaper than Tariq Road shops for similar quality. I visited their showroom first and the salesperson wasn't pushy at all — let me take my time. Sofa fits perfectly in our corner and the fabric is stain-resistant which is essential with kids. Happy customer."
+                            "Was comparing L shape sofa prices across Pindi and Lahore for weeks. These guys were 25-30% cheaper than Tariq Road shops for similar quality. I visited their showroom first and the salesperson wasn't pushy at all â€” let me take my time. Sofa fits perfectly in our corner and the fabric is stain-resistant which is essential with kids. Happy customer."
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">April 22, 2026</span>
@@ -1476,10 +1476,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Velvet Sofa Set — Navy Blue, 5-Seater
+                            Velvet Sofa Set â€” Navy Blue, 5-Seater
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "I ordered online after seeing their Facebook page. Was a bit nervous since Multan delivery is not always reliable, but they shipped through TCS and it arrived packed in thick cardboard with foam protection. The navy blue velvet sofa set is gorgeous — the color is rich and the gold legs add an elegant touch. Meri sahelian bhi order karne wali hain ab 😊"
+                            "I ordered online after seeing their Facebook page. Was a bit nervous since Multan delivery is not always reliable, but they shipped through TCS and it arrived packed in thick cardboard with foam protection. The navy blue velvet sofa set is gorgeous â€” the color is rich and the gold legs add an elegant touch. Meri sahelian bhi order karne wali hain ab ðŸ˜Š"
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">May 3, 2026</span>
@@ -1552,7 +1552,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-3" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>For small spaces, a <strong class="text-charcoal">modern sofa cum bed design</strong> with built-in storage compartments is ideal. Our convertible sofa beds start from <strong>PKR 35,000</strong> and are available in multiple sizes. They feature easy-pull mechanisms and high-density foam for comfortable sleeping — perfect for apartments and guest rooms. Chotay kamron ke liye yeh best option hai.</p>
+                                <p>For small spaces, a <strong class="text-charcoal">modern sofa cum bed design</strong> with built-in storage compartments is ideal. Our convertible sofa beds start from <strong>PKR 35,000</strong> and are available in multiple sizes. They feature easy-pull mechanisms and high-density foam for comfortable sleeping â€” perfect for apartments and guest rooms. Chotay kamron ke liye yeh best option hai.</p>
                             </div>
                         </div>
                     </div>
@@ -1578,7 +1578,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-5" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>Humare paas <strong class="text-charcoal">Chinyoti sofa set designs</strong> ki bohat bari range maujood hai — jis mein hand-carved Sheesham aur Rosewood frames shamil hain. <strong>Chinyoti sofa set price</strong> 5-seater set ke liye <strong>PKR 80,000</strong> se shuru hoti hai premium poshish ke saath. Traditional jali work, floral carving, aur modern fusion designs available hain.</p>
+                                <p>Humare paas <strong class="text-charcoal">Chinyoti sofa set designs</strong> ki bohat bari range maujood hai â€” jis mein hand-carved Sheesham aur Rosewood frames shamil hain. <strong>Chinyoti sofa set price</strong> 5-seater set ke liye <strong>PKR 80,000</strong> se shuru hoti hai premium poshish ke saath. Traditional jali work, floral carving, aur modern fusion designs available hain.</p>
                             </div>
                         </div>
                     </div>
@@ -1591,7 +1591,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-6" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>Humare paas <strong class="text-charcoal">sofa poshish ke design</strong> mein velvet, leatherette, suede, linen, aur premium jacquard fabric available hain. Aap apni pasand ka colour aur design choose kar sakte hain. Poshish ki warranty 2 saal tak di jati hai. <strong>Drawing room ke liye sofa</strong> poshish mein se aap koi bhi design select kar sakte hain — hum free fabric samples bhi bhejte hain.</p>
+                                <p>Humare paas <strong class="text-charcoal">sofa poshish ke design</strong> mein velvet, leatherette, suede, linen, aur premium jacquard fabric available hain. Aap apni pasand ka colour aur design choose kar sakte hain. Poshish ki warranty 2 saal tak di jati hai. <strong>Drawing room ke liye sofa</strong> poshish mein se aap koi bhi design select kar sakte hain â€” hum free fabric samples bhi bhejte hain.</p>
                             </div>
                         </div>
                     </div>
@@ -1669,8 +1669,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 </div>
                                 <div>
                                     <div class="font-semibold text-charcoal mb-1">Working Hours</div>
-                                    <div class="text-gray-500 text-sm">Mon–Sat: 10:00 AM – 8:00 PM</div>
-                                    <div class="text-gray-500 text-sm">Sunday: 12:00 PM – 6:00 PM</div>
+                                    <div class="text-gray-500 text-sm">Monâ€“Sat: 10:00 AM â€“ 8:00 PM</div>
+                                    <div class="text-gray-500 text-sm">Sunday: 12:00 PM â€“ 6:00 PM</div>
                                 </div>
                             </div>
                         </div>
@@ -1831,3 +1831,4 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
 </body>
 </html>
+

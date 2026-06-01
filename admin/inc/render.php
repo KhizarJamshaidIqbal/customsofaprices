@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (!defined('ADMIN')) { http_response_code(403); exit('Forbidden'); }
 
 function e($s): string {
@@ -25,7 +25,7 @@ function render_head(array $cfg, string $title, string $bodyClass = ''): void {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title><?= e($title) ?> &middot; <?= e($cfg['site_name']) ?></title>
-<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="icon" type="image/png" href="/images/favicon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@ function render_login(array $cfg, ?array $flash): void {
 <div class="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-charcoal-dark via-charcoal to-charcoal-dark">
   <div class="w-full max-w-md">
     <div class="flex items-center justify-center gap-3 mb-8">
-      <img src="/images/logo.png" alt="" class="w-12 h-12 rounded-xl">
+      <img src="/images/logo.webp" alt="" class="w-12 h-12 rounded-xl">
       <div>
         <div class="font-display text-2xl font-bold text-white"><?= e($cfg['site_name']) ?></div>
         <div class="text-gold-light text-[11px] uppercase tracking-[0.2em]"><?= e($cfg['panel_name']) ?></div>
@@ -156,7 +156,7 @@ function render_dashboard(array $cfg, ?array $flash, array $runs, array $log): v
   <!-- Sidebar -->
   <aside id="sidebar" class="flex flex-col w-64 max-w-[80vw] bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
     <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10">
-      <img src="/images/logo.png" alt="" class="w-9 h-9 rounded-lg">
+      <img src="/images/logo.webp" alt="" class="w-9 h-9 rounded-lg">
       <div>
         <div class="font-display font-bold text-white text-sm leading-tight"><?= e($cfg['site_name']) ?></div>
         <div class="text-gold-light text-[10px] uppercase tracking-[0.18em]"><?= e($cfg['panel_name']) ?></div>
@@ -354,7 +354,7 @@ function render_chrome(array $cfg, ?array $flash, array $data): void {
 <div class="min-h-screen flex">
   <aside id="sidebar" class="flex flex-col w-64 max-w-[80vw] bg-charcoal-dark text-white/80 fixed inset-y-0 left-0 z-40 -translate-x-full transition-transform duration-300 ease-in-out">
     <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10">
-      <img src="/images/logo.png" alt="" class="w-9 h-9 rounded-lg">
+      <img src="/images/logo.webp" alt="" class="w-9 h-9 rounded-lg">
       <div>
         <div class="font-display font-bold text-white text-sm leading-tight"><?= e($cfg['site_name']) ?></div>
         <div class="text-gold-light text-[10px] uppercase tracking-[0.18em]"><?= e($cfg['panel_name']) ?></div>
@@ -513,3 +513,4 @@ function render_chrome(array $cfg, ?array $flash, array $data): void {
     <?php
     render_foot();
 }
+
