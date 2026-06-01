@@ -26,7 +26,21 @@ $collections = [
             'Solid seasoned wood internal frame with a 10-year warranty',
             'Sleek modern aesthetics with optional brushed gold or chrome metal legs'
         ],
-        'rec' => 'Highly recommended for medium to large living rooms and open-concept TV lounges. Choose a 5-seater L-shape for compact corners, or scale up to a grand 7-seater layout for wider drawing spaces.'
+        'rec' => 'Highly recommended for medium to large living rooms and open-concept TV lounges. Choose a 5-seater L-shape for compact corners, or scale up to a grand 7-seater layout for wider drawing spaces.',
+        'faqs' => [
+            [
+                'q' => 'What is the minimum room size required for an L-Shape sofa?',
+                'a' => 'An L-shape sofa typically requires a minimum room size of 10x10 feet for a standard 5-seater corner sofa. *Chotay rooms ke liye hum precise measurements ke mutabik custom sizes design karte hain.*'
+            ],
+            [
+                'q' => 'Can the alignment of the L-shape corner be changed later?',
+                'a' => 'Yes, if you choose a **reversible modular L-shape**, you can change the alignment from Left-Hand to Right-Hand yourself. For fixed layouts, please specify your preferred corner orientation during order booking.'
+            ],
+            [
+                'q' => 'How do you prevent the corner seat of the L-Shape sofa from sagging?',
+                'a' => 'We use premium double-ply heavy-duty webbing support combined with a high-density **Master MoltyFoam core** to ensure the corner seat retains its firm shape and never sags.'
+            ]
+        ]
     ],
     'chinyoti' => [
         'title' => 'Chinyoti & Chesterfield',
@@ -48,7 +62,21 @@ $collections = [
             'High-resilience foam padding for maximum sitting support',
             'Stately armrests and elegant crown carving designs'
         ],
-        'rec' => 'Perfect for the primary formal drawing room (Mehman Khana). Combine a main 3-seater Chesterfield sofa with two matching single-seater hand-carved Chinyoti chairs to create an authoritative seating layout.'
+        'rec' => 'Perfect for the primary formal drawing room (Mehman Khana). Combine a main 3-seater Chesterfield sofa with two matching single-seater hand-carved Chinyoti chairs to create an authoritative seating layout.',
+        'faqs' => [
+            [
+                'q' => 'Is the wood used in Chinyoti & Chesterfield sofas 100% solid Sheesham?',
+                'a' => 'Yes, we use 100% seasoned, grade-A **Sheesham (Rosewood)** for all carved frames. *Hum local wood mix nahi karte, aur frame par lifetime structural warranty dete hain.*'
+            ],
+            [
+                'q' => 'What polishing options are available for the hand-carved wood frame?',
+                'a' => 'You can choose between antique gold leaf (deko leafing), silver leaf, champagne finish, or natural walnut grain polish in matte or high-gloss protective lacquer coating.'
+            ],
+            [
+                'q' => 'How do you maintain the deep button tufting on a Chesterfield sofa?',
+                'a' => 'Our tufting is done entirely by hand using deep-pulled heavy-duty industrial threads anchored directly to the solid wood frame, preventing the buttons from coming loose over time.'
+            ]
+        ]
     ],
     'velvet' => [
         'title' => 'Velvet & Leather Sofas',
@@ -70,7 +98,21 @@ $collections = [
             'Multi-layered foam cushioning for a plush, sinking seat feel',
             'Solid hardwood frame reinforcement at all load-bearing points'
         ],
-        'rec' => 'Excellent for modern apartments, executive office cabins, and main family lounges. Deep tones like navy blue, emerald green, tan leather, and charcoal grey are highly recommended for this style.'
+        'rec' => 'Excellent for modern apartments, executive office cabins, and main family lounges. Deep tones like navy blue, emerald green, tan leather, and charcoal grey are highly recommended for this style.',
+        'faqs' => [
+            [
+                'q' => 'Is the velvet fabric stain-resistant and easy to clean?',
+                'a' => 'Yes, we use premium **stain-resistant imported velvet** (Jute-velvet or Korean velvet). Liquid spills can be easily wiped away with a dry cloth or mild upholstery cleaner.'
+            ],
+            [
+                'q' => 'Will genuine leather get hot during summer in Pakistan?',
+                'a' => 'We offer highly breathable, commercial-grade genuine leathers and premium micro-fiber leatherettes that regulate temperature and do not heat up or stick under standard home fan/AC cooling.'
+            ],
+            [
+                'q' => 'Can I combine velvet and leatherette upholstery on the same sofa?',
+                'a' => 'Absolutely. A highly recommended modern trend is using sleek leatherette on the outer shell/armrests and plush velvet on the inner seating cushions for a premium dual-texture contrast.'
+            ]
+        ]
     ],
     'wooden' => [
         'title' => 'Wooden Sofa Frames',
@@ -92,7 +134,21 @@ $collections = [
             'Fully customizable cushion firmness (soft, medium, or hard)',
             'Tenoned and mortised joinery for heavy-duty load resistance'
         ],
-        'rec' => 'Ideal for traditional homes, open patios, wide entry hallways, or primary dining lounges. Pair with floral pattern fabrics or classic damasks to beautifully highlight the natural dark wood polish.'
+        'rec' => 'Ideal for traditional homes, open patios, wide entry hallways, or primary dining lounges. Pair with floral pattern fabrics or classic damasks to beautifully highlight the natural dark wood polish.',
+        'faqs' => [
+            [
+                'q' => 'How do you protect the seasoned wood frames from termites?',
+                'a' => 'Every seasoned Sheesham wood board undergoes a specialized **chemical anti-termite treatment** and kiln-drying process to ensure 100% lifetime resistance against pests and moisture warping.'
+            ],
+            [
+                'q' => 'Can the cushions on wooden sofa frames be removed for washing?',
+                'a' => 'Yes, we design custom cushions with premium hidden zippers, allowing you to easily remove the outer fabric covers for dry-cleaning or gentle washing.'
+            ],
+            [
+                'q' => 'What polish lasts the longest on Sheesham wood frames?',
+                'a' => 'Our polyurethane (PU) coat finish provides the highest protection against everyday scratches, water spills, and heat marks, preserving the wood\'s natural grain for decades.'
+            ]
+        ]
     ],
     'turkish' => [
         'title' => 'Turkish Sofa Sets',
@@ -114,7 +170,21 @@ $collections = [
             'Spacious seating cushions for elevated hosting comfort',
             'Solid internal wood frame with specialized steel leg stabilizers'
         ],
-        'rec' => 'Perfect for contemporary drawing rooms, premium lounges, and upscale bridal rooms. Highly recommended in light shades like off-white, beige, pastel pink, or light teal, accented with gold-bordered side tables.'
+        'rec' => 'Perfect for contemporary drawing rooms, premium lounges, and upscale bridal rooms. Highly recommended in light shades like off-white, beige, pastel pink, or light teal, accented with gold-bordered side tables.',
+        'faqs' => [
+            [
+                'q' => 'What makes a Turkish Sofa Set different from standard Pakistani designs?',
+                'a' => 'Turkish sofas feature modern European curved contours, lower-profile ergonomics, spacious seating cushions, and subtle metallic borders (gold or chrome outline trims) rather than heavy wood carvings.'
+            ],
+            [
+                'q' => 'What type of metal is used in the gold trim borders?',
+                'a' => 'We use premium electroplated, rust-proof **stainless steel trims** (gold, rose gold, or silver) that do not tarnish, lose shine, or peel over time.'
+            ],
+            [
+                'q' => 'Can the Turkish sofa sets be customized in dynamic pastel colors?',
+                'a' => 'Yes, Turkish designs look spectacular in pastel and soft neutral color palettes like off-white, beige, powder pink, mint green, and light teal. We provide 100+ pastel fabric cards on booking.'
+            ]
+        ]
     ],
     'victorian' => [
         'title' => 'Victorian & Classic Sofas',
@@ -136,7 +206,21 @@ $collections = [
             'High-density master foam cushions with orthopaedic spring support',
             'Double-reinforced cabriole legs for stability'
         ],
-        'rec' => 'Exclusively designed for high-ceiling, grand drawing rooms. We recommend placing a 3-seater Victorian sofa in the center as a royal showcase piece, flanked by two single chairs.'
+        'rec' => 'Exclusively designed for high-ceiling, grand drawing rooms. We recommend placing a 3-seater Victorian sofa in the center as a royal showcase piece, flanked by two single chairs.',
+        'faqs' => [
+            [
+                'q' => 'What polishes and leafing techniques are used for Victorian sofas?',
+                'a' => 'We use premium hand-applied **antique gold leafing** (deco leaf) or silver leafing, finished with an ultra-thin dust-resistant protective seal to prevent discoloration over the years.'
+            ],
+            [
+                'q' => 'Are Victorian sofas suitable for regular everyday TV lounge use?',
+                'a' => 'Victorian sofas have high arched backs and ornate carvings, designed primarily as formal showcase pieces for drawing rooms (Mehman Khana). For casual daily lounging, we recommend our L-shape or modular collections.'
+            ],
+            [
+                'q' => 'What fabric patterns work best with classical Victorian carved frames?',
+                'a' => 'Heavy brocades, premium damasks, and rich royal velvets with classic floral or royal motifs beautifully complement the gold leafing and grand architecture of Victorian frames.'
+            ]
+        ]
     ],
     'modular' => [
         'title' => 'Modular & Sectional Sofas',
@@ -158,7 +242,21 @@ $collections = [
             'Durable, modern block-stitched fabrics (stain and water-resistant)',
             'Multi-layered foam padding with high-resiliency webbed suspension'
         ],
-        'rec' => 'Ideal for modern open-concept apartments, home theater basements, and active family lounges. Excellent for larger families who love hosting casual gatherings.'
+        'rec' => 'Ideal for modern open-concept apartments, home theater basements, and active family lounges. Excellent for larger families who love hosting casual gatherings.',
+        'faqs' => [
+            [
+                'q' => 'Can I expand a modular sofa set by adding more seats later?',
+                'a' => 'Yes, because each seating block acts as a standalone unit with hidden interlocking steel connectors underneath, you can order additional middle seats or corner modules at any time to expand your layout.'
+            ],
+            [
+                'q' => 'Do modular sofa pieces slide apart when sitting down?',
+                'a' => 'No, we install heavy-duty hidden **interlocking steel alligator clips** beneath each module to secure them firmly together. They only separate when lifted and unhooked intentionally.'
+            ],
+            [
+                'q' => 'Is modular block-stitched fabric easy to maintain?',
+                'a' => 'Yes, we use thick, high-durability modern fabrics (stain and water-resistant Jute/Linen blends) that stand up to active family gatherings and are extremely easy to vacuum and spot-clean.'
+            ]
+        ]
     ],
     'dewan' => [
         'title' => 'Dewan & Diwan Sofas',
@@ -180,7 +278,21 @@ $collections = [
             'Polished in antique gold leaf, silver leaf, or rich dark walnut',
             'Comfortable flat-bed style high-density foam mattress top'
         ],
-        'rec' => 'Perfect as an accent seating option in drawing rooms, a cozy reading bed in bedrooms, or as a standalone window seat in large hallways and open lounges.'
+        'rec' => 'Perfect as an accent seating option in drawing rooms, a cozy reading bed in bedrooms, or as a standalone window seat in large hallways and open lounges.',
+        'faqs' => [
+            [
+                'q' => 'What is the typical length of a custom Dewan/Diwan daybed?',
+                'a' => 'Our standard custom Dewans are 6 feet in length and 2.5 feet in width, providing the perfect daybed size for relaxing. We can customize the dimensions to match your specific corner or window alcove.'
+            ],
+            [
+                'q' => 'Do Dewan daybeds include the bolster pillows (Gao-Takya)?',
+                'a' => 'Yes, every Dewan order includes two matching cylindrical bolster pillows (Gao-Takya) and customized throw cushions upholstered in your selected premium fabric.'
+            ],
+            [
+                'q' => 'Can a Dewan be used as an extra bed for overnight guests?',
+                'a' => 'Absolutely. Because we use a flat-bed style, high-density **Master MoltyFoam mattress top**, it provides excellent orthopaedic back support and comfort for sleeping.'
+            ]
+        ]
     ],
     'drawingroom' => [
         'title' => 'Drawing Room Sofa Sets',
@@ -201,7 +313,21 @@ $collections = [
             'Premium high-grade textured fabrics, heavy chenilles, or damasks',
             'Corner-blocked, double-reinforced solid wood frames'
         ],
-        'rec' => 'The absolute premier choice for your main formal guest hosting room (Mehman Khana). Arrange symmetrically around a large center coffee table to create the ideal conversation circle.'
+        'rec' => 'The absolute premier choice for your main formal guest hosting room (Mehman Khana). Arrange symmetrically around a large center coffee table to create the ideal conversation circle.',
+        'faqs' => [
+            [
+                'q' => 'What is the standard configuration of a Drawing Room Sofa Set in Pakistan?',
+                'a' => 'The standard formal guest hosting arrangement is a **7-seater set (3-seater + 2-seater + 2 single chairs)**. We also offer 5-seater, 6-seater, or grand 9-seater configurations based on your space.'
+            ],
+            [
+                'q' => 'Why are drawing room seats designed to be firmer and more upright?',
+                'a' => 'Formal drawing rooms are built for hosting guests and conversation, which require upright, comfortable posture. We use orthopaedic spring foundations and high-resilience foam to maintain an elegant, firm seating structure.'
+            ],
+            [
+                'q' => 'Does the price include coordinating accent cushions?',
+                'a' => 'Yes, all our complete drawing room sets include customized coordinating throw cushions and accent pillows in contrasting fabrics at no extra cost.'
+            ]
+        ]
     ],
     'accent' => [
         'title' => 'Accent & Single Seater',
@@ -221,7 +347,21 @@ $collections = [
             'Ergonomic backrest support with curved comfort shell designs',
             'Compact footprint suitable for any empty corner'
         ],
-        'rec' => 'Perfect for master bedroom corners, vanity rooms, dressing areas, entryways, or as contrasting side chairs flanking a primary living room sofa set.'
+        'rec' => 'Perfect for master bedroom corners, vanity rooms, dressing areas, entryways, or as contrasting side chairs flanking a primary living room sofa set.',
+        'faqs' => [
+            [
+                'q' => 'What is the purpose of adding an accent chair to a living room?',
+                'a' => 'Accent chairs inject a burst of color, texture, and creative shape to empty room corners. They serve as stunning statement pieces that break the monotony of matching sofa sets.'
+            ],
+            [
+                'q' => 'Are the metal legs on accent chairs rust-proof?',
+                'a' => 'Yes, all our accent chairs use premium electroplated gold steel legs or textured black powder-coated iron frames that are fully rust-proof and highly durable.'
+            ],
+            [
+                'q' => 'Can I customize the fabric texture to be fuzzy Boucle?',
+                'a' => 'Absolutely. We offer a wide range of plush velvets, fuzzy modern boucle fabrics, and heavy textured linens to make your single-seater accent chair pop.'
+            ]
+        ]
     ],
     'office' => [
         'title' => 'Office & Reception Sofas',
@@ -241,7 +381,21 @@ $collections = [
             'Firm, high-density orthopaedic foam cushioning to prevent sagging',
             'Low maintenance - extremely easy to wipe down, dust, and sanitize'
         ],
-        'rec' => 'Essential for corporate lobbies, executive cabins, medical clinics, reception desks, waiting rooms, and professional office lounges.'
+        'rec' => 'Essential for corporate lobbies, executive cabins, medical clinics, reception desks, waiting rooms, and professional office lounges.',
+        'faqs' => [
+            [
+                'q' => 'How long does office reception upholstery last under heavy public use?',
+                'a' => 'We use heavy-duty, commercial-grade double-ply leatherette or wear-resistant synthetic fabrics rated for high-traffic environments, ensuring the upholstery lasts for years without cracking or peeling.'
+            ],
+            [
+                'q' => 'Are reception sofas easy to clean and sanitize daily?',
+                'a' => 'Yes, our commercial leatherette and steel frame office sofas can be wiped down daily with standard disinfectants, alcohol wipes, or damp cloths without damaging the color or material.'
+            ],
+            [
+                'q' => 'Do you offer firm orthopaedic foam options for corporate seating?',
+                'a' => 'Yes, we utilize high-density, firm orthopaedic foam to support correct sitting posture and prevent the cushions from sagging or losing shape under continuous commercial use.'
+            ]
+        ]
     ],
     'chaise' => [
         'title' => 'Chaise Lounge',
@@ -261,7 +415,21 @@ $collections = [
             'Premium ultra-soft velvet and highly durable luxury fabrics',
             'Sturdy seasoned wood frame with custom wooden or metal legs'
         ],
-        'rec' => 'Perfect positioned next to a large master bedroom window, in a master suite dressing area, or as a contrasting corner accent in a luxury drawing room.'
+        'rec' => 'Perfect positioned next to a large master bedroom window, in a master suite dressing area, or as a contrasting corner accent in a luxury drawing room.',
+        'faqs' => [
+            [
+                'q' => 'What is the difference between a Dewan and a Chaise Lounge?',
+                'a' => 'A Dewan is a traditional daybed with a carved wooden back and bolster pillows, whereas a Chaise Lounge features modern Hollywood-style deep button tufting, an elongated sweeping curved backrest, and an elegant side-arm support.'
+            ],
+            [
+                'q' => 'Can a chaise lounge be customized as left-facing or right-facing?',
+                'a' => 'Yes, you can choose either a Left-Arm or Right-Arm configuration depending on where the chaise lounge will be positioned relative to your room\'s windows or main walls.'
+            ],
+            [
+                'q' => 'What is the best fabric for a button-tufted chaise lounge?',
+                'a' => 'Ultra-soft premium velvet is the absolute best fabric, as it gorgeously catches room lighting across the deep tufted buttons and curved edges, enhancing the luxurious feel.'
+            ]
+        ]
     ],
     'ottoman' => [
         'title' => 'Ottoman & Poufs',
@@ -281,7 +449,21 @@ $collections = [
             'Luxurious tufted velvet fabric with gold-plated metallic base rings',
             'Extremely easy to move around for flexible seating layouts'
         ],
-        'rec' => 'Place in front of your main L-shape sofa as a footrest, in the center of a modular sofa set as a soft coffee table, or beneath a vanity mirror console.'
+        'rec' => 'Place in front of your main L-shape sofa as a footrest, in the center of a modular sofa set as a soft coffee table, or beneath a vanity mirror console.',
+        'faqs' => [
+            [
+                'q' => 'Can a storage ottoman serve as a coffee table alternative?',
+                'a' => 'Yes, our firm tufted flat-top ottomans are perfect coffee table alternatives. You can place a serving tray on top for drinks and books, while storing blankets and cushions inside.'
+            ],
+            [
+                'q' => 'How strong is the internal frame of the ottoman benches?',
+                'a' => 'We construct all ottoman frames with double-ply seasoned local hardwood, making them sturdy enough to comfortably support up to 150 kg of weight as extra guest seating.'
+            ],
+            [
+                'q' => 'Do you customize the metallic base rings in chrome or black?',
+                'a' => 'Yes, the circular poufs and storage benches can be customized with brushed gold metallic base rings, chrome finishes, or plain wood/fabric borders.'
+            ]
+        ]
     ]
 ];
 
@@ -510,6 +692,26 @@ $c = $collections[$id];
         }
     }
     </script>
+
+    <!-- Schema.org FAQPage Structured Data (SEO & AEO) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            <?php foreach ($c['faqs'] as $index => $faq): ?>
+            {
+                "@type": "Question",
+                "name": "<?= htmlspecialchars($faq['q'], ENT_QUOTES, 'UTF-8') ?>",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<?= htmlspecialchars(strip_tags($faq['a']), ENT_QUOTES, 'UTF-8') ?>"
+                }
+            }<?= $index < count($c['faqs']) - 1 ? ',' : '' ?>
+            <?php endforeach; ?>
+        ]
+    }
+    </script>
 </head>
 <body class="bg-cream font-body antialiased">
 
@@ -731,6 +933,38 @@ $c = $collections[$id];
                 </div>
 
                 <!-- ============================================ -->
+                <!-- COLLECTION SPECIFIC FAQ SECTION (SEO & AEO) -->
+                <!-- ============================================ -->
+                <div class="mt-12 lg:mt-16 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100/80 reveal">
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <span class="text-xs text-gold-dark font-bold uppercase tracking-widest block mb-2">Frequently Asked Questions</span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-charcoal">
+                            <?= $c['title'] ?> <span class="text-gold-dark">Help Desk</span>
+                        </h2>
+                        <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2">
+                            Aap ke mind mein jo sawalat hain, un ke jawab yahan par detailed solutions ke sath diye gaye hain. Fully optimized custom advice for Pakistani homes.
+                        </p>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto space-y-4">
+                        <?php foreach ($c['faqs'] as $index => $faq): ?>
+                        <div class="border border-gray-100 rounded-xl overflow-hidden bg-cream/30">
+                            <button onclick="toggleCollectionFaq(<?= $index ?>)" 
+                                    class="w-full text-left px-5 py-4 flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-charcoal hover:bg-cream/70 transition-colors duration-300 focus:outline-none"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-ans-<?= $index ?>">
+                                <span><?= $faq['q'] ?></span>
+                                <i id="faq-icon-<?= $index ?>" class="fas fa-chevron-down text-gold-dark text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div id="faq-ans-<?= $index ?>" class="hidden px-5 pb-5 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50/50 pt-3 bg-white">
+                                <?= $faq['a'] ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
                 <!-- CUSTOM ORDER FORM SECTION -->
                 <!-- ============================================ -->
                 <div id="customize-form" class="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch reveal">
@@ -886,6 +1120,25 @@ $c = $collections[$id];
             // Set active styles on clicked thumbnail
             buttonEl.classList.remove('border-gray-200');
             buttonEl.classList.add('border-gold', 'shadow-md', 'scale-[1.02]');
+        }
+
+        // Toggle Collection FAQ Accordion Handler (SEO & AEO)
+        function toggleCollectionFaq(index) {
+            const answerEl = document.getElementById(`faq-ans-${index}`);
+            const iconEl = document.getElementById(`faq-icon-${index}`);
+            const buttonEl = answerEl.previousElementSibling;
+            
+            const isHidden = answerEl.classList.contains('hidden');
+            
+            if (isHidden) {
+                answerEl.classList.remove('hidden');
+                iconEl.classList.add('rotate-180');
+                buttonEl.setAttribute('aria-expanded', 'true');
+            } else {
+                answerEl.classList.add('hidden');
+                iconEl.classList.remove('rotate-180');
+                buttonEl.setAttribute('aria-expanded', 'false');
+            }
         }
     </script>
 
