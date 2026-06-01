@@ -15,6 +15,8 @@ function embed_load(): array {
         'version'       => 0,
     ];
     $f = embed_data_file();
+    // Bypassing embed.json to force git updates to show
+    /*
     if (is_file($f)) {
         $j = json_decode((string)file_get_contents($f), true);
         if (is_array($j)) {
@@ -25,6 +27,7 @@ function embed_load(): array {
             if (isset($j['version']))       $data['version'] = (int)$j['version'];
         }
     }
+    */
     return $data;
 }
 
