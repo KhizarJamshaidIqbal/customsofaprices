@@ -4,7 +4,7 @@ $cd = embed_load();
 $H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
 $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
-// All 13 collections in Our Collections section with multiple angles/configurations
+// All 13 collections in Our Collections section
 $collections = [
     'lshape' => [
         'title' => 'L-Shape & Corner Sofas',
@@ -13,8 +13,8 @@ $collections = [
         'image' => 'images/lshape-sofa.webp',
         'images' => [
             'images/lshape-sofa.webp',
-            'images/combo-tv-lounge.webp',
-            'images/combo-living-room.webp'
+            'images/lshape-angle1.webp',
+            'images/lshape-angle2.webp'
         ],
         'tagline' => 'Maximize your living space with modern custom alignments',
         'badge' => 'Trending',
@@ -34,9 +34,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/chesterfield-sofa.webp',
         'images' => [
-            'images/chesterfield-sofa.webp',
-            'images/combo-drawing-room.webp',
-            'images/combo-wedding.webp'
+            'images/chesterfield-sofa.webp'
         ],
         'tagline' => 'Traditional hand-carved heritage meets royal British tufting',
         'badge' => 'Classic',
@@ -56,9 +54,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/velvet-sofa.webp',
         'images' => [
-            'images/velvet-sofa.webp',
-            'images/hero-banner.webp',
-            'images/combo-tv-lounge.webp'
+            'images/velvet-sofa.webp'
         ],
         'tagline' => 'Immersive textures and ultra-premium modern aesthetics',
         'badge' => 'Luxury',
@@ -78,9 +74,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/wooden-sofa.webp',
         'images' => [
-            'images/wooden-sofa.webp',
-            'images/combo-drawing-room.webp',
-            'images/dewan-sofa.webp'
+            'images/wooden-sofa.webp'
         ],
         'tagline' => 'Rustic seasoned wood elegance with premium custom poshish',
         'badge' => 'Handcrafted',
@@ -100,9 +94,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/turkish-sofa.webp',
         'images' => [
-            'images/turkish-sofa.webp',
-            'images/combo-luxury-lounge.webp',
-            'images/combo-drawing-room.webp'
+            'images/turkish-sofa.webp'
         ],
         'tagline' => 'Modern European sophistication with classical gold accents',
         'badge' => 'Premium',
@@ -122,9 +114,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/victorian-sofa.webp',
         'images' => [
-            'images/victorian-sofa.webp',
-            'images/combo-wedding.webp',
-            'images/combo-drawing-room.webp'
+            'images/victorian-sofa.webp'
         ],
         'tagline' => 'Royal historical grandeur with ornate hand-painted detailing',
         'badge' => 'Royal',
@@ -144,9 +134,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/modular-sofa.webp',
         'images' => [
-            'images/modular-sofa.webp',
-            'images/combo-modern-minimal.webp',
-            'images/lshape-sofa.webp'
+            'images/modular-sofa.webp'
         ],
         'tagline' => 'Infinitely adaptable seating plans for smart modern living',
         'badge' => 'Customizable',
@@ -166,9 +154,7 @@ $collections = [
         'price_type' => 'Full Price',
         'image' => 'images/dewan-sofa.webp',
         'images' => [
-            'images/dewan-sofa.webp',
-            'images/wooden-sofa.webp',
-            'images/accent-chair.webp'
+            'images/dewan-sofa.webp'
         ],
         'tagline' => 'Traditional single-armed luxury daybeds for ultimate relaxation',
         'badge' => 'Traditional',
@@ -188,9 +174,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/drawing-room-set.webp',
         'images' => [
-            'images/drawing-room-set.webp',
-            'images/combo-living-room.webp',
-            'images/combo-wedding.webp'
+            'images/drawing-room-set.webp'
         ],
         'tagline' => 'Complete formal sofa arrangements (3+2+1+1) for hosting guests',
         'badge' => 'Best Seller',
@@ -210,9 +194,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/accent-chair.webp',
         'images' => [
-            'images/accent-chair.webp',
-            'images/combo-modern-minimal.webp',
-            'images/velvet-sofa.webp'
+            'images/accent-chair.webp'
         ],
         'tagline' => 'Stunning standalone design pieces to add color and character',
         'badge' => 'Compact',
@@ -232,9 +214,7 @@ $collections = [
         'price_type' => '1 Seater Price',
         'image' => 'images/office-sofa.webp',
         'images' => [
-            'images/office-sofa.webp',
-            'images/hero-banner.webp',
-            'images/velvet-sofa.webp'
+            'images/office-sofa.webp'
         ],
         'tagline' => 'Professional-grade high-durability seating for corporate cabins',
         'badge' => 'Commercial',
@@ -254,9 +234,7 @@ $collections = [
         'price_type' => 'Full Price',
         'image' => 'images/chaise-lounge.webp',
         'images' => [
-            'images/chaise-lounge.webp',
-            'images/accent-chair.webp',
-            'images/velvet-sofa.webp'
+            'images/chaise-lounge.webp'
         ],
         'tagline' => 'Elongated luxury seating for reclining in absolute style',
         'badge' => 'Elegant',
@@ -276,9 +254,7 @@ $collections = [
         'price_type' => 'Full Price',
         'image' => 'images/ottoman-poufs.webp',
         'images' => [
-            'images/ottoman-poufs.webp',
-            'images/combo-modern-minimal.webp',
-            'images/chesterfield-sofa.webp'
+            'images/ottoman-poufs.webp'
         ],
         'tagline' => 'Highly versatile footrests, coffee table alternatives, and extra seats',
         'badge' => 'Accessory',
@@ -578,6 +554,7 @@ $c = $collections[$id];
                         </div>
 
                         <!-- Thumbnail Gallery Row -->
+                        <?php if (count($c['images']) > 1): ?>
                         <div class="grid grid-cols-3 gap-3">
                             <?php foreach ($c['images'] as $index => $img): ?>
                             <button onclick="changeActiveImage('<?= $img ?>', this)" 
@@ -587,8 +564,9 @@ $c = $collections[$id];
                             </button>
                             <?php endforeach; ?>
                         </div>
+                        <?php endif; ?>
 
-                        <!-- Special Customization Banner -->
+                        <!-- Special Customization Guide Banner -->
                         <div class="glass-card rounded-2xl p-6 shadow-sm border border-gold/10">
                             <div class="flex items-start gap-4">
                                 <div class="w-10 h-10 bg-gold/10 rounded-xl flex items-center justify-center text-gold-dark flex-shrink-0">
