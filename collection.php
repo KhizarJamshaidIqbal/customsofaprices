@@ -885,7 +885,7 @@ $c = $collections[$id];
                 <!-- ============================================ -->
                 <!-- FULL CUSTOMIZATION EXPLANATION (WIDE CARD) -->
                 <!-- ============================================ -->
-                <div class="mt-12 lg:mt-16 bg-white rounded-2xl p-8 shadow-sm border border-gray-100/80 reveal">
+                <div class="mt-12 lg:mt-16 reveal">
                     <div class="text-center max-w-3xl mx-auto mb-10">
                         <span class="text-xs text-gold-dark font-bold uppercase tracking-widest block mb-2">Bespoke Manufacturing Process</span>
                         <h2 class="font-display text-2xl sm:text-3xl font-bold text-charcoal">
@@ -896,24 +896,24 @@ $c = $collections[$id];
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-center">
-                        <div class="space-y-3 p-4">
-                            <div class="w-12 h-12 mx-auto bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">1</div>
-                            <h3 class="font-display text-base font-bold text-charcoal">Fabric & Color Selection</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gold/15 text-center card-hover">
+                            <div class="w-12 h-12 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">1</div>
+                            <h3 class="font-display text-base font-bold text-charcoal mb-2">Fabric & Color Selection</h3>
                             <p class="text-xs text-gray-500 leading-relaxed">
                                 Soft Velvet, Premium Boucle, Textured Jute, ya high-quality imported Leatherette. Aap apni marzi ka koi bhi fabric aur shade choose karein. Ham color cards share karenge.
                             </p>
                         </div>
-                        <div class="space-y-3 p-4">
-                            <div class="w-12 h-12 mx-auto bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">2</div>
-                            <h3 class="font-display text-base font-bold text-charcoal">Custom Dimensions</h3>
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gold/15 text-center card-hover">
+                            <div class="w-12 h-12 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">2</div>
+                            <h3 class="font-display text-base font-bold text-charcoal mb-2">Custom Dimensions</h3>
                             <p class="text-xs text-gray-500 leading-relaxed">
                                 Room chota hai ya bada? Ham standard 7-seater se hat kar customized 5-seater, 6-seater, ya precise inch measurements ke mutabik structural frames design karenge.
                             </p>
                         </div>
-                        <div class="space-y-3 p-4">
-                            <div class="w-12 h-12 mx-auto bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">3</div>
-                            <h3 class="font-display text-base font-bold text-charcoal">Artisanal Polish & Trim</h3>
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gold/15 text-center card-hover">
+                            <div class="w-12 h-12 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center text-gold-dark text-lg font-bold">3</div>
+                            <h3 class="font-display text-base font-bold text-charcoal mb-2">Artisanal Polish & Trim</h3>
                             <p class="text-gray-500 text-xs leading-relaxed">
                                 Wood polish ke natural walnut grain, high-gloss mahogany finishes, antique gold, ya modern brushed metallic chrome accents. Jo flow aap ke room ke interior ka hai hum wahi finish denge.
                             </p>
