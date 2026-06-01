@@ -1546,7 +1546,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                     <div class="font-semibold text-charcoal mb-1">Phone / WhatsApp</div>
                                     <a href="tel:+923007131249" class="text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
                                     <span class="text-gray-300 mx-2">|</span>
-                                    <a href="tel:+923107923290" class="text-gray-500 text-sm hover:text-gold-dark transition-colors">0310 7923290</a>
+                                    <a href="tel:+923117131249" class="text-gray-500 text-sm hover:text-gold-dark transition-colors">0311 7131249</a>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4 p-5 bg-cream rounded-xl border border-brand-100">

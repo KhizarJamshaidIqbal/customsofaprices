@@ -377,7 +377,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <h3 class="font-display text-lg font-bold text-charcoal mb-2">Phone / WhatsApp</h3>
                         <a href="tel:03007131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
-                        <a href="tel:03107923290" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0310 7923290</a>
+                        <a href="tel:03117131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0311 7131249</a>
                     </div>
 
                     <!-- Card: Email -->
