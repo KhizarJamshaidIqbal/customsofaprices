@@ -10,7 +10,7 @@
 
     <!-- Dedicated Contact Page -->
     <url>
-        <loc>https://cutomsofaprices.com/contact.php</loc>
+        <loc>https://cutomsofaprices.com/contact</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
@@ -18,7 +18,7 @@
 
     <!-- Dedicated FAQ Page -->
     <url>
-        <loc>https://cutomsofaprices.com/faq.php</loc>
+        <loc>https://cutomsofaprices.com/faq</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
