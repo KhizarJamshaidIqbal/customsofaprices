@@ -89,6 +89,13 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         }
     </script>
 
+    <!-- Progressive Enhancement for Animations -->
+    <script>
+        if (typeof IntersectionObserver !== 'undefined') {
+            document.documentElement.classList.add('js-reveal');
+        }
+    </script>
+
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -200,13 +207,13 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             left: 100%;
         }
 
-        /* Scroll Reveal Animations */
-        .reveal {
+        /* Scroll Reveal Animations — Progressively Enhanced */
+        .js-reveal .reveal {
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.7s ease, transform 0.7s ease;
         }
-        .reveal.visible {
+        .js-reveal .reveal.visible {
             opacity: 1;
             transform: translateY(0);
         }
