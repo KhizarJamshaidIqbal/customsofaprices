@@ -464,11 +464,9 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
                     <!-- LEFT: Contact Form -->
                     <div class="glass-card rounded-2xl p-8 sm:p-10 shadow-lg border border-gray-100/80">
-                        <form action="https://formsubmit.co/info@cutomsofaprices.com" method="POST" id="contact-form-el">
-                            <!-- Hidden fields -->
-                            <input type="hidden" name="_subject" value="New Contact from Custom Sofa Prices">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://cutomsofaprices.com/contact.php?sent=1">
+                        <form method="POST" id="contact-form-el" data-cem-endpoint="/contact-submit" data-wa-number="923007131249" data-support-email="info@cutomsofaprices.com">
+                            <!-- Honeypot (anti-bot, invisible to users) -->
+                            <input type="text" name="website_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;overflow:hidden" />
 
                             <!-- Name -->
                             <div class="mb-5">
@@ -522,12 +520,25 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                     class="form-input w-full px-5 py-3.5 rounded-xl border border-gray-200 bg-white/80 text-charcoal placeholder-gray-400 text-sm resize-none"></textarea>
                             </div>
 
-                            <!-- Submit Button -->
-                            <button type="submit" id="contact-submit-btn"
-                                class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 btn-shine">
-                                <i class="fas fa-paper-plane"></i>
-                                Send Message
-                            </button>
+                            <!-- Dual Action Buttons -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <!-- WhatsApp Button (fire-and-forget + navigate to wa.me) -->
+                                <button type="submit" id="cem-btn-whatsapp"
+                                    class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold text-base px-6 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 btn-shine">
+                                    <i class="fab fa-whatsapp text-xl"></i>
+                                    Send via WhatsApp
+                                </button>
+
+                                <!-- Email Button (awaited fetch, inline status) -->
+                                <a href="mailto:info@cutomsofaprices.com" id="cem-btn-email"
+                                    class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-base px-6 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 btn-shine cursor-pointer text-center no-underline">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send via Email
+                                </a>
+                            </div>
+
+                            <!-- Inline Status Message -->
+                            <div id="cem-status" class="mt-4 text-center text-sm font-medium min-h-[1.5em]" role="status" aria-live="polite"></div>
                         </form>
                     </div>
 
@@ -679,6 +690,152 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                 setTimeout(() => successAlert.remove(), 500);
             }, 8000);
         }
+
+        // ===== CEM Webhook Integration =====
+        (function () {
+            'use strict';
+
+            var form       = document.getElementById('contact-form-el');
+            if (!form) return;
+
+            var endpoint   = form.getAttribute('data-cem-endpoint') || '/contact-submit';
+            var waNumber   = form.getAttribute('data-wa-number') || '923007131249';
+            var supportEmail = form.getAttribute('data-support-email') || 'info@cutomsofaprices.com';
+            var btnWA      = document.getElementById('cem-btn-whatsapp');
+            var btnEmail   = document.getElementById('cem-btn-email');
+            var statusEl   = document.getElementById('cem-status');
+
+            function getFormData() {
+                return {
+                    name:    (form.querySelector('[name="name"]').value || '').trim(),
+                    phone:   (form.querySelector('[name="phone"]').value || '').trim(),
+                    email:   (form.querySelector('[name="email"]').value || '').trim(),
+                    subject: (form.querySelector('[name="subject"]') ? form.querySelector('[name="subject"]').value : '').trim(),
+                    message: (form.querySelector('[name="message"]').value || '').trim(),
+                    website_url: (form.querySelector('[name="website_url"]') ? form.querySelector('[name="website_url"]').value : '')
+                };
+            }
+
+            function validate(data) {
+                if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+                    setStatus('Please enter a valid email address.', 'error');
+                    return false;
+                }
+                if (!data.name && !data.phone && !data.message) {
+                    setStatus('Please fill in at least your name, phone, or message.', 'error');
+                    return false;
+                }
+                return true;
+            }
+
+            function setStatus(msg, type) {
+                statusEl.textContent = msg;
+                statusEl.className = 'mt-4 text-center text-sm font-medium min-h-[1.5em] ' +
+                    (type === 'error' ? 'text-red-500' :
+                     type === 'success' ? 'text-green-600' :
+                     'text-gold-dark');
+            }
+
+            function setBusy(busy) {
+                btnWA.disabled = busy;
+                btnEmail.setAttribute('aria-disabled', busy ? 'true' : 'false');
+                if (busy) {
+                    btnEmail.style.pointerEvents = 'none';
+                    btnEmail.style.opacity = '0.6';
+                    btnWA.style.pointerEvents = 'none';
+                    btnWA.style.opacity = '0.6';
+                } else {
+                    btnEmail.style.pointerEvents = '';
+                    btnEmail.style.opacity = '';
+                    btnWA.style.pointerEvents = '';
+                    btnWA.style.opacity = '';
+                }
+            }
+
+            // --- (A) WhatsApp button: fire-and-forget + navigate ---
+            btnWA.addEventListener('click', function (e) {
+                e.preventDefault();
+                var data = getFormData();
+
+                // Honeypot — silent resolve.
+                if (data.website_url) {
+                    var waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent('Hi! I want to know about sofa prices.');
+                    window.open(waUrl, '_blank');
+                    return;
+                }
+
+                if (!validate(data)) return;
+
+                // Build WhatsApp message text from form data.
+                var waText = 'Hi! I am interested in your sofas.\n'
+                    + 'Name: ' + data.name + '\n'
+                    + 'Phone: ' + data.phone + '\n'
+                    + 'Email: ' + data.email + '\n'
+                    + (data.subject ? 'Subject: ' + data.subject + '\n' : '')
+                    + (data.message ? 'Message: ' + data.message : '');
+
+                var waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(waText);
+
+                // Fire-and-forget CEM ingest (keepalive for page navigation).
+                try {
+                    fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data),
+                        keepalive: true,
+                        credentials: 'same-origin'
+                    }).catch(function () { /* noop — WhatsApp is the primary channel */ });
+                } catch (ex) { /* noop */ }
+
+                window.open(waUrl, '_blank');
+            });
+
+            // --- (B) Email button: awaited fetch, inline status ---
+            btnEmail.addEventListener('click', function (e) {
+                e.preventDefault(); // Critical: no mailto navigation.
+                var data = getFormData();
+
+                // Honeypot — silent resolve.
+                if (data.website_url) {
+                    setStatus('Message sent successfully!', 'success');
+                    return;
+                }
+
+                if (!validate(data)) return;
+
+                setBusy(true);
+                setStatus('Sending your message...', 'info');
+
+                fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                    credentials: 'same-origin'
+                })
+                .then(function (res) {
+                    return res.text().then(function (text) {
+                        var parsed;
+                        try { parsed = JSON.parse(text); } catch (_) { parsed = null; }
+
+                        // Strict validation: res.ok AND parsed.ok === true.
+                        // Guards against static servers returning 200 with raw PHP source.
+                        if (res.ok && parsed && parsed.ok === true) {
+                            setStatus('Sent! Our team will reply to ' + data.email + ' within 4 hours.', 'success');
+                            form.reset();
+                        } else {
+                            var code = res.status || 'unknown';
+                            setStatus('Could not send right now (status ' + code + '). Please try WhatsApp instead.', 'error');
+                        }
+                    });
+                })
+                .catch(function () {
+                    setStatus('Network error. Please try WhatsApp instead.', 'error');
+                })
+                .finally(function () {
+                    setBusy(false);
+                });
+            });
+        })();
     </script>
 
 </body>

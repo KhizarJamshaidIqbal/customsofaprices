@@ -1008,11 +1008,9 @@ $c = $collections[$id];
 
                     <!-- Right Custom Order Form (7 cols) -->
                     <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100/80">
-                        <form action="https://formsubmit.co/info@cutomsofaprices.com" method="POST" id="custom-inquiry-form">
-                            <!-- Hidden fields -->
-                            <input type="hidden" name="_subject" value="Custom Sofa Quote Inquiry - <?= $c['title'] ?>">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://cutomsofaprices.com/collection.php?id=<?= $id ?>&sent=1">
+                        <form method="POST" id="custom-inquiry-form" data-cem-endpoint="/contact-submit" data-wa-number="923007131249" data-support-email="info@cutomsofaprices.com" data-collection-title="<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>">
+                            <!-- Honeypot (anti-bot, invisible to users) -->
+                            <input type="text" name="website_url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;overflow:hidden" />
                             <input type="hidden" name="selected_collection" value="<?= $c['title'] ?>">
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -1028,6 +1026,13 @@ $c = $collections[$id];
                                     <input type="tel" name="phone" id="c-phone" required placeholder="e.g. 0300 1234567"
                                         class="form-input w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-xs">
                                 </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-4">
+                                <label for="c-email" class="block text-xs font-semibold text-charcoal mb-1">Email Address *</label>
+                                <input type="email" name="email" id="c-email" required placeholder="you@example.com"
+                                    class="form-input w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-xs">
                             </div>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -1064,11 +1069,25 @@ $c = $collections[$id];
                                     class="form-input w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-xs resize-none"></textarea>
                             </div>
 
-                            <button type="submit" 
-                                class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-300 btn-shine">
-                                <i class="fas fa-calculator"></i>
-                                Get Factory Direct Quote
-                            </button>
+                            <!-- Dual Action Buttons -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <!-- WhatsApp Button -->
+                                <button type="submit" id="cem-coll-btn-whatsapp"
+                                    class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold text-sm px-5 py-3.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-300 btn-shine">
+                                    <i class="fab fa-whatsapp text-lg"></i>
+                                    Send via WhatsApp
+                                </button>
+
+                                <!-- Email Button -->
+                                <a href="mailto:info@cutomsofaprices.com" id="cem-coll-btn-email"
+                                    class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-bold text-sm px-5 py-3.5 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-300 btn-shine cursor-pointer text-center no-underline">
+                                    <i class="fas fa-calculator"></i>
+                                    Get Quote via Email
+                                </a>
+                            </div>
+
+                            <!-- Inline Status Message -->
+                            <div id="cem-coll-status" class="mt-3 text-center text-xs font-medium min-h-[1.2em]" role="status" aria-live="polite"></div>
                         </form>
                     </div>
                 </div>
@@ -1159,6 +1178,147 @@ $c = $collections[$id];
                 buttonEl.setAttribute('aria-expanded', 'false');
             }
         }
+
+        // ===== CEM Webhook Integration (Collection Form) =====
+        (function () {
+            'use strict';
+
+            var form       = document.getElementById('custom-inquiry-form');
+            if (!form) return;
+
+            var endpoint   = form.getAttribute('data-cem-endpoint') || '/contact-submit';
+            var waNumber   = form.getAttribute('data-wa-number') || '923007131249';
+            var collTitle  = form.getAttribute('data-collection-title') || 'Sofa Set';
+            var btnWA      = document.getElementById('cem-coll-btn-whatsapp');
+            var btnEmail   = document.getElementById('cem-coll-btn-email');
+            var statusEl   = document.getElementById('cem-coll-status');
+
+            function getFormData() {
+                return {
+                    name:              (form.querySelector('[name="name"]').value || '').trim(),
+                    phone:             (form.querySelector('[name="phone"]').value || '').trim(),
+                    email:             (form.querySelector('[name="email"]').value || '').trim(),
+                    subject:           'Custom Sofa Quote - ' + collTitle,
+                    message:           (form.querySelector('[name="message"]').value || '').trim(),
+                    seating_setup:     (form.querySelector('[name="seating_setup"]') ? form.querySelector('[name="seating_setup"]').value : '').trim(),
+                    fabric_preference: (form.querySelector('[name="fabric_preference"]') ? form.querySelector('[name="fabric_preference"]').value : '').trim(),
+                    selected_collection: collTitle,
+                    website_url:       (form.querySelector('[name="website_url"]') ? form.querySelector('[name="website_url"]').value : '')
+                };
+            }
+
+            function validate(data) {
+                if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+                    setStatus('Please enter a valid email address.', 'error');
+                    return false;
+                }
+                if (!data.name && !data.phone && !data.message) {
+                    setStatus('Please fill in at least your name, phone, or message.', 'error');
+                    return false;
+                }
+                return true;
+            }
+
+            function setStatus(msg, type) {
+                statusEl.textContent = msg;
+                statusEl.className = 'mt-3 text-center text-xs font-medium min-h-[1.2em] ' +
+                    (type === 'error' ? 'text-red-500' :
+                     type === 'success' ? 'text-green-600' :
+                     'text-gold-dark');
+            }
+
+            function setBusy(busy) {
+                btnWA.disabled = busy;
+                btnEmail.setAttribute('aria-disabled', busy ? 'true' : 'false');
+                if (busy) {
+                    btnEmail.style.pointerEvents = 'none';
+                    btnEmail.style.opacity = '0.6';
+                    btnWA.style.pointerEvents = 'none';
+                    btnWA.style.opacity = '0.6';
+                } else {
+                    btnEmail.style.pointerEvents = '';
+                    btnEmail.style.opacity = '';
+                    btnWA.style.pointerEvents = '';
+                    btnWA.style.opacity = '';
+                }
+            }
+
+            // --- (A) WhatsApp button: fire-and-forget + navigate ---
+            btnWA.addEventListener('click', function (e) {
+                e.preventDefault();
+                var data = getFormData();
+
+                if (data.website_url) {
+                    window.open('https://wa.me/' + waNumber, '_blank');
+                    return;
+                }
+
+                if (!validate(data)) return;
+
+                var waText = 'Hi! I am interested in your ' + collTitle + '.\n'
+                    + 'Name: ' + data.name + '\n'
+                    + 'Phone: ' + data.phone + '\n'
+                    + 'Email: ' + data.email + '\n'
+                    + 'Seating: ' + data.seating_setup + '\n'
+                    + 'Fabric: ' + data.fabric_preference + '\n'
+                    + (data.message ? 'Notes: ' + data.message : '');
+
+                try {
+                    fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data),
+                        keepalive: true,
+                        credentials: 'same-origin'
+                    }).catch(function () {});
+                } catch (ex) {}
+
+                window.open('https://wa.me/' + waNumber + '?text=' + encodeURIComponent(waText), '_blank');
+            });
+
+            // --- (B) Email button: awaited fetch, inline status ---
+            btnEmail.addEventListener('click', function (e) {
+                e.preventDefault();
+                var data = getFormData();
+
+                if (data.website_url) {
+                    setStatus('Quote request sent!', 'success');
+                    return;
+                }
+
+                if (!validate(data)) return;
+
+                setBusy(true);
+                setStatus('Sending your quote request...', 'info');
+
+                fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                    credentials: 'same-origin'
+                })
+                .then(function (res) {
+                    return res.text().then(function (text) {
+                        var parsed;
+                        try { parsed = JSON.parse(text); } catch (_) { parsed = null; }
+
+                        if (res.ok && parsed && parsed.ok === true) {
+                            setStatus('Sent! Our team will reply to ' + data.email + ' within 4 hours.', 'success');
+                            form.reset();
+                        } else {
+                            var code = res.status || 'unknown';
+                            setStatus('Could not send (status ' + code + '). Please try WhatsApp instead.', 'error');
+                        }
+                    });
+                })
+                .catch(function () {
+                    setStatus('Network error. Please try WhatsApp instead.', 'error');
+                })
+                .finally(function () {
+                    setBusy(false);
+                });
+            });
+        })();
     </script>
 
 </body>

@@ -15,3 +15,6 @@ Desktop.ini
 
 # Admin panel runtime data (NEVER commit secrets: password hash, GitHub token)
 admin/data/*.json
+
+# CEM webhook secrets (created manually on server, never committed)
+inc/.env
