@@ -149,7 +149,7 @@ $webhookSecret = cem_env('CEM_WEBHOOK_SECRET');
 
 if ($webhookUrl === '' || $webhookSecret === '') {
     error_log('[CEM] Missing CEM_WEBHOOK_URL or CEM_WEBHOOK_SECRET');
-    http_response_code(502);
+    http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'upstream_misconfigured']);
     exit;
 }
@@ -207,7 +207,7 @@ curl_close($ch);
 
 if ($curlErr !== '') {
     error_log('[CEM] cURL error: ' . $curlErr);
-    http_response_code(502);
+    http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'upstream_unreachable']);
     exit;
 }
@@ -218,7 +218,7 @@ error_log('[CEM] upstream responded ' . $httpStatus);
 if ($httpStatus >= 200 && $httpStatus < 300) {
     echo json_encode(['ok' => true]);
 } else {
-    http_response_code(502);
+    http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'upstream_rejected', 'upstream_status' => $httpStatus]);
 }
 
