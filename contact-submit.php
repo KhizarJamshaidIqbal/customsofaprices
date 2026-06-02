@@ -11,7 +11,8 @@ declare(strict_types=1);
  *   CEM_WEBHOOK_URL, CEM_WEBHOOK_SECRET, CEM_ALLOWED_ORIGIN, CEM_CA_BUNDLE
  */
 
-require __DIR__ . '/inc/cem-env.php';
+try {
+    require __DIR__ . '/inc/cem-env.php';
 
 // ---------------------------------------------------------------------------
 // CORS
@@ -219,4 +220,17 @@ if ($httpStatus >= 200 && $httpStatus < 300) {
 } else {
     http_response_code(502);
     echo json_encode(['ok' => false, 'error' => 'upstream_rejected', 'upstream_status' => $httpStatus]);
+}
+
+} catch (\Throwable $e) {
+    http_response_code(500);
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'ok' => false,
+        'error' => 'php_fatal_error',
+        'message' => $e->getMessage(),
+        'file' => basename($e->getFile()),
+        'line' => $e->getLine()
+    ]);
+    exit;
 }
