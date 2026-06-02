@@ -355,97 +355,6 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         </section>
 
         <!-- ============================================ -->
-        <!-- CONTACT INFO CARDS -->
-        <!-- ============================================ -->
-        <section id="contact-info" class="py-16 lg:py-24 bg-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                <!-- Section Header -->
-                <div class="text-center mb-14 reveal">
-                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-4">
-                        <span class="w-8 h-px bg-gold"></span>
-                        Get In Touch
-                        <span class="w-8 h-px bg-gold"></span>
-                    </span>
-                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-                        How to <span class="text-gold-dark">Reach Us</span>
-                    </h2>
-                    <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Whether you want a custom quote, have a question, or wish to visit our showroom — we're here to help.
-                    </p>
-                </div>
-
-                <!-- Info Cards Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
-                    <!-- Card: Address -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
-                            <i class="fas fa-map-marker-alt text-2xl text-gold-dark card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Our Location</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Custom Sofa Prices,<br>Gujrat, Punjab, Pakistan</p>
-                    </div>
-
-                    <!-- Card: Phone -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.1s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
-                            <i class="fas fa-phone-alt text-2xl text-gold-dark card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Phone / WhatsApp</h3>
-                        <a href="tel:03007131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
-                        <a href="tel:03117131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0311 7131249</a>
-                    </div>
-
-                    <!-- Card: Email -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.2s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
-                            <i class="fas fa-envelope text-2xl text-gold-dark card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Email Us</h3>
-                        <a href="mailto:info@cutomsofaprices.com" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">info@cutomsofaprices.com</a>
-                        <a href="mailto:customsofaprice@gmail.com" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">customsofaprice@gmail.com</a>
-                    </div>
-
-                    <!-- Card: Working Hours -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.1s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
-                            <i class="fas fa-clock text-2xl text-gold-dark card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Working Hours</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Mon – Sat: 10:00 AM – 8:00 PM</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mt-1">Sunday: 12:00 PM – 6:00 PM</p>
-                    </div>
-
-                    <!-- Card: Google Business -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.2s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
-                            <i class="fab fa-google text-2xl text-gold-dark card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Google Business</h3>
-                        <a href="https://share.google/vWTLTD6slemi5nnGT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm hover:text-gold transition-colors mt-1">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                            View on Google
-                        </a>
-                    </div>
-
-                    <!-- Card: Quick WhatsApp -->
-                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.3s;">
-                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-green-500/20 to-green-500/5 rounded-2xl flex items-center justify-center border border-green-500/20">
-                            <i class="fab fa-whatsapp text-2xl text-green-600 card-icon"></i>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">WhatsApp Chat</h3>
-                        <a href="https://wa.me/923007131249?text=Hi!%20I%20want%20to%20know%20about%20sofa%20prices." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-green-600 font-semibold text-sm hover:text-green-700 transition-colors mt-1">
-                            <i class="fas fa-comment-dots text-xs"></i>
-                            Start Chat Now
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
         <!-- CONTACT FORM + GOOGLE MAPS -->
         <!-- ============================================ -->
         <section id="contact-form" class="py-16 lg:py-24 bg-white">
@@ -559,9 +468,100 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         </section>
 
         <!-- ============================================ -->
+        <!-- CONTACT INFO CARDS -->
+        <!-- ============================================ -->
+        <section id="contact-info" class="py-16 lg:py-24 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Section Header -->
+                <div class="text-center mb-14 reveal">
+                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-4">
+                        <span class="w-8 h-px bg-gold"></span>
+                        Get In Touch
+                        <span class="w-8 h-px bg-gold"></span>
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-4">
+                        How to <span class="text-gold-dark">Reach Us</span>
+                    </h2>
+                    <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                        Whether you want a custom quote, have a question, or wish to visit our showroom — we're here to help.
+                    </p>
+                </div>
+
+                <!-- Info Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                    <!-- Card: Address -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <i class="fas fa-map-marker-alt text-2xl text-gold-dark card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Our Location</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Custom Sofa Prices,<br>Gujrat, Punjab, Pakistan</p>
+                    </div>
+
+                    <!-- Card: Phone -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.1s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <i class="fas fa-phone-alt text-2xl text-gold-dark card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Phone / WhatsApp</h3>
+                        <a href="tel:03007131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
+                        <a href="tel:03117131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0311 7131249</a>
+                    </div>
+
+                    <!-- Card: Email -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.2s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <i class="fas fa-envelope text-2xl text-gold-dark card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Email Us</h3>
+                        <a href="mailto:info@cutomsofaprices.com" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">info@cutomsofaprices.com</a>
+                        <a href="mailto:customsofaprice@gmail.com" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">customsofaprice@gmail.com</a>
+                    </div>
+
+                    <!-- Card: Working Hours -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.1s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <i class="fas fa-clock text-2xl text-gold-dark card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Working Hours</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Mon – Sat: 10:00 AM – 8:00 PM</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mt-1">Sunday: 12:00 PM – 6:00 PM</p>
+                    </div>
+
+                    <!-- Card: Google Business -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.2s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <i class="fab fa-google text-2xl text-gold-dark card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">Google Business</h3>
+                        <a href="https://share.google/vWTLTD6slemi5nnGT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm hover:text-gold transition-colors mt-1">
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                            View on Google
+                        </a>
+                    </div>
+
+                    <!-- Card: Quick WhatsApp -->
+                    <div class="glass-card card-hover icon-float rounded-2xl p-7 text-center reveal" style="transition-delay: 0.3s;">
+                        <div class="w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-green-500/20 to-green-500/5 rounded-2xl flex items-center justify-center border border-green-500/20">
+                            <i class="fab fa-whatsapp text-2xl text-green-600 card-icon"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">WhatsApp Chat</h3>
+                        <a href="https://wa.me/923007131249?text=Hi!%20I%20want%20to%20know%20about%20sofa%20prices." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-green-600 font-semibold text-sm hover:text-green-700 transition-colors mt-1">
+                            <i class="fas fa-comment-dots text-xs"></i>
+                            Start Chat Now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
         <!-- SOCIAL MEDIA SECTION -->
         <!-- ============================================ -->
-        <section id="social-media" class="py-16 lg:py-24 bg-cream">
+        <section id="social-media" class="py-16 lg:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div class="text-center mb-12 reveal">
