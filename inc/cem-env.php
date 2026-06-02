@@ -24,6 +24,7 @@ function cem_env(string $key, string $default = ''): string
 
         $candidates = [
             __DIR__ . '/.env',
+            dirname(__DIR__) . '/.env',
         ];
 
         // Hostinger: .env sits one level above public_html (DOCUMENT_ROOT).
