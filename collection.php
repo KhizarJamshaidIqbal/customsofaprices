@@ -1329,7 +1329,7 @@ $c = $collections[$id];
         })();
     </script>
 
-<!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
-<script src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
+<!-- RoomCanvas — "Try in your place" AI sofa visualizer (pre-seeded with the viewed collection) -->
+<script src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5" data-rc-collection="<?php echo htmlspecialchars($id, ENT_QUOTES); ?>" data-rc-context="<?php echo htmlspecialchars($c['title'] ?? '', ENT_QUOTES); ?>"></script>
 </body>
 </html>
