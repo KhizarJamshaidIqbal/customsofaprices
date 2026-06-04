@@ -467,9 +467,15 @@ $collections = [
     ]
 ];
 
-// Fallback protection: if ID is empty or doesn't exist, fallback to lshape
+// ID handling: empty -> default to lshape; unknown -> send a real 404 status
+// (prevents soft-404s / unbounded indexable URLs from arbitrary ?id= values).
 $id = isset($_GET['id']) ? strtolower(trim($_GET['id'])) : 'lshape';
+if ($id === '') {
+    $id = 'lshape';
+}
 if (!array_key_exists($id, $collections)) {
+    http_response_code(404);
+    header('Cache-Control: no-store, max-age=0');
     $id = 'lshape';
 }
 
@@ -483,7 +489,7 @@ $c = $collections[$id];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
-    <title><?= $c['title'] ?> – Custom Sofa Prices Pakistan | Factory Direct</title>
+    <title><?= $c['title'] ?> Price in Pakistan | Custom Sofa Prices Gujrat</title>
     <meta name="description" content="Explore <?= $c['title'] ?> starting from <?= $c['price_text'] ?>. 100% custom-made sizes, fabrics & colors. MoltyFoam 10-year warranty. Delivered across Pakistan from Gujrat.">
     <meta name="keywords" content="<?= strtolower($c['title']) ?> price, custom sofa pakistan, <?= strtolower($c['title']) ?> design, Gujrat furniture showroom, bespoke sofas">
     <meta name="author" content="Custom Sofa Prices Pakistan">
@@ -493,7 +499,7 @@ $c = $collections[$id];
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.webp">
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
     <!-- Open Graph / Social -->
@@ -678,6 +684,9 @@ $c = $collections[$id];
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "<?= $c['title'] ?>",
+        "sku": "CSP-<?= strtoupper($id) ?>",
+        "category": "Sofa",
+        "material": "Seasoned wood frame; premium upholstery (velvet, leather, fabric)",
         "image": "https://cutomsofaprices.com/<?= $c['image'] ?>",
         "description": "<?= $c['desc'] ?> Custom sizing, fabrics and colors available.",
         "brand": {
@@ -685,21 +694,13 @@ $c = $collections[$id];
             "name": "Custom Sofa Prices Pakistan"
         },
         "offers": {
-            "@type": "AggregateOffer",
+            "@type": "Offer",
             "priceCurrency": "PKR",
-            "lowPrice": "<?= preg_replace('/[^0-9]/', '', $c['price_text']) ?>",
-            "highPrice": "<?= (int)preg_replace('/[^0-9]/', '', $c['price_text']) * 4 ?>",
-            "offerCount": "12",
-            "offers": [
-                {
-                    "@type": "Offer",
-                    "price": "<?= preg_replace('/[^0-9]/', '', $c['price_text']) ?>",
-                    "priceCurrency": "PKR",
-                    "itemCondition": "https://schema.org/NewCondition",
-                    "availability": "https://schema.org/PreOrder",
-                    "url": "https://cutomsofaprices.com/collection.php?id=<?= $id ?>"
-                }
-            ]
+            "price": "<?= preg_replace('/[^0-9]/', '', $c['price_text']) ?>",
+            "priceValidUntil": "<?= date('Y-12-31') ?>",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock",
+            "url": "https://cutomsofaprices.com/collection.php?id=<?= $id ?>"
         }
     }
     </script>
@@ -720,6 +721,19 @@ $c = $collections[$id];
                 }
             }<?= $index < count($c['faqs']) - 1 ? ',' : '' ?>
             <?php endforeach; ?>
+        ]
+    }
+    </script>
+
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cutomsofaprices.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://cutomsofaprices.com/#collections" },
+            { "@type": "ListItem", "position": 3, "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>", "item": "https://cutomsofaprices.com/collection.php?id=<?= $id ?>" }
         ]
     }
     </script>
@@ -788,7 +802,7 @@ $c = $collections[$id];
                             <button onclick="changeActiveImage('<?= $img ?>', this)" 
                                     class="aspect-[4/3] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none <?= $index === 0 ? 'border-gold shadow-md scale-[1.02]' : 'border-gray-200 hover:border-gold/50' ?>"
                                     aria-label="View layout option <?= $index + 1 ?>">
-                                <img src="<?= $img ?>" alt="Layout option view <?= $index + 1 ?>" class="w-full h-full object-cover">
+                                <img src="<?= $img ?>" alt="<?= htmlspecialchars($c['title'], ENT_QUOTES) ?> view <?= $index + 1 ?> - Gujrat, Pakistan" class="w-full h-full object-cover" width="200" height="150" loading="lazy" decoding="async">
                             </button>
                             <?php endforeach; ?>
                         </div>
@@ -835,7 +849,7 @@ $c = $collections[$id];
                             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-50 pb-5">
                                 <div>
                                     <span class="text-[11px] text-gold-dark font-bold uppercase tracking-wider block mb-1">Estimated Pricing</span>
-                                    <span class="text-2xl sm:text-3xl font-extrabold text-charcoal"><?= $c['price_text'] ?> PKR</span>
+                                    <span class="text-2xl sm:text-3xl font-extrabold text-charcoal"><?= $c['price_text'] ?></span>
                                 </div>
                                 <span class="inline-block bg-charcoal text-white text-xs font-bold px-3.5 py-2 rounded-lg">
                                     <i class="fas fa-info-circle mr-1 text-gold text-[10px]"></i> <?= $c['price_type'] ?>
