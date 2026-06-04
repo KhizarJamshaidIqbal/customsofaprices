@@ -1329,5 +1329,7 @@ $c = $collections[$id];
         })();
     </script>
 
+<!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
+<script src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
 </body>
 </html>
