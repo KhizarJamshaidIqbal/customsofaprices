@@ -181,5 +181,7 @@ header('Pragma: no-cache');
         <span class="absolute w-full h-full rounded-full bg-green-500/40 animate-ping"></span>
     </a>
 
+<!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
+<script src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
 </body>
 </html>
