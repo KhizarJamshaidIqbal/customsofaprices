@@ -295,12 +295,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "https://youtube.com/@customsofamaker",
             "https://www.facebook.com/profile.php?id=61590109367846",
             "https://www.tiktok.com/@custom.sofa"
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1000"
-        }
+        ]
     }
     </script>
 

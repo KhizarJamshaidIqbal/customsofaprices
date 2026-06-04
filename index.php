@@ -12,8 +12,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
-    <title>Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs â€” Custom Sofa Prices</title>
-    <meta name="description" content="Explore the best sofa set prices in Pakistan. Shop 7 seater sofa sets, L shape sofas, Chinyoti designs, Chesterfield sofas & velvet sofa sets. Sasta aur acha sofa set â€” direct from factory. Free delivery across Pakistan.">
+    <title>Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs</title>
+    <meta name="description" content="Explore the best sofa set prices in Pakistan. Shop 7 seater sofa sets, L shape sofas, Chinyoti designs, Chesterfield sofas & velvet sofa sets. Sasta aur acha sofa set — direct from factory. Free delivery across Pakistan.">
     <meta name="keywords" content="sofa set price in Pakistan, 7 seater sofa set price, L shape sofa price, sofa set for sale, Chinyoti sofa set price, modern sofa design for living room, luxury sofa set designs, corner sofa design, sofa cum bed design, velvet sofa set design, Chesterfield sofa design">
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -22,11 +22,11 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.webp">
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
     <!-- Preload Hero Image for LCP -->
-    <link rel="preload" as="image" href="images/hero-banner.webp">
+    <link rel="preload" as="image" href="images/hero-banner.webp" fetchpriority="high">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
@@ -34,12 +34,15 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta property="og:title" content="Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs">
     <meta property="og:description" content="Pakistan's trusted source for premium sofa sets. Explore 7 seater, L-shape, Chesterfield, velvet & Chinyoti sofa designs with factory-direct prices.">
     <meta property="og:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
     <meta property="og:locale" content="en_PK">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sofa Set Price in Pakistan | Modern & Luxury Sofa Designs">
     <meta name="twitter:description" content="Shop luxury sofa sets at best prices. 7 seater, L-shape, Chesterfield & more.">
+    <meta name="twitter:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -267,7 +270,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "longitude": 74.5254195
         },
         "image": "https://cutomsofaprices.com/images/hero-banner.webp",
-        "priceRange": "PKR 17,000 - 415,000",
+        "priceRange": "PKR 30,000-415,000",
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -289,12 +292,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "https://youtube.com/@customsofamaker",
             "https://www.facebook.com/profile.php?id=61590109367846",
             "https://www.tiktok.com/@custom.sofa"
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1000"
-        }
+        ]
     }
     </script>
 
@@ -393,7 +391,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
                     <!-- Sub-headline with keywords -->
                     <p class="text-lg sm:text-xl text-white/85 leading-relaxed mb-8 max-w-xl">
-                        Discover premium <strong class="text-white">7 seater sofa sets</strong>, elegant <strong class="text-white">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture â€” all at factory-direct prices.
+                        Discover premium <strong class="text-white">7 seater sofa sets</strong>, elegant <strong class="text-white">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
                     </p>
 
                     <!-- CTAs -->
@@ -451,7 +449,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         Premium <span class="text-gold-dark">Sofa Set</span> for Sale
                     </h2>
                     <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Browse our curated collection of modern sofa designs for your living room. From classic wooden frames to contemporary L-shapes â€” every piece is crafted for comfort and elegance.
+                        Browse our curated collection of modern sofa designs for your living room. From classic wooden frames to contemporary L-shapes — every piece is crafted for comfort and elegance.
                     </p>
                 </div>
 
@@ -764,7 +762,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         Complete <span class="text-gold-dark">Sofa Packages</span>
                     </h2>
                     <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Save more with our curated sofa packages â€” everything you need for a stunning living room, bundled at exclusive prices. Up to 25% savings versus buying separately.
+                        Save more with our curated sofa packages — everything you need for a stunning living room, bundled at exclusive prices. Up to 25% savings versus buying separately.
                     </p>
                 </div>
 
@@ -983,7 +981,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             Crafted with Premium <span class="text-gold-dark">Materials</span> & Master Workmanship
                         </h2>
                         <p class="text-gray-500 text-lg leading-relaxed mb-8">
-                            Every sofa set we create is built with carefully selected materials â€” from kiln-dried hardwood frames to high-resilience foam and premium fabrics. Our master craftsmen bring decades of experience to deliver furniture that lasts a lifetime.
+                            Every sofa set we create is built with carefully selected materials — from kiln-dried hardwood frames to high-resilience foam and premium fabrics. Our master craftsmen bring decades of experience to deliver furniture that lasts a lifetime.
                         </p>
 
                         <!-- Features Grid -->
@@ -1107,20 +1105,20 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 Kiya aap apne <strong class="text-charcoal">drawing room ke liye sofa</strong> dhoond rahe hain? Aap bilkul sahi jagah par hain! <strong class="text-charcoal">Custom Sofa Prices</strong> Pakistan ka ek leading furniture brand hai jo 15 saal se zyada arsay se premium quality ke sofa sets bana raha hai. Humare paas behtareen <strong class="text-charcoal">lakri ka sofa design</strong> aur <strong class="text-charcoal">sofa poshish ke design</strong> maujood hain jo aapke ghar ko ek naya look dein ge.
                             </p>
                             <p>
-                                Humare <strong class="text-charcoal">sofa ke naye design</strong> har hafte update hote hain taake aapko latest trends mil sakein. Chahay aap <strong class="text-charcoal">modern sofa design for living room</strong> dhoond rahe hon ya phir traditional Chinyoti craftsmanship â€” hum aapki har zaroorat poori karte hain. Humare <strong class="text-charcoal">luxury sofa set designs</strong> mein L-shape, Chesterfield, velvet, aur sofa cum bed shamil hain.
+                                Humare <strong class="text-charcoal">sofa ke naye design</strong> har hafte update hote hain taake aapko latest trends mil sakein. Chahay aap <strong class="text-charcoal">modern sofa design for living room</strong> dhoond rahe hon ya phir traditional Chinyoti craftsmanship — hum aapki har zaroorat poori karte hain. Humare <strong class="text-charcoal">luxury sofa set designs</strong> mein L-shape, Chesterfield, velvet, aur sofa cum bed shamil hain.
                             </p>
                             <p>
-                                Humari factory Chiniot, Punjab mein hai jahan se hum <strong class="text-charcoal">sasta aur acha sofa set</strong> seedha aapke ghar tak pohancha te hain â€” koi middleman nahi! Is liye humari prices market se 30-40% kam hain. Aap humari website par <strong class="text-charcoal">sofa set price in Pakistan</strong> check kar sakte hain ya phir hum se seedha baat kar ke apna custom order de sakte hain.
+                                Humari factory Chiniot, Punjab mein hai jahan se hum <strong class="text-charcoal">sasta aur acha sofa set</strong> seedha aapke ghar tak pohancha te hain — koi middleman nahi! Is liye humari prices market se 30-40% kam hain. Aap humari website par <strong class="text-charcoal">sofa set price in Pakistan</strong> check kar sakte hain ya phir hum se seedha baat kar ke apna custom order de sakte hain.
                             </p>
                         </div>
 
                         <!-- Trust badges -->
                         <div class="flex flex-wrap justify-center gap-6 mt-10 pt-8 border-t border-brand-200">
                             <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm">
-                                <i class="fas fa-certificate text-gold text-xl"></i>
+                                <i class="fas fa-award text-gold text-xl"></i>
                                 <div>
-                                    <div class="font-semibold text-charcoal text-sm">ISO Certified</div>
-                                    <div class="text-gray-400 text-xs">Quality Assured</div>
+                                    <div class="font-semibold text-charcoal text-sm">Premium Quality</div>
+                                    <div class="text-gray-400 text-xs">Handcrafted Finish</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm">
@@ -1175,7 +1173,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <i class="fas fa-star text-amber-400 text-base"></i>
                             <i class="fas fa-star text-amber-400 text-base"></i>
                         </div>
-                        <span class="text-gray-400 text-sm">Based on <strong class="text-charcoal">1000+</strong> verified reviews</span>
+                        <span class="text-gray-400 text-sm">Loved by families across Pakistan</span>
                     </div>
                 </div>
 
@@ -1206,17 +1204,17 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <!-- Product Tag -->
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            7-Seater L-Shape Sofa â€” Velvet
+                            7-Seater L-Shape Sofa — Velvet
                         </div>
                         <!-- Review Text -->
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Ordered a 7 seater L-shape sofa set in dark green velvet for our drawing room. The quality honestly surprised me â€” the wood frame is solid Sheesham and the cushions still feel firm after 4 months. Delivery was on time and the installation team was very professional. My wife is very happy with it. Bilkul paison ki value mil gayi."
+                            "Ordered a 7 seater L-shape sofa set in dark green velvet for our drawing room. The quality honestly surprised me — the wood frame is solid Sheesham and the cushions still feel firm after 4 months. Delivery was on time and the installation team was very professional. My wife is very happy with it. Bilkul paison ki value mil gayi."
                         </p>
                         <!-- Footer -->
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">March 12, 2026</span>
                             <span class="inline-flex items-center gap-1 text-green-600 text-xs font-medium">
-                                <i class="fas fa-check-circle text-[10px]"></i> Verified Purchase
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1243,7 +1241,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Chesterfield 5-Seater â€” Brown Leather
+                            Chesterfield 5-Seater — Brown Leather
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
                             "I searched everywhere for a good Chesterfield sofa design in Pakistan and most showrooms were overpriced. Found Custom Sofa Prices through Google and decided to take a chance. So glad I did! The tufting is deep and even, the leather smells genuine, and the nailhead trim is beautifully done. It's become the centerpiece of our lounge."
@@ -1251,7 +1249,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">January 28, 2026</span>
                             <span class="inline-flex items-center gap-1 text-green-600 text-xs font-medium">
-                                <i class="fas fa-check-circle text-[10px]"></i> Verified Purchase
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1278,15 +1276,15 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Sofa Cum Bed â€” Grey Fabric
+                            Sofa Cum Bed — Grey Fabric
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Bought the sofa cum bed for my apartment guest room. The pull-out mechanism works smoothly and the mattress is decent for occasional use. Build quality is solid. Only reason for 4 stars â€” delivery took 3 extra days because of Eid rush, but they called and kept me updated. Overall a good buy for the price, aur colour bhi room se match karta hai perfectly."
+                            "Bought the sofa cum bed for my apartment guest room. The pull-out mechanism works smoothly and the mattress is decent for occasional use. Build quality is solid. Only reason for 4 stars — delivery took 3 extra days because of Eid rush, but they called and kept me updated. Overall a good buy for the price, aur colour bhi room se match karta hai perfectly."
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">April 5, 2026</span>
                             <span class="inline-flex items-center gap-1 text-green-600 text-xs font-medium">
-                                <i class="fas fa-check-circle text-[10px]"></i> Verified Purchase
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1313,7 +1311,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Chinyoti Carved Sofa â€” 7 Seater
+                            Chinyoti Carved Sofa — 7 Seater
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
                             "Humne Chinyoti sofa set liya hai 7 seater wala jis ki carving itni detailed hai ke sab log poochte hain kahan se liya. Sheesham wood ki quality behtareen hai aur poshish ka fabric bhi premium lagta hai. Drawing room ke liye sofa yeh best choice tha humari. Highly recommended for anyone who wants traditional Pakistani craftsmanship."
@@ -1321,7 +1319,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">February 19, 2026</span>
                             <span class="inline-flex items-center gap-1 text-green-600 text-xs font-medium">
-                                <i class="fas fa-check-circle text-[10px]"></i> Verified Purchase
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1348,15 +1346,15 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Corner Sofa â€” Cream Fabric
+                            Corner Sofa — Cream Fabric
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "Was comparing L shape sofa prices across Pindi and Lahore for weeks. These guys were 25-30% cheaper than Tariq Road shops for similar quality. I visited their showroom first and the salesperson wasn't pushy at all â€” let me take my time. Sofa fits perfectly in our corner and the fabric is stain-resistant which is essential with kids. Happy customer."
+                            "Was comparing L shape sofa prices across Pindi and Lahore for weeks. These guys were 25-30% cheaper than Tariq Road shops for similar quality. I visited their showroom first and the salesperson wasn't pushy at all — let me take my time. Sofa fits perfectly in our corner and the fabric is stain-resistant which is essential with kids. Happy customer."
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">April 22, 2026</span>
                             <span class="inline-flex items-center gap-1 text-blue-500 text-xs font-medium">
-                                <i class="fab fa-google text-[10px]"></i> Google Review
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1383,15 +1381,15 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </div>
                         <div class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-lg text-xs text-gray-500 mb-3 w-fit">
                             <i class="fas fa-couch text-gold text-[10px]"></i>
-                            Velvet Sofa Set â€” Navy Blue, 5-Seater
+                            Velvet Sofa Set — Navy Blue, 5-Seater
                         </div>
                         <p class="text-gray-500 text-sm leading-relaxed flex-1">
-                            "I ordered online after seeing their Facebook page. Was a bit nervous since Multan delivery is not always reliable, but they shipped through TCS and it arrived packed in thick cardboard with foam protection. The navy blue velvet sofa set is gorgeous â€” the color is rich and the gold legs add an elegant touch. Meri sahelian bhi order karne wali hain ab ðŸ˜Š"
+                            "I ordered online after seeing their Facebook page. Was a bit nervous since Multan delivery is not always reliable, but they shipped through TCS and it arrived packed in thick cardboard with foam protection. The navy blue velvet sofa set is gorgeous — the color is rich and the gold legs add an elegant touch. Meri sahelian bhi order karne wali hain ab 😊"
                         </p>
                         <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-50">
                             <span class="text-gray-300 text-xs">May 3, 2026</span>
                             <span class="inline-flex items-center gap-1 text-green-600 text-xs font-medium">
-                                <i class="fas fa-check-circle text-[10px]"></i> Verified Purchase
+                                <i class="fas fa-comment-dots text-[10px]"></i> Customer Review
                             </span>
                         </div>
                     </article>
@@ -1459,7 +1457,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-3" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>For small spaces, a <strong class="text-charcoal">modern sofa cum bed design</strong> with built-in storage compartments is ideal. Our convertible sofa beds start from <strong>PKR 35,000</strong> and are available in multiple sizes. They feature easy-pull mechanisms and high-density foam for comfortable sleeping â€” perfect for apartments and guest rooms. Chotay kamron ke liye yeh best option hai.</p>
+                                <p>For small spaces, a <strong class="text-charcoal">modern sofa cum bed design</strong> with built-in storage compartments is ideal. Our convertible sofa beds start from <strong>PKR 35,000</strong> and are available in multiple sizes. They feature easy-pull mechanisms and high-density foam for comfortable sleeping — perfect for apartments and guest rooms. Chotay kamron ke liye yeh best option hai.</p>
                             </div>
                         </div>
                     </div>
@@ -1485,7 +1483,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-5" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>Humare paas <strong class="text-charcoal">Chinyoti sofa set designs</strong> ki bohat bari range maujood hai â€” jis mein hand-carved Sheesham aur Rosewood frames shamil hain. <strong>Chinyoti sofa set price</strong> 5-seater set ke liye <strong>PKR 80,000</strong> se shuru hoti hai premium poshish ke saath. Traditional jali work, floral carving, aur modern fusion designs available hain.</p>
+                                <p>Humare paas <strong class="text-charcoal">Chinyoti sofa set designs</strong> ki bohat bari range maujood hai — jis mein hand-carved Sheesham aur Rosewood frames shamil hain. <strong>Chinyoti sofa set price</strong> 5-seater set ke liye <strong>PKR 80,000</strong> se shuru hoti hai premium poshish ke saath. Traditional jali work, floral carving, aur modern fusion designs available hain.</p>
                             </div>
                         </div>
                     </div>
@@ -1498,7 +1496,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         </button>
                         <div class="faq-content px-6" id="faq-answer-6" role="region">
                             <div class="pb-6 text-gray-500 leading-relaxed">
-                                <p>Humare paas <strong class="text-charcoal">sofa poshish ke design</strong> mein velvet, leatherette, suede, linen, aur premium jacquard fabric available hain. Aap apni pasand ka colour aur design choose kar sakte hain. Poshish ki warranty 2 saal tak di jati hai. <strong>Drawing room ke liye sofa</strong> poshish mein se aap koi bhi design select kar sakte hain â€” hum free fabric samples bhi bhejte hain.</p>
+                                <p>Humare paas <strong class="text-charcoal">sofa poshish ke design</strong> mein velvet, leatherette, suede, linen, aur premium jacquard fabric available hain. Aap apni pasand ka colour aur design choose kar sakte hain. Poshish ki warranty 2 saal tak di jati hai. <strong>Drawing room ke liye sofa</strong> poshish mein se aap koi bhi design select kar sakte hain — hum free fabric samples bhi bhejte hain.</p>
                             </div>
                         </div>
                     </div>
@@ -1577,8 +1575,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                 </div>
                                 <div>
                                     <div class="font-semibold text-charcoal mb-1">Working Hours</div>
-                                    <div class="text-gray-500 text-sm">Monâ€“Sat: 10:00 AM â€“ 8:00 PM</div>
-                                    <div class="text-gray-500 text-sm">Sunday: 12:00 PM â€“ 6:00 PM</div>
+                                    <div class="text-gray-500 text-sm">Mon–Sat: 10:00 AM – 8:00 PM</div>
+                                    <div class="text-gray-500 text-sm">Sunday: 12:00 PM – 6:00 PM</div>
                                 </div>
                             </div>
                         </div>

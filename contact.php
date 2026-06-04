@@ -275,11 +275,6 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             "contactType": "customer service",
             "availableLanguage": ["English", "Urdu"],
             "areaServed": "PK"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1000"
         }
     }
     </script>
@@ -506,8 +501,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                             <i class="fas fa-phone-alt text-2xl text-gold-dark card-icon"></i>
                         </div>
                         <h3 class="font-display text-lg font-bold text-charcoal mb-2">Phone / WhatsApp</h3>
-                        <a href="tel:03007131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
-                        <a href="tel:03117131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0311 7131249</a>
+                        <a href="tel:+923007131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors">0300 7131249</a>
+                        <a href="tel:+923117131249" class="block text-gray-500 text-sm hover:text-gold-dark transition-colors mt-1">0311 7131249</a>
                     </div>
 
                     <!-- Card: Email -->

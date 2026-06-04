@@ -6,6 +6,9 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 
 // Send 404 Status Code for proper Search Crawler alignment
 http_response_code(404);
+// Do not cache 404 responses (prevents stale/long-cached 404s for URLs published later).
+header('Cache-Control: no-store, max-age=0');
+header('Pragma: no-cache');
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
