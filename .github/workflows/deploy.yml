@@ -41,6 +41,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
+          # Hostinger's FTP control socket is often slow to accept the connection;
+          # raise the timeout (default 30s) to avoid intermittent "Timeout (control socket)" failures.
+          timeout: 120000
           # Dedicated FTP account chrooted to the site's real docroot
           # (/home/u606995444/domains/cutomsofaprices.com/public_html), so the
           # login root IS the web root -> upload straight into ./.
