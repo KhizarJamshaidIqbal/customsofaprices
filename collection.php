@@ -479,9 +479,13 @@ if (!array_key_exists($id, $collections)) {
     $id = 'lshape';
 }
 
-// ===== L-Shape pilot: attach 12 sub-products (Level 2 listing -> Level 3 detail) =====
-if (is_file(__DIR__ . '/data/lshape-products.php')) {
-    $collections['lshape']['products'] = require __DIR__ . '/data/lshape-products.php';
+// ===== Attach sub-products (Level 2 listing -> Level 3 detail) for ANY collection that
+// has a data/<id>-products.php file. Drop in a data file to enable a collection. =====
+foreach (array_keys($collections) as $cid) {
+    $pf = __DIR__ . '/data/' . $cid . '-products.php';
+    if (is_file($pf)) {
+        $collections[$cid]['products'] = require $pf;
+    }
 }
 
 $c = $collections[$id];
@@ -500,10 +504,10 @@ if ($hasProducts) {
         $slug = $p;
         $c = $c['products'][$p];                 // detail: the existing detail markup uses $c
         // auto-include any generated angle images (slug-1.webp, slug-2.webp, ...)
-        $found = glob(__DIR__ . '/images/lshape/' . $slug . '-*.webp');
+        $found = glob(__DIR__ . '/images/' . $parentId . '/' . $slug . '-*.webp');
         if ($found) {
             sort($found);
-            $c['images'] = array_map(static fn($f) => 'images/lshape/' . basename($f), $found);
+            $c['images'] = array_map(static fn($f) => 'images/' . $parentId . '/' . basename($f), $found);
             $c['image']  = $c['images'][0];
         }
         $mode = 'detail';
@@ -515,7 +519,7 @@ if ($hasProducts) {
 
 // ---- SEO vars (mode-aware) ----
 if ($mode === 'listing') {
-    $pageTitle = $c['title'] . ' - 12 Styles & Prices | Custom Sofa Prices Gujrat';
+    $pageTitle = $c['title'] . ' - ' . count($c['products']) . ' Styles & Prices | Custom Sofa Prices Gujrat';
     $metaDesc  = 'Browse ' . count($c['products']) . ' ' . $c['title'] . ' styles, custom-made from ' . $c['price_text'] . '. Choose your design, then customise size, fabric & colour. Factory-direct from Gujrat, delivered across Pakistan.';
     $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId;
     $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
