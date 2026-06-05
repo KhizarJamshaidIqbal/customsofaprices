@@ -1,0 +1,298 @@
+<?php
+/**
+ * L-Shape & Corner Sofas — 12 product styles (pilot).
+ * Same shape as a $collections entry so the existing detail markup renders each one.
+ * Images: <slug>-1.webp (master) is the default; collection.php auto-includes any
+ * generated angle images (<slug>-2.webp ... <slug>-8.webp) via glob.
+ */
+return [
+
+    'left-hand' => [
+        'title' => 'Left-Hand L-Shape Sofa',
+        'price_text' => 'Starts from PKR 65,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Popular',
+        'tagline' => 'Classic left-facing chaise — perfect for living rooms with the corner on your left.',
+        'image' => 'images/lshape/left-hand-1.webp',
+        'images' => ['images/lshape/left-hand-1.webp'],
+        'desc' => 'The Left-Hand L-Shape is our most-loved corner sofa, with the extended chaise on the left side as you face it. Built on a seasoned wooden frame with high-density Master MoltyFoam, it suits modern Pakistani drawing rooms and TV lounges. Available in premium linen, velvet, and imported leather with fully custom sizing.',
+        'features' => [
+            'Left-hand facing chaise (corner on your left)',
+            'High-density Master MoltyFoam seating core',
+            '100+ premium linen, velvet & leather fabric options',
+            'Seasoned wooden frame with 10-year warranty',
+            'Optional brushed-gold or wooden legs',
+        ],
+        'rec' => 'Best for medium to large living rooms where the wall/corner sits on your left. Choose a 5-seater for compact spaces or scale up to 7-seater for wider lounges.',
+        'faqs' => [
+            ['q' => 'What does "left-hand" mean in an L-shape sofa?', 'a' => 'Facing the sofa, the long chaise section is on your left. Agar aapke room ka corner left side par hai to yeh perfect fit hai.'],
+            ['q' => 'Can I change the size of the Left-Hand L-Shape?', 'a' => 'Yes — it is 100% custom-made. We build it to your exact room dimensions, seating count, and fabric choice.'],
+            ['q' => 'What is the starting price?', 'a' => 'Pricing starts from PKR 65,000 (1-seater rate) and scales with seating, fabric, and size. Contact us for an exact quote.'],
+        ],
+    ],
+
+    'right-hand' => [
+        'title' => 'Right-Hand L-Shape Sofa',
+        'price_text' => 'Starts from PKR 65,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Popular',
+        'tagline' => 'Right-facing chaise — ideal when your room corner is on the right.',
+        'image' => 'images/lshape/right-hand-1.webp',
+        'images' => ['images/lshape/right-hand-1.webp'],
+        'desc' => 'The Right-Hand L-Shape mirrors our classic corner design with the chaise extended to the right. Soft rolled arms, deep seating, and a sturdy seasoned frame make it a comfortable, long-lasting choice for family lounges across Pakistan. Fully customisable in size, fabric, and colour.',
+        'features' => [
+            'Right-hand facing chaise (corner on your right)',
+            'Deep, supportive Master MoltyFoam seats',
+            'Soft rolled arms with durable upholstery',
+            'Seasoned wooden frame, 10-year warranty',
+            'Choice of fabric, velvet or leatherette',
+        ],
+        'rec' => 'Ideal for rooms where the corner/wall is on your right. Pairs well with a centre table and a single accent chair.',
+        'faqs' => [
+            ['q' => 'How is this different from the Left-Hand L-Shape?', 'a' => 'Only the chaise orientation differs — here the long section sits on your right as you face the sofa.'],
+            ['q' => 'Is the orientation reversible?', 'a' => 'Choose our modular build for a reversible chaise; the standard fixed build is set to your chosen side at order time.'],
+            ['q' => 'Do you deliver outside Gujrat?', 'a' => 'Yes — we deliver nationwide across Pakistan from our Gujrat factory.'],
+        ],
+    ],
+
+    'u-shape' => [
+        'title' => 'U-Shape Sectional Sofa',
+        'price_text' => 'Starts from PKR 95,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Spacious',
+        'tagline' => 'Wrap-around seating for large drawing rooms and big families.',
+        'image' => 'images/lshape/u-shape-1.webp',
+        'images' => ['images/lshape/u-shape-1.webp'],
+        'desc' => 'The U-Shape Sectional takes the corner concept further, wrapping seating around three sides for maximum capacity and conversation-friendly layouts. Perfect for spacious drawing rooms and joint-family lounges, built on a heavy-duty frame with firm, sag-resistant foam.',
+        'features' => [
+            'Three-sided wrap-around seating (8–10 seaters)',
+            'Conversation-friendly layout for large rooms',
+            'Heavy-duty frame with double-ply webbing',
+            'Firm, sag-resistant high-density foam',
+            'Custom fabric, colour and dimensions',
+        ],
+        'rec' => 'Best for large drawing rooms (12x14 ft+). Great for big families and frequent guests.',
+        'faqs' => [
+            ['q' => 'How much space does a U-shape need?', 'a' => 'We recommend a minimum room size of about 12x14 feet, but we build to your exact measurements.'],
+            ['q' => 'How many people can sit on it?', 'a' => 'Typical U-shapes seat 8–10 people comfortably depending on the size you choose.'],
+            ['q' => 'Can it be split for moving?', 'a' => 'Yes — we build it in sections so it is easy to move and arrange.'],
+        ],
+    ],
+
+    'modular' => [
+        'title' => 'Modular Corner Sofa',
+        'price_text' => 'Starts from PKR 85,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Flexible',
+        'tagline' => 'Re-arrangeable pieces you can reconfigure any time.',
+        'image' => 'images/lshape/modular-1.webp',
+        'images' => ['images/lshape/modular-1.webp'],
+        'desc' => 'The Modular Corner Sofa is made of individual sections you can rearrange to suit your room or mood — L-shape today, straight or U-shape tomorrow. A smart, future-proof choice for changing spaces, with the same premium foam and frame quality as our fixed designs.',
+        'features' => [
+            'Individual pieces — reconfigure L / U / straight',
+            'Reversible chaise orientation',
+            'Low-profile contemporary styling',
+            'Premium Master MoltyFoam in every module',
+            'Add or remove seats later as needed',
+        ],
+        'rec' => 'Perfect for renters or anyone who likes to change their layout. Start small and expand over time.',
+        'faqs' => [
+            ['q' => 'Can I add more modules later?', 'a' => 'Yes — tell us the fabric and batch and we can match additional modules for you later.'],
+            ['q' => 'Do the pieces stay together?', 'a' => 'Modules connect with secure brackets so they stay aligned but separate easily when you want to rearrange.'],
+            ['q' => 'Is it more expensive than a fixed L-shape?', 'a' => 'Slightly, due to the connector hardware and finishing on each piece — but the flexibility is worth it.'],
+        ],
+    ],
+
+    'recliner' => [
+        'title' => 'Recliner Corner Sofa',
+        'price_text' => 'Starts from PKR 120,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Premium',
+        'tagline' => 'Built-in recliners for the ultimate TV-lounge comfort.',
+        'image' => 'images/lshape/recliner-1.webp',
+        'images' => ['images/lshape/recliner-1.webp'],
+        'desc' => 'The Recliner Corner Sofa combines L-shape seating with built-in reclining footrests for cinema-style relaxation. Plush padding, sturdy reclining mechanisms, and durable leatherette or fabric make it the centrepiece of any home theatre or TV lounge.',
+        'features' => [
+            'Built-in manual recliner seats with footrests',
+            'Extra-plush padded back and arms',
+            'Durable leatherette or fabric upholstery',
+            'Reinforced frame for reclining mechanisms',
+            'Optional cup-holder console',
+        ],
+        'rec' => 'Best for dedicated TV lounges and home theatres. Leave clearance behind the reclining seats.',
+        'faqs' => [
+            ['q' => 'Are the recliners manual or motorised?', 'a' => 'Standard build is manual; motorised recliners are available on request at additional cost.'],
+            ['q' => 'How much clearance do recliners need?', 'a' => 'Allow roughly 12–18 inches behind each reclining seat for the backrest to tilt.'],
+            ['q' => 'Is the mechanism covered by warranty?', 'a' => 'Yes — the frame carries a 10-year warranty and the mechanism is warranted separately.'],
+        ],
+    ],
+
+    'storage' => [
+        'title' => 'Storage Corner Sofa',
+        'price_text' => 'Starts from PKR 78,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Smart',
+        'tagline' => 'Hidden under-seat storage to keep your lounge clutter-free.',
+        'image' => 'images/lshape/storage-1.webp',
+        'images' => ['images/lshape/storage-1.webp'],
+        'desc' => 'The Storage Corner Sofa hides generous compartments under the chaise and seats — perfect for blankets, cushions, and seasonal items. You get the same comfort of our L-shape range plus practical, space-saving storage, ideal for compact Pakistani homes.',
+        'features' => [
+            'Lift-up chaise with deep storage box',
+            'Extra storage under main seats',
+            'Gas-strut assisted easy lift',
+            'High-density foam, custom fabric',
+            'Great for apartments and small rooms',
+        ],
+        'rec' => 'Ideal where storage is tight. Keep the chaise on the side with easy access.',
+        'faqs' => [
+            ['q' => 'How much can the storage hold?', 'a' => 'The chaise compartment easily fits blankets, pillows, and bedding for a small family.'],
+            ['q' => 'Is the lift mechanism sturdy?', 'a' => 'Yes — we use gas-strut supports so the seat lifts smoothly and stays open safely.'],
+            ['q' => 'Does storage reduce comfort?', 'a' => 'No — the seating foam and support are the same as our standard L-shape.'],
+        ],
+    ],
+
+    'sofa-bed' => [
+        'title' => 'Corner Sofa-Cum-Bed',
+        'price_text' => 'Starts from PKR 72,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Convertible',
+        'tagline' => 'A corner sofa by day, a comfortable bed by night.',
+        'image' => 'images/lshape/sofa-bed-1.webp',
+        'images' => ['images/lshape/sofa-bed-1.webp'],
+        'desc' => 'The Corner Sofa-Cum-Bed converts from a stylish L-shape into a flat, comfortable sleeping surface — perfect for guest rooms, studio apartments, and small homes. Easy-pull mechanism, supportive foam, and optional storage make it a true two-in-one.',
+        'features' => [
+            'Easy pull-out conversion to a flat bed',
+            'Comfortable sleeping surface for guests',
+            'Optional under-seat storage',
+            'Durable mechanism and seasoned frame',
+            'Custom fabric and size',
+        ],
+        'rec' => 'Best for guest rooms and small apartments where one piece must do double duty.',
+        'faqs' => [
+            ['q' => 'How big is the bed when opened?', 'a' => 'Depending on the size you choose, it opens to a comfortable double sleeping surface.'],
+            ['q' => 'Is it comfortable for daily sleeping?', 'a' => 'It is great for guests and occasional use; for daily sleeping we recommend a higher-density foam upgrade.'],
+            ['q' => 'How easy is the conversion?', 'a' => 'Very easy — a single smooth pull-out action, no tools needed.'],
+        ],
+    ],
+
+    'open-chaise' => [
+        'title' => 'Open-Chaise L-Shape Sofa',
+        'price_text' => 'Starts from PKR 68,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Airy',
+        'tagline' => 'Soft, open chaise lounge end for a relaxed modern look.',
+        'image' => 'images/lshape/open-chaise-1.webp',
+        'images' => ['images/lshape/open-chaise-1.webp'],
+        'desc' => 'The Open-Chaise L-Shape features an open, armless chaise lounge that keeps the design light and airy. With soft rounded cushions and a low profile, it brings a calm, contemporary feel — a great fit for modern minimal interiors.',
+        'features' => [
+            'Open, armless chaise lounge end',
+            'Soft rounded cushions, low profile',
+            'Lightweight, airy modern aesthetic',
+            'Premium boucle or linen fabrics',
+            'Custom sizing and colour',
+        ],
+        'rec' => 'Best for modern minimal rooms where you want an open, uncluttered look.',
+        'faqs' => [
+            ['q' => 'Is the open chaise comfortable to lie on?', 'a' => 'Yes — it is a full lounge length with the same supportive foam as the main seats.'],
+            ['q' => 'Can I add an arm to the chaise?', 'a' => 'Yes — tell us and we can build a closed-arm version instead.'],
+            ['q' => 'Which fabrics suit this style best?', 'a' => 'Soft boucle and textured linen pair beautifully with the open, minimal silhouette.'],
+        ],
+    ],
+
+    'velvet-tufted' => [
+        'title' => 'Velvet Tufted L-Shape Sofa',
+        'price_text' => 'Starts from PKR 88,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Luxury',
+        'tagline' => 'Rich velvet and deep button-tufting for a luxe statement.',
+        'image' => 'images/lshape/velvet-tufted-1.webp',
+        'images' => ['images/lshape/velvet-tufted-1.webp'],
+        'desc' => 'The Velvet Tufted L-Shape is our most glamorous corner sofa — plush velvet upholstery, deep diamond button-tufting, and slim metal legs for an elegant, premium look. A showpiece for formal drawing rooms that still delivers everyday comfort.',
+        'features' => [
+            'Premium velvet upholstery, rich colours',
+            'Deep diamond button-tufted back',
+            'Slim brushed-gold metal legs',
+            'High-density seating for daily comfort',
+            'Custom colour and size',
+        ],
+        'rec' => 'Best for formal drawing rooms and statement spaces. Jewel tones (emerald, royal blue) look stunning.',
+        'faqs' => [
+            ['q' => 'Is velvet hard to maintain?', 'a' => 'Quality upholstery velvet is durable and easy to brush clean; we can recommend stain-resistant options.'],
+            ['q' => 'What colours are available?', 'a' => 'A wide palette — emerald, royal blue, grey, blush, and more. We match to your room.'],
+            ['q' => 'Are the legs gold-plated?', 'a' => 'Legs are brushed-gold finished metal for a premium look without the premium-plating cost.'],
+        ],
+    ],
+
+    'leather' => [
+        'title' => 'Premium Leather L-Shape Sofa',
+        'price_text' => 'Starts from PKR 110,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Premium',
+        'tagline' => 'Sophisticated full-grain leather built to last for years.',
+        'image' => 'images/lshape/leather-1.webp',
+        'images' => ['images/lshape/leather-1.webp'],
+        'desc' => 'The Premium Leather L-Shape is a timeless, executive-grade corner sofa upholstered in durable full-grain leather. Clean stitched panels, a sturdy wooden frame, and a refined finish make it perfect for formal lounges and offices that demand a sophisticated look.',
+        'features' => [
+            'Durable full-grain / premium leather',
+            'Clean stitched panel design',
+            'Sturdy seasoned wooden frame',
+            'Easy-wipe, long-lasting surface',
+            'Custom size and leather grade',
+        ],
+        'rec' => 'Best for formal lounges and executive offices. Tan and dark brown are the most popular finishes.',
+        'faqs' => [
+            ['q' => 'Is it genuine leather?', 'a' => 'We offer both genuine full-grain leather and premium leatherette — your choice based on budget.'],
+            ['q' => 'How do I care for leather in Pakistan\'s climate?', 'a' => 'Wipe with a dry cloth and condition occasionally; keep out of direct harsh sunlight to preserve the finish.'],
+            ['q' => 'Why is leather more expensive?', 'a' => 'Genuine leather costs more as a raw material and lasts significantly longer than fabric.'],
+        ],
+    ],
+
+    'low-floor' => [
+        'title' => 'Low-Floor Modern L-Shape',
+        'price_text' => 'Starts from PKR 70,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Modern',
+        'tagline' => 'Low-seat Japandi styling for a calm, contemporary room.',
+        'image' => 'images/lshape/low-floor-1.webp',
+        'images' => ['images/lshape/low-floor-1.webp'],
+        'desc' => 'The Low-Floor Modern L-Shape brings a relaxed, Japandi-inspired feel with a lower seat height, clean lines, and warm wood accents. It makes ceilings feel taller and rooms feel calmer — ideal for minimal, contemporary interiors.',
+        'features' => [
+            'Lower seat height, grounded modern look',
+            'Clean minimal lines, warm wood accents',
+            'Neutral oatmeal / grey fabrics',
+            'Comfort-first deep cushions',
+            'Custom size and colour',
+        ],
+        'rec' => 'Best for modern minimal and Japandi interiors. Pairs well with low coffee tables and floor cushions.',
+        'faqs' => [
+            ['q' => 'Is a low sofa comfortable to get up from?', 'a' => 'It sits a little lower than standard; we can adjust the height slightly if you prefer.'],
+            ['q' => 'Does it suit small rooms?', 'a' => 'Yes — the low profile makes rooms feel more open and the ceiling feel higher.'],
+            ['q' => 'What fabrics work best?', 'a' => 'Neutral textured fabrics (oatmeal, stone, soft grey) complete the calm Japandi look.'],
+        ],
+    ],
+
+    'compact' => [
+        'title' => 'Compact 5-Seater L-Shape',
+        'price_text' => 'Starts from PKR 55,000',
+        'price_type' => '1 Seater Price',
+        'badge' => 'Best Value',
+        'tagline' => 'Space-saving corner comfort for apartments and small lounges.',
+        'image' => 'images/lshape/compact-1.webp',
+        'images' => ['images/lshape/compact-1.webp'],
+        'desc' => 'The Compact 5-Seater L-Shape is designed for smaller homes and apartments — slim arms, a tighter footprint, and smart proportions give you proper corner seating without crowding the room. Great value with the same quality foam and frame.',
+        'features' => [
+            'Space-saving 5-seater footprint',
+            'Slim arms, smart proportions',
+            'Same Master MoltyFoam comfort',
+            'Wide range of affordable fabrics',
+            'Custom size to fit tight corners',
+        ],
+        'rec' => 'Best for apartments, small TV lounges, and bachelor pads where space is limited.',
+        'faqs' => [
+            ['q' => 'How small a room can this fit?', 'a' => 'It works well in rooms from about 9x10 feet; we tailor the exact size to your corner.'],
+            ['q' => 'Is the comfort compromised to save space?', 'a' => 'No — only the footprint is smaller; the seating foam and support stay premium.'],
+            ['q' => 'Is this the most affordable L-shape?', 'a' => 'Yes — it starts from PKR 55,000, our best-value entry into corner sofas.'],
+        ],
+    ],
+
+];

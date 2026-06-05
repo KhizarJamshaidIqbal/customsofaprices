@@ -479,7 +479,52 @@ if (!array_key_exists($id, $collections)) {
     $id = 'lshape';
 }
 
+// ===== L-Shape pilot: attach 12 sub-products (Level 2 listing -> Level 3 detail) =====
+if (is_file(__DIR__ . '/data/lshape-products.php')) {
+    $collections['lshape']['products'] = require __DIR__ . '/data/lshape-products.php';
+}
+
 $c = $collections[$id];
+
+// Page mode: a collection that HAS a 'products' array shows a LISTING (Level 2);
+// ?p=<slug> opens that product's DETAIL (Level 3). Collections without products = single detail (old behaviour).
+$hasProducts = isset($c['products']) && is_array($c['products']);
+$mode        = 'detail';
+$p           = '';
+$parentId    = $id;
+$parentTitle = $c['title'];
+
+if ($hasProducts) {
+    $p = isset($_GET['p']) ? preg_replace('/[^a-z0-9\-]/', '', strtolower($_GET['p'])) : '';
+    if ($p !== '' && isset($c['products'][$p])) {
+        $slug = $p;
+        $c = $c['products'][$p];                 // detail: the existing detail markup uses $c
+        // auto-include any generated angle images (slug-1.webp, slug-2.webp, ...)
+        $found = glob(__DIR__ . '/images/lshape/' . $slug . '-*.webp');
+        if ($found) {
+            sort($found);
+            $c['images'] = array_map(static fn($f) => 'images/lshape/' . basename($f), $found);
+            $c['image']  = $c['images'][0];
+        }
+        $mode = 'detail';
+    } else {
+        if ($p !== '') { http_response_code(404); $p = ''; }
+        $mode = 'listing';
+    }
+}
+
+// ---- SEO vars (mode-aware) ----
+if ($mode === 'listing') {
+    $pageTitle = $c['title'] . ' - 12 Styles & Prices | Custom Sofa Prices Gujrat';
+    $metaDesc  = 'Browse ' . count($c['products']) . ' ' . $c['title'] . ' styles, custom-made from ' . $c['price_text'] . '. Choose your design, then customise size, fabric & colour. Factory-direct from Gujrat, delivered across Pakistan.';
+    $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId;
+    $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
+} else {
+    $pageTitle = $c['title'] . ' Price in Pakistan | Custom Sofa Prices Gujrat';
+    $metaDesc  = 'Explore ' . $c['title'] . ' starting from ' . $c['price_text'] . '. 100% custom-made sizes, fabrics & colours. Delivered across Pakistan from Gujrat.';
+    $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId . ($p !== '' ? '&p=' . $p : '');
+    $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -489,12 +534,12 @@ $c = $collections[$id];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary SEO Meta Tags -->
-    <title><?= $c['title'] ?> Price in Pakistan | Custom Sofa Prices Gujrat</title>
-    <meta name="description" content="Explore <?= $c['title'] ?> starting from <?= $c['price_text'] ?>. 100% custom-made sizes, fabrics & colors. MoltyFoam 10-year warranty. Delivered across Pakistan from Gujrat.">
+    <title><?= htmlspecialchars($pageTitle, ENT_QUOTES) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($metaDesc, ENT_QUOTES) ?>">
     <meta name="keywords" content="<?= strtolower($c['title']) ?> price, custom sofa pakistan, <?= strtolower($c['title']) ?> design, Gujrat furniture showroom, bespoke sofas">
     <meta name="author" content="Custom Sofa Prices Pakistan">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cutomsofaprices.com/collection.php?id=<?= $id ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonical, ENT_QUOTES) ?>">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">
 
@@ -504,16 +549,16 @@ $c = $collections[$id];
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cutomsofaprices.com/collection.php?id=<?= $id ?>">
-    <meta property="og:title" content="<?= $c['title'] ?> – Custom Sofa Prices Pakistan">
-    <meta property="og:description" content="Explore <?= $c['title'] ?> starting from <?= $c['price_text'] ?>. Built according to your exact room size, colors, and layout preferences.">
-    <meta property="og:image" content="https://cutomsofaprices.com/<?= $c['image'] ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical, ENT_QUOTES) ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($metaDesc, ENT_QUOTES) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($ogImage, ENT_QUOTES) ?>">
     <meta property="og:locale" content="en_PK">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= $c['title'] ?> – Custom Sofa Prices Pakistan">
-    <meta name="twitter:description" content="Bespoke <?= strtolower($c['title']) ?> starting from <?= $c['price_text'] ?>. Fully customizable sizing, fabrics & colors.">
+    <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($metaDesc, ENT_QUOTES) ?>">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -678,17 +723,18 @@ $c = $collections[$id];
         }
     </style>
 
+<?php if ($mode === 'detail'): ?>
     <!-- Schema.org Product Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "<?= $c['title'] ?>",
-        "sku": "CSP-<?= strtoupper($id) ?>",
+        "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>",
+        "sku": "CSP-<?= strtoupper($parentId) ?><?= $p !== '' ? '-' . strtoupper($p) : '' ?>",
         "category": "Sofa",
         "material": "Seasoned wood frame; premium upholstery (velvet, leather, fabric)",
-        "image": "https://cutomsofaprices.com/<?= $c['image'] ?>",
-        "description": "<?= $c['desc'] ?> Custom sizing, fabrics and colors available.",
+        "image": "<?= htmlspecialchars($ogImage, ENT_QUOTES) ?>",
+        "description": "<?= htmlspecialchars(strip_tags($c['desc']), ENT_QUOTES) ?> Custom sizing, fabrics and colours available.",
         "brand": {
             "@type": "Brand",
             "name": "Custom Sofa Prices Pakistan"
@@ -700,7 +746,7 @@ $c = $collections[$id];
             "priceValidUntil": "<?= date('Y-12-31') ?>",
             "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
-            "url": "https://cutomsofaprices.com/collection.php?id=<?= $id ?>"
+            "url": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>"
         }
     }
     </script>
@@ -732,11 +778,47 @@ $c = $collections[$id];
         "@type": "BreadcrumbList",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cutomsofaprices.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://cutomsofaprices.com/#collections" },
-            { "@type": "ListItem", "position": 3, "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>", "item": "https://cutomsofaprices.com/collection.php?id=<?= $id ?>" }
+            { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://cutomsofaprices.com/#collections" }<?php if ($hasProducts): ?>,
+            { "@type": "ListItem", "position": 3, "name": "<?= htmlspecialchars($parentTitle, ENT_QUOTES) ?>", "item": "https://cutomsofaprices.com/collection.php?id=<?= $parentId ?>" },
+            { "@type": "ListItem", "position": 4, "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>", "item": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>" }<?php else: ?>,
+            { "@type": "ListItem", "position": 3, "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>", "item": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>" }<?php endif; ?>
         ]
     }
     </script>
+<?php else: ?>
+    <!-- Schema.org ItemList (collection listing) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?> Styles",
+        "numberOfItems": <?= count($c['products']) ?>,
+        "itemListElement": [
+            <?php $li = 0; foreach ($c['products'] as $pslug => $pr): $li++; ?>
+            {
+                "@type": "ListItem",
+                "position": <?= $li ?>,
+                "name": "<?= htmlspecialchars($pr['title'], ENT_QUOTES) ?>",
+                "url": "https://cutomsofaprices.com/collection.php?id=<?= $parentId ?>&p=<?= $pslug ?>"
+            }<?= $li < count($c['products']) ? ',' : '' ?>
+            <?php endforeach; ?>
+        ]
+    }
+    </script>
+
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cutomsofaprices.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://cutomsofaprices.com/#collections" },
+            { "@type": "ListItem", "position": 3, "name": "<?= htmlspecialchars($c['title'], ENT_QUOTES) ?>", "item": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>" }
+        ]
+    }
+    </script>
+<?php endif; ?>
 </head>
 <body class="bg-cream font-body antialiased">
 
@@ -744,6 +826,63 @@ $c = $collections[$id];
     <?= $H ?>
 
     <main id="main-content">
+
+<?php if ($mode === 'listing'): ?>
+        <!-- ============================================ -->
+        <!-- LEVEL 2: COLLECTION LISTING (choose a style)  -->
+        <!-- ============================================ -->
+        <section class="relative min-h-[30vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-charcoal-dark"></div>
+                <div class="absolute inset-0 opacity-25" style="background-image: url('<?= $c['image'] ?>'); background-size: cover; background-position: center;"></div>
+                <div class="hero-overlay absolute inset-0"></div>
+                <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center w-full">
+                <nav aria-label="Breadcrumb" class="mb-5">
+                    <ol class="inline-flex items-center gap-2 text-xs text-white/60">
+                        <li><a href="https://cutomsofaprices.com/" class="hover:text-gold transition-colors duration-300"><i class="fas fa-home mr-1"></i>Home</a></li>
+                        <li><i class="fas fa-chevron-right text-[8px] text-gold/60"></i></li>
+                        <li><a href="https://cutomsofaprices.com/#collections" class="hover:text-gold transition-colors duration-300">Collections</a></li>
+                        <li><i class="fas fa-chevron-right text-[8px] text-gold/60"></i></li>
+                        <li class="text-gold font-medium"><?= htmlspecialchars($c['title']) ?></li>
+                    </ol>
+                </nav>
+                <span class="inline-block bg-gold/20 text-gold-light border border-gold/30 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-4"><?= count($c['products']) ?> Custom Styles</span>
+                <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.1] mb-4"><?= htmlspecialchars($c['title']) ?></h1>
+                <p class="text-base sm:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">Apna favourite style choose karein &mdash; har design 100% custom-made hai, aapke room size, fabric aur colour ke mutabik. Starting from <?= htmlspecialchars($c['price_text']) ?>.</p>
+            </div>
+        </section>
+
+        <section class="py-14 lg:py-20 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10 reveal">
+                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-3"><span class="w-8 h-px bg-gold"></span> Choose Your Style <span class="w-8 h-px bg-gold"></span></span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-charcoal">All <?= htmlspecialchars($c['title']) ?> Designs</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <?php foreach ($c['products'] as $pslug => $pr): ?>
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal">
+                        <a href="collection.php?id=<?= $parentId ?>&p=<?= $pslug ?>" class="block" aria-label="View <?= htmlspecialchars($pr['title'], ENT_QUOTES) ?>">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="<?= $pr['image'] ?>" alt="<?= htmlspecialchars($pr['title'], ENT_QUOTES) ?> - L-shape sofa price in Pakistan, Gujrat" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
+                                <div class="absolute top-4 left-4 bg-gold/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm"><?= htmlspecialchars($pr['badge']) ?></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300"><?= htmlspecialchars($pr['title']) ?></h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4"><?= htmlspecialchars($pr['tagline']) ?></p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gold-dark font-bold text-sm"><?= htmlspecialchars($pr['price_text']) ?></span>
+                                    <span class="inline-flex items-center gap-1.5 text-charcoal font-semibold text-sm group-hover:gap-3 transition-all duration-300">View Details <i class="fas fa-arrow-right text-xs"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+<?php else: ?>
 
         <!-- ============================================ -->
         <!-- HERO SECTION -->
@@ -1116,6 +1255,7 @@ $c = $collections[$id];
 
             </div>
         </section>
+<?php endif; ?>
 
     </main>
 
