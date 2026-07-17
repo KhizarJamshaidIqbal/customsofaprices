@@ -20,6 +20,9 @@ ServerSignature Off
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
+    # Redirect /blog and /blogs to blogs index with trailing slash
+    RewriteRule ^blogs?$ https://cutomsofaprices.com/blogs/ [R=301,NC,L]
+
     # Clean URL: Redirect external requests for .php files to their extensionless equivalents
     # e.g. /contact.php -> /contact, /faq.php -> /faq
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php\ HTTP/ [NC]
