@@ -74,6 +74,14 @@ ServerSignature Off
     # Keep HTML fresh: dynamic PHP pages, live prices, and proper 404s must not be long-cached.
     ExpiresByType text/html "access plus 0 seconds"
 
+    # Crawler and AI-agent directive files must stay fresh. Without this rule
+    # they inherit ExpiresDefault (1 month), so robots.txt, ai.txt, llms.txt and
+    # llms-full.txt were served with max-age=2592000 - a change to our crawl
+    # rules could take up to 30 days to reach a bot, and Cloudflare edge-cached
+    # robots.txt on top of that (a sitemap line added on 2026-07-28 was still
+    # invisible hours after deploy while the origin already served it).
+    ExpiresByType text/plain "access plus 1 hour"
+
     # CSS & JavaScript (1 Year for caching efficiency)
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType text/javascript "access plus 1 year"
