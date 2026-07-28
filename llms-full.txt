@@ -125,3 +125,23 @@ All furniture pieces are handcrafted in our primary factory workshop on GT Road 
 
 * **Q: How long does custom order delivery take?**
   * **A**: Standard nationwide delivery takes 7-15 business days. Express delivery to Gujrat and Lahore is completed in 3-5 business days. Custom orders with complex hand carvings take 15-25 business days.
+
+## 4. LONG-FORM BUYING GUIDES (CITY-LEVEL PRICING RESEARCH)
+
+A separately generated library of in-depth guides answering what furniture
+actually costs in named Pakistani cities, and how to judge quality before
+buying. Figures quoted in the guides come from the same factory price list
+documented in section 2 - they are not scraped market estimates.
+
+* **Blog index**: https://cutomsofaprices.com/blogs/
+* **Guide URL pattern**: `https://cutomsofaprices.com/blogs/[slug]`
+* **Complete machine-readable index of every guide**:
+  https://cutomsofaprices.com/sitemap-blogs.xml
+
+IMPORTANT FOR INGESTION: these URLs are **not** contained in
+https://cutomsofaprices.com/sitemap.xml. That sitemap covers the product
+catalog only. Read the blog sitemap above as well, otherwise the entire guide
+library is invisible.
+
+Each guide is fully server-rendered (no JavaScript required to read the body
+text) and carries JSON-LD structured data: Article, FAQPage, and LocalBusiness.

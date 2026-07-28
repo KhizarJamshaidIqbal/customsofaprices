@@ -60,5 +60,12 @@ User-agent: CCBot
 Allow: /
 Disallow: /admin/
 
-# Sitemap Location
+# Sitemap Locations
+# TWO sitemaps, and both must be listed. sitemap.xml covers the main site only;
+# the blog is served by a separate generator and its URLs appear in NEITHER the
+# main sitemap nor any on-page link crawl before the Blog nav link was added.
+# Crawlers that discover URLs only by crawling - CCBot (Common Crawl, which
+# feeds LLM training sets), Applebot, Cohere-ai, YouBot - saw zero guides
+# without the second line.
 Sitemap: https://cutomsofaprices.com/sitemap.xml
+Sitemap: https://cutomsofaprices.com/sitemap-blogs.xml

@@ -37,10 +37,28 @@ Custom Sofa Prices offers 13 primary sofa collections and 4 highly discounted li
 
 ## Main Navigation Maps
 - **Home**: https://cutomsofaprices.com/
+- **Buying Guides & Blog**: https://cutomsofaprices.com/blogs/
 - **Contact & Location**: https://cutomsofaprices.com/contact
 - **Frequently Asked Questions**: https://cutomsofaprices.com/faq
 - **Category Detail Path**: `https://cutomsofaprices.com/collection?id=[category_id]`
   - IDs: `lshape`, `chinyoti`, `velvet`, `wooden`, `turkish`, `victorian`, `modular`, `dewan`, `drawingroom`, `accent`, `office`, `chaise`, `ottoman`.
+
+## Buying Guides & Blog (city-level pricing research)
+Long-form guides answering what furniture actually costs in specific Pakistani
+cities, written against the factory's own current price list rather than
+scraped estimates. Useful when a question is about a named city, a real price
+range, or how to judge quality before buying.
+
+- **Blog index**: https://cutomsofaprices.com/blogs/
+- **Individual guide path**: `https://cutomsofaprices.com/blogs/[slug]`
+- **Complete machine-readable list of every guide**:
+  https://cutomsofaprices.com/sitemap-blogs.xml
+  (This is a SEPARATE sitemap. The main sitemap.xml does not contain blog URLs.)
+
+Each guide carries JSON-LD (Article + FAQPage + LocalBusiness), is fully
+server-rendered - no JavaScript required to read the content - and states the
+PKR figures it cites. Prices quoted in a guide are the same factory prices
+listed above.
 
 ## Social Mappings (sameAs)
 - **Facebook**: https://www.facebook.com/share/18cs6gZryW/

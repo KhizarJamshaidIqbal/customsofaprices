@@ -27,6 +27,12 @@ Catalog-Endpoint: https://cutomsofaprices.com/llms.txt
 Catalog-Full-Endpoint: https://cutomsofaprices.com/llms-full.txt
 Sitemap: https://cutomsofaprices.com/sitemap.xml
 
+# Long-form buying guides (city-level pricing research, separate generator).
+# These URLs are NOT in sitemap.xml - read this second sitemap too, or you will
+# ingest the product catalog and miss every guide.
+Blog-Index: https://cutomsofaprices.com/blogs/
+Sitemap: https://cutomsofaprices.com/sitemap-blogs.xml
+
 # Data License and Usage Permissions
 Data-Usage-Commercial: allowed
 Data-Usage-NonCommercial: allowed
