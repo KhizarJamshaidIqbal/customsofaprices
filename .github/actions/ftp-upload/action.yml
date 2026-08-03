@@ -1,0 +1,43 @@
+name: FTP upload to Hostinger
+description: >
+  One upload attempt to the live server. Exists so deploy.yml can retry the
+  upload without repeating the server address, exclude list and timeout three
+  times - the settings live here once, and drift between attempts is impossible.
+
+inputs:
+  password:
+    description: FTP password (pass secrets.FTP_PASSWORD in)
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Upload
+      uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      with:
+        server: 46.28.46.55
+        username: u606995444.deploy
+        password: ${{ inputs.password }}
+        protocol: ftp
+        port: 21
+        # Hostinger's FTP control socket is often slow to accept the connection.
+        # Raised from the 30s default to 120s on 2026-06-05 for exactly this
+        # reason - and it did NOT stop the failures (12 of 28 first attempts
+        # failed afterwards), which is why deploy.yml retries instead of raising
+        # this number again. Every observed failure times out at the full 120s
+        # with "Failed to connect" and no file transfer, so the connection is
+        # never established - retrying is safe, nothing is left half-uploaded.
+        timeout: 120000
+        # Dedicated FTP account chrooted to the site's real docroot
+        # (/home/u606995444/domains/cutomsofaprices.com/public_html), so the
+        # login root IS the web root -> upload straight into ./.
+        server-dir: ./
+        # Dev-only files and runtime data must never be uploaded.
+        exclude: |
+          **/.git*
+          **/.git*/**
+          .github/**
+          crop_logo.py
+          .gitignore
+          **/*.md
+          admin/data/*.json

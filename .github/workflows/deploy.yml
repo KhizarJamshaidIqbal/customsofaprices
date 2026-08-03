@@ -32,28 +32,85 @@ jobs:
             echo "ready=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Deploy via FTP
+      # ---------------------------------------------------------------------
+      # WHY THIS IS RETRIED THREE TIMES
+      #
+      # Hostinger's FTP server intermittently refuses to open the control
+      # socket. Measured over the deploy history: 12 of the 28 first attempts
+      # since 2026-06-05 failed this way. Every one of them times out at the
+      # full 120s with "Failed to connect" and NOT ONE file transferred, so the
+      # connection is never established and a retry cannot corrupt a partial
+      # upload.
+      #
+      # Raising the timeout was already tried (30s -> 120s, commit 83a43fb) and
+      # did not fix it. Re-running the identical commit minutes later does -
+      # every manual re-run in the history succeeded. So the workflow now does
+      # that re-run itself.
+      #
+      # This matters because a failed deploy is SILENT in the worst way: the
+      # commit is on GitHub, the change looks shipped, and the live site quietly
+      # stays on the old version. That happened twice on 2026-07-28 and was only
+      # caught because someone checked by hand.
+      #
+      # The gate is `outcome`, not `conclusion`. Per GitHub's contexts docs,
+      # `outcome` is the result BEFORE continue-on-error is applied and
+      # `conclusion` is the result AFTER - with continue-on-error: true a failed
+      # step reports conclusion == 'success', so gating on conclusion would mean
+      # the retry never fires.
+      #
+      # The final attempt deliberately has NO continue-on-error: if all three
+      # fail the job goes red, because that is a real outage and must not be
+      # hidden by the retry.
+      # ---------------------------------------------------------------------
+
+      - name: Deploy via FTP (attempt 1 of 3)
+        id: ftp1
         if: steps.check.outputs.ready == 'true'
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        continue-on-error: true
+        uses: ./.github/actions/ftp-upload
         with:
-          server: 46.28.46.55
-          username: u606995444.deploy
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
-          # Hostinger's FTP control socket is often slow to accept the connection;
-          # raise the timeout (default 30s) to avoid intermittent "Timeout (control socket)" failures.
-          timeout: 120000
-          # Dedicated FTP account chrooted to the site's real docroot
-          # (/home/u606995444/domains/cutomsofaprices.com/public_html), so the
-          # login root IS the web root -> upload straight into ./.
-          server-dir: ./
-          # Dev-only files and runtime data must never be uploaded.
-          exclude: |
-            **/.git*
-            **/.git*/**
-            .github/**
-            crop_logo.py
-            .gitignore
-            **/*.md
-            admin/data/*.json
+
+      - name: Wait before attempt 2
+        if: steps.check.outputs.ready == 'true' && steps.ftp1.outcome == 'failure'
+        run: |
+          echo "::warning::FTP attempt 1 failed — retrying in 60s."
+          sleep 60
+
+      - name: Deploy via FTP (attempt 2 of 3)
+        id: ftp2
+        if: steps.check.outputs.ready == 'true' && steps.ftp1.outcome == 'failure'
+        continue-on-error: true
+        uses: ./.github/actions/ftp-upload
+        with:
+          password: ${{ secrets.FTP_PASSWORD }}
+
+      - name: Wait before attempt 3
+        if: steps.check.outputs.ready == 'true' && steps.ftp1.outcome == 'failure' && steps.ftp2.outcome == 'failure'
+        run: |
+          echo "::warning::FTP attempt 2 failed — final retry in 60s."
+          sleep 60
+
+      # No continue-on-error here on purpose: if this one fails the job fails.
+      - name: Deploy via FTP (attempt 3 of 3 — final)
+        id: ftp3
+        if: steps.check.outputs.ready == 'true' && steps.ftp1.outcome == 'failure' && steps.ftp2.outcome == 'failure'
+        uses: ./.github/actions/ftp-upload
+        with:
+          password: ${{ secrets.FTP_PASSWORD }}
+
+      # Records which attempt won, so the retry never silently masks a server
+      # that is getting steadily worse. If this line starts reading "attempt 3"
+      # regularly, the FTP host needs fixing, not more retries.
+      - name: Report which attempt succeeded
+        if: always() && steps.check.outputs.ready == 'true'
+        run: |
+          if [ "${{ steps.ftp1.outcome }}" = "success" ]; then
+            echo "### Deployed on attempt 1" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.ftp2.outcome }}" = "success" ]; then
+            echo "### Deployed on attempt 2 (attempt 1 failed to connect)" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.ftp3.outcome }}" = "success" ]; then
+            echo "### Deployed on attempt 3 (attempts 1 and 2 failed to connect)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### Deploy FAILED after 3 attempts — the live site is still on the previous version" >> "$GITHUB_STEP_SUMMARY"
+          fi
