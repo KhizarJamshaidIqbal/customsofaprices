@@ -60,6 +60,25 @@ User-agent: CCBot
 Allow: /
 Disallow: /admin/
 
+
+# AI SEARCH crawlers (distinct from the training crawlers above).
+# OAI-SearchBot serves ChatGPT Search; Claude-SearchBot and Claude-User serve
+# Claude. Blocking these removes the site from AI answers entirely, which is the
+# opposite of the intent above, so they are named explicitly rather than left to
+# the User-agent: * fallback.
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin/
+
 # Sitemap Locations
 # TWO sitemaps, and both must be listed. sitemap.xml covers the main site only;
 # the blog is served by a separate generator and its URLs appear in NEITHER the
