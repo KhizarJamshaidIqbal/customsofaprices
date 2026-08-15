@@ -102,29 +102,6 @@ return [
         ],
     ],
 
-    'carved-7seater' => [
-        'title' => 'Hand-Carved 7-Seater Set',
-        'price_text' => 'Starts from PKR 180,000',
-        'price_type' => 'Full Set Price',
-        'badge' => 'Full Set',
-        'tagline' => 'A complete carved drawing-room set — sofas, settees & centre table.',
-        'image' => 'images/chinyoti/carved-7seater-1.webp',
-        'images' => ['images/chinyoti/carved-7seater-1.webp'],
-        'desc' => 'The Hand-Carved 7-Seater Set is a complete Chiniot drawing-room solution — typically a 3-seater, two single seats, and matching settees, all hand-carved in solid Sheesham with coordinated upholstery and an optional matching centre table.',
-        'features' => [
-            'Complete 7-seater carved set',
-            'Matching settees + optional centre table',
-            'Solid Sheesham, hand-carved throughout',
-            'Coordinated custom upholstery',
-            'Polished or antique finish',
-        ],
-        'rec' => 'Best for furnishing a full drawing room in one go with a perfectly matched carved set.',
-        'faqs' => [
-            ['q' => 'Set mein kya kya aata hai?', 'a' => 'Standard: ek 3-seater, do single seaters, aur settees. Centre table add kiya ja sakta hai.'],
-            ['q' => 'Can I change the seating count?', 'a' => 'Yes — we build 5, 7, or larger sets to fit your room exactly.'],
-            ['q' => 'Is delivery included?', 'a' => 'We deliver nationwide from Gujrat; delivery charges depend on city — ask for a quote.'],
-        ],
-    ],
 
     'curved-chinyoti' => [
         'title' => 'Curved-Back Chinyoti Sofa',
