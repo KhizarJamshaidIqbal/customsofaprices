@@ -1,5 +1,5 @@
 <?php
-/** Office & Reception Sofas — 12 styles. Images: images/office/<slug>-1.webp (master); angles auto-included via glob. */
+/** Office & Reception Sofas — 11 styles. Images: images/office/<slug>-1.webp (master); angles auto-included via glob. */
 return [
     'executive-leather' => [
         'title' => 'Executive Leather Sofa', 'price_text' => 'Starts from PKR 90,000', 'price_type' => '1 Seater Price',
@@ -131,19 +131,7 @@ return [
             ['q' => 'Bulk?', 'a' => 'Yes.'],
         ],
     ],
-    'office-recliner' => [
-        'title' => 'Office Recliner Sofa', 'price_text' => 'Starts from PKR 85,000', 'price_type' => '1 Seater Price',
-        'badge' => 'Comfort', 'tagline' => 'Reclining comfort for executive lounges.',
-        'image' => 'images/office/office-recliner-1.webp', 'images' => ['images/office/office-recliner-1.webp'],
-        'desc' => 'The Office Recliner Sofa brings executive-level comfort to private offices and lounges — reclining seats with premium leather, perfect for unwinding between meetings.',
-        'features' => ['Built-in recliners', 'Premium leather', 'Executive comfort', 'Sturdy frame', 'Custom colour'],
-        'rec' => 'Best for executive offices and private lounges.',
-        'faqs' => [
-            ['q' => 'Manual ya motorised?', 'a' => 'Standard manual; motorised request par.'],
-            ['q' => 'Leather?', 'a' => 'Premium leather / leatherette.'],
-            ['q' => 'Bulk?', 'a' => 'Yes.'],
-        ],
-    ],
+
     'premium-office-set' => [
         'title' => 'Premium Office Sofa Set', 'price_text' => 'Starts from PKR 150,000', 'price_type' => 'Full Set Price',
         'badge' => 'Full Set', 'tagline' => 'A complete coordinated set for executive suites.',
