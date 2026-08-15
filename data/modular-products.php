@@ -1,5 +1,5 @@
 <?php
-/** Modular & Sectional Sofas — 12 styles. Images: images/modular/<slug>-1.webp (master); angles auto-included via glob. */
+/** Modular & Sectional Sofas — 9 styles. Images: images/modular/<slug>-1.webp (master); angles auto-included via glob. */
 return [
     'classic-modular' => [
         'title' => 'Classic Modular Sofa', 'price_text' => 'Starts from PKR 85,000', 'price_type' => '1 Seater Price',
@@ -40,32 +40,7 @@ return [
             ['q' => 'Delivery?', 'a' => 'Nationwide from Gujrat.'],
         ],
     ],
-    'modular-recliner' => [
-        'title' => 'Modular Recliner Sectional', 'price_text' => 'Starts from PKR 140,000', 'price_type' => '1 Seater Price',
-        'badge' => 'Comfort', 'tagline' => 'Reconfigurable sections with built-in recliners.',
-        'image' => 'images/modular/modular-recliner-1.webp', 'images' => ['images/modular/modular-recliner-1.webp'],
-        'desc' => 'The Modular Recliner Sectional combines flexible modular seating with built-in reclining seats — the ultimate relaxation setup for home theatres and TV lounges, arranged your way.',
-        'features' => ['Modular sections + recliners', 'Built-in footrests', 'Plush padding', 'Reconfigurable layout', 'Custom size'],
-        'rec' => 'Best for home theatres and TV lounges.',
-        'faqs' => [
-            ['q' => 'Recliner manual ya motorised?', 'a' => 'Standard manual; motorised request par.'],
-            ['q' => 'Clearance?', 'a' => 'Reclining seats ke peeche ~12-18 inch.'],
-            ['q' => 'Add modules?', 'a' => 'Yes — later add kar sakte hain.'],
-        ],
-    ],
-    'modular-storage' => [
-        'title' => 'Modular Storage Sectional', 'price_text' => 'Starts from PKR 110,000', 'price_type' => '1 Seater Price',
-        'badge' => 'Smart', 'tagline' => 'Hidden storage inside flexible modular seats.',
-        'image' => 'images/modular/modular-storage-1.webp', 'images' => ['images/modular/modular-storage-1.webp'],
-        'desc' => 'The Modular Storage Sectional hides generous storage under its seats and chaise — flexible, reconfigurable seating that keeps your lounge clutter-free. Perfect for compact homes.',
-        'features' => ['Storage under seats & chaise', 'Modular reconfigurable layout', 'Gas-strut easy lift', 'High-density foam', 'Custom fabric'],
-        'rec' => 'Best for compact homes where storage matters.',
-        'faqs' => [
-            ['q' => 'Kitna storage?', 'a' => 'Blankets, cushions, seasonal items easily fit.'],
-            ['q' => 'Lift mechanism sturdy?', 'a' => 'Yes — gas-strut supported.'],
-            ['q' => 'Comfort?', 'a' => 'Same premium foam, no compromise.'],
-        ],
-    ],
+
     'modular-ottoman' => [
         'title' => 'Sectional with Ottoman', 'price_text' => 'Starts from PKR 95,000', 'price_type' => '1 Seater Price',
         'badge' => 'Versatile', 'tagline' => 'A sectional with a movable ottoman for flexible seating.',
@@ -131,19 +106,7 @@ return [
             ['q' => 'Delivery?', 'a' => 'Nationwide; sections mein.'],
         ],
     ],
-    'convertible-sectional' => [
-        'title' => 'Convertible Sectional Sofa-Bed', 'price_text' => 'Starts from PKR 105,000', 'price_type' => '1 Seater Price',
-        'badge' => 'Convertible', 'tagline' => 'A sectional that turns into a bed for guests.',
-        'image' => 'images/modular/convertible-sectional-1.webp', 'images' => ['images/modular/convertible-sectional-1.webp'],
-        'desc' => 'The Convertible Sectional Sofa-Bed combines flexible corner seating with a pull-out bed — perfect for guest rooms, studios, and homes that need a smart two-in-one solution.',
-        'features' => ['Pull-out bed conversion', 'Modular corner seating', 'Optional storage', 'Supportive foam', 'Custom fabric & size'],
-        'rec' => 'Best for guest rooms, studios, and small homes.',
-        'faqs' => [
-            ['q' => 'Bed kitna bada?', 'a' => 'Size ke mutabik comfortable double.'],
-            ['q' => 'Daily sleeping?', 'a' => 'Guests ke liye great; daily ke liye higher-density foam recommend.'],
-            ['q' => 'Conversion easy?', 'a' => 'Yes — smooth pull-out, no tools.'],
-        ],
-    ],
+
     'compact-sectional' => [
         'title' => 'Compact Modular Loveseat', 'price_text' => 'Starts from PKR 65,000', 'price_type' => '2 Seater Price',
         'badge' => 'Compact', 'tagline' => 'A small modular set for apartments and small lounges.',
