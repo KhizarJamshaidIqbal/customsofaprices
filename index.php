@@ -467,289 +467,315 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     <!-- Card 1: L-Shape & Corner Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-lshape">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/lshape-sofa.webp" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-gold/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Trending
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-lshape">
+                        <a href="collection.php?id=lshape" class="block h-full" aria-label="View L-Shape & Corner Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/lshape-sofa.webp" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-gold/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Trending
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                L-Shape & Corner Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Maximize your living space with our premium corner sofa designs. Available in fabric, leather & velvet. L shape sofa 1 seater price starts from PKR 65,000.
-                            </p>
-                            <a href="collection.php?id=lshape" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    L-Shape & Corner Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Maximize your living space with our premium corner sofa designs. Available in fabric, leather & velvet. L shape sofa 1 seater price starts from PKR 65,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 2: Classic Chinyoti & Chesterfield -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-chinyoti" style="transition-delay: 0.1s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/chesterfield-sofa.webp" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-charcoal/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Classic
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-chinyoti" style="transition-delay: 0.1s;">
+                        <a href="collection.php?id=chinyoti" class="block h-full" aria-label="View Chinyoti & Chesterfield Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/chesterfield-sofa.webp" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-charcoal/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Classic
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Chinyoti & Chesterfield
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Timeless Chinyoti sofa set designs with hand-carved frames & the iconic Chesterfield sofa design with deep button tufting. 1 seater price from PKR 80,000.
-                            </p>
-                            <a href="collection.php?id=chinyoti" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Chinyoti & Chesterfield
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Timeless Chinyoti sofa set designs with hand-carved frames & the iconic Chesterfield sofa design with deep button tufting. 1 seater price from PKR 80,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 3: Velvet & Leather Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-velvet" style="transition-delay: 0.2s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/velvet-sofa.webp" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-purple-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Luxury
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-velvet" style="transition-delay: 0.2s;">
+                        <a href="collection.php?id=velvet" class="block h-full" aria-label="View Velvet & Leather Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/velvet-sofa.webp" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-purple-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Luxury
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Velvet & Leather Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Elevate your space with our luxury velvet sofa set designs and genuine leather sofas. Rich textures, premium comfort. 1 seater price from PKR 65,000.
-                            </p>
-                            <a href="collection.php?id=velvet" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Velvet & Leather Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Elevate your space with our luxury velvet sofa set designs and genuine leather sofas. Rich textures, premium comfort. 1 seater price from PKR 65,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 4: Wooden Sofa Frames -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-wooden">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-amber-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Handcrafted
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-wooden">
+                        <a href="collection.php?id=wooden" class="block h-full" aria-label="View Wooden Sofa Frames Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-amber-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Handcrafted
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Wooden Sofa Frames
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Explore lakri ka sofa design - handcrafted Sheesham & Rosewood frames with your choice of sofa poshish ke design. 1 seater price from PKR 80,000.
-                            </p>
-                            <a href="collection.php?id=wooden" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Wooden Sofa Frames
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Explore lakri ka sofa design - handcrafted Sheesham & Rosewood frames with your choice of sofa poshish ke design. 1 seater price from PKR 80,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 7: Turkish Sofa Sets -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-turkish" style="transition-delay: 0.1s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/turkish-sofa.webp" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-yellow-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Premium
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-turkish" style="transition-delay: 0.1s;">
+                        <a href="collection.php?id=turkish" class="block h-full" aria-label="View Turkish Sofa Sets Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/turkish-sofa.webp" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-yellow-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Premium
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Turkish Sofa Sets
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Opulent Turkish-style sofas with intricate carved frames and premium upholstery. A statement piece for your drawing room. 1 seater price from PKR 80,000.
-                            </p>
-                            <a href="collection.php?id=turkish" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Turkish Sofa Sets
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Opulent Turkish-style sofas with intricate carved frames and premium upholstery. A statement piece for your drawing room. 1 seater price from PKR 80,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 8: Victorian & Classic Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-victorian" style="transition-delay: 0.2s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/victorian-sofa.webp" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-rose-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Royal
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-victorian" style="transition-delay: 0.2s;">
+                        <a href="collection.php?id=victorian" class="block h-full" aria-label="View Victorian & Classic Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/victorian-sofa.webp" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-rose-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Royal
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Victorian & Classic Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Elegant Victorian designs with gold-leaf wood carving and luxurious velvet upholstery. Timeless beauty for royal drawing rooms. 1 seater price from PKR 85,000.
-                            </p>
-                            <a href="collection.php?id=victorian" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Victorian & Classic Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Elegant Victorian designs with gold-leaf wood carving and luxurious velvet upholstery. Timeless beauty for royal drawing rooms. 1 seater price from PKR 85,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 9: Modular & Sectional Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-modular">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/modular-sofa.webp" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-indigo-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Customizable
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-modular">
+                        <a href="collection.php?id=modular" class="block h-full" aria-label="View Modular & Sectional Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/modular-sofa.webp" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-indigo-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Customizable
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Modular & Sectional Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Flexible modular sofas that you can rearrange to fit any space. U-shape & multi-section configurations available. 1 seater price from PKR 55,000.
-                            </p>
-                            <a href="collection.php?id=modular" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Modular & Sectional Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Flexible modular sofas that you can rearrange to fit any space. U-shape & multi-section configurations available. 1 seater price from PKR 55,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 10: Dewan & Diwan Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-dewan" style="transition-delay: 0.1s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/dewan-sofa.webp" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-emerald-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Traditional
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-dewan" style="transition-delay: 0.1s;">
+                        <a href="collection.php?id=dewan" class="block h-full" aria-label="View Dewan & Diwan Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/dewan-sofa.webp" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-emerald-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Traditional
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Dewan & Diwan Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Classic day-bed style divans with bolster cushions - a Pakistani living room staple. Sheesham frames with premium poshish. Full price from PKR 195,000.
-                            </p>
-                            <a href="collection.php?id=dewan" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Dewan & Diwan Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Classic day-bed style divans with bolster cushions - a Pakistani living room staple. Sheesham frames with premium poshish. Full price from PKR 195,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 11: Drawing Room Sofa Sets -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-drawingroom" style="transition-delay: 0.2s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/drawing-room-set.webp" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-gold-dark/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Best Seller
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-drawingroom" style="transition-delay: 0.2s;">
+                        <a href="collection.php?id=drawingroom" class="block h-full" aria-label="View Drawing Room Sofa Sets Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/drawing-room-set.webp" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-gold-dark/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Best Seller
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Drawing Room Sofa Sets
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Complete 7-seater drawing room sets (3+2+1+1) in coordinated designs. Formal elegance for your mehman khana. 1 seater price from PKR 85,000.
-                            </p>
-                            <a href="collection.php?id=drawingroom" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Drawing Room Sofa Sets
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Complete 7-seater drawing room sets (3+2+1+1) in coordinated designs. Formal elegance for your mehman khana. 1 seater price from PKR 85,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 12: Accent & Single Seater -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-accent">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/accent-chair.webp" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-pink-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Compact
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-accent">
+                        <a href="collection.php?id=accent" class="block h-full" aria-label="View Accent & Single Seater Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/accent-chair.webp" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-pink-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Compact
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Accent & Single Seater
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Stylish accent chairs and single seaters for bedrooms, corners & reading nooks. Contemporary designs with gold metal legs. 1 seater price from PKR 40,000.
-                            </p>
-                            <a href="collection.php?id=accent" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Accent & Single Seater
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Stylish accent chairs and single seaters for bedrooms, corners & reading nooks. Contemporary designs with gold metal legs. 1 seater price from PKR 40,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 13: Office & Reception Sofas -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-office" style="transition-delay: 0.1s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/office-sofa.webp" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-slate-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Commercial
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-office" style="transition-delay: 0.1s;">
+                        <a href="collection.php?id=office" class="block h-full" aria-label="View Office & Reception Sofas Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/office-sofa.webp" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-slate-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Commercial
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Office & Reception Sofas
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Professional-grade sofas for offices, waiting areas & reception lounges. Durable leather & fabric options. 1 seater price from PKR 30,000.
-                            </p>
-                            <a href="collection.php?id=office" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Office & Reception Sofas
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Professional-grade sofas for offices, waiting areas & reception lounges. Durable leather & fabric options. 1 seater price from PKR 30,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 14: Chaise Lounge -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-chaise" style="transition-delay: 0.2s;">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/chaise-lounge.webp" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-fuchsia-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Elegant
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-chaise" style="transition-delay: 0.2s;">
+                        <a href="collection.php?id=chaise" class="block h-full" aria-label="View Chaise Lounge Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/chaise-lounge.webp" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-fuchsia-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Elegant
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Chaise Lounge
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Luxurious chaise lounges for bedrooms, reading nooks & living rooms. Tufted designs with premium velvet upholstery. Full price from PKR 65,000.
-                            </p>
-                            <a href="collection.php?id=chaise" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Chaise Lounge
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Luxurious chaise lounges for bedrooms, reading nooks & living rooms. Tufted designs with premium velvet upholstery. Full price from PKR 65,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                     <!-- Card 15: Ottoman & Poufs -->
-                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="card-ottoman">
-                        <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/ottoman-poufs.webp" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
-                            <div class="absolute top-4 left-4 bg-amber-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
-                                Accessory
+                    <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-ottoman">
+                        <a href="collection.php?id=ottoman" class="block h-full" aria-label="View Ottoman & Poufs Collection">
+                            <div class="relative overflow-hidden aspect-[4/3]">
+                                <img src="images/ottoman-poufs.webp" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-amber-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
+                                    Accessory
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
-                                Ottoman & Poufs
-                            </h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                                Complement your sofas with matching ottomans, poufs & settees. Storage options available. Perfect footrests & extra seating. Full price from PKR 170,000.
-                            </p>
-                            <a href="collection.php?id=ottoman" class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm hover:gap-3 transition-all duration-300">
-                                View Collection <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                        </div>
+                            <div class="p-6">
+                                <h3 class="font-display text-xl font-bold text-charcoal mb-2 group-hover:text-gold-dark transition-colors duration-300">
+                                    Ottoman & Poufs
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Complement your sofas with matching ottomans, poufs & settees. Storage options available. Perfect footrests & extra seating. Full price from PKR 170,000.
+                                </p>
+                                <span class="inline-flex items-center gap-1.5 text-gold-dark font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                                    View Collection <i class="fas fa-arrow-right text-xs"></i>
+                                </span>
+                            </div>
+                        </a>
                     </article>
 
                 </div>
