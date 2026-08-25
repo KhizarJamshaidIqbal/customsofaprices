@@ -456,10 +456,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                         <span class="w-8 h-px bg-gold"></span>
                     </span>
                     <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-5">
-                        Premium <span class="text-gold-dark">Sofa Set</span> for Sale
+                        Custom <span class="text-gold-dark">Sofa Design</span> & Luxury Sets in Pakistan
                     </h2>
-                    <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-                        Browse our curated collection of modern sofa designs for your living room. From classic wooden frames to contemporary L-shapes — every piece is crafted for comfort and elegance.
+                    <p class="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+                        Explore our handcrafted <strong>sofa design</strong> collection tailored for modern Pakistani living rooms and formal drawing spaces. From traditional Chinyoti carvings and Chesterfield tufting to contemporary L-shape sectionals — custom-built in Gujrat with factory-direct prices starting from PKR 30,000 to 415,000 with free nationwide delivery.
                     </p>
                 </div>
 

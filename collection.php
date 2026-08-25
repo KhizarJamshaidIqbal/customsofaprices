@@ -519,13 +519,13 @@ if ($hasProducts) {
 
 // ---- SEO vars (mode-aware) ----
 if ($mode === 'listing') {
-    $pageTitle = $c['title'] . ' - ' . count($c['products']) . ' Styles & Prices | Custom Sofa Prices Gujrat';
-    $metaDesc  = 'Browse ' . count($c['products']) . ' ' . $c['title'] . ' styles, custom-made from ' . $c['price_text'] . '. Choose your design, then customise size, fabric & colour. Factory-direct from Gujrat, delivered across Pakistan.';
+    $pageTitle = $c['title'] . ' Sofa Set Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
+    $metaDesc  = 'Browse ' . count($c['products']) . '+ ' . $c['title'] . ' sofa designs with direct factory rates ' . strtolower($c['price_text']) . '. Solid Sheesham wood frames & Master MoltyFoam. Delivered nationwide from Gujrat.';
     $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId;
     $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
 } else {
-    $pageTitle = $c['title'] . ' Price in Pakistan | Custom Sofa Prices Gujrat';
-    $metaDesc  = 'Explore ' . $c['title'] . ' starting from ' . $c['price_text'] . '. 100% custom-made sizes, fabrics & colours. Delivered across Pakistan from Gujrat.';
+    $pageTitle = $c['title'] . ' Price in Pakistan | Custom Sofa Prices';
+    $metaDesc  = 'Explore ' . $c['title'] . ' starting from ' . $c['price_text'] . '. 100% custom-made sizes, fabrics & colours. Solid seasoned wood frame with 10-year warranty. Delivered nationwide.';
     $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId . ($p !== '' ? '&p=' . $p : '');
     $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
 }
@@ -760,7 +760,42 @@ if ($mode === 'listing') {
             "priceValidUntil": "<?= date('Y-12-31') ?>",
             "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
-            "url": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>"
+            "url": "<?= htmlspecialchars($canonical, ENT_QUOTES) ?>",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "PKR"
+                },
+                "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "PK"
+                },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 14,
+                        "maxValue": 21,
+                        "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 2,
+                        "maxValue": 5,
+                        "unitCode": "DAY"
+                    }
+                }
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "PK",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 7,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/FreeReturn"
+            }
         }
     }
     </script>
