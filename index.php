@@ -197,10 +197,10 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             </div>
 
             <!-- Hero Content -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14 w-full">
                 <div class="max-w-2xl lg:max-w-3xl">
                     <!-- Top Social Proof Pill -->
-                    <div class="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full mb-4 shadow-lg shadow-black/30">
+                    <div class="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-3.5 py-1 rounded-full mb-3 sm:mb-4 shadow-lg shadow-black/30">
                         <span class="flex text-gold text-xs gap-0.5">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -213,66 +213,66 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- H1 Heading -->
-                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.12] mb-4 tracking-tight drop-shadow-md">
+                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.12] mb-3 sm:mb-4 tracking-tight drop-shadow-md">
                         Modern & Luxury <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
                         in Pakistan
                     </h1>
 
                     <!-- Sub-headline -->
-                    <p class="text-base sm:text-lg text-gray-200 leading-relaxed mb-5 font-normal drop-shadow max-w-2xl">
+                    <p class="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed mb-4 sm:mb-5 font-normal drop-shadow max-w-2xl">
                         Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
                     </p>
 
                     <!-- Quick Popular Category Tags -->
-                    <div class="flex flex-wrap items-center gap-2 mb-6">
-                        <span class="text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                    <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6">
+                        <span class="text-[11px] sm:text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             🛋️ 7-Seater Sets
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             ✨ L-Shape Corner
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             👑 Chinyoti Carved
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             🛏️ Sofa Cum Bed
                         </a>
                     </div>
 
                     <!-- CTA Button Group -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6">
-                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-7 py-3.5 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-5 sm:mb-6">
+                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
                             <i class="fas fa-couch text-charcoal-dark text-base"></i>
                             <span>Explore 2026 Designs</span>
                             <i class="fas fa-arrow-right text-xs"></i>
                         </a>
-                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-6 py-3.5 rounded-xl transition-all duration-300 shadow-lg">
+                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-sm sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl transition-all duration-300 shadow-lg">
                             <i class="fas fa-tags text-gold"></i>
                             <span>Get Factory Prices</span>
                         </a>
                     </div>
 
-                    <!-- Horizontal Trust Signals Bar -->
-                    <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-white/15 text-white/90 text-xs sm:text-sm">
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                <i class="fas fa-check"></i>
+                    <!-- Horizontal Trust Signals Bar (Modern Glass Micro-Badges) -->
+                    <div class="grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:items-center sm:gap-6 pt-3.5 sm:pt-4 border-t border-white/15">
+                        <div class="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 bg-white/10 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none border border-white/15 sm:border-0 rounded-xl sm:rounded-none py-2 px-1 sm:p-0">
+                            <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gold/25 flex items-center justify-center text-gold text-[10px] sm:text-xs flex-shrink-0">
+                                <i class="fas fa-truck-fast"></i>
                             </span>
-                            <span>Free Delivery PK</span>
+                            <span class="text-[11px] sm:text-sm font-semibold sm:font-normal text-white truncate">Free Delivery</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                <i class="fas fa-check"></i>
+                        <div class="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 bg-white/10 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none border border-white/15 sm:border-0 rounded-xl sm:rounded-none py-2 px-1 sm:p-0">
+                            <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gold/25 flex items-center justify-center text-gold text-[10px] sm:text-xs flex-shrink-0">
+                                <i class="fas fa-shield-alt"></i>
                             </span>
-                            <span>2-Year Warranty</span>
+                            <span class="text-[11px] sm:text-sm font-semibold sm:font-normal text-white truncate">2-Yr Warranty</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                <i class="fas fa-check"></i>
+                        <div class="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 bg-white/10 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none border border-white/15 sm:border-0 rounded-xl sm:rounded-none py-2 px-1 sm:p-0">
+                            <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gold/25 flex items-center justify-center text-gold text-[10px] sm:text-xs flex-shrink-0">
+                                <i class="fas fa-gem"></i>
                             </span>
-                            <span>100% Solid Sheesham</span>
+                            <span class="text-[11px] sm:text-sm font-semibold sm:font-normal text-white truncate">Solid Wood</span>
                         </div>
                     </div>
                 </div>
