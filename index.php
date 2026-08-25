@@ -256,10 +256,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 text-white/50">
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 text-gray-300">
                 <span class="text-xs uppercase tracking-widest">Scroll</span>
-                <div class="w-5 h-8 border-2 border-white/30 rounded-full flex justify-center">
-                    <div class="w-1 h-2 bg-white/60 rounded-full mt-1.5 animate-bounce"></div>
+                <div class="w-5 h-8 border-2 border-white/50 rounded-full flex justify-center">
+                    <div class="w-1 h-2 bg-white/80 rounded-full mt-1.5 animate-bounce"></div>
                 </div>
             </div>
         </section>
@@ -897,7 +897,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                         <div class="text-4xl lg:text-5xl font-bold text-gold font-display">15+</div>
                                         <div>
                                             <div class="font-semibold text-white/90">Years of Experience</div>
-                                            <div class="text-white/50 text-sm">Trusted since 2010 across Pakistan</div>
+                                            <div class="text-gray-300 text-sm">Trusted since 2010 across Pakistan</div>
                                         </div>
                                     </div>
                                     <div class="w-full h-px bg-white/10"></div>
@@ -905,7 +905,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                         <div class="text-4xl lg:text-5xl font-bold text-gold font-display">5K+</div>
                                         <div>
                                             <div class="font-semibold text-white/90">Sofas Delivered</div>
-                                            <div class="text-white/50 text-sm">Happy homes across all major cities</div>
+                                            <div class="text-gray-300 text-sm">Happy homes across all major cities</div>
                                         </div>
                                     </div>
                                     <div class="w-full h-px bg-white/10"></div>
@@ -913,7 +913,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                         <div class="text-4xl lg:text-5xl font-bold text-gold font-display">200+</div>
                                         <div>
                                             <div class="font-semibold text-white/90">Sofa Designs</div>
-                                            <div class="text-white/50 text-sm">Sofa ke naye design har hafte update hote hain</div>
+                                            <div class="text-gray-300 text-sm">Sofa ke naye design har hafte update hote hain</div>
                                         </div>
                                     </div>
                                     <div class="w-full h-px bg-white/10"></div>
@@ -921,7 +921,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
                                         <div class="text-4xl lg:text-5xl font-bold text-gold font-display">4.9</div>
                                         <div>
                                             <div class="font-semibold text-white/90">Customer Rating</div>
-                                            <div class="text-white/50 text-sm flex items-center gap-1">
+                                            <div class="text-gray-300 text-sm flex items-center gap-1">
                                                 <i class="fas fa-star text-gold text-xs"></i>
                                                 <i class="fas fa-star text-gold text-xs"></i>
                                                 <i class="fas fa-star text-gold text-xs"></i>
