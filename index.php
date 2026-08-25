@@ -7,16 +7,6 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TCQG0L7EQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4TCQG0L7EQ');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,13 +51,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="twitter:description" content="Shop luxury sofa sets at best prices. 7 seater, L-shape, Chesterfield & more.">
     <meta name="twitter:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
 
-    <!-- Google Fonts (Non-blocking async) -->
+    <!-- Google Fonts (Swap enabled) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome CDN (Non-blocking async) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
@@ -1609,9 +1596,31 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             });
         });
     </script>
+ 
+    <!-- RoomCanvas High-Contrast WCAG AAA Accessibility Styling -->
+    <style>
+    html body .rc-fab, html body button.rc-fab {
+        background-color: #1a1a1a !important;
+        color: #ffffff !important;
+        border: 2px solid #C9A96E !important;
+    }
+    html body .rc-fab *, html body button.rc-fab * {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
+    </style>
 
-<!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
-<script defer src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
+    <!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
+    <script defer src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
+
+    <!-- Google tag (gtag.js) — Non-blocking Deferred -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TCQG0L7EQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4TCQG0L7EQ');
+    </script>
 </body>
 </html>
 
