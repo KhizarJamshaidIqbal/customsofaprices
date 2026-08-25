@@ -54,12 +54,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
 
 
 
-    <!-- Progressive Enhancement for Animations -->
-    <script>
-        if (typeof IntersectionObserver !== 'undefined') {
-            document.documentElement.classList.add('js-reveal');
-        }
-    </script>
+
 
     <!-- JSON-LD: LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -1515,6 +1510,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
         });
 
         // ===== Scroll Reveal Animation =====
+        document.documentElement.classList.add('js-reveal');
         const revealElements = document.querySelectorAll('.reveal');
 
         const revealObserver = new IntersectionObserver((entries) => {
