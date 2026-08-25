@@ -50,8 +50,13 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
     <meta name="twitter:description" content="Shop luxury sofa sets at best prices. 7 seater, L-shape, Chesterfield & more.">
     <meta name="twitter:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
 
+    <!-- Preconnect to Font Origins for Fast WOFF2 Streaming -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-
+    <!-- FontAwesome (non-render-blocking: preload + async swap) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
 
 
@@ -182,7 +187,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <picture class="block w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
                     <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
-                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="400" height="340" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="480" height="360" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
@@ -1628,11 +1633,6 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             rc.setAttribute('data-rc-key', 'rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5');
             document.body.appendChild(rc);
 
-            // 3. FontAwesome Icons
-            var fa = document.createElement('link');
-            fa.rel = 'stylesheet';
-            fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
-            document.head.appendChild(fa);
         }
 
         ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(e) {
