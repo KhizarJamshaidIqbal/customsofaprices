@@ -184,7 +184,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
         <!-- ============================================ -->
         <!-- HERO SECTION (Option 2: Cinematic Vignette Split Layout) -->
         <!-- ============================================ -->
-        <section id="hero" class="relative min-h-[92vh] lg:min-h-[96vh] flex items-center overflow-hidden">
+        <section id="hero" class="relative min-h-[75vh] lg:min-h-[82vh] flex items-center overflow-hidden">
             <!-- Background Image with Cinematic Split Vignette -->
             <div class="absolute inset-0">
                 <picture class="block w-full h-full">
@@ -197,10 +197,10 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             </div>
 
             <!-- Hero Content -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
                 <div class="max-w-2xl lg:max-w-3xl">
                     <!-- Top Social Proof Pill -->
-                    <div class="inline-flex items-center gap-2.5 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-lg shadow-black/30">
+                    <div class="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full mb-4 shadow-lg shadow-black/30">
                         <span class="flex text-gold text-xs gap-0.5">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -213,19 +213,19 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- H1 Heading -->
-                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-md">
+                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.12] mb-4 tracking-tight drop-shadow-md">
                         Modern & Luxury <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
                         in Pakistan
                     </h1>
 
                     <!-- Sub-headline -->
-                    <p class="text-lg sm:text-xl text-gray-200 leading-relaxed mb-6 font-normal drop-shadow max-w-2xl">
+                    <p class="text-base sm:text-lg text-gray-200 leading-relaxed mb-5 font-normal drop-shadow max-w-2xl">
                         Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
                     </p>
 
                     <!-- Quick Popular Category Tags -->
-                    <div class="flex flex-wrap items-center gap-2 mb-8">
+                    <div class="flex flex-wrap items-center gap-2 mb-6">
                         <span class="text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
                         <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             🛋️ 7-Seater Sets
@@ -242,20 +242,20 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- CTA Button Group -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
-                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 btn-shine">
-                            <i class="fas fa-couch text-charcoal-dark text-lg"></i>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6">
+                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-7 py-3.5 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
+                            <i class="fas fa-couch text-charcoal-dark text-base"></i>
                             <span>Explore 2026 Designs</span>
                             <i class="fas fa-arrow-right text-xs"></i>
                         </a>
-                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-7 py-4 rounded-xl transition-all duration-300 shadow-lg">
+                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-6 py-3.5 rounded-xl transition-all duration-300 shadow-lg">
                             <i class="fas fa-tags text-gold"></i>
                             <span>Get Factory Prices</span>
                         </a>
                     </div>
 
                     <!-- Horizontal Trust Signals Bar -->
-                    <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-6 border-t border-white/15 text-white/90 text-xs sm:text-sm">
+                    <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-white/15 text-white/90 text-xs sm:text-sm">
                         <div class="flex items-center gap-2">
                             <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
                                 <i class="fas fa-check"></i>
@@ -279,10 +279,10 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-2 text-gray-300">
-                <span class="text-xs uppercase tracking-widest">Scroll</span>
-                <div class="w-5 h-8 border-2 border-white/50 rounded-full flex justify-center">
-                    <div class="w-1 h-2 bg-white/80 rounded-full mt-1.5 animate-bounce"></div>
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-1.5 text-gray-300">
+                <span class="text-[10px] uppercase tracking-widest">Scroll</span>
+                <div class="w-4 h-6 border-2 border-white/50 rounded-full flex justify-center">
+                    <div class="w-1 h-1.5 bg-white/80 rounded-full mt-1 animate-bounce"></div>
                 </div>
             </div>
         </section>
