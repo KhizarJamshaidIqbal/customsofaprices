@@ -237,26 +237,26 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- Trust Signals (3 Glass Micro-Cards) -->
-                    <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-white/15">
-                        <div class="flex items-center gap-2 sm:gap-2.5 bg-white/5 rounded-xl px-2.5 py-2.5 border border-white/5">
-                            <i class="fas fa-truck-fast text-gold text-base sm:text-lg"></i>
-                            <div class="text-left">
-                                <div class="text-xs font-semibold text-white">Free Delivery</div>
-                                <div class="text-[10px] text-gray-300 hidden sm:block">Across Pakistan</div>
+                    <div class="grid grid-cols-3 gap-1.5 sm:gap-3 pt-5 sm:pt-6 border-t border-white/15">
+                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
+                            <i class="fas fa-truck-fast text-gold text-sm sm:text-lg flex-shrink-0"></i>
+                            <div class="text-left min-w-0">
+                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">Free Delivery</div>
+                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">All Pakistan</div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2 sm:gap-2.5 bg-white/5 rounded-xl px-2.5 py-2.5 border border-white/5">
-                            <i class="fas fa-shield-alt text-gold text-base sm:text-lg"></i>
-                            <div class="text-left">
-                                <div class="text-xs font-semibold text-white">2-Yr Warranty</div>
-                                <div class="text-[10px] text-gray-300 hidden sm:block">Wood & Foam</div>
+                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
+                            <i class="fas fa-shield-alt text-gold text-sm sm:text-lg flex-shrink-0"></i>
+                            <div class="text-left min-w-0">
+                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">2-Yr Warranty</div>
+                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">Wood & Foam</div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2 sm:gap-2.5 bg-white/5 rounded-xl px-2.5 py-2.5 border border-white/5">
-                            <i class="fas fa-rotate-left text-gold text-base sm:text-lg"></i>
-                            <div class="text-left">
-                                <div class="text-xs font-semibold text-white">Easy Returns</div>
-                                <div class="text-[10px] text-gray-300 hidden sm:block">100% Guaranteed</div>
+                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
+                            <i class="fas fa-rotate-left text-gold text-sm sm:text-lg flex-shrink-0"></i>
+                            <div class="text-left min-w-0">
+                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">Easy Returns</div>
+                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">Guaranteed</div>
                             </div>
                         </div>
                     </div>
