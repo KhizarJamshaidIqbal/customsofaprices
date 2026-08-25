@@ -38,8 +38,9 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <link rel="icon" type="image/webp" href="images/favicon.webp">
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
-    <!-- Preload Hero Image for Fast LCP -->
-    <link rel="preload" as="image" href="images/hero-banner.webp" fetchpriority="high">
+    <!-- Preload Hero Image for Fast LCP (Responsive) -->
+    <link rel="preload" as="image" href="images/hero-banner-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-banner.webp" media="(min-width: 769px)" fetchpriority="high">
 
     <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
     <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
@@ -204,7 +205,10 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         <section id="hero" class="relative min-h-[85vh] lg:min-h-[92vh] flex items-center overflow-hidden">
             <!-- Background Image -->
             <div class="absolute inset-0">
-                <img src="images/hero-banner.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="1920" height="1080" loading="eager">
+                <picture class="w-full h-full">
+                    <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
+                    <img src="images/hero-banner.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="1024" height="1024" fetchpriority="high" loading="eager" decoding="async">
+                </picture>
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
 
@@ -1607,7 +1611,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     </script>
 
 <!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
-<script src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
+<script defer src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
 </body>
 </html>
 

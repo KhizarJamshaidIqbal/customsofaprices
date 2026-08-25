@@ -266,3 +266,15 @@
 .breadcrumb-sep {
     color: rgba(255, 255, 255, 0.7);
 }
+
+/* RoomCanvas Widget High Contrast Fix */
+.rc-fab,
+button.rc-fab {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 2px solid #C9A96E !important;
+}
+.rc-fab *,
+button.rc-fab * {
+    color: #ffffff !important;
+}
