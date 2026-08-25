@@ -48,53 +48,25 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="twitter:title" content="FAQ - Sofa Set Questions | Custom Sofa Prices Pakistan">
     <meta name="twitter:description" content="Get answers about sofa prices, delivery, warranty & customization in Pakistan.">
 
-    <!-- Google Fonts -->
+    <!-- Preload Hero Image for Fast LCP -->
+    <link rel="preload" as="image" href="images/hero-banner.webp" fetchpriority="high">
+
+    <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
+    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
+
+    <!-- Google Fonts (Non-blocking async) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'display': ['"Playfair Display"', 'Georgia', 'serif'],
-                        'body': ['"Inter"', 'system-ui', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fdf8f0',
-                            100: '#f9eed9',
-                            200: '#f2dbb2',
-                            300: '#e8c17f',
-                            400: '#dea54e',
-                            500: '#d4902e',
-                            600: '#c07623',
-                            700: '#9f5b1f',
-                            800: '#814a20',
-                            900: '#6a3e1e',
-                        },
-                        gold: {
-                            DEFAULT: '#C9A96E',
-                            light: '#DFC9A0',
-                            dark: '#A68942',
-                        },
-                        charcoal: {
-                            DEFAULT: '#2D2D2D',
-                            light: '#4A4A4A',
-                            dark: '#1A1A1A',
-                        },
-                        cream: {
-                            DEFAULT: '#FAFAF6',
-                            dark: '#F0EDE5',
-                        }
-                    },
-                }
-            }
-        }
-    </script>
+    <!-- FontAwesome CDN (Non-blocking async) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
 
     <!-- Progressive Enhancement for Animations -->
     <script>
@@ -102,162 +74,6 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             document.documentElement.classList.add('js-reveal');
         }
     </script>
-
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom Styles -->
-    <style>
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            background-color: #FAFAF6;
-            color: #2D2D2D;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .font-display { font-family: 'Playfair Display', Georgia, serif; }
-
-        /* Hero Overlay Gradient */
-        .hero-overlay {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.82) 0%, rgba(45, 45, 45, 0.65) 50%, rgba(201, 169, 110, 0.22) 100%);
-        }
-
-        /* Gold Underline Animation */
-        .gold-line {
-            position: relative;
-            display: inline-block;
-        }
-        .gold-line::after {
-            content: '';
-            position: absolute;
-            bottom: -6px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #C9A96E, #DFC9A0);
-            border-radius: 2px;
-        }
-
-        /* FAQ Accordion */
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
-        }
-        .faq-content.open {
-            max-height: 600px;
-        }
-        .faq-icon {
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-        .faq-item.active {
-            border-color: #C9A96E;
-            box-shadow: 0 4px 24px -4px rgba(201, 169, 110, 0.18);
-        }
-
-        /* Category Tab Active */
-        .tab-btn {
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        .tab-btn::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #C9A96E, #A68942);
-            border-radius: 2px;
-            transition: width 0.3s ease;
-        }
-        .tab-btn.active::after {
-            width: 60%;
-        }
-        .tab-btn.active {
-            color: #A68942;
-            background-color: rgba(201, 169, 110, 0.08);
-        }
-
-        /* Search Input Focus */
-        .search-input:focus {
-            border-color: #C9A96E;
-            box-shadow: 0 0 0 4px rgba(201, 169, 110, 0.15);
-        }
-
-        /* CTA Shine Effect */
-        .btn-shine {
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-shine::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s ease;
-        }
-        .btn-shine:hover::before {
-            left: 100%;
-        }
-
-        /* Scroll Reveal Animations — Progressively Enhanced */
-        .js-reveal .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .js-reveal .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* FAQ item hidden by search */
-        .faq-item.hidden-by-search {
-            display: none;
-        }
-
-        /* Category section hidden by tab */
-        .faq-category.hidden-by-tab {
-            display: none;
-        }
-
-        /* Pulse animation for WhatsApp */
-        @keyframes gentle-pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        .pulse-gentle { animation: gentle-pulse 3s ease-in-out infinite; }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #F0EDE5; }
-        ::-webkit-scrollbar-thumb { background: #C9A96E; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #A68942; }
-
-        /* No results message */
-        .no-results {
-            display: none;
-        }
-        .no-results.visible {
-            display: block;
-        }
-
-        /* Breadcrumb separator */
-        .breadcrumb-sep {
-            color: rgba(255, 255, 255, 0.4);
-        }
-    </style>
 
     <!-- JSON-LD: LocalBusiness Schema -->
     <script type="application/ld+json">

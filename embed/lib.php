@@ -64,8 +64,7 @@ function embed_render(string $part): void {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={theme:{extend:{fontFamily:{display:['"Playfair Display"','Georgia','serif'],body:['Inter','system-ui','sans-serif']},colors:{gold:{DEFAULT:'#C9A96E',light:'#DFC9A0',dark:'#A68942'},charcoal:{DEFAULT:'#2D2D2D',light:'#4A4A4A',dark:'#1A1A1A'},cream:{DEFAULT:'#FAFAF6',dark:'#F0EDE5'}}}}};</script>
+<style><?= @file_get_contents(__DIR__ . '/../style.min.css') ?></style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>html,body{margin:0;padding:0;overflow-x:hidden;background:transparent}body{font-family:Inter,system-ui,sans-serif}.font-display{font-family:'Playfair Display',Georgia,serif}</style>
 </head>

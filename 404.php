@@ -37,91 +37,22 @@ header('Pragma: no-cache');
     <link rel="icon" type="image/png" href="images/favicon.webp">
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
-    <!-- Google Fonts -->
+    <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
+    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
+
+    <!-- Google Fonts (Non-blocking async) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'display': ['"Playfair Display"', 'Georgia', 'serif'],
-                        'body': ['"Inter"', 'system-ui', 'sans-serif'],
-                    },
-                    colors: {
-                        gold: {
-                            DEFAULT: '#C9A96E',
-                            light: '#DFC9A0',
-                            dark: '#A68942',
-                        },
-                        charcoal: {
-                            DEFAULT: '#2D2D2D',
-                            light: '#4A4A4A',
-                            dark: '#1A1A1A',
-                        },
-                        cream: {
-                            DEFAULT: '#FAFAF6',
-                            dark: '#F0EDE5',
-                        }
-                    },
-                }
-            }
-        }
-    </script>
-
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom Styles -->
-    <style>
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            background-color: #FAFAF6;
-            color: #2D2D2D;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .font-display { font-family: 'Playfair Display', Georgia, serif; }
-
-        .hero-overlay {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.88) 0%, rgba(45, 45, 45, 0.75) 50%, rgba(201, 169, 110, 0.22) 100%);
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(201, 169, 110, 0.15);
-        }
-
-        .collection-btn {
-            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-        .collection-btn:hover {
-            border-color: #C9A96E;
-            background-color: rgba(201, 169, 110, 0.08);
-            transform: translateY(-2px);
-        }
-
-        /* Pulse animation for WhatsApp */
-        @keyframes gentle-pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-        .pulse-gentle { animation: gentle-pulse 3s ease-in-out infinite; }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #F0EDE5; }
-        ::-webkit-scrollbar-thumb { background: #C9A96E; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #A68942; }
-    </style>
+    <!-- FontAwesome CDN (Non-blocking async) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
 </head>
 <body class="bg-cream font-body antialiased flex flex-col min-h-screen justify-between">
 

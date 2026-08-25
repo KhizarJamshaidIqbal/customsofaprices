@@ -175,3 +175,94 @@
 .img-zoom-container:hover img {
     transform: scale(1.05);
 }
+
+/* Social Icon Hover */
+.social-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.18);
+}
+
+/* Success Alert Animation */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.success-alert {
+    animation: slideDown 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Contact Card Icon Pulse */
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+.icon-float:hover .card-icon {
+    animation: iconFloat 1.2s ease-in-out infinite;
+}
+
+/* 404 Collection Button */
+.collection-btn {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.collection-btn:hover {
+    border-color: #C9A96E;
+    background-color: rgba(201, 169, 110, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Category Tab Active */
+.tab-btn {
+    position: relative;
+    transition: all 0.3s ease;
+}
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #C9A96E, #8A6A1E);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.tab-btn.active::after {
+    width: 60%;
+}
+.tab-btn.active {
+    color: #8A6A1E;
+    background-color: rgba(201, 169, 110, 0.08);
+}
+
+/* Search Input Focus */
+.search-input:focus {
+    border-color: #C9A96E;
+    box-shadow: 0 0 0 4px rgba(201, 169, 110, 0.15);
+}
+
+/* FAQ item hidden by search */
+.faq-item.hidden-by-search {
+    display: none;
+}
+
+/* Category section hidden by tab */
+.faq-category.hidden-by-tab {
+    display: none;
+}
+
+/* No results message */
+.no-results {
+    display: none;
+}
+.no-results.visible {
+    display: block;
+}
+
+/* Breadcrumb separator */
+.breadcrumb-sep {
+    color: rgba(255, 255, 255, 0.7);
+}
