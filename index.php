@@ -182,81 +182,121 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
         <!-- HERO SECTION -->
         <!-- ============================================ -->
         <!-- ============================================ -->
-        <!-- HERO SECTION (Option 1: Modern Luxury Glassmorphism) -->
+        <!-- HERO SECTION (Option 2: Cinematic Vignette Split Layout) -->
         <!-- ============================================ -->
-        <section id="hero" class="relative min-h-[90vh] lg:min-h-[94vh] flex items-center overflow-hidden">
-            <!-- Background Image -->
+        <section id="hero" class="relative min-h-[92vh] lg:min-h-[96vh] flex items-center overflow-hidden">
+            <!-- Background Image with Cinematic Split Vignette -->
             <div class="absolute inset-0">
                 <picture class="block w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
                     <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
-                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="480" height="360" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover object-center lg:object-right" width="480" height="360" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
-                <div class="hero-overlay absolute inset-0"></div>
+                <!-- Dual Cinematic Gradient Overlay -->
+                <div class="hero-overlay-v2 absolute inset-0"></div>
             </div>
 
-            <!-- Hero Content Container -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full">
-                <!-- Luxury Glassmorphic Card -->
-                <div class="max-w-2xl bg-black/45 backdrop-blur-xl rounded-3xl p-6 sm:p-8 lg:p-10 border border-white/15 shadow-2xl ring-1 ring-white/10">
-                    <!-- Rating / Social Proof Badge -->
-                    <div class="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md text-amber-200 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-6 border border-gold/30 shadow-inner">
-                        <div class="flex text-gold text-xs gap-0.5">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            <!-- Hero Content: Split Layout -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <!-- Left Column: Typography & CTAs (7 Cols) -->
+                    <div class="lg:col-span-7 max-w-2xl">
+                        <!-- Top Social Proof Pill -->
+                        <div class="inline-flex items-center gap-2.5 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-lg shadow-black/30">
+                            <span class="flex text-gold text-xs gap-0.5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="w-1 h-1 rounded-full bg-gold/60"></span>
+                            <span class="text-white font-medium">4.9/5 Rating (1,000+ Reviews)</span>
                         </div>
-                        <span class="text-white/95 font-medium">Rated 4.9/5 by 1,000+ Happy Homes</span>
-                    </div>
 
-                    <!-- H1 Heading with shimmering gold accent -->
-                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-5 tracking-tight">
-                        Modern & Luxury <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
-                        in Pakistan
-                    </h1>
+                        <!-- H1 Heading -->
+                        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-md">
+                            Modern & Luxury <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
+                            in Pakistan
+                        </h1>
 
-                    <!-- Sub-headline with keywords -->
-                    <p class="text-base sm:text-lg text-gray-200 leading-relaxed mb-8 max-w-xl font-normal">
-                        Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
-                    </p>
+                        <!-- Sub-headline -->
+                        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed mb-6 font-normal drop-shadow">
+                            Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
+                        </p>
 
-                    <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
-                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-gold/20 hover:shadow-xl hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
-                            <i class="fas fa-couch text-charcoal-dark"></i>
-                            <span>Explore Designs</span>
-                            <i class="fas fa-arrow-right text-xs"></i>
-                        </a>
-                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 hover:border-gold/50 text-white font-semibold text-base px-7 py-4 rounded-xl transition-all duration-300">
-                            <i class="fas fa-tags text-gold"></i>
-                            <span>Get Latest Prices</span>
-                        </a>
-                    </div>
+                        <!-- Quick Popular Category Tags -->
+                        <div class="flex flex-wrap items-center gap-2 mb-8">
+                            <span class="text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
+                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                                🛋️ 7-Seater Sets
+                            </a>
+                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                                ✨ L-Shape Corner
+                            </a>
+                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                                👑 Chinyoti Carved
+                            </a>
+                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                                🛏️ Sofa Cum Bed
+                            </a>
+                        </div>
 
-                    <!-- Trust Signals (3 Glass Micro-Cards) -->
-                    <div class="grid grid-cols-3 gap-1.5 sm:gap-3 pt-5 sm:pt-6 border-t border-white/15">
-                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
-                            <i class="fas fa-truck-fast text-gold text-sm sm:text-lg flex-shrink-0"></i>
-                            <div class="text-left min-w-0">
-                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">Free Delivery</div>
-                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">All Pakistan</div>
+                        <!-- CTA Button Group -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+                            <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 btn-shine">
+                                <i class="fas fa-couch text-charcoal-dark text-lg"></i>
+                                <span>Explore 2026 Designs</span>
+                                <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                            <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-7 py-4 rounded-xl transition-all duration-300 shadow-lg">
+                                <i class="fas fa-tags text-gold"></i>
+                                <span>Get Factory Prices</span>
+                            </a>
+                        </div>
+
+                        <!-- Horizontal Trust Signals Bar -->
+                        <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-6 border-t border-white/15 text-white/90 text-xs sm:text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>Free Delivery PK</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>2-Year Warranty</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>100% Solid Sheesham</span>
                             </div>
                         </div>
-                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
-                            <i class="fas fa-shield-alt text-gold text-sm sm:text-lg flex-shrink-0"></i>
-                            <div class="text-left min-w-0">
-                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">2-Yr Warranty</div>
-                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">Wood & Foam</div>
+                    </div>
+
+                    <!-- Right Column: Floating Feature Card on Desktop (5 Cols) -->
+                    <div class="hidden lg:flex lg:col-span-5 justify-end">
+                        <div class="bg-black/55 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-2xl max-w-sm text-white transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 flex items-center justify-center text-gold text-lg">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Direct Factory Rate</div>
+                                    <div class="text-sm font-semibold">Gujrat Craftsmen</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center gap-1.5 sm:gap-2.5 bg-white/5 rounded-xl px-2 py-2 sm:px-3 sm:py-2.5 border border-white/5">
-                            <i class="fas fa-rotate-left text-gold text-sm sm:text-lg flex-shrink-0"></i>
-                            <div class="text-left min-w-0">
-                                <div class="text-[11px] sm:text-xs font-semibold text-white truncate">Easy Returns</div>
-                                <div class="text-[9px] sm:text-[10px] text-gray-300 hidden sm:block truncate">Guaranteed</div>
+                            <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                                Handcrafted by master artisans with 15+ years experience. Custom fabric, size & color options available.
+                            </p>
+                            <div class="flex items-center justify-between text-xs pt-3 border-t border-white/15 text-gold-light font-medium">
+                                <span>Starting from PKR 30,000</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>

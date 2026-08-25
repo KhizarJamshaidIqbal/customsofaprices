@@ -131,6 +131,12 @@
                 linear-gradient(180deg, rgba(15, 15, 15, 0.45) 0%, transparent 40%, rgba(15, 15, 15, 0.65) 100%);
 }
 
+/* Hero Overlay V2 - Cinematic Vignette Split Layout */
+.hero-overlay-v2 {
+    background: linear-gradient(90deg, rgba(10, 10, 10, 0.90) 0%, rgba(12, 12, 12, 0.82) 42%, rgba(20, 20, 20, 0.35) 75%, rgba(10, 10, 10, 0.08) 100%),
+                linear-gradient(180deg, rgba(10, 10, 10, 0.50) 0%, transparent 40%, rgba(10, 10, 10, 0.70) 100%);
+}
+
 /* Subtle Card Hover */
 .card-hover {
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
