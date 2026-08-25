@@ -187,7 +187,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <picture class="block w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
                     <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
-                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="420" height="420" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="400" height="340" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
