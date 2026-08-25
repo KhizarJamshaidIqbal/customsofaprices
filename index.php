@@ -196,108 +196,83 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <div class="hero-overlay-v2 absolute inset-0"></div>
             </div>
 
-            <!-- Hero Content: Split Layout -->
+            <!-- Hero Content -->
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
-                <div class="grid lg:grid-cols-12 gap-8 items-center">
-                    <!-- Left Column: Typography & CTAs (7 Cols) -->
-                    <div class="lg:col-span-7 max-w-2xl">
-                        <!-- Top Social Proof Pill -->
-                        <div class="inline-flex items-center gap-2.5 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-lg shadow-black/30">
-                            <span class="flex text-gold text-xs gap-0.5">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <span class="w-1 h-1 rounded-full bg-gold/60"></span>
-                            <span class="text-white font-medium">4.9/5 Rating (1,000+ Reviews)</span>
-                        </div>
-
-                        <!-- H1 Heading -->
-                        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-md">
-                            Modern & Luxury <br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
-                            in Pakistan
-                        </h1>
-
-                        <!-- Sub-headline -->
-                        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed mb-6 font-normal drop-shadow">
-                            Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
-                        </p>
-
-                        <!-- Quick Popular Category Tags -->
-                        <div class="flex flex-wrap items-center gap-2 mb-8">
-                            <span class="text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
-                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                                🛋️ 7-Seater Sets
-                            </a>
-                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                                ✨ L-Shape Corner
-                            </a>
-                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                                👑 Chinyoti Carved
-                            </a>
-                            <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                                🛏️ Sofa Cum Bed
-                            </a>
-                        </div>
-
-                        <!-- CTA Button Group -->
-                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
-                            <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 btn-shine">
-                                <i class="fas fa-couch text-charcoal-dark text-lg"></i>
-                                <span>Explore 2026 Designs</span>
-                                <i class="fas fa-arrow-right text-xs"></i>
-                            </a>
-                            <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-7 py-4 rounded-xl transition-all duration-300 shadow-lg">
-                                <i class="fas fa-tags text-gold"></i>
-                                <span>Get Factory Prices</span>
-                            </a>
-                        </div>
-
-                        <!-- Horizontal Trust Signals Bar -->
-                        <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-6 border-t border-white/15 text-white/90 text-xs sm:text-sm">
-                            <div class="flex items-center gap-2">
-                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span>Free Delivery PK</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span>2-Year Warranty</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span>100% Solid Sheesham</span>
-                            </div>
-                        </div>
+                <div class="max-w-2xl lg:max-w-3xl">
+                    <!-- Top Social Proof Pill -->
+                    <div class="inline-flex items-center gap-2.5 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-lg shadow-black/30">
+                        <span class="flex text-gold text-xs gap-0.5">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="w-1 h-1 rounded-full bg-gold/60"></span>
+                        <span class="text-white font-medium">4.9/5 Rating (1,000+ Reviews)</span>
                     </div>
 
-                    <!-- Right Column: Floating Feature Card on Desktop (5 Cols) -->
-                    <div class="hidden lg:flex lg:col-span-5 justify-end">
-                        <div class="bg-black/55 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-2xl max-w-sm text-white transform hover:scale-105 transition-transform duration-300">
-                            <div class="flex items-center gap-3 mb-3">
-                                <div class="w-10 h-10 rounded-xl bg-gold/20 flex items-center justify-center text-gold text-lg">
-                                    <i class="fas fa-award"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs uppercase tracking-wider text-gold font-bold">Direct Factory Rate</div>
-                                    <div class="text-sm font-semibold">Gujrat Craftsmen</div>
-                                </div>
-                            </div>
-                            <p class="text-xs text-gray-300 leading-relaxed mb-4">
-                                Handcrafted by master artisans with 15+ years experience. Custom fabric, size & color options available.
-                            </p>
-                            <div class="flex items-center justify-between text-xs pt-3 border-t border-white/15 text-gold-light font-medium">
-                                <span>Starting from PKR 30,000</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
+                    <!-- H1 Heading -->
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight drop-shadow-md">
+                        Modern & Luxury <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
+                        in Pakistan
+                    </h1>
+
+                    <!-- Sub-headline -->
+                    <p class="text-lg sm:text-xl text-gray-200 leading-relaxed mb-6 font-normal drop-shadow max-w-2xl">
+                        Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
+                    </p>
+
+                    <!-- Quick Popular Category Tags -->
+                    <div class="flex flex-wrap items-center gap-2 mb-8">
+                        <span class="text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                            🛋️ 7-Seater Sets
+                        </a>
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                            ✨ L-Shape Corner
+                        </a>
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                            👑 Chinyoti Carved
+                        </a>
+                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                            🛏️ Sofa Cum Bed
+                        </a>
+                    </div>
+
+                    <!-- CTA Button Group -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 btn-shine">
+                            <i class="fas fa-couch text-charcoal-dark text-lg"></i>
+                            <span>Explore 2026 Designs</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2.5 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-base px-7 py-4 rounded-xl transition-all duration-300 shadow-lg">
+                            <i class="fas fa-tags text-gold"></i>
+                            <span>Get Factory Prices</span>
+                        </a>
+                    </div>
+
+                    <!-- Horizontal Trust Signals Bar -->
+                    <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-6 border-t border-white/15 text-white/90 text-xs sm:text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>Free Delivery PK</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>2-Year Warranty</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-gold/20 flex items-center justify-center text-gold text-xs">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span>100% Solid Sheesham</span>
                         </div>
                     </div>
                 </div>
