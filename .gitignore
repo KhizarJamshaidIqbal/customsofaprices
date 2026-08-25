@@ -18,3 +18,9 @@ admin/data/*.json
 
 # CEM webhook secrets (created manually on server, never committed)
 inc/.env
+
+# Node
+node_modules/
+package.json
+package-lock.json
+

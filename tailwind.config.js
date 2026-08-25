@@ -2,8 +2,9 @@
 module.exports = {
   content: [
     './*.php',
-    './data/*.php',
-    './embed/*.php'
+    './data/**/*.php',
+    './embed/**/*.{php,html}',
+    './inc/**/*.php'
   ],
   theme: {
     extend: {
