@@ -38,12 +38,11 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <link rel="icon" type="image/webp" href="images/favicon.webp">
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
-    <!-- Preload Critical CSS and Hero Image for Fast LCP -->
-    <link rel="preload" as="style" href="css/style.min.css">
+    <!-- Preload Hero Image for Fast LCP -->
     <link rel="preload" as="image" href="images/hero-banner.webp" fetchpriority="high">
 
-    <!-- Compiled Production CSS (Zero JS Rendering Delay) -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
+    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">

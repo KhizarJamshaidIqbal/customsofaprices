@@ -574,11 +574,8 @@ if ($mode === 'listing') {
     <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($metaDesc, ENT_QUOTES) ?>">
 
-    <!-- Preload Critical CSS -->
-    <link rel="preload" as="style" href="css/style.min.css">
-
-    <!-- Compiled Production CSS (Zero JS Rendering Delay) -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
+    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
 
     <!-- Agentic & Machine Manifests -->
     <link rel="alternate" type="application/ld+json" href="knowledge-graph.jsonld">

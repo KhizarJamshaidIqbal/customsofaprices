@@ -66,7 +66,14 @@
         "@type": "Country",
         "name": "Pakistan"
       },
-      "hasMap": "https://share.google/vWTLTD6slemi5nnGT"
+      "hasMap": "https://share.google/vWTLTD6slemi5nnGT",
+      "potentialAction": [
+        {
+          "@type": "CommunicateAction",
+          "name": "Direct WhatsApp Sofa Consultation",
+          "target": "https://wa.me/923007131249"
+        }
+      ]
     },
     {
       "@type": "WebSite",
@@ -75,7 +82,17 @@
       "name": "Custom Sofa Prices Pakistan",
       "publisher": {
         "@id": "https://cutomsofaprices.com/#organization"
-      }
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://cutomsofaprices.com/collection.php?id={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
     }
   ]
 }
