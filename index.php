@@ -29,8 +29,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <link rel="apple-touch-icon" href="images/favicon.webp">
 
     <!-- Preload Hero Image for Fast LCP (Responsive) -->
-    <link rel="preload" as="image" href="images/hero-banner-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
-    <link rel="preload" as="image" href="images/hero-banner.webp" media="(min-width: 769px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-banner-mobile.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-banner.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
 
     <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
     <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
@@ -51,10 +51,14 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <meta name="twitter:description" content="Shop luxury sofa sets at best prices. 7 seater, L-shape, Chesterfield & more.">
     <meta name="twitter:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
 
-    <!-- Google Fonts (Swap enabled) -->
+    <!-- Google Fonts (Non-blocking async) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap">
+    </noscript>
 
     <!-- FontAwesome CDN (Non-blocking async) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
@@ -194,7 +198,8 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
             <div class="absolute inset-0">
                 <picture class="w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
-                    <img src="images/hero-banner.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="1024" height="1024" fetchpriority="high" loading="eager" decoding="async">
+                    <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="640" height="640" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
@@ -1601,6 +1606,7 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
     <style>
     html body .rc-fab, html body button.rc-fab {
         background-color: #1a1a1a !important;
+        background: #1a1a1a !important;
         color: #ffffff !important;
         border: 2px solid #C9A96E !important;
     }
@@ -1609,6 +1615,22 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         fill: #ffffff !important;
     }
     </style>
+    <script>
+    (function() {
+        function fixContrast() {
+            var els = document.querySelectorAll('.rc-fab, button.rc-fab');
+            els.forEach(function(el) {
+                el.style.setProperty('background', '#1a1a1a', 'important');
+                el.style.setProperty('background-color', '#1a1a1a', 'important');
+                el.style.setProperty('color', '#ffffff', 'important');
+            });
+        }
+        var obs = new MutationObserver(fixContrast);
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+        window.addEventListener('DOMContentLoaded', fixContrast);
+        window.addEventListener('load', fixContrast);
+    })();
+    </script>
 
     <!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
     <script defer src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
