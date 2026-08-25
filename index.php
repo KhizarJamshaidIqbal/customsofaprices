@@ -187,7 +187,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <picture class="block w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
                     <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
-                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="480" height="480" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover" width="420" height="420" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
                 <div class="hero-overlay absolute inset-0"></div>
             </div>
@@ -279,7 +279,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-lshape">
                         <a href="collection.php?id=lshape" class="block h-full" aria-label="View L-Shape & Corner Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/lshape-sofa.webp" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/lshape-sofa.webp" alt="Modern L shape sofa design in cream fabric for living room - L shape sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-gold/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Trending
                                 </div>
@@ -303,7 +303,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-chinyoti" style="transition-delay: 0.1s;">
                         <a href="collection.php?id=chinyoti" class="block h-full" aria-label="View Chinyoti & Chesterfield Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/chesterfield-sofa.webp" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/chesterfield-sofa.webp" alt="Classic Chesterfield sofa design in tufted brown leather - Chinyoti sofa set price and Chesterfield sofa design" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-charcoal/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Classic
                                 </div>
@@ -327,7 +327,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-velvet" style="transition-delay: 0.2s;">
                         <a href="collection.php?id=velvet" class="block h-full" aria-label="View Velvet & Leather Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/velvet-sofa.webp" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/velvet-sofa.webp" alt="Luxury velvet sofa set design in royal navy blue with gold legs - Velvet sofa set design for modern living room" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-purple-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Luxury
                                 </div>
@@ -351,7 +351,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-wooden">
                         <a href="collection.php?id=wooden" class="block h-full" aria-label="View Wooden Sofa Frames Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/wooden-sofa.webp" alt="Pakistani Chinyoti style wooden sofa with carved Sheesham frame - Lakri ka sofa design with premium poshish" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-amber-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Handcrafted
                                 </div>
@@ -375,7 +375,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-turkish" style="transition-delay: 0.1s;">
                         <a href="collection.php?id=turkish" class="block h-full" aria-label="View Turkish Sofa Sets Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/turkish-sofa.webp" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/turkish-sofa.webp" alt="Ornate Turkish style sofa set in gold and cream upholstery - Turkish sofa design for luxury drawing rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-yellow-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Premium
                                 </div>
@@ -399,7 +399,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-victorian" style="transition-delay: 0.2s;">
                         <a href="collection.php?id=victorian" class="block h-full" aria-label="View Victorian & Classic Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/victorian-sofa.webp" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/victorian-sofa.webp" alt="Victorian style carved wooden sofa in burgundy velvet - Classic sofa design with gold leaf carving" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-rose-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Royal
                                 </div>
@@ -423,7 +423,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-modular">
                         <a href="collection.php?id=modular" class="block h-full" aria-label="View Modular & Sectional Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/modular-sofa.webp" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/modular-sofa.webp" alt="Modern modular sectional sofa in beige fabric - U-shape configurable sofa design for spacious living rooms" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-indigo-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Customizable
                                 </div>
@@ -447,7 +447,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-dewan" style="transition-delay: 0.1s;">
                         <a href="collection.php?id=dewan" class="block h-full" aria-label="View Dewan & Diwan Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/dewan-sofa.webp" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/dewan-sofa.webp" alt="Traditional Pakistani Dewan Diwan sofa in emerald green velvet - Dewan sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-emerald-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Traditional
                                 </div>
@@ -471,7 +471,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-drawingroom" style="transition-delay: 0.2s;">
                         <a href="collection.php?id=drawingroom" class="block h-full" aria-label="View Drawing Room Sofa Sets Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/drawing-room-set.webp" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/drawing-room-set.webp" alt="Complete 7 seater drawing room sofa set in cream and gold - Drawing room sofa set price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-gold-dark/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Best Seller
                                 </div>
@@ -495,7 +495,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-accent">
                         <a href="collection.php?id=accent" class="block h-full" aria-label="View Accent & Single Seater Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/accent-chair.webp" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/accent-chair.webp" alt="Elegant dusty pink accent sofa chair with gold legs - Single seater sofa chair price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-pink-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Compact
                                 </div>
@@ -519,7 +519,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-office" style="transition-delay: 0.1s;">
                         <a href="collection.php?id=office" class="block h-full" aria-label="View Office & Reception Sofas Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/office-sofa.webp" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/office-sofa.webp" alt="Modern black leather office reception sofa with chrome legs - Office sofa price in Pakistan for corporate spaces" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-slate-700/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Commercial
                                 </div>
@@ -543,7 +543,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-chaise" style="transition-delay: 0.2s;">
                         <a href="collection.php?id=chaise" class="block h-full" aria-label="View Chaise Lounge Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/chaise-lounge.webp" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/chaise-lounge.webp" alt="Elegant dusty rose velvet chaise lounge with tufted back and gold legs - Chaise lounge sofa price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-fuchsia-600/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Elegant
                                 </div>
@@ -567,7 +567,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal cursor-pointer" id="card-ottoman">
                         <a href="collection.php?id=ottoman" class="block h-full" aria-label="View Ottoman & Poufs Collection">
                             <div class="relative overflow-hidden aspect-[4/3]">
-                                <img src="images/ottoman-poufs.webp" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                                <img src="images/ottoman-poufs.webp" alt="Luxury velvet ottomans and poufs set in gold and cream with tufted buttons - Ottoman pouf price in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                                 <div class="absolute top-4 left-4 bg-amber-500/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                     Accessory
                                 </div>
@@ -617,7 +617,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 1: Living Room Complete Set -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-living">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-living-room.webp" alt="Complete living room sofa package with 7-seater sofa set, center table and side tables - Best sofa combo deal in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-living-room.webp" alt="Complete living room sofa package with 7-seater sofa set, center table and side tables - Best sofa combo deal in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
@@ -647,7 +647,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 2: Drawing Room Royal Package -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-drawing" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-drawing-room.webp" alt="Royal drawing room package with Chesterfield sofa, marble coffee table and ottoman - Premium sofa combo in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-drawing-room.webp" alt="Royal drawing room package with Chesterfield sofa, marble coffee table and ottoman - Premium sofa combo in Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
@@ -677,7 +677,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 3: TV Lounge Comfort Pack -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-tvlounge" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-tv-lounge.webp" alt="TV lounge package with L-shape sofa, TV console and decorative cushions - Sofa package deal for TV lounge" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-tv-lounge.webp" alt="TV lounge package with L-shape sofa, TV console and decorative cushions - Sofa package deal for TV lounge" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 20%
                             </div>
@@ -707,7 +707,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 4: Luxury Lounge Bundle -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-luxury">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-luxury-lounge.webp" alt="Luxury lounge bundle with Turkish 7-seater sofa, carved center table and Persian rug - Premium sofa package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-luxury-lounge.webp" alt="Luxury lounge bundle with Turkish 7-seater sofa, carved center table and Persian rug - Premium sofa package Pakistan" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-amber-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-crown mr-1"></i> Premium
                             </div>
@@ -736,7 +736,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 5: Modern Minimal Set -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-minimal" style="transition-delay: 0.1s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-modern-minimal.webp" alt="Modern minimalist sofa set with modular sofa and glass coffee table - Contemporary sofa package deal" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-modern-minimal.webp" alt="Modern minimalist sofa set with modular sofa and glass coffee table - Contemporary sofa package deal" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-green-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-tag mr-1"></i> Save 25%
                             </div>
@@ -766,7 +766,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Package 6: Wedding Sofa Package -->
                     <article class="group card-hover bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden reveal" id="pkg-wedding" style="transition-delay: 0.2s;">
                         <div class="relative overflow-hidden aspect-[4/3]">
-                            <img src="images/combo-wedding.webp" alt="Premium Pakistani wedding sofa package with ornate carved golden sofa set and center table - Shaadi furniture package" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy">
+                            <img src="images/combo-wedding.webp" alt="Premium Pakistani wedding sofa package with ornate carved golden sofa set and center table - Shaadi furniture package" class="w-full h-full object-cover img-zoom" width="600" height="450" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-rose-600/90 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg backdrop-blur-sm">
                                 <i class="fas fa-heart mr-1"></i> Wedding
                             </div>
