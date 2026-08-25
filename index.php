@@ -1615,33 +1615,41 @@ $F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
         fill: #ffffff !important;
     }
     </style>
+
+    <!-- Lazy Load Non-Critical Third Party Scripts (RoomCanvas & Analytics) -->
     <script>
     (function() {
-        function fixContrast() {
-            var els = document.querySelectorAll('.rc-fab, button.rc-fab');
-            els.forEach(function(el) {
-                el.style.setProperty('background', '#1a1a1a', 'important');
-                el.style.setProperty('background-color', '#1a1a1a', 'important');
-                el.style.setProperty('color', '#ffffff', 'important');
+        var thirdPartyLoaded = false;
+        function loadThirdParty() {
+            if (thirdPartyLoaded) return;
+            thirdPartyLoaded = true;
+            ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(e) {
+                window.removeEventListener(e, loadThirdParty, { passive: true });
             });
+
+            // 1. Google Analytics
+            var g = document.createElement('script');
+            g.async = true;
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-4TCQG0L7EQ';
+            document.head.appendChild(g);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4TCQG0L7EQ');
+
+            // 2. RoomCanvas Widget
+            var rc = document.createElement('script');
+            rc.async = true;
+            rc.src = 'https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js';
+            rc.setAttribute('data-rc-key', 'rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5');
+            document.body.appendChild(rc);
         }
-        var obs = new MutationObserver(fixContrast);
-        obs.observe(document.documentElement, { childList: true, subtree: true });
-        window.addEventListener('DOMContentLoaded', fixContrast);
-        window.addEventListener('load', fixContrast);
+
+        ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(e) {
+            window.addEventListener(e, loadThirdParty, { passive: true, once: true });
+        });
+        setTimeout(loadThirdParty, 4000);
     })();
-    </script>
-
-    <!-- RoomCanvas — "Try in your place" AI sofa visualizer -->
-    <script defer src="https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js" data-rc-key="rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5"></script>
-
-    <!-- Google tag (gtag.js) — Non-blocking Deferred -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TCQG0L7EQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4TCQG0L7EQ');
     </script>
 </body>
 </html>
