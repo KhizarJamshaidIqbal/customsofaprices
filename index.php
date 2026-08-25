@@ -1632,6 +1632,12 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             rc.src = 'https://roomcanvas-worker.epsoldev.workers.dev/rc/widget.js';
             rc.setAttribute('data-rc-key', 'rcpk_02ad3bf359949d9d4ca57d5eaab1ffa5');
             document.body.appendChild(rc);
+
+            // 3. FontAwesome Icons
+            var fa = document.createElement('link');
+            fa.rel = 'stylesheet';
+            fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+            document.head.appendChild(fa);
         }
 
         ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(e) {
@@ -1639,12 +1645,6 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
         });
     })();
     </script>
-
-    <!-- FontAwesome CDN (Non-blocking async) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </noscript>
 </body>
 </html>
 
