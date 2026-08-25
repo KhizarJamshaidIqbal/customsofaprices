@@ -1,8 +1,7 @@
 <?php
 require __DIR__ . '/embed/lib.php';
-$cd = embed_load();
-$H = embed_sanitize($cd['header_html'], (bool)$cd['allow_scripts']);
-$F = embed_sanitize($cd['footer_html'], (bool)$cd['allow_scripts']);
+$H = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/header.html'), false);
+$F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), false);
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
