@@ -50,8 +50,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
     <meta name="twitter:description" content="Shop luxury sofa sets at best prices. 7 seater, L-shape, Chesterfield & more.">
     <meta name="twitter:image" content="https://cutomsofaprices.com/images/hero-banner.webp">
 
-    <!-- Preconnect to Font Origin for Fast WOFF2 Streaming -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
 
 
