@@ -18,12 +18,12 @@ $tables = [
         'retail_compare' => 'PKR 62,000',
         'dimensions' => '48" L × 24" W × 18" H',
         'wood' => 'Solid Hardwood & Piano Lacquer',
-        'glass' => '8mm Clear Tempered Glass',
-        'storage' => 'Gold Soft Drawer + Display Niche',
+        'glass' => '8mm Bevelled Clear Tempered Glass',
+        'storage' => 'Gold Soft Drawer + Niche',
         'description' => 'Antique gold brass platform with black Greek-key border and filigree center medallion under clear tempered glass, paired with high-gloss piano black cabinet.',
         'features' => [
-            'Antique gold deck with black Greek-key meander border',
-            'Clear shatter-resistant tempered glass with center medallion',
+            'Antique gold deck with black Greek-key border',
+            'Clear shatter-resistant tempered glass medallion',
             'Storage drawer with antique gold front & custom handle'
         ],
         'whatsapp_msg' => 'Hi, I want to order the Greek-Key Gold & Black Center Table (PKR 38,000) shown on your website. Please share delivery timeline and details.'
@@ -70,7 +70,7 @@ $tables = [
         'storage' => 'Concealed Center Drawer with Black Face',
         'description' => 'Sculptural boat-prism coffee table with bold chamfered geometric angles in rich dark walnut, an all-around floating shadow reveal channel, and smoked glass top.',
         'features' => [
-            'Chamfered faceted geometric angled body in seasoned walnut',
+            'Chamfered faceted geometric angled body in walnut',
             'Flush reflective dark smoked tempered glass top',
             'Continuous shadow reveal channel creating a floating look'
         ],
@@ -103,7 +103,7 @@ $tables = [
     [
         'id' => 'dual-tone-table',
         'category' => 'glass',
-        'title' => 'Dual-Tone Architectural Coffee Table',
+        'title' => 'Dual-Tone Architectural Table',
         'subtitle' => 'Multi-Storage Centerpiece with Black Glass, Teak Frame & Chrome Accents',
         'badge' => 'Smart Storage',
         'badge_color' => 'bg-slate-800 text-white',
@@ -118,11 +118,35 @@ $tables = [
         'storage' => 'Side Cupboard + Pull-Out Drawer + Shelf',
         'description' => 'Contemporary coffee table with high-gloss black tempered glass, warm teak wood partitions, enclosed side cupboard, drawer, open shelf, and chrome cylinder feet.',
         'features' => [
-            'Reflective glossy black tempered glass top with radius corners',
+            'Reflective black tempered glass top with radius corners',
             'Enclosed side cupboard with round polished chrome knob',
             'Deep drawer + open middle shelf for books and remotes'
         ],
         'whatsapp_msg' => 'Hi, I want to order the Dual-Tone Architectural Coffee Table (PKR 36,000) shown on your website. Please share delivery timeline and details.'
+    ],
+    [
+        'id' => 'custom-table-order',
+        'category' => 'custom',
+        'title' => 'Bespoke Custom Table Order',
+        'subtitle' => 'Craft Any Pinterest or Instagram Design with Factory Precision',
+        'badge' => 'Made to Order',
+        'badge_color' => 'bg-gold-dark text-white',
+        'badge_icon' => 'fa-pencil-ruler',
+        'image' => 'images/workshop/center-tables.webp',
+        'price_num' => 35000,
+        'price_text' => 'Factory Quote',
+        'retail_compare' => 'Save 40%',
+        'dimensions' => 'Customized to Your Space',
+        'wood' => 'Walnut, Teak, Ash, Oak or Lacquer',
+        'glass' => 'Clear, Smoked, Bronze, or Marble',
+        'storage' => 'Built Exactly to Your Needs',
+        'description' => 'Have a photo of a center table you love? Share the photo and measurements with our master carpenters in Gujrat for an instant direct-from-workshop quote.',
+        'features' => [
+            '100% custom dimensions matching your sofa set',
+            'Choice of solid hardwoods, polish shades & metal trims',
+            'Free design consultation and 3D proportion guidance'
+        ],
+        'whatsapp_msg' => 'Hi, I have a photo of a center table I want to get custom made. Please guide me on pricing and dimensions.'
     ]
 ];
 ?>
@@ -174,7 +198,7 @@ $tables = [
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.min.css">
 
-    <!-- Bulletproof Scoped Responsive CSS for 3-Column Cards Grid -->
+    <!-- Pixel-by-Pixel Bulletproof Responsive Styling -->
     <style>
         :root {
             --gold-primary: #c9a96e;
@@ -185,6 +209,11 @@ $tables = [
             --cream: #fafaf6;
             --whatsapp-green: #25D366;
             --whatsapp-dark: #1ea952;
+        }
+
+        /* Anchor scroll offset for sticky header */
+        article[id] {
+            scroll-margin-top: 105px;
         }
 
         /* Container */
@@ -214,6 +243,7 @@ $tables = [
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
+            align-items: stretch;
         }
         @media (min-width: 640px) {
             .three-cards-grid {
@@ -228,7 +258,7 @@ $tables = [
             }
         }
 
-        /* Individual Card Box */
+        /* Vertical Card Box */
         .table-vertical-card {
             background: #ffffff;
             border-radius: 1.25rem;
@@ -238,20 +268,20 @@ $tables = [
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
             height: 100%;
         }
         .table-vertical-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-5px);
             box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.12);
             border-color: rgba(201, 169, 110, 0.6);
         }
 
-        /* Image Box */
+        /* Image Box with perfect aspect ratio and focal centering */
         .table-card-img-box {
             position: relative;
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 16 / 11;
             background-color: #f3f4f6;
             overflow: hidden;
             cursor: pointer;
@@ -260,7 +290,7 @@ $tables = [
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            object-position: center 35%;
             transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             display: block;
         }
@@ -270,55 +300,124 @@ $tables = [
 
         /* Card Content Area */
         .table-card-body {
-            padding: 1.25rem 1.5rem 1.5rem;
+            padding: 1.25rem 1.25rem 1.5rem;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             justify-content: space-between;
         }
-
-        /* Spec Badges Matrix */
-        .compact-spec-matrix {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.375rem;
-            margin-top: 0.75rem;
-            margin-bottom: 0.875rem;
+        @media (min-width: 640px) {
+            .table-card-body {
+                padding: 1.35rem 1.35rem 1.5rem;
+            }
         }
-        .compact-spec-chip {
-            background: #fbfbf9;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            border-radius: 0.625rem;
-            padding: 0.45rem 0.55rem;
-            font-size: 0.75rem;
-            line-height: 1.25;
+
+        /* Typography consistency across rows */
+        .table-card-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.2rem;
+            line-height: 1.35;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+            min-height: 3.1rem;
             display: flex;
             align-items: flex-start;
-            gap: 0.375rem;
         }
-        .compact-spec-chip i {
+        @media (min-width: 640px) {
+            .table-card-title {
+                font-size: 1.25rem;
+            }
+        }
+
+        .table-card-subtitle {
             color: var(--gold-dark);
-            margin-top: 0.12rem;
-            flex-shrink: 0;
             font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 1.35;
+            margin-bottom: 0.5rem;
+            min-height: 2.1rem;
+            display: flex;
+            align-items: flex-start;
         }
-        .compact-spec-chip div {
-            min-width: 0;
+
+        .table-card-desc {
+            color: #4b5563;
+            font-size: 0.8125rem;
+            line-height: 1.45;
+            margin-bottom: 0.75rem;
+            min-height: 3.6rem;
         }
-        .compact-spec-chip strong {
-            display: block;
-            font-size: 0.625rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            color: #888888;
+
+        /* Clean Luxury Key-Value Specs List (Zero Truncation) */
+        .card-specs-list {
+            background: #fbfbf9;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 0.75rem;
+            padding: 0.625rem 0.875rem;
+            margin: 0.75rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
         }
-        .compact-spec-chip span {
-            display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #374151;
+        .spec-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            line-height: 1.35;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
+            padding-bottom: 0.35rem;
+        }
+        .spec-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .spec-label {
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
             font-weight: 500;
+            flex-shrink: 0;
+        }
+        .spec-label i {
+            color: var(--gold-dark);
+            font-size: 0.75rem;
+            width: 14px;
+            text-align: center;
+        }
+        .spec-val {
+            font-weight: 600;
+            color: #1f2937;
+            text-align: right;
+            word-break: break-word;
+        }
+
+        /* Feature Bullet Points */
+        .card-features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            min-height: 4.8rem;
+        }
+        .card-features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            color: #4b5563;
+            line-height: 1.35;
+        }
+        .card-features-list li i {
+            color: var(--gold-primary);
+            font-size: 0.6875rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
         }
 
         /* Buttons */
@@ -391,7 +490,7 @@ $tables = [
             object-fit: contain;
         }
 
-        /* Sticky Mobile WhatsApp Bar */
+        /* Sticky Mobile WhatsApp Bar with Safe Area Inset */
         @media (max-width: 767px) {
             .mobile-bottom-bar {
                 position: fixed;
@@ -399,17 +498,17 @@ $tables = [
                 left: 0;
                 right: 0;
                 z-index: 45;
-                background: rgba(255, 255, 255, 0.95);
+                background: rgba(255, 255, 255, 0.96);
                 backdrop-filter: blur(12px);
                 border-top: 1px solid rgba(0, 0, 0, 0.08);
-                padding: 0.625rem 1rem;
+                padding: 0.625rem 1rem max(0.625rem, env(safe-area-inset-bottom));
                 display: flex;
                 align-items: center;
                 gap: 0.75rem;
                 box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
             }
             body {
-                padding-bottom: 70px;
+                padding-bottom: 75px;
             }
         }
         @media (min-width: 768px) {
@@ -564,30 +663,31 @@ $tables = [
                         Master Center Tables Collection
                     </h2>
                     <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                        Every model below is crafted in our Gujrat workshop on regular order. Click any table photo to inspect full details, or click Order on WhatsApp to inquire.
+                        Crafted in our Gujrat workshop on regular order. Click any photo to inspect full details, or click Order on WhatsApp to inquire.
                     </p>
                 </div>
 
                 <!-- Interactive Filter Tabs -->
                 <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                    <button type="button" class="table-filter-btn active" data-filter="all">All Models (5)</button>
+                    <button type="button" class="table-filter-btn active" data-filter="all">All Tables (6)</button>
                     <button type="button" class="table-filter-btn" data-filter="walnut">Solid Walnut &amp; Wood</button>
                     <button type="button" class="table-filter-btn" data-filter="glass">Tempered Glass &amp; Smoked</button>
                     <button type="button" class="table-filter-btn" data-filter="gold">Royal Gold &amp; Brass</button>
+                    <button type="button" class="table-filter-btn" data-filter="custom">Custom Order</button>
                 </div>
 
-                <!-- 3-Columns Grid on Desktop -->
+                <!-- 3-Columns Grid on Desktop (3x2 = 6 Cards Symmetrical Layout) -->
                 <div id="table-cards-list" class="three-cards-grid">
                     <?php foreach ($tables as $idx => $t): ?>
                     <article id="<?= htmlspecialchars($t['id']) ?>" 
                              class="table-vertical-card" 
                              data-category="<?= htmlspecialchars($t['category']) ?>">
                         
-                        <!-- Top Image Box (4:3 ratio) -->
+                        <!-- Top Image Box (16:11 ratio with focal centering) -->
                         <div class="table-card-img-box group" onclick="openLightbox('<?= htmlspecialchars($t['image']) ?>', '<?= htmlspecialchars(addslashes($t['title'])) ?>')">
                             <img src="<?= htmlspecialchars($t['image']) ?>"
                                  alt="<?= htmlspecialchars($t['title']) ?> — Bespoke Center Table Pakistan"
-                                 loading="lazy" width="800" height="600">
+                                 loading="lazy" width="800" height="550">
                             
                             <!-- Floating Badge -->
                             <span class="absolute top-3 left-3 <?= htmlspecialchars($t['badge_color']) ?> text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 z-10">
@@ -614,65 +714,53 @@ $tables = [
                                     </div>
                                 </div>
 
-                                <!-- Title -->
-                                <h3 class="font-display text-lg sm:text-xl font-bold text-charcoal mb-1 leading-snug">
+                                <!-- Title (Fixed min-height for horizontal row alignment) -->
+                                <h3 class="table-card-title">
                                     <?= htmlspecialchars($t['title']) ?>
                                 </h3>
 
-                                <!-- Subtitle -->
-                                <p class="text-gold-dark text-xs font-semibold mb-2">
+                                <!-- Subtitle (Fixed min-height for horizontal row alignment) -->
+                                <p class="table-card-subtitle">
                                     <?= htmlspecialchars($t['subtitle']) ?>
                                 </p>
 
                                 <!-- Short Description -->
-                                <p class="text-gray-600 text-xs leading-relaxed mb-3">
+                                <p class="table-card-desc">
                                     <?= htmlspecialchars($t['description']) ?>
                                 </p>
 
-                                <!-- 4-Pill Compact Specs Grid -->
-                                <div class="compact-spec-matrix">
-                                    <div class="compact-spec-chip">
-                                        <i class="fas fa-ruler-combined"></i>
-                                        <div>
-                                            <strong>Size</strong>
-                                            <span><?= htmlspecialchars($t['dimensions']) ?></span>
-                                        </div>
+                                <!-- Clean Luxury Key-Value Specs List (Zero Truncation) -->
+                                <div class="card-specs-list">
+                                    <div class="spec-row">
+                                        <span class="spec-label"><i class="fas fa-ruler-combined"></i> Dimensions</span>
+                                        <span class="spec-val"><?= htmlspecialchars($t['dimensions']) ?></span>
                                     </div>
-                                    <div class="compact-spec-chip">
-                                        <i class="fas fa-tree"></i>
-                                        <div>
-                                            <strong>Core</strong>
-                                            <span><?= htmlspecialchars($t['wood']) ?></span>
-                                        </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label"><i class="fas fa-tree"></i> Material</span>
+                                        <span class="spec-val"><?= htmlspecialchars($t['wood']) ?></span>
                                     </div>
-                                    <div class="compact-spec-chip">
-                                        <i class="fas fa-shield-alt"></i>
-                                        <div>
-                                            <strong>Surface</strong>
-                                            <span><?= htmlspecialchars($t['glass']) ?></span>
-                                        </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label"><i class="fas fa-shield-alt"></i> Top Surface</span>
+                                        <span class="spec-val"><?= htmlspecialchars($t['glass']) ?></span>
                                     </div>
-                                    <div class="compact-spec-chip">
-                                        <i class="fas fa-box"></i>
-                                        <div>
-                                            <strong>Storage</strong>
-                                            <span><?= htmlspecialchars($t['storage']) ?></span>
-                                        </div>
+                                    <div class="spec-row">
+                                        <span class="spec-label"><i class="fas fa-box"></i> Storage</span>
+                                        <span class="spec-val"><?= htmlspecialchars($t['storage']) ?></span>
                                     </div>
                                 </div>
 
                                 <!-- Build Highlights Checklist -->
-                                <ul class="space-y-1 text-xs text-gray-600 mb-4 pt-1">
+                                <ul class="card-features-list">
                                     <?php foreach ($t['features'] as $f): ?>
-                                    <li class="flex items-start gap-1.5">
-                                        <i class="fas fa-check text-gold text-[10px] mt-0.5 flex-shrink-0"></i>
+                                    <li>
+                                        <i class="fas fa-check"></i>
                                         <span><?= htmlspecialchars($f) ?></span>
                                     </li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
 
-                            <!-- CTA Buttons -->
+                            <!-- Pinned Bottom CTA Buttons -->
                             <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
                                 <a href="https://wa.me/923007131249?text=<?= urlencode($t['whatsapp_msg']) ?>"
                                    class="btn-card-whatsapp"
