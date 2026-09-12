@@ -525,15 +525,70 @@ $tables = [
             body {
                 padding-bottom: 75px;
             }
-            .custom-order-banner a {
-                width: 100% !important;
-                justify-content: center;
-                text-align: center;
-            }
         }
         @media (min-width: 768px) {
             .mobile-bottom-bar {
                 display: none !important;
+            }
+        }
+
+        /* Custom Order Banner Action Buttons */
+        .banner-btn-whatsapp {
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 0.9375rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+            box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .banner-btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px -4px rgba(37, 211, 102, 0.55);
+            background: linear-gradient(135deg, #2ae06d, var(--whatsapp-green));
+            color: #ffffff !important;
+        }
+
+        .banner-btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .banner-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(201, 169, 110, 0.6);
+            transform: translateY(-2px);
+            color: #ffffff !important;
+        }
+
+        @media (max-width: 639px) {
+            .banner-cta-group {
+                width: 100%;
+            }
+            .banner-btn-whatsapp,
+            .banner-btn-secondary {
+                width: 100% !important;
+                padding: 0.85rem 1.25rem;
+                font-size: 0.875rem;
             }
         }
 
@@ -886,27 +941,44 @@ $tables = [
         <!-- Bring Your Own Design / Custom Order Banner -->
         <section class="py-12 lg:py-16 bg-cream">
             <div class="tables-grid-container">
-                <div class="bg-gradient-to-br from-charcoal-dark to-charcoal text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl custom-order-banner">
-                    <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-                    <div class="relative z-10 max-w-2xl">
-                        <span class="text-gold-light text-xs font-bold uppercase tracking-[0.2em] mb-2 block">
-                            Have a Specific Design in Mind?
+                <div class="bg-gradient-to-br from-charcoal-dark via-charcoal to-[#1a1a1a] text-white rounded-3xl p-8 sm:p-12 lg:p-14 relative overflow-hidden shadow-2xl border border-white/10 text-center max-w-4xl mx-auto">
+                    <!-- Ambient gold glow -->
+                    <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -left-20 -top-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="relative z-10 max-w-2xl mx-auto">
+                        <span class="inline-flex items-center gap-2 text-gold-light text-xs font-bold uppercase tracking-[0.2em] mb-3 bg-white/10 px-4 py-1.5 rounded-full border border-white/10 backdrop-blur-sm">
+                            <i class="fas fa-pencil-ruler text-gold"></i> Have a Specific Design in Mind?
                         </span>
-                        <h2 class="font-display text-2xl sm:text-3xl font-bold mb-3">
+
+                        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 tracking-tight text-white">
                             Send Us Any Pinterest or Instagram Table Photo
                         </h2>
-                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-6">
+
+                        <p class="text-gray-300 text-xs sm:text-sm lg:text-base leading-relaxed mb-8 max-w-xl mx-auto">
                             Seen a center table online you love? Share the photo with us. Our master carpenters in Gujrat will replicate it with your exact dimensions, wood choice, and finishes at direct factory rates.
                         </p>
-                        <div class="flex flex-wrap gap-3">
+
+                        <!-- Action Buttons: Side-by-Side on Desktop/Tablet, Full Width on Mobile -->
+                        <div class="banner-cta-group flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6">
                             <a href="https://wa.me/923007131249?text=Hi%2C%20I%20have%20a%20photo%20of%20a%20center%20table%20I%20want%20to%20get%20custom%20made.%20Can%20I%20share%20it%20for%20a%20price%20quote%3F"
-                               class="btn-card-whatsapp w-auto px-6 py-3 text-sm"
+                               class="banner-btn-whatsapp"
                                target="_blank" rel="noopener">
-                                <i class="fab fa-whatsapp text-lg"></i> Share Photo on WhatsApp
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                <span>Share Photo on WhatsApp</span>
                             </a>
-                            <a href="https://cutomsofaprices.com/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-full transition-colors border border-white/20">
-                                <i class="fas fa-map-marker-alt text-gold"></i> Visit Gujrat Workshop
+                            <a href="https://cutomsofaprices.com/contact"
+                               class="banner-btn-secondary">
+                                <i class="fas fa-map-marker-alt text-gold"></i>
+                                <span>Visit Gujrat Workshop</span>
                             </a>
+                        </div>
+
+                        <!-- Trust Points -->
+                        <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400 pt-4 border-t border-white/10">
+                            <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-gold text-xs"></i> 100% Exact Replication</span>
+                            <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-gold text-xs"></i> Direct Factory Quote</span>
+                            <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-gold text-xs"></i> Free 3D Size Consultation</span>
                         </div>
                     </div>
                 </div>
