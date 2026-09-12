@@ -394,7 +394,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                         <div class="relative aspect-[3/2] lg:aspect-auto overflow-hidden">
                             <img src="images/workshop/center-tables.webp"
-                                 alt="Bespoke Center Tables — Japandi Walnut & Dual-Tone Teak Designs — Custom Sofa Prices Pakistan"
+                                 alt="Floating Smoked Glass Coffee Table with Curved Cream Base & Gold Trim — Custom Sofa Prices Pakistan"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  loading="lazy" width="800" height="533">
                         </div>
@@ -404,14 +404,14 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                             </span>
                             <h3 class="font-display text-2xl lg:text-3xl font-bold text-charcoal mb-3">Center Tables — Made to Match</h3>
                             <p class="text-gray-500 text-sm leading-relaxed mb-5">
-                                Curved Japandi walnut, dual-tone teak &amp; graphite, smoked glass tops — every table built to complement your sofa set. Storage drawers, brass or chrome hardware, your choice of finish.
+                                Floating smoked bronze glass top, curved warm-cream casing, dual dark walnut drawers with brushed brass hardware — custom crafted in Gujrat to perfectly match your living room sofa set.
                             </p>
                             <ul class="text-gray-500 text-sm space-y-1.5 mb-6">
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Solid wood with tempered glass</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Hidden drawers &amp; open shelving</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>10+ designs — or bring your own</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Floating tempered smoked glass top with walnut lip</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Dual soft-close drawers with brushed gold bar handles</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Curved capsule base in custom fabric or lacquer finish</li>
                             </ul>
-                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20a%20custom%20center%20table%20from%20your%20workshop.%20Please%20share%20designs%20and%20prices."
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Floating%20Smoked%20Glass%20Center%20Table%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
                                class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300 w-fit"
                                target="_blank" rel="noopener">
                                 <i class="fab fa-whatsapp text-base"></i> Order a Custom Table
