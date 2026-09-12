@@ -389,32 +389,67 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
                 </div>
 
-                <!-- Full-Width Center Tables Feature -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover reveal">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                        <div class="relative aspect-[3/2] lg:aspect-auto overflow-hidden">
+                <!-- 2-Column Bespoke Center Tables Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 reveal">
+
+                    <!-- Table Card 1: Floating Smoked Glass Table -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover flex flex-col">
+                        <div class="relative aspect-[3/2] overflow-hidden">
                             <img src="images/workshop/floating-center-table.webp"
                                  alt="Floating Smoked Glass Coffee Table with Curved Cream Base & Gold Trim — Custom Sofa Prices Pakistan"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  loading="lazy" width="800" height="533">
-                        </div>
-                        <div class="flex flex-col justify-center p-8 lg:p-12">
-                            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-xs uppercase tracking-[0.15em] mb-3">
-                                <i class="fas fa-gem"></i> Bespoke Collection
+                            <span class="absolute top-4 left-4 bg-gold/90 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                <i class="fas fa-gem mr-1"></i> Bespoke Luxury
                             </span>
-                            <h3 class="font-display text-2xl lg:text-3xl font-bold text-charcoal mb-3">Center Tables — Made to Match</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-5">
-                                Floating smoked bronze glass top, curved warm-cream casing, dual dark walnut drawers with brushed brass hardware — custom crafted in Gujrat to perfectly match your living room sofa set.
-                            </p>
-                            <ul class="text-gray-500 text-sm space-y-1.5 mb-6">
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Floating tempered smoked glass top with walnut lip</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Dual soft-close drawers with brushed gold bar handles</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Curved capsule base in custom fabric or lacquer finish</li>
-                            </ul>
+                        </div>
+                        <div class="p-6 lg:p-8 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="font-display text-xl lg:text-2xl font-bold text-charcoal mb-2">Floating Glass &amp; Walnut Table</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Floating smoked bronze glass top, curved warm-cream casing, dual dark walnut drawers with brushed brass hardware — custom crafted to match your sofa suite.
+                                </p>
+                                <ul class="text-gray-500 text-sm space-y-1.5 mb-6">
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Floating tempered smoked glass top with walnut lip</li>
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Dual soft-close drawers with brushed gold bar handles</li>
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Curved capsule base in custom fabric or lacquer finish</li>
+                                </ul>
+                            </div>
                             <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Floating%20Smoked%20Glass%20Center%20Table%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
                                class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300 w-fit"
                                target="_blank" rel="noopener">
-                                <i class="fab fa-whatsapp text-base"></i> Order a Custom Table
+                                <i class="fab fa-whatsapp text-base"></i> Order This Table
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Table Card 2: Dual-Tone Multi-Storage Table -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover flex flex-col">
+                        <div class="relative aspect-[3/2] overflow-hidden">
+                            <img src="images/workshop/dual-tone-center-table.webp"
+                                 alt="Dual-Tone Modern Coffee Table with Black Glass & Teak Finish — Custom Sofa Prices Pakistan"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy" width="800" height="533">
+                            <span class="absolute top-4 left-4 bg-charcoal/85 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                <i class="fas fa-layer-group mr-1"></i> Multi-Storage
+                            </span>
+                        </div>
+                        <div class="p-6 lg:p-8 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 class="font-display text-xl lg:text-2xl font-bold text-charcoal mb-2">Dual-Tone Architectural Table</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                    Reflective black tempered glass top, warm teak wood structure, enclosed charcoal side cabinet, and deep drawer with open book shelf.
+                                </p>
+                                <ul class="text-gray-500 text-sm space-y-1.5 mb-6">
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Reflective black tempered glass top with radius edges</li>
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Side cabinet + drawer + open magazine display tier</li>
+                                    <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Polished chrome cylindrical legs with floor-protecting caps</li>
+                                </ul>
+                            </div>
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Dual-Tone%20Teak%20and%20Black%20Glass%20Center%20Table%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                               class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300 w-fit"
+                               target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp text-base"></i> Order This Table
                             </a>
                         </div>
                     </div>
