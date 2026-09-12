@@ -17,9 +17,9 @@ $tables = [
         'price_text' => 'PKR 38,000',
         'retail_compare' => 'PKR 62,000',
         'dimensions' => '48" L × 24" W × 18" H',
-        'wood' => 'Solid Hardwood & Piano Lacquer',
-        'glass' => '8mm Bevelled Clear Tempered Glass',
-        'storage' => 'Gold Soft Drawer + Niche',
+        'wood' => 'Hardwood & Piano Lacquer',
+        'glass' => '8mm Bevelled Tempered Glass',
+        'storage' => 'Gold Drawer + Open Niche',
         'description' => 'Antique gold brass platform with black Greek-key border and filigree center medallion under clear tempered glass, paired with high-gloss piano black cabinet.',
         'features' => [
             'Antique gold deck with black Greek-key border',
@@ -40,10 +40,10 @@ $tables = [
         'price_num' => 48000,
         'price_text' => 'PKR 48,000',
         'retail_compare' => 'PKR 78,000',
-        'dimensions' => '40" × 40" Square × 16" H',
-        'wood' => '100% Solid Seasoned Dark Walnut',
-        'glass' => 'Bronze-Tinted Reflective Mirror',
-        'storage' => 'Bi-Level Tiers + Recessed Wood Well',
+        'dimensions' => '40" × 40" Sq × 16" H',
+        'wood' => 'Solid Seasoned Walnut',
+        'glass' => 'Bronze-Tinted Mirror Glass',
+        'storage' => 'Bi-Level Cantilever Slabs',
         'description' => 'Architectural modern coffee table with a 100% solid black wood box base and two bi-level cantilevered thick solid dark walnut slabs with reflective bronze mirror surfaces.',
         'features' => [
             '100% solid seasoned walnut slabs with rich natural grain',
@@ -65,9 +65,9 @@ $tables = [
         'price_text' => 'PKR 45,000',
         'retail_compare' => 'PKR 72,000',
         'dimensions' => '46" L × 28" W × 17" H',
-        'wood' => 'Seasoned Dark Walnut Veneer & Core',
-        'glass' => 'Flush Smoked Tempered Safety Glass',
-        'storage' => 'Concealed Center Drawer with Black Face',
+        'wood' => 'Seasoned Dark Walnut',
+        'glass' => 'Smoked Tempered Glass',
+        'storage' => 'Concealed Center Drawer',
         'description' => 'Sculptural boat-prism coffee table with bold chamfered geometric angles in rich dark walnut, an all-around floating shadow reveal channel, and smoked glass top.',
         'features' => [
             'Chamfered faceted geometric angled body in walnut',
@@ -89,9 +89,9 @@ $tables = [
         'price_text' => 'PKR 42,000',
         'retail_compare' => 'PKR 68,000',
         'dimensions' => '44" L × 24" W × 18" H',
-        'wood' => 'Warm Cream Casing & Walnut Fronts',
-        'glass' => 'Elevated 10mm Smoked Bronze Glass',
-        'storage' => 'Dual Soft-Close Drawers + Gold Handles',
+        'wood' => 'Warm Cream & Walnut Fronts',
+        'glass' => 'Elevated 10mm Smoked Glass',
+        'storage' => 'Dual Soft-Close Drawers',
         'description' => 'Curved warm-cream capsule body with floating tempered smoked bronze glass deck, textured dark walnut drawer fronts, and brushed champagne gold accents.',
         'features' => [
             'Floating tempered smoked bronze glass deck with walnut lip',
@@ -113,9 +113,9 @@ $tables = [
         'price_text' => 'PKR 36,000',
         'retail_compare' => 'PKR 58,000',
         'dimensions' => '48" L × 24" W × 18" H',
-        'wood' => 'Seasoned Warm Teak Wood Core',
-        'glass' => 'High-Gloss Reflective Black Glass',
-        'storage' => 'Side Cupboard + Pull-Out Drawer + Shelf',
+        'wood' => 'Seasoned Warm Teak Wood',
+        'glass' => 'Reflective Black Glass',
+        'storage' => 'Cupboard + Drawer + Shelf',
         'description' => 'Contemporary coffee table with high-gloss black tempered glass, warm teak wood partitions, enclosed side cupboard, drawer, open shelf, and chrome cylinder feet.',
         'features' => [
             'Reflective black tempered glass top with radius corners',
@@ -136,10 +136,10 @@ $tables = [
         'price_num' => 35000,
         'price_text' => 'Factory Quote',
         'retail_compare' => 'Save 40%',
-        'dimensions' => 'Customized to Your Space',
-        'wood' => 'Walnut, Teak, Ash, Oak or Lacquer',
-        'glass' => 'Clear, Smoked, Bronze, or Marble',
-        'storage' => 'Built Exactly to Your Needs',
+        'dimensions' => 'Customized to Your Room',
+        'wood' => 'Walnut, Teak, Ash, Lacquer',
+        'glass' => 'Clear, Smoked, Tinted Glass',
+        'storage' => 'Tailored to Your Order',
         'description' => 'Have a photo of a center table you love? Share the photo and measurements with our master carpenters in Gujrat for an instant direct-from-workshop quote.',
         'features' => [
             '100% custom dimensions matching your sofa set',
@@ -227,11 +227,17 @@ $tables = [
         }
         @media (min-width: 640px) {
             .tables-grid-container {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
             }
         }
         @media (min-width: 1024px) {
+            .tables-grid-container {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+        }
+        @media (min-width: 1280px) {
             .tables-grid-container {
                 padding-left: 2rem;
                 padding-right: 2rem;
@@ -242,19 +248,24 @@ $tables = [
         .three-cards-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            gap: 1.25rem;
             align-items: stretch;
         }
         @media (min-width: 640px) {
             .three-cards-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
+                gap: 1.25rem;
             }
         }
         @media (min-width: 1024px) {
             .three-cards-grid {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
+                gap: 1.25rem;
+            }
+        }
+        @media (min-width: 1280px) {
+            .three-cards-grid {
+                gap: 1.75rem;
             }
         }
 
@@ -300,13 +311,13 @@ $tables = [
 
         /* Card Content Area */
         .table-card-body {
-            padding: 1.25rem 1.25rem 1.5rem;
+            padding: 1.15rem 1.15rem 1.35rem;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             justify-content: space-between;
         }
-        @media (min-width: 640px) {
+        @media (min-width: 1280px) {
             .table-card-body {
                 padding: 1.35rem 1.35rem 1.5rem;
             }
@@ -315,24 +326,25 @@ $tables = [
         /* Typography consistency across rows */
         .table-card-title {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.2rem;
-            line-height: 1.35;
+            font-size: 1.15rem;
+            line-height: 1.3;
             font-weight: 700;
             color: var(--charcoal);
             margin-bottom: 0.25rem;
-            min-height: 3.1rem;
+            min-height: 3rem;
             display: flex;
             align-items: flex-start;
         }
-        @media (min-width: 640px) {
+        @media (min-width: 1280px) {
             .table-card-title {
                 font-size: 1.25rem;
+                min-height: 3.25rem;
             }
         }
 
         .table-card-subtitle {
             color: var(--gold-dark);
-            font-size: 0.75rem;
+            font-size: 0.725rem;
             font-weight: 600;
             line-height: 1.35;
             margin-bottom: 0.5rem;
@@ -343,7 +355,7 @@ $tables = [
 
         .table-card-desc {
             color: #4b5563;
-            font-size: 0.8125rem;
+            font-size: 0.785rem;
             line-height: 1.45;
             margin-bottom: 0.75rem;
             min-height: 3.6rem;
@@ -354,21 +366,23 @@ $tables = [
             background: #fbfbf9;
             border: 1px solid rgba(0, 0, 0, 0.06);
             border-radius: 0.75rem;
-            padding: 0.625rem 0.875rem;
-            margin: 0.75rem 0 1rem;
+            padding: 0.55rem 0.75rem;
+            margin: 0.65rem 0 0.85rem;
             display: flex;
             flex-direction: column;
-            gap: 0.4rem;
+            gap: 0.35rem;
+            min-height: 7.5rem;
+            justify-content: space-around;
         }
         .spec-row {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
-            gap: 0.5rem;
-            font-size: 0.75rem;
-            line-height: 1.35;
+            gap: 0.35rem;
+            font-size: 0.72rem;
+            line-height: 1.3;
             border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
-            padding-bottom: 0.35rem;
+            padding-bottom: 0.25rem;
         }
         .spec-row:last-child {
             border-bottom: none;
@@ -378,13 +392,14 @@ $tables = [
             color: #6b7280;
             display: flex;
             align-items: center;
-            gap: 0.375rem;
+            gap: 0.3rem;
             font-weight: 500;
             flex-shrink: 0;
+            font-size: 0.72rem;
         }
         .spec-label i {
             color: var(--gold-dark);
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             width: 14px;
             text-align: center;
         }
@@ -392,6 +407,7 @@ $tables = [
             font-weight: 600;
             color: #1f2937;
             text-align: right;
+            font-size: 0.72rem;
             word-break: break-word;
         }
 
@@ -399,23 +415,23 @@ $tables = [
         .card-features-list {
             list-style: none;
             padding: 0;
-            margin: 0 0 1rem 0;
+            margin: 0 0 0.85rem 0;
             display: flex;
             flex-direction: column;
-            gap: 0.35rem;
-            min-height: 4.8rem;
+            gap: 0.25rem;
+            min-height: 5.5rem;
         }
         .card-features-list li {
             display: flex;
             align-items: flex-start;
-            gap: 0.4rem;
-            font-size: 0.75rem;
+            gap: 0.35rem;
+            font-size: 0.72rem;
             color: #4b5563;
             line-height: 1.35;
         }
         .card-features-list li i {
             color: var(--gold-primary);
-            font-size: 0.6875rem;
+            font-size: 0.65rem;
             margin-top: 0.2rem;
             flex-shrink: 0;
         }
@@ -510,9 +526,38 @@ $tables = [
             body {
                 padding-bottom: 75px;
             }
+            .custom-order-banner a {
+                width: 100% !important;
+                justify-content: center;
+                text-align: center;
+            }
         }
         @media (min-width: 768px) {
             .mobile-bottom-bar {
+                display: none !important;
+            }
+        }
+
+        /* Header Tablet Protection (768px - 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            header .flex-container-nav {
+                gap: 0.5rem;
+            }
+            header nav.hidden.md\:flex {
+                gap: 0.65rem;
+            }
+            header nav.hidden.md\:flex a {
+                font-size: 0.775rem;
+                white-space: nowrap;
+            }
+            header .flex-container-nav > div.hidden.md\:flex a {
+                font-size: 0.75rem;
+                padding: 0.35rem 0.65rem;
+                white-space: nowrap;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 900px) {
+            header .flex-container-nav > div.hidden.md\:flex {
                 display: none !important;
             }
         }
@@ -836,7 +881,7 @@ $tables = [
         <!-- Bring Your Own Design / Custom Order Banner -->
         <section class="py-12 lg:py-16 bg-cream">
             <div class="tables-grid-container">
-                <div class="bg-gradient-to-br from-charcoal-dark to-charcoal text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl">
+                <div class="bg-gradient-to-br from-charcoal-dark to-charcoal text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl custom-order-banner">
                     <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                     <div class="relative z-10 max-w-2xl">
                         <span class="text-gold-light text-xs font-bold uppercase tracking-[0.2em] mb-2 block">
@@ -934,10 +979,11 @@ $tables = [
     <script>
         // Set Header active link for Tables
         document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('header nav a, #mobile-menu a');
+            const navLinks = document.querySelectorAll('header nav a, #mobile-dropdown a, .mobile-nav-link');
             navLinks.forEach(link => {
-                if (link.getAttribute('href') && link.getAttribute('href').includes('/tables')) {
+                if (link.getAttribute('href') && (link.getAttribute('href').includes('/tables') || link.getAttribute('href').endsWith('tables'))) {
                     link.classList.add('text-gold-dark', 'font-bold');
+                    link.setAttribute('aria-current', 'page');
                 }
             });
 
