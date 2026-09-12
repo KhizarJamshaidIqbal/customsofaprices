@@ -310,25 +310,25 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <!-- 3-Column Sofa Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8 reveal">
 
-                    <!-- Card 1: Modern L-Shape -->
+                    <!-- Card 1: Greek-Key Gold & Black Table -->
                     <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
                         <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="images/workshop/modern-lshape.webp"
-                                 alt="Modern L-Shape Sofa with Gold Center Table — Custom Sofa Prices Pakistan"
+                            <img src="images/workshop/greek-key-gold-table.webp"
+                                 alt="Greek-Key Black & Gold Luxury Center Table with Glass Top — Custom Sofa Prices Pakistan"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  loading="lazy" width="800" height="600">
                             <span class="absolute top-4 left-4 bg-gold/90 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
-                                <i class="fas fa-fire mr-1"></i> Best Seller
+                                <i class="fas fa-crown mr-1"></i> Best Seller
                             </span>
                         </div>
                         <div class="p-5 lg:p-6">
-                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Modern L-Shape Suite</h3>
+                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Greek-Key Gold &amp; Black Table</h3>
                             <ul class="text-gray-500 text-sm space-y-1 mb-4">
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Geometric cushions & clean armrests</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Greek-key glass center table included</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>5 to 9 seater — fully customizable</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Antique gold top with Greek-key meander border</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Tempered glass with classical center medallion</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Glossy black body, open niche &amp; gold drawer</li>
                             </ul>
-                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Modern%20L-Shape%20Suite%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Greek-Key%20Gold%20and%20Black%20Center%20Table%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
                                class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
                                target="_blank" rel="noopener">
                                 <i class="fab fa-whatsapp text-base"></i> Get Price
