@@ -222,7 +222,7 @@ $tables = [
         /* Modern Table Card */
         .modern-table-card {
             background: #ffffff;
-            border-radius: 1.75rem;
+            border-radius: 1.5rem;
             border: 1px solid rgba(201, 169, 110, 0.22);
             box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
             overflow: hidden;
@@ -277,7 +277,7 @@ $tables = [
             .card-img-half {
                 width: 50%;
                 flex: 0 0 50%;
-                min-height: 480px;
+                min-height: 460px;
             }
         }
         .card-img-half img {
@@ -309,7 +309,7 @@ $tables = [
             .card-details-half {
                 width: 50%;
                 flex: 0 0 50%;
-                padding: 2.75rem 3rem;
+                padding: 2.25rem 2.5rem;
             }
         }
 
@@ -317,9 +317,9 @@ $tables = [
         .spec-pills-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 0.625rem;
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
         @media (min-width: 640px) {
             .spec-pills-grid {
@@ -330,7 +330,7 @@ $tables = [
             background: #fbfbf9;
             border: 1px solid rgba(0, 0, 0, 0.06);
             border-radius: 0.875rem;
-            padding: 0.625rem 0.875rem;
+            padding: 0.5rem 0.75rem;
             display: flex;
             align-items: flex-start;
             gap: 0.625rem;
