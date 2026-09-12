@@ -6,14 +6,21 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
 $tables = [
     [
         'id' => 'greek-key-table',
+        'category' => 'gold',
         'title' => 'Greek-Key Gold & Black Center Table',
+        'subtitle' => 'Royal Dual-Tone Statement Piece with Filigree Center Medallion',
         'badge' => 'Best Seller',
-        'badge_color' => 'bg-gold/90 text-white',
+        'badge_color' => 'bg-amber-500 text-white',
         'badge_icon' => 'fa-crown',
         'image' => 'images/workshop/greek-key-gold-table.webp',
-        'price_text' => 'Starts from PKR 38,000',
-        'dimensions' => 'Standard: 48" L × 24" W × 18" H (Customizable)',
-        'description' => 'A royal dual-tone statement table featuring an antique gold brass surface with an ornate black Greek-key meander border and a classical filigree center medallion under clear tempered glass, paired with a sleek piano-black lacquer cabinet.',
+        'price_num' => 38000,
+        'price_text' => 'PKR 38,000',
+        'retail_compare' => 'PKR 62,000',
+        'dimensions' => '48" L × 24" W × 18" H',
+        'wood' => 'Solid Seasoned Hardwood & High-Gloss Piano Lacquer',
+        'glass' => '8mm Bevelled Clear Tempered Safety Glass',
+        'storage' => 'Gold-Faced Soft Drawer + Open Display Niche',
+        'description' => 'A royal statement center table featuring an antique gold brass deck with an intricate black Greek-key meander border and classical filigree center medallion beneath heavy tempered glass, anchored by a deep piano-black lacquer cabinet.',
         'features' => [
             'Antique gold brass platform with black Greek-key border',
             'Clear shatter-resistant tempered glass with center medallion',
@@ -21,17 +28,24 @@ $tables = [
             'Storage drawer with antique gold front & custom handle',
             'Heavy-duty stepped dark plinth pedestal base'
         ],
-        'whatsapp_msg' => 'Hi, I want to order the Greek-Key Gold and Black Center Table shown on your website. Please share price and delivery details.'
+        'whatsapp_msg' => 'Hi, I want to order the Greek-Key Gold & Black Center Table (PKR 38,000) shown on your website. Please share delivery timeline and payment details.'
     ],
     [
         'id' => 'cantilever-table',
+        'category' => 'walnut',
         'title' => 'Multi-Tier Cantilever Center Table',
+        'subtitle' => 'Architectural Italian-Inspired Bi-Level Walnut & Bronze Mirror Coffee Table',
         'badge' => 'Statement Piece',
-        'badge_color' => 'bg-charcoal/85 text-white',
+        'badge_color' => 'bg-neutral-800 text-white',
         'badge_icon' => 'fa-layer-group',
         'image' => 'images/workshop/cantilever-glass-table.webp',
-        'price_text' => 'Starts from PKR 48,000',
-        'dimensions' => 'Standard: 40" × 40" Square × 16" H (Customizable)',
+        'price_num' => 48000,
+        'price_text' => 'PKR 48,000',
+        'retail_compare' => 'PKR 78,000',
+        'dimensions' => '40" × 40" Square × 16" H',
+        'wood' => '100% Solid Seasoned Dark Walnut & Matte Black Box Plinth',
+        'glass' => 'Inset Bronze-Tinted Reflective Mirror Surfaces',
+        'storage' => 'Staggered Bi-Level Tiers + Recessed Wood Well',
         'description' => 'Architectural Italian-inspired modern coffee table crafted with a 100% solid black wood box base and two bi-level cantilevered thick solid dark walnut slabs topped with reflective bronze glass mirror surfaces.',
         'features' => [
             '100% solid wood square box base in matte black lacquer',
@@ -40,17 +54,24 @@ $tables = [
             'Staggered bi-level cantilevered architectural layout',
             'Spacious recessed central wooden storage well'
         ],
-        'whatsapp_msg' => 'Hi, I want to order the Multi-Tier Cantilever Center Table shown on your website. Please share price and delivery details.'
+        'whatsapp_msg' => 'Hi, I want to order the Multi-Tier Cantilever Center Table (PKR 48,000) shown on your website. Please share delivery timeline and payment details.'
     ],
     [
         'id' => 'faceted-walnut-table',
+        'category' => 'walnut',
         'title' => 'Faceted Walnut & Glass Center Table',
+        'subtitle' => 'Sculptural Chamfered Boat-Prism Table with Floating Shadow Channel',
         'badge' => 'Sculptural Masterpiece',
-        'badge_color' => 'bg-gold-dark/90 text-white',
+        'badge_color' => 'bg-amber-700 text-white',
         'badge_icon' => 'fa-gem',
         'image' => 'images/workshop/faceted-walnut-table.webp',
-        'price_text' => 'Starts from PKR 45,000',
-        'dimensions' => 'Standard: 46" L × 28" W × 17" H (Customizable)',
+        'price_num' => 45000,
+        'price_text' => 'PKR 45,000',
+        'retail_compare' => 'PKR 72,000',
+        'dimensions' => '46" L × 28" W × 17" H',
+        'wood' => 'Kiln-Dried Walnut Veneer Core & Seasoned Solid Wood Subframe',
+        'glass' => 'Flush Dark Smoked Tempered Safety Glass Top',
+        'storage' => 'Concealed Center Drawer with Matte Black Face',
         'description' => 'Sculptural boat-prism coffee table with bold chamfered geometric angles in rich dark walnut, an all-around floating shadow reveal channel, flush dark smoked glass top, and a center storage drawer.',
         'features' => [
             'Chamfered faceted geometric angled body in seasoned walnut',
@@ -59,17 +80,24 @@ $tables = [
             'Center pull-out drawer with matte black face & brass knob',
             'Tapered dark solid wooden feet with floor protectors'
         ],
-        'whatsapp_msg' => 'Hi, I want to order the Faceted Walnut Center Table shown on your website. Please share price and delivery details.'
+        'whatsapp_msg' => 'Hi, I want to order the Faceted Walnut & Glass Center Table (PKR 45,000) shown on your website. Please share delivery timeline and payment details.'
     ],
     [
         'id' => 'floating-glass-table',
+        'category' => 'glass',
         'title' => 'Floating Glass & Walnut Capsule Table',
+        'subtitle' => 'Minimalist Curved Capsule Deck with Elevated Bronze Glass Platform',
         'badge' => 'Bespoke Luxury',
-        'badge_color' => 'bg-gold/90 text-white',
+        'badge_color' => 'bg-amber-600 text-white',
         'badge_icon' => 'fa-sparkles',
         'image' => 'images/workshop/floating-center-table.webp',
-        'price_text' => 'Starts from PKR 42,000',
-        'dimensions' => 'Standard: 44" L × 24" W × 18" H (Customizable)',
+        'price_num' => 42000,
+        'price_text' => 'PKR 42,000',
+        'retail_compare' => 'PKR 68,000',
+        'dimensions' => '44" L × 24" W × 18" H',
+        'wood' => 'Warm Cream Casing & Textured Dark Walnut Grain Drawer Fronts',
+        'glass' => 'Elevated 10mm Smoked Bronze Tempered Glass Top',
+        'storage' => 'Dual Soft-Close Wooden Drawers with Brushed Gold Handles',
         'description' => 'A sophisticated modern centerpiece with a floating tempered smoked bronze glass deck elevated above a curved cream capsule body, equipped with dual dark walnut drawers and brushed champagne gold trim.',
         'features' => [
             'Floating tempered smoked bronze glass top with raised walnut lip',
@@ -78,17 +106,24 @@ $tables = [
             'Sleek horizontal brushed gold bar handles',
             'Continuous brushed champagne gold perimeter reveal strip'
         ],
-        'whatsapp_msg' => 'Hi, I want to order the Floating Smoked Glass Center Table shown on your website. Please share price and delivery details.'
+        'whatsapp_msg' => 'Hi, I want to order the Floating Glass & Walnut Capsule Table (PKR 42,000) shown on your website. Please share delivery timeline and payment details.'
     ],
     [
         'id' => 'dual-tone-table',
+        'category' => 'glass',
         'title' => 'Dual-Tone Architectural Coffee Table',
+        'subtitle' => 'Multi-Storage Centerpiece with Black Glass, Teak Frame & Chrome Accents',
         'badge' => 'Smart Storage',
-        'badge_color' => 'bg-charcoal/85 text-white',
+        'badge_color' => 'bg-slate-800 text-white',
         'badge_icon' => 'fa-book-open',
         'image' => 'images/workshop/dual-tone-center-table.webp',
-        'price_text' => 'Starts from PKR 36,000',
-        'dimensions' => 'Standard: 48" L × 24" W × 18" H (Customizable)',
+        'price_num' => 36000,
+        'price_text' => 'PKR 36,000',
+        'retail_compare' => 'PKR 58,000',
+        'dimensions' => '48" L × 24" W × 18" H',
+        'wood' => 'Seasoned Warm Teak Wood Core & Enclosed Charcoal Cabinet',
+        'glass' => 'High-Gloss Reflective Black Tempered Glass with Rounded Corners',
+        'storage' => 'Enclosed Cupboard + Deep Pull-Out Drawer + Open Magazine Shelf',
         'description' => 'A functional contemporary coffee table featuring reflective glossy black tempered glass with radius rounded corners, warm teak wood frame, enclosed charcoal side cabinet, pull-out drawer, and open magazine tier.',
         'features' => [
             'High-gloss reflective black tempered glass top with radius edges',
@@ -97,7 +132,7 @@ $tables = [
             'Deep storage drawer with horizontal chrome bar pull',
             'Open center display tier & polished chrome cylinder legs'
         ],
-        'whatsapp_msg' => 'Hi, I want to order the Dual-Tone Teak and Black Glass Center Table shown on your website. Please share price and delivery details.'
+        'whatsapp_msg' => 'Hi, I want to order the Dual-Tone Architectural Coffee Table (PKR 36,000) shown on your website. Please share delivery timeline and payment details.'
     ]
 ];
 ?>
@@ -138,27 +173,283 @@ $tables = [
     <meta property="og:description" content="Shop factory-direct handcrafted center tables in Pakistan. Floating glass, solid walnut, Greek-key brass & multi-storage designs made to complement your sofa set.">
     <meta property="og:image" content="https://cutomsofaprices.com/images/workshop/greek-key-gold-table.webp">
     <meta property="og:locale" content="en_PK">
+    <meta property="og:site_name" content="Custom Sofa Prices Pakistan">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bespoke Center Tables & Luxury Coffee Table Designs">
-    <meta name="twitter:description" content="Factory-direct center tables in Pakistan. Solid wood, tempered glass, custom dimensions.">
-
-    <!-- Inlined Production CSS -->
-    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
-
-    <!-- Google Fonts -->
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.min.css">
 
-    <!-- JSON-LD: Structured Data -->
+    <!-- Scoped Bulletproof Responsive Tables CSS -->
+    <style>
+        :root {
+            --gold-primary: #c9a96e;
+            --gold-dark: #8a6a1e;
+            --gold-light: #dfc9a0;
+            --charcoal: #2d2d2d;
+            --charcoal-dark: #1a1a1a;
+            --cream: #fafaf6;
+            --whatsapp-green: #25D366;
+            --whatsapp-dark: #1ea952;
+        }
+
+        /* Responsive Layout Architecture */
+        .table-showcase-container {
+            width: 100%;
+            max-width: 1240px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .table-showcase-container {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .table-showcase-container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+        /* Modern Table Card */
+        .modern-table-card {
+            background: #ffffff;
+            border-radius: 1.75rem;
+            border: 1px solid rgba(201, 169, 110, 0.22);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+            margin-bottom: 2.5rem;
+        }
+        @media (min-width: 1024px) {
+            .modern-table-card {
+                margin-bottom: 3.5rem;
+            }
+        }
+        .modern-table-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.12);
+            border-color: rgba(201, 169, 110, 0.5);
+        }
+
+        /* Card Split Row */
+        .card-split-row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        @media (min-width: 1024px) {
+            .card-split-row {
+                flex-direction: row;
+                align-items: stretch;
+            }
+            .card-split-row.row-reverse {
+                flex-direction: row-reverse;
+            }
+        }
+
+        /* Image Half */
+        .card-img-half {
+            width: 100%;
+            position: relative;
+            background-color: #f3f4f6;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 1023px) {
+            .card-img-half {
+                aspect-ratio: 16 / 10;
+                min-height: 260px;
+                max-height: 400px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .card-img-half {
+                width: 50%;
+                flex: 0 0 50%;
+                min-height: 480px;
+            }
+        }
+        .card-img-half img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+            display: block;
+        }
+        .modern-table-card:hover .card-img-half img {
+            transform: scale(1.05);
+        }
+
+        /* Details Half */
+        .card-details-half {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .card-details-half {
+                padding: 2rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .card-details-half {
+                width: 50%;
+                flex: 0 0 50%;
+                padding: 2.75rem 3rem;
+            }
+        }
+
+        /* Spec Pills Grid */
+        .spec-pills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.625rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        @media (min-width: 640px) {
+            .spec-pills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .spec-pill-item {
+            background: #fbfbf9;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 0.875rem;
+            padding: 0.625rem 0.875rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.625rem;
+            font-size: 0.8125rem;
+            line-height: 1.35;
+        }
+        .spec-pill-item i {
+            color: var(--gold-dark);
+            margin-top: 0.15rem;
+            flex-shrink: 0;
+            font-size: 0.875rem;
+        }
+        .spec-pill-item strong {
+            display: block;
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888888;
+            margin-bottom: 0.1rem;
+        }
+
+        /* WhatsApp Button */
+        .btn-whatsapp-order {
+            background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 0.9375rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+            box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.38);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-whatsapp-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -5px rgba(37, 211, 102, 0.5);
+            background: linear-gradient(135deg, #2ae06d, var(--whatsapp-green));
+            color: #ffffff !important;
+        }
+
+        /* Filter Tab Buttons */
+        .table-filter-btn {
+            background: #ffffff;
+            color: #4b5563;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.625rem 1.25rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .table-filter-btn:hover {
+            border-color: var(--gold-primary);
+            color: var(--gold-dark);
+        }
+        .table-filter-btn.active {
+            background: var(--charcoal);
+            color: #ffffff;
+            border-color: var(--charcoal);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Lightbox Image Preview Modal */
+        .table-lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .table-lightbox.active {
+            display: flex;
+        }
+        .table-lightbox img {
+            max-width: 92vw;
+            max-height: 85vh;
+            border-radius: 1rem;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
+        }
+
+        /* Sticky Mobile WhatsApp Bar */
+        @media (max-width: 767px) {
+            .mobile-bottom-bar {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 45;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(12px);
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                padding: 0.625rem 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
+        @media (min-width: 768px) {
+            .mobile-bottom-bar {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <!-- Schema.org Product & Breadcrumb JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -181,31 +472,20 @@ $tables = [
                 ]
             },
             {
-                "@type": "CollectionPage",
-                "@id": "https://cutomsofaprices.com/tables#webpage",
-                "url": "https://cutomsofaprices.com/tables",
-                "name": "Bespoke Center Tables & Luxury Coffee Table Designs in Pakistan",
-                "description": "Handcrafted luxury center tables and modern coffee tables made in Gujrat, Pakistan. Factory direct prices with nationwide delivery.",
-                "isPartOf": {
-                    "@type": "WebSite",
-                    "@id": "https://cutomsofaprices.com/#website",
-                    "url": "https://cutomsofaprices.com/",
-                    "name": "Custom Sofa Prices Pakistan"
-                }
-            },
-            {
                 "@type": "ItemList",
-                "name": "Handcrafted Center Table Models",
+                "name": "Bespoke Center Tables & Luxury Coffee Table Designs in Pakistan",
+                "description": "Factory-direct bespoke center tables crafted in Gujrat workshop. Tempered smoked glass, solid dark walnut, and Greek-key gold finishes.",
+                "numberOfItems": <?= count($tables) ?>,
                 "itemListElement": [
                     <?php 
                     $jsonItems = [];
-                    foreach ($tables as $index => $t) {
+                    foreach ($tables as $i => $t) {
                         $jsonItems[] = json_encode([
                             '@type' => 'Product',
-                            'position' => $index + 1,
+                            'position' => $i + 1,
                             'name' => $t['title'],
-                            'image' => 'https://cutomsofaprices.com/' . $t['image'],
                             'description' => $t['description'],
+                            'image' => 'https://cutomsofaprices.com/' . $t['image'],
                             'brand' => [
                                 '@type' => 'Brand',
                                 'name' => 'Custom Sofa Prices Pakistan'
@@ -213,6 +493,7 @@ $tables = [
                             'offers' => [
                                 '@type' => 'Offer',
                                 'priceCurrency' => 'PKR',
+                                'price' => $t['price_num'],
                                 'availability' => 'https://schema.org/InStock',
                                 'url' => 'https://cutomsofaprices.com/tables#' . $t['id']
                             ]
@@ -227,26 +508,26 @@ $tables = [
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "What is the average center table price in Pakistan?",
+                        "name": "What is the price of center tables in Pakistan?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Center table prices in Pakistan generally range from PKR 25,000 to PKR 90,000 depending on materials, tempered glass thickness, wood species, and custom carving or metalwork. At Custom Sofa Prices, our factory-direct builds start from PKR 36,000."
+                            "text": "Center table prices at Custom Sofa Prices range from PKR 36,000 for contemporary dual-tone teak designs up to PKR 48,000 for heavy multi-tier solid walnut cantilever units. Because you buy directly from our Gujrat workshop, you save 35% to 50% compared to luxury furniture showroom retail prices."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Can you customize the center table to match my sofa set?",
+                        "name": "Can you customize the center table size to match my sofa set?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes! Every center table is customized to match your sofa height, length, wood finish, and fabric or leather accents. You can also bring your own photo from Pinterest or Instagram and our craftsmen will replicate it."
+                            "text": "Yes, 100%! Every center table is tailor-made to match your sofa height, length, wood polish, and interior room theme. You can also share any photo from Pinterest or Instagram and our master craftsmen will replicate it with precision."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "What type of glass is used for coffee table tops?",
+                        "name": "How is glass delivered safely across Pakistani cities?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "We strictly use 8mm to 12mm heavy-duty tempered safety glass in smoked bronze, reflective black, or ultra-clear options with bevelled polished edges."
+                            "text": "All glass tops use 8mm to 12mm shatter-resistant tempered safety glass. They are packed in high-density foam wrapping inside a solid custom wooden crate. We guarantee zero breakage doorstep delivery across Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, and nationwide."
                         }
                     }
                 ]
@@ -263,7 +544,7 @@ $tables = [
 
         <!-- Breadcrumbs -->
         <nav class="bg-white border-b border-gray-100 py-3" aria-label="Breadcrumb">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="table-showcase-container">
                 <ol class="flex items-center gap-2 text-xs sm:text-sm text-gray-500">
                     <li>
                         <a href="https://cutomsofaprices.com/" class="hover:text-gold-dark transition-colors">
@@ -277,106 +558,174 @@ $tables = [
         </nav>
 
         <!-- Hero Section -->
-        <section class="relative bg-charcoal-dark text-white py-16 lg:py-24 overflow-hidden">
+        <section class="relative bg-charcoal-dark text-white py-14 lg:py-20 overflow-hidden">
             <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="relative table-showcase-container text-center">
                 <span class="inline-flex items-center gap-2 text-gold-light font-semibold text-xs sm:text-sm uppercase tracking-[0.2em] mb-4 bg-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
                     <i class="fas fa-gem text-gold"></i> Live From Our Gujrat Workshop
                 </span>
-                <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
                     Bespoke <span class="text-gold-light">Center Tables</span> &amp; Coffee Designs
                 </h1>
-                <p class="text-gray-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed mb-8">
-                    Handcrafted center tables engineered to anchor your drawing room. Built from seasoned solid wood, high-density tempered glass, and luxury brass hardware — factory direct with zero retail middlemen.
+                <p class="text-gray-300 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed mb-8">
+                    Engineered to anchor your drawing room. Handcrafted from seasoned solid hardwoods, shatter-resistant tempered safety glass, and brushed luxury metallic trims — direct from our factory with zero showroom markup.
                 </p>
-                <div class="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-gray-300">
-                    <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10"><i class="fas fa-check-circle text-gold"></i> 100% Seasoned Wood</span>
-                    <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10"><i class="fas fa-shield-alt text-gold"></i> 8-12mm Tempered Safety Glass</span>
-                    <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10"><i class="fas fa-ruler-combined text-gold"></i> Custom Sizes Made to Match</span>
-                    <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10"><i class="fas fa-truck text-gold"></i> Nationwide Safe Delivery</span>
+                <div class="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-gray-300">
+                    <span class="flex items-center gap-2 bg-white/5 px-3.5 py-1.5 rounded-full border border-white/10"><i class="fas fa-check-circle text-gold"></i> 100% Seasoned Hardwood</span>
+                    <span class="flex items-center gap-2 bg-white/5 px-3.5 py-1.5 rounded-full border border-white/10"><i class="fas fa-shield-alt text-gold"></i> 8-12mm Tempered Safety Glass</span>
+                    <span class="flex items-center gap-2 bg-white/5 px-3.5 py-1.5 rounded-full border border-white/10"><i class="fas fa-ruler-combined text-gold"></i> Custom Sizes Made to Match</span>
+                    <span class="flex items-center gap-2 bg-white/5 px-3.5 py-1.5 rounded-full border border-white/10"><i class="fas fa-truck text-gold"></i> Wooden Crate Delivery Nationwide</span>
                 </div>
             </div>
         </section>
 
-        <!-- Signature Tables Showcase Grid -->
-        <section class="py-16 lg:py-24 bg-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Signature Tables Showcase Section -->
+        <section class="py-12 lg:py-20 bg-cream">
+            <div class="table-showcase-container">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-3">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-xs uppercase tracking-[0.2em] mb-2">
                         <span class="w-8 h-px bg-gold"></span>
                         Our Most Ordered Builds
                         <span class="w-8 h-px bg-gold"></span>
                     </span>
-                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-4">
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-3">
                         Master Center Tables Collection
                     </h2>
                     <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
-                        Every model below is manufactured in our Gujrat workshop on regular order. Click any table to get exact factory pricing or customize dimensions to fit your space.
+                        Every model below is manufactured in our Gujrat workshop on regular order. Click any table to inspect specs, request custom dimensions, or order directly on WhatsApp.
                     </p>
                 </div>
 
-                <div class="space-y-12 lg:space-y-16">
-                    <?php foreach ($tables as $idx => $t): ?>
-                    <article id="<?= htmlspecialchars($t['id']) ?>" class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100">
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+                    <button type="button" class="table-filter-btn active" data-filter="all">All Models (5)</button>
+                    <button type="button" class="table-filter-btn" data-filter="walnut">Solid Walnut &amp; Wood</button>
+                    <button type="button" class="table-filter-btn" data-filter="glass">Tempered Glass &amp; Smoked</button>
+                    <button type="button" class="table-filter-btn" data-filter="gold">Royal Gold &amp; Brass</button>
+                </div>
+
+                <!-- Cards Stream with Alternating Desktop Layout -->
+                <div id="table-cards-list">
+                    <?php foreach ($tables as $idx => $t): 
+                        $isReverse = ($idx % 2 === 1);
+                    ?>
+                    <article id="<?= htmlspecialchars($t['id']) ?>" 
+                             class="modern-table-card" 
+                             data-category="<?= htmlspecialchars($t['category']) ?>">
+                        
+                        <div class="card-split-row <?= $isReverse ? 'row-reverse' : '' ?>">
                             
-                            <!-- Image Column (6 Cols) -->
-                            <div class="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto overflow-hidden bg-gray-100 min-h-[320px] lg:min-h-[420px]">
+                            <!-- Image Half -->
+                            <div class="card-img-half group cursor-pointer" onclick="openLightbox('<?= htmlspecialchars($t['image']) ?>', '<?= htmlspecialchars(addslashes($t['title'])) ?>')">
                                 <img src="<?= htmlspecialchars($t['image']) ?>"
-                                     alt="<?= htmlspecialchars($t['title']) ?> — Custom Sofa Prices Pakistan"
-                                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                     alt="<?= htmlspecialchars($t['title']) ?> — Bespoke Center Table Pakistan"
                                      loading="lazy" width="800" height="600">
-                                <span class="absolute top-5 left-5 <?= htmlspecialchars($t['badge_color']) ?> text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+                                
+                                <!-- Floating Badge -->
+                                <span class="absolute top-4 left-4 <?= htmlspecialchars($t['badge_color']) ?> text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-1.5 z-10">
                                     <i class="fas <?= htmlspecialchars($t['badge_icon']) ?>"></i> <?= htmlspecialchars($t['badge']) ?>
+                                </span>
+
+                                <!-- Zoom Icon Hint -->
+                                <span class="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white text-xs px-3 py-1.5 rounded-full backdrop-blur-md flex items-center gap-1.5 transition-all opacity-80 group-hover:opacity-100 z-10">
+                                    <i class="fas fa-search-plus"></i> <span class="hidden sm:inline">Tap to Inspect</span>
                                 </span>
                             </div>
 
-                            <!-- Content Column (6 Cols) -->
-                            <div class="lg:col-span-6 p-8 lg:p-12 flex flex-col justify-between">
+                            <!-- Details Half -->
+                            <div class="card-details-half">
                                 <div>
-                                    <div class="flex items-center justify-between gap-4 mb-2">
-                                        <span class="text-gold-dark text-xs font-bold uppercase tracking-widest">Gujrat Workshop Build</span>
-                                        <span class="bg-gray-100 text-charcoal text-xs font-semibold px-3 py-1 rounded-full"><?= htmlspecialchars($t['price_text']) ?></span>
+                                    
+                                    <!-- Tag & Price Header -->
+                                    <div class="flex items-center justify-between gap-3 mb-2">
+                                        <span class="text-gold-dark text-xs font-bold uppercase tracking-widest flex items-center gap-1">
+                                            <i class="fas fa-hammer text-[10px]"></i> Gujrat Workshop
+                                        </span>
+                                        <div class="text-right">
+                                            <span class="text-charcoal font-bold text-base sm:text-lg"><?= htmlspecialchars($t['price_text']) ?></span>
+                                            <span class="text-gray-400 text-xs line-through ml-1.5"><?= htmlspecialchars($t['retail_compare']) ?></span>
+                                        </div>
                                     </div>
-                                    <h3 class="font-display text-2xl lg:text-3xl font-bold text-charcoal mb-3">
+
+                                    <!-- Title -->
+                                    <h3 class="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2 leading-tight">
                                         <?= htmlspecialchars($t['title']) ?>
                                     </h3>
-                                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                    
+                                    <!-- Subtitle -->
+                                    <p class="text-gold-dark text-xs sm:text-sm font-semibold mb-3">
+                                        <?= htmlspecialchars($t['subtitle']) ?>
+                                    </p>
+
+                                    <!-- Description -->
+                                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
                                         <?= htmlspecialchars($t['description']) ?>
                                     </p>
 
-                                    <!-- Dimensions & Customization Badge -->
-                                    <div class="bg-gray-50 border border-gray-100 rounded-xl p-3.5 mb-6 text-xs text-gray-600 flex items-center gap-2.5">
-                                        <i class="fas fa-ruler-combined text-gold text-sm flex-shrink-0"></i>
-                                        <span><strong>Dimensions:</strong> <?= htmlspecialchars($t['dimensions']) ?></span>
+                                    <!-- 4-Pill Specs Matrix -->
+                                    <div class="spec-pills-grid">
+                                        <div class="spec-pill-item">
+                                            <i class="fas fa-ruler-combined"></i>
+                                            <div>
+                                                <strong>Standard Size</strong>
+                                                <span><?= htmlspecialchars($t['dimensions']) ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="spec-pill-item">
+                                            <i class="fas fa-tree"></i>
+                                            <div>
+                                                <strong>Core Material</strong>
+                                                <span><?= htmlspecialchars($t['wood']) ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="spec-pill-item">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <div>
+                                                <strong>Table Surface</strong>
+                                                <span><?= htmlspecialchars($t['glass']) ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="spec-pill-item">
+                                            <i class="fas fa-box"></i>
+                                            <div>
+                                                <strong>Storage Utility</strong>
+                                                <span><?= htmlspecialchars($t['storage']) ?></span>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <!-- Feature Highlights -->
-                                    <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal mb-3">Craftsmanship Highlights:</h4>
-                                    <ul class="space-y-2 text-sm text-gray-600 mb-8">
-                                        <?php foreach ($t['features'] as $f): ?>
-                                        <li class="flex items-start gap-2.5">
-                                            <i class="fas fa-check text-gold text-xs mt-1 flex-shrink-0"></i>
-                                            <span><?= htmlspecialchars($f) ?></span>
-                                        </li>
-                                        <?php endforeach; ?>
-                                    </ul>
+                                    <!-- Craftsmanship Bullet Points -->
+                                    <div class="mb-6 pt-1">
+                                        <span class="text-[11px] font-bold uppercase tracking-wider text-charcoal block mb-2">Signature Build Highlights:</span>
+                                        <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600">
+                                            <?php foreach ($t['features'] as $f): ?>
+                                            <li class="flex items-start gap-2">
+                                                <i class="fas fa-check text-gold text-xs mt-0.5 flex-shrink-0"></i>
+                                                <span><?= htmlspecialchars($f) ?></span>
+                                            </li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+
                                 </div>
 
-                                <!-- CTAs -->
-                                <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-gray-100">
+                                <!-- Action Buttons -->
+                                <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-gray-100">
                                     <a href="https://wa.me/923007131249?text=<?= urlencode($t['whatsapp_msg']) ?>"
-                                       class="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark text-white font-semibold text-sm px-6 py-3.5 rounded-full shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                                       class="btn-whatsapp-order flex-1 sm:flex-initial"
                                        target="_blank" rel="noopener">
-                                        <i class="fab fa-whatsapp text-lg"></i> Order via WhatsApp
+                                        <i class="fab fa-whatsapp text-lg"></i> Order on WhatsApp
                                     </a>
-                                    <a href="tel:+923007131249" class="inline-flex items-center gap-2 text-charcoal hover:text-gold-dark text-sm font-semibold px-4 py-3 rounded-full hover:bg-gray-100 transition-colors">
+                                    <a href="tel:+923007131249" 
+                                       class="inline-flex items-center justify-center gap-2 text-charcoal hover:text-gold-dark text-xs sm:text-sm font-semibold px-4 py-3 rounded-full hover:bg-gray-100 transition-colors border border-gray-200">
                                         <i class="fas fa-phone-alt text-gold text-xs"></i> 0300 7131249
                                     </a>
                                 </div>
 
                             </div>
+
                         </div>
                     </article>
                     <?php endforeach; ?>
@@ -385,28 +734,79 @@ $tables = [
             </div>
         </section>
 
-        <!-- Bring Your Own Design / Customization Banner -->
-        <section class="py-16 bg-white border-y border-gray-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gradient-to-br from-charcoal-dark to-charcoal text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-xl">
+        <!-- Sizing & Placement Guide: How to Match with Your Sofa -->
+        <section class="py-14 lg:py-20 bg-white border-y border-gray-100">
+            <div class="table-showcase-container">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-gold-dark text-xs font-bold uppercase tracking-[0.2em] mb-2 block">
+                        Expert Workshop Advice
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-4xl font-bold text-charcoal mb-3">
+                        How to Choose the Right Center Table Size
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        To achieve that balanced interior look, follow our master carpenter golden rules when picking dimensions:
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 sm:p-8 text-center hover:border-gold/40 transition-colors">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-gold/15 rounded-2xl flex items-center justify-center text-gold-dark text-2xl">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">1. The Height Rule</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                            Your center table should sit <strong>1 to 2 inches below</strong> or level with your sofa seat cushions (typically 16" to 18" high) for effortless reach of cups and books.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 sm:p-8 text-center hover:border-gold/40 transition-colors">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-gold/15 rounded-2xl flex items-center justify-center text-gold-dark text-2xl">
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">2. The 2/3 Length Ratio</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                            A balanced coffee table measures roughly <strong>two-thirds the length</strong> of your main sofa. For standard 7-8 foot sofas, a 48" to 52" table is ideal.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 sm:p-8 text-center hover:border-gold/40 transition-colors">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-gold/15 rounded-2xl flex items-center justify-center text-gold-dark text-2xl">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-charcoal mb-2">3. The 16" Legroom Clearance</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                            Maintain <strong>14 to 18 inches</strong> between your sofa and the table perimeter to allow natural walking flow and comfortable stretch room.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bring Your Own Design / Custom Order Banner -->
+        <section class="py-14 lg:py-20 bg-cream">
+            <div class="table-showcase-container">
+                <div class="bg-gradient-to-br from-charcoal-dark to-charcoal text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
                     <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
                     <div class="relative z-10 max-w-3xl">
                         <span class="text-gold-light text-xs font-bold uppercase tracking-[0.2em] mb-2 block">
                             Have a Specific Design in Mind?
                         </span>
                         <h2 class="font-display text-2xl sm:text-4xl font-bold mb-4">
-                            Send Us Any Pinterest or Instagram Table Design
+                            Send Us Any Pinterest or Instagram Table Photo
                         </h2>
                         <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">
-                            Found a center table photo you love? Our master carpenters in Gujrat can craft it from scratch with your preferred dimensions, wood species, and glass finishes at authentic factory-direct rates.
+                            Seen a coffee table design online that you want tailored to your drawing room? Share the photo with us. Our Gujrat workshop can craft it from seasoned hardwoods, marble tops, or tempered glass at authentic factory rates.
                         </p>
                         <div class="flex flex-wrap gap-4">
                             <a href="https://wa.me/923007131249?text=Hi%2C%20I%20have%20a%20photo%20of%20a%20center%20table%20I%20want%20to%20get%20custom%20made.%20Can%20I%20share%20it%20for%20a%20price%20quote%3F"
-                               class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-dark text-white font-semibold text-sm sm:text-base px-8 py-4 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                               class="btn-whatsapp-order"
                                target="_blank" rel="noopener">
-                                <i class="fab fa-whatsapp text-xl"></i> Share Your Design on WhatsApp
+                                <i class="fab fa-whatsapp text-xl"></i> Share Photo on WhatsApp
                             </a>
-                            <a href="https://cutomsofaprices.com/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base px-6 py-4 rounded-full transition-colors">
+                            <a href="https://cutomsofaprices.com/contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full transition-colors border border-white/20">
                                 <i class="fas fa-map-marker-alt text-gold"></i> Visit Gujrat Workshop
                             </a>
                         </div>
@@ -415,46 +815,10 @@ $tables = [
             </div>
         </section>
 
-        <!-- Why Choose Us / Guarantees -->
-        <section class="py-16 lg:py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="w-12 h-12 bg-gold/10 text-gold-dark rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <h4 class="font-display text-lg font-bold text-charcoal mb-2">100% Seasoned Wood</h4>
-                        <p class="text-gray-500 text-sm leading-relaxed">Termite-treated solid Sheesham, Walnut, and Teak frame guarantee no warping or cracking.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="w-12 h-12 bg-gold/10 text-gold-dark rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fas fa-shield-virus"></i>
-                        </div>
-                        <h4 class="font-display text-lg font-bold text-charcoal mb-2">Tempered Safety Glass</h4>
-                        <p class="text-gray-500 text-sm leading-relaxed">8mm to 12mm shatter-resistant smoked bronze, reflective black, or clear glass tops.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="w-12 h-12 bg-gold/10 text-gold-dark rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fas fa-sliders-h"></i>
-                        </div>
-                        <h4 class="font-display text-lg font-bold text-charcoal mb-2">Exact Match Sizing</h4>
-                        <p class="text-gray-500 text-sm leading-relaxed">Tailored height and length so your center table aligns seamlessly with your sofa seating height.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="w-12 h-12 bg-gold/10 text-gold-dark rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fas fa-truck-loading"></i>
-                        </div>
-                        <h4 class="font-display text-lg font-bold text-charcoal mb-2">Safe Doorstep Delivery</h4>
-                        <p class="text-gray-500 text-sm leading-relaxed">Multi-layer wooden crate packing ensuring zero transit damage across all cities in Pakistan.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- FAQ Section -->
-        <section class="py-16 lg:py-20 bg-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
+        <section class="py-14 lg:py-20 bg-white">
+            <div class="table-showcase-container max-w-4xl">
+                <div class="text-center mb-10">
                     <h2 class="font-display text-3xl font-bold text-charcoal mb-3">Frequently Asked Questions</h2>
                     <p class="text-gray-500 text-sm">Everything you need to know about our custom center table orders.</p>
                 </div>
@@ -465,16 +829,16 @@ $tables = [
                             <span class="text-gold group-open:rotate-180 transition-transform duration-300"><i class="fas fa-chevron-down"></i></span>
                         </summary>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            Our bespoke center tables start from PKR 36,000 for modern multi-storage dual-tone designs, ranging up to PKR 48,000 for heavy multi-tier solid walnut cantilever units. Because you order directly from our Gujrat factory, you save 30% to 50% compared to luxury showroom retail prices.
+                            Our bespoke center tables start from PKR 36,000 for contemporary multi-storage dual-tone designs, up to PKR 48,000 for solid walnut cantilever units. Because you order directly from our Gujrat factory, you save 30% to 50% compared to luxury showroom retail prices.
                         </p>
                     </details>
                     <details class="group bg-gray-50 rounded-2xl p-6 transition-colors duration-200">
                         <summary class="font-semibold text-charcoal text-base cursor-pointer flex items-center justify-between list-none">
-                            <span>Can I customize the size of my center table?</span>
+                            <span>Can I customize the size and polish color?</span>
                             <span class="text-gold group-open:rotate-180 transition-transform duration-300"><i class="fas fa-chevron-down"></i></span>
                         </summary>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            Yes! Standard rectangular tables are usually 48"×24", and squares are 36"×36" or 40"×40". However, you can give us your exact room measurements or sofa dimensions and we will adjust the length, width, and height accordingly.
+                            Yes! Standard rectangular tables are usually 48"×24", and squares are 36"×36" or 40"×40". However, you can provide your exact room measurements or sofa dimensions and we will adjust length, width, and height accordingly. Wood finish can also be matched to dark walnut, teak, natural oak, or high-gloss black.
                         </p>
                     </details>
                     <details class="group bg-gray-50 rounded-2xl p-6 transition-colors duration-200">
@@ -483,7 +847,7 @@ $tables = [
                             <span class="text-gold group-open:rotate-180 transition-transform duration-300"><i class="fas fa-chevron-down"></i></span>
                         </summary>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            All glass coffee tables are wrapped in high-density bubble wrap, corner-protected with foam, and packed inside a reinforced solid wooden crate. We provide doorstep delivery across Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, Multan, and all other cities.
+                            All glass coffee tables are wrapped in high-density bubble wrap, corner-protected with heavy foam, and packed inside a reinforced solid wooden crate. We provide doorstep delivery across Lahore, Karachi, Islamabad, Rawalpindi, Faisalabad, Multan, and all other cities.
                         </p>
                     </details>
                 </div>
@@ -492,19 +856,87 @@ $tables = [
 
     </main>
 
+    <!-- Sticky Mobile WhatsApp Action Bar -->
+    <div class="mobile-bottom-bar">
+        <div class="flex-1">
+            <span class="text-[11px] text-gray-500 block leading-tight">Need Custom Dimensions?</span>
+            <span class="font-bold text-xs text-charcoal">Chat with Gujrat Workshop</span>
+        </div>
+        <a href="https://wa.me/923007131249?text=Hi%2C%20I%20am%20browsing%20your%20Center%20Tables%20collection%20and%20want%20to%20discuss%20pricing%20and%20custom%20sizes."
+           class="btn-whatsapp-order text-xs py-2.5 px-4 shadow-sm"
+           target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp text-base"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="tableLightbox" class="table-lightbox" onclick="closeLightbox(event)">
+        <div class="relative max-w-4xl mx-auto flex flex-col items-center">
+            <button type="button" class="absolute -top-10 right-0 text-white text-2xl hover:text-gold" onclick="closeLightbox(event)">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightboxImg" src="" alt="Enlarged Center Table View">
+            <p id="lightboxCaption" class="text-white text-sm font-semibold mt-3 text-center"></p>
+        </div>
+    </div>
+
     <?= $F ?>
 
-    <!-- Sticky Header Shadow & Smooth Scroll Script -->
+    <!-- Interactive Scripts: Filter Tabs, Lightbox & Active Nav -->
     <script>
-        const header = document.getElementById('main-header');
-        if (header) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 20) {
-                    header.classList.add('shadow-md');
-                } else {
-                    header.classList.remove('shadow-md');
+        // Set Header active link for Tables
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('header nav a, #mobile-menu a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') && link.getAttribute('href').includes('/tables')) {
+                    link.classList.add('text-gold-dark', 'font-bold');
                 }
-            }, { passive: true });
+            });
+
+            // Filter Tabs logic
+            const filterBtns = document.querySelectorAll('.table-filter-btn');
+            const tableCards = document.querySelectorAll('.modern-table-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+                    tableCards.forEach(card => {
+                        const cat = card.getAttribute('data-category');
+                        if (filter === 'all' || cat === filter) {
+                            card.style.display = '';
+                            card.style.opacity = '1';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Lightbox Functions
+        function openLightbox(src, title) {
+            const lb = document.getElementById('tableLightbox');
+            const img = document.getElementById('lightboxImg');
+            const caption = document.getElementById('lightboxCaption');
+            if (lb && img) {
+                img.src = src;
+                caption.textContent = title;
+                lb.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeLightbox(e) {
+            if (e.target.id === 'tableLightbox' || e.target.closest('button')) {
+                const lb = document.getElementById('tableLightbox');
+                if (lb) {
+                    lb.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
         }
     </script>
 </body>
