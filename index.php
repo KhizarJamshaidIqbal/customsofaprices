@@ -393,7 +393,7 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover reveal">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                         <div class="relative aspect-[3/2] lg:aspect-auto overflow-hidden">
-                            <img src="images/workshop/center-tables.webp"
+                            <img src="images/workshop/floating-center-table.webp"
                                  alt="Floating Smoked Glass Coffee Table with Curved Cream Base & Gold Trim — Custom Sofa Prices Pakistan"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  loading="lazy" width="800" height="533">
