@@ -288,6 +288,141 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
         </section>
 
         <!-- ============================================ -->
+        <!-- FACTORY SPOTLIGHT — MOST ORDERED BUILDS -->
+        <!-- ============================================ -->
+        <section id="factory-spotlight" class="py-20 lg:py-28 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-14 reveal">
+                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-4">
+                        <span class="w-8 h-px bg-gold"></span>
+                        Live From Our Workshop
+                        <span class="w-8 h-px bg-gold"></span>
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+                        Our Most <span class="text-gold-dark">Ordered</span> Designs
+                    </h2>
+                    <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                        These are the builds our Gujrat craftsmen make every week — factory-tested, customer-approved, ready to order.
+                    </p>
+                </div>
+
+                <!-- 3-Column Sofa Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8 reveal">
+
+                    <!-- Card 1: Modern L-Shape -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+                        <div class="relative aspect-[4/3] overflow-hidden">
+                            <img src="images/workshop/modern-lshape.webp"
+                                 alt="Modern L-Shape Sofa with Gold Center Table — Custom Sofa Prices Pakistan"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy" width="800" height="600">
+                            <span class="absolute top-4 left-4 bg-gold/90 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                <i class="fas fa-fire mr-1"></i> Best Seller
+                            </span>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Modern L-Shape Suite</h3>
+                            <ul class="text-gray-500 text-sm space-y-1 mb-4">
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Geometric cushions & clean armrests</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Greek-key glass center table included</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>5 to 9 seater — fully customizable</li>
+                            </ul>
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Modern%20L-Shape%20Suite%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                               class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
+                               target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp text-base"></i> Get Price
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Monochrome Stripe Suite -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+                        <div class="relative aspect-[4/3] overflow-hidden">
+                            <img src="images/workshop/monochrome-suite.webp"
+                                 alt="Black & White Stripe Sofa Set with Houndstooth Accent Chairs — Custom Sofa Prices Pakistan"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy" width="800" height="600">
+                            <span class="absolute top-4 left-4 bg-charcoal/85 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                <i class="fas fa-palette mr-1"></i> Statement Piece
+                            </span>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Monochrome Stripe Suite</h3>
+                            <ul class="text-gray-500 text-sm space-y-1 mb-4">
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Bold black &amp; white stripe upholstery</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Matching houndstooth accent chairs</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Complete drawing room set</li>
+                            </ul>
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Monochrome%20Stripe%20Suite%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                               class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
+                               target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp text-base"></i> Get Price
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Grand 7-Seater Sectional -->
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+                        <div class="relative aspect-[4/3] overflow-hidden">
+                            <img src="images/workshop/grand-sectional.webp"
+                                 alt="Grand 7-Seater U-Shape Sectional Sofa — Custom Sofa Prices Pakistan"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy" width="800" height="600">
+                            <span class="absolute top-4 left-4 bg-gold-dark/90 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                <i class="fas fa-couch mr-1"></i> Family Size
+                            </span>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Grand 7-Seater Sectional</h3>
+                            <ul class="text-gray-500 text-sm space-y-1 mb-4">
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Massive U/L shape — fills the room</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Walnut coffee table with glass top</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Up to 11 seater on request</li>
+                            </ul>
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Grand%207-Seater%20Sectional%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                               class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
+                               target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp text-base"></i> Get Price
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Center Tables Feature -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover reveal">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                        <div class="relative aspect-[3/2] lg:aspect-auto overflow-hidden">
+                            <img src="images/workshop/center-tables.webp"
+                                 alt="Bespoke Center Tables — Japandi Walnut & Dual-Tone Teak Designs — Custom Sofa Prices Pakistan"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 loading="lazy" width="800" height="533">
+                        </div>
+                        <div class="flex flex-col justify-center p-8 lg:p-12">
+                            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-xs uppercase tracking-[0.15em] mb-3">
+                                <i class="fas fa-gem"></i> Bespoke Collection
+                            </span>
+                            <h3 class="font-display text-2xl lg:text-3xl font-bold text-charcoal mb-3">Center Tables — Made to Match</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                                Curved Japandi walnut, dual-tone teak &amp; graphite, smoked glass tops — every table built to complement your sofa set. Storage drawers, brass or chrome hardware, your choice of finish.
+                            </p>
+                            <ul class="text-gray-500 text-sm space-y-1.5 mb-6">
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Solid wood with tempered glass</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Hidden drawers &amp; open shelving</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>10+ designs — or bring your own</li>
+                            </ul>
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20a%20custom%20center%20table%20from%20your%20workshop.%20Please%20share%20designs%20and%20prices."
+                               class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300 w-fit"
+                               target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp text-base"></i> Order a Custom Table
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
         <!-- PRODUCT CATEGORIES / COLLECTIONS -->
         <!-- ============================================ -->
         <section id="collections" class="py-20 lg:py-28 bg-white">
