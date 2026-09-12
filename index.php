@@ -336,25 +336,25 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                         </div>
                     </div>
 
-                    <!-- Card 2: Monochrome Stripe Suite -->
+                    <!-- Card 2: Multi-Tier Cantilever Table -->
                     <div class="group bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
                         <div class="relative aspect-[4/3] overflow-hidden">
-                            <img src="images/workshop/monochrome-suite.webp"
-                                 alt="Black & White Stripe Sofa Set with Houndstooth Accent Chairs — Custom Sofa Prices Pakistan"
+                            <img src="images/workshop/cantilever-glass-table.webp"
+                                 alt="Luxury Multi-Tier Square Coffee Table with Walnut Slabs & Glass Mirror Top — Custom Sofa Prices Pakistan"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  loading="lazy" width="800" height="600">
                             <span class="absolute top-4 left-4 bg-charcoal/85 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full backdrop-blur-sm">
-                                <i class="fas fa-palette mr-1"></i> Statement Piece
+                                <i class="fas fa-layer-group mr-1"></i> Statement Piece
                             </span>
                         </div>
                         <div class="p-5 lg:p-6">
-                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Monochrome Stripe Suite</h3>
+                            <h3 class="font-display text-lg lg:text-xl font-bold text-charcoal mb-2">Multi-Tier Cantilever Table</h3>
                             <ul class="text-gray-500 text-sm space-y-1 mb-4">
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Bold black &amp; white stripe upholstery</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Matching houndstooth accent chairs</li>
-                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Complete drawing room set</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Thick solid walnut slabs with exposed grain</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Inset reflective bronze glass mirror top</li>
+                                <li><i class="fas fa-check text-gold text-xs mr-1.5"></i>Solid matte black wooden box base</li>
                             </ul>
-                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Monochrome%20Stripe%20Suite%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
+                            <a href="https://wa.me/923007131249?text=Hi%2C%20I%20want%20to%20order%20the%20Multi-Tier%20Cantilever%20Center%20Table%20shown%20on%20your%20website.%20Please%20share%20price%20and%20details."
                                class="inline-flex items-center gap-2 bg-charcoal hover:bg-gold-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
                                target="_blank" rel="noopener">
                                 <i class="fab fa-whatsapp text-base"></i> Get Price
