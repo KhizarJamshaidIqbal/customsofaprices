@@ -332,8 +332,7 @@ $tables = [
             color: var(--charcoal);
             margin-bottom: 0.25rem;
             min-height: 3rem;
-            display: flex;
-            align-items: flex-start;
+            display: block;
         }
         @media (min-width: 1280px) {
             .table-card-title {
@@ -349,8 +348,7 @@ $tables = [
             line-height: 1.35;
             margin-bottom: 0.5rem;
             min-height: 2.1rem;
-            display: flex;
-            align-items: flex-start;
+            display: block;
         }
 
         .table-card-desc {
@@ -452,6 +450,7 @@ $tables = [
             box-shadow: 0 6px 16px -3px rgba(37, 211, 102, 0.35);
             transition: all 0.3s ease;
             text-decoration: none;
+            white-space: nowrap;
         }
         .btn-card-whatsapp:hover {
             transform: translateY(-2px);
@@ -750,12 +749,18 @@ $tables = [
                             <div>
                                 <!-- Origin & Price Header -->
                                 <div class="flex items-center justify-between gap-2 mb-2">
-                                    <span class="text-gold-dark text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <span class="text-gold-dark text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 flex-shrink-0">
                                         <i class="fas fa-hammer text-[10px]"></i> Gujrat Workshop
                                     </span>
-                                    <div>
-                                        <span class="text-charcoal font-bold text-sm sm:text-base"><?= htmlspecialchars($t['price_text']) ?></span>
-                                        <span class="text-gray-400 text-[11px] line-through ml-1"><?= htmlspecialchars($t['retail_compare']) ?></span>
+                                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                                        <span class="text-charcoal font-bold text-sm sm:text-base whitespace-nowrap"><?= htmlspecialchars($t['price_text']) ?></span>
+                                        <?php if (!empty($t['retail_compare'])): ?>
+                                            <?php if (str_starts_with($t['retail_compare'], 'Save')): ?>
+                                                <span class="text-emerald-700 bg-emerald-50 border border-emerald-200 text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap"><?= htmlspecialchars($t['retail_compare']) ?></span>
+                                            <?php else: ?>
+                                                <span class="text-gray-400 text-[11px] line-through whitespace-nowrap"><?= htmlspecialchars($t['retail_compare']) ?></span>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
 
@@ -806,14 +811,14 @@ $tables = [
                             </div>
 
                             <!-- Pinned Bottom CTA Buttons -->
-                            <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
+                            <div class="pt-3 border-t border-gray-100 flex flex-col gap-2 mt-auto">
                                 <a href="https://wa.me/923007131249?text=<?= urlencode($t['whatsapp_msg']) ?>"
                                    class="btn-card-whatsapp"
                                    target="_blank" rel="noopener">
                                     <i class="fab fa-whatsapp text-base"></i> Order on WhatsApp
                                 </a>
                                 <a href="tel:+923007131249"
-                                   class="inline-flex items-center justify-center gap-1.5 text-gray-600 hover:text-gold-dark text-xs font-semibold py-1.5 rounded-full hover:bg-gray-50 transition-colors">
+                                   class="w-full inline-flex items-center justify-center gap-1.5 text-gray-600 hover:text-gold-dark text-xs font-semibold py-1.5 rounded-full hover:bg-gray-50 transition-colors">
                                     <i class="fas fa-phone-alt text-gold text-[10px]"></i> 0300 7131249
                                 </a>
                             </div>
@@ -844,8 +849,8 @@ $tables = [
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
-                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors h-full flex flex-col justify-start">
+                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl flex-shrink-0">
                             <i class="fas fa-arrows-alt-v"></i>
                         </div>
                         <h3 class="font-display text-base font-bold text-charcoal mb-1.5">1. The Height Rule</h3>
@@ -854,8 +859,8 @@ $tables = [
                         </p>
                     </div>
 
-                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors h-full flex flex-col justify-start">
+                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl flex-shrink-0">
                             <i class="fas fa-arrows-alt-h"></i>
                         </div>
                         <h3 class="font-display text-base font-bold text-charcoal mb-1.5">2. The 2/3 Length Ratio</h3>
@@ -864,8 +869,8 @@ $tables = [
                         </p>
                     </div>
 
-                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:border-gold/40 transition-colors h-full flex flex-col justify-start">
+                        <div class="w-12 h-12 mx-auto mb-3 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl flex-shrink-0">
                             <i class="fas fa-walking"></i>
                         </div>
                         <h3 class="font-display text-base font-bold text-charcoal mb-1.5">3. 16" Legroom Clearance</h3>
