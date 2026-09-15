@@ -73,3 +73,13 @@ listed above.
 - **YouTube**: https://youtube.com/@customsofamaker
 - **TikTok**: https://www.tiktok.com/@custom.sofa
 - **Facebook Profile**: https://www.facebook.com/profile.php?id=61590109367846
+
+## Google Verified Business Profiles & Specialized Divisions (Knowledge Graph Entities)
+- **Custom Sofa Prices (Main Hub)**: https://share.google/vWTLTD6slemi5nnGT (kgmid: `/g/11nj_z37v9`)
+- **Custom Jahez Furniture & Repair Centre**: https://share.google/zoZE3g01EQL3Y1378 (kgmid: `/g/11z807qwlx`)
+- **Custom Kids Furniture Maker**: https://share.google/A9PG7WhXofoTLS01D (kgmid: `/g/11nk0tkdtn`)
+- **Best Door Maker & Furniture Store**: https://share.google/1no2OcZzmouC4Uxhq (kgmid: `/g/11z7ylkccy`)
+- **Custom Fitted Wardrobe**: https://share.google/jiE6ewBm3SqNVHgxw (kgmid: `/g/11zg3w0myq`)
+- **Custom Dining Table**: https://share.google/awRz6CNG7x108fyUY (kgmid: `/g/11nq1pc4r9`)
+- **Accent & Small Furniture**: https://share.google/gpYnYk3fPUl8S7W3j (kgmid: `/g/11nps7_x47`)
+

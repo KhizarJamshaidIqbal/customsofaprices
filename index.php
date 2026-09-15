@@ -113,13 +113,57 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
             { "@type": "City", "name": "Sialkot" },
             { "@type": "City", "name": "Multan" }
         ],
+        "department": [
+            {
+                "@type": "FurnitureStore",
+                "name": "Custom Sofa Prices",
+                "hasMap": "https://share.google/vWTLTD6slemi5nnGT"
+            },
+            {
+                "@type": "FurnitureStore",
+                "name": "Custom Jahez Furniture & Repair Centre",
+                "hasMap": "https://share.google/zoZE3g01EQL3Y1378"
+            },
+            {
+                "@type": "FurnitureStore",
+                "name": "Custom Kids Furniture Maker",
+                "hasMap": "https://share.google/A9PG7WhXofoTLS01D"
+            },
+            {
+                "@type": "HomeGoodsStore",
+                "name": "Best Door Maker & Furinture Store",
+                "hasMap": "https://share.google/1no2OcZzmouC4Uxhq"
+            },
+            {
+                "@type": "FurnitureStore",
+                "name": "Custom Fitted Wardrobe",
+                "hasMap": "https://share.google/jiE6ewBm3SqNVHgxw"
+            },
+            {
+                "@type": "FurnitureStore",
+                "name": "Custom Dining Table",
+                "hasMap": "https://share.google/awRz6CNG7x108fyUY"
+            },
+            {
+                "@type": "FurnitureStore",
+                "name": "Accent and Small Furniture",
+                "hasMap": "https://share.google/gpYnYk3fPUl8S7W3j"
+            }
+        ],
         "sameAs": [
             "https://www.facebook.com/share/18cs6gZryW/",
             "https://www.instagram.com/customsofamaker",
             "https://pin.it/2FKxBiazu",
             "https://youtube.com/@customsofamaker",
             "https://www.facebook.com/profile.php?id=61590109367846",
-            "https://www.tiktok.com/@custom.sofa"
+            "https://www.tiktok.com/@custom.sofa",
+            "https://share.google/vWTLTD6slemi5nnGT",
+            "https://share.google/zoZE3g01EQL3Y1378",
+            "https://share.google/A9PG7WhXofoTLS01D",
+            "https://share.google/1no2OcZzmouC4Uxhq",
+            "https://share.google/jiE6ewBm3SqNVHgxw",
+            "https://share.google/awRz6CNG7x108fyUY",
+            "https://share.google/gpYnYk3fPUl8S7W3j"
         ]
     }
     </script>
