@@ -32,7 +32,15 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
     <link rel="preload" as="image" href="images/hero-banner.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
 
     <!-- Inlined Production CSS (Zero Network Latency, Instant FCP) -->
-    <style><?= @file_get_contents(__DIR__ . '/style.min.css') ?></style>
+    <style>
+    <?= @file_get_contents(__DIR__ . '/style.min.css') ?>
+    .hero-pill{display:inline-flex;align-items:center;padding:3px 11px 3px 4px;border-radius:9999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#ffffff;font-size:11.5px;font-weight:500;text-decoration:none;transition:all .25s ease}
+    @media(min-width:640px){.hero-pill{padding:4px 13px 4px 5px;font-size:12px}}
+    .hero-pill:hover{background:#c9a96e;border-color:#c9a96e;color:#121212!important;transform:translateY(-1px);box-shadow:0 4px 14px rgba(201,169,110,0.3)}
+    .hero-pill-icon{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(201,169,110,0.22);color:#c9a96e;margin-right:6px;flex-shrink:0;transition:all .25s ease}
+    .hero-pill:hover .hero-pill-icon{background:rgba(18,18,18,0.16);color:#121212}
+    .hero-pill-icon svg{width:11px;height:11px}
+    </style>
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
@@ -283,21 +291,36 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
 
                     <!-- Quick Popular Category Tags -->
                     <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6">
-                        <span class="text-[11px] sm:text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
-                        <a href="collection.php?id=drawingroom" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                            🛋️ 7-Seater Sets
+                        <span class="text-[11px] sm:text-xs text-gold font-bold mr-1 uppercase tracking-wider">Popular:</span>
+                        <a href="collection.php?id=drawingroom" class="hero-pill">
+                            <span class="hero-pill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9z"/><path d="M2 11a2 2 0 0 1 2-2h1v5H4a2 2 0 0 1-2-2v-1zm18-1h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1v-5z"/><rect x="4" y="17" width="2" height="3" rx="0.5"/><rect x="18" y="17" width="2" height="3" rx="0.5"/></svg>
+                            </span>
+                            <span>7-Seater Sets</span>
                         </a>
-                        <a href="collection.php?id=lshape" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                            ✨ L-Shape Corner
+                        <a href="collection.php?id=lshape" class="hero-pill">
+                            <span class="hero-pill-icon">
+                                <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H6a1 1 0 0 1-1-1V2a1 1 0 0 0-1-1H2z"/></svg>
+                            </span>
+                            <span>L-Shape Corner</span>
                         </a>
-                        <a href="collection.php?id=chinyoti" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                            👑 Chinyoti Carved
+                        <a href="collection.php?id=chinyoti" class="hero-pill">
+                            <span class="hero-pill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v2H3v-2zm1.5-3l2.5-7.5 5 4.5 5-4.5 2.5 7.5H4.5z"/><circle cx="7" cy="6.5" r="1.5"/><circle cx="12" cy="4" r="1.5"/><circle cx="17" cy="6.5" r="1.5"/></svg>
+                            </span>
+                            <span>Chinyoti Carved</span>
                         </a>
-                        <a href="collection.php?id=lshape&amp;p=sofa-bed" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                            🛏️ Sofa Cum Bed
+                        <a href="collection.php?id=lshape&amp;p=sofa-bed" class="hero-pill">
+                            <span class="hero-pill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17h20M2 12h20M4 12V7a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5M2 17v4M22 17v4"/></svg>
+                            </span>
+                            <span>Sofa Cum Bed</span>
                         </a>
-                        <a href="/tables" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
-                            ☕ Center Tables
+                        <a href="/tables" class="hero-pill">
+                            <span class="hero-pill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="4.5" rx="1.5" fill="currentColor" stroke="none"/><path d="M5 11.5v8M19 11.5v8M12 11.5v5"/></svg>
+                            </span>
+                            <span>Center Tables</span>
                         </a>
                     </div>
 
