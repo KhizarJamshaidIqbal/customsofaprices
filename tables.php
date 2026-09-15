@@ -125,6 +125,30 @@ $tables = [
         'whatsapp_msg' => 'Hi, I want to order the Dual-Tone Architectural Coffee Table (PKR 36,000) shown on your website. Please share delivery timeline and details.'
     ],
     [
+        'id' => 'terrazzo-arch-table',
+        'category' => 'glass',
+        'title' => 'Curved Arch Terrazzo & Glass Table',
+        'subtitle' => 'Modern Asymmetrical Centerpiece with Terrazzo Stone Deck & Arch Cutouts',
+        'badge' => 'New Arrival',
+        'badge_color' => 'bg-teal-700 text-white',
+        'badge_icon' => 'fa-sparkles',
+        'image' => 'images/workshop/curved-arch-terrazzo-table.webp',
+        'price_num' => 39000,
+        'price_text' => 'PKR 39,000',
+        'retail_compare' => 'PKR 64,000',
+        'dimensions' => '48" L × 24" W × 18" H',
+        'wood' => 'Solid Hardwood & White Deco Finish',
+        'glass' => '8mm Tempered Glass over Terrazzo',
+        'storage' => 'Dual Drawers + Open Niche',
+        'description' => 'Architectural modern coffee table with crisp white deco finish, black inlay racing stripes, precision curved arch pedestals, dual pull-out drawers, and polished terrazzo stone top under tempered safety glass.',
+        'features' => [
+            'Polished white terrazzo composite top under 8mm tempered glass',
+            'Curved arch pedestals with precision black stripe inlays',
+            'Dual stacked drawers with black faces & curved chrome handles'
+        ],
+        'whatsapp_msg' => 'Hi, I want to order the Curved Arch Terrazzo & Glass Center Table (PKR 39,000) shown on your website. Please share delivery timeline and details.'
+    ],
+    [
         'id' => 'custom-table-order',
         'category' => 'custom',
         'title' => 'Bespoke Custom Table Order',
@@ -266,6 +290,22 @@ $tables = [
         @media (min-width: 1280px) {
             .three-cards-grid {
                 gap: 1.75rem;
+            }
+        }
+
+        /* Centering the 7th Card (#custom-table-order) on Desktop and Tablet */
+        @media (min-width: 1024px) {
+            #custom-table-order {
+                grid-column: 2;
+            }
+        }
+        @media (min-width: 640px) and (max-width: 1023px) {
+            #custom-table-order {
+                grid-column: 1 / -1;
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
             }
         }
 
@@ -768,9 +808,9 @@ $tables = [
 
                 <!-- Interactive Filter Tabs -->
                 <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                    <button type="button" class="table-filter-btn active" data-filter="all">All Tables (6)</button>
+                    <button type="button" class="table-filter-btn active" data-filter="all">All Tables (<?= count($tables) ?>)</button>
                     <button type="button" class="table-filter-btn" data-filter="walnut">Solid Walnut &amp; Wood</button>
-                    <button type="button" class="table-filter-btn" data-filter="glass">Tempered Glass &amp; Smoked</button>
+                    <button type="button" class="table-filter-btn" data-filter="glass">Tempered Glass &amp; Stone</button>
                     <button type="button" class="table-filter-btn" data-filter="gold">Royal Gold &amp; Brass</button>
                     <button type="button" class="table-filter-btn" data-filter="custom">Custom Order</button>
                 </div>
