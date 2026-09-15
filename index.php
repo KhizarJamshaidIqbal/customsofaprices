@@ -40,6 +40,19 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
     .hero-pill-icon{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(201,169,110,0.22);color:#c9a96e;margin-right:6px;flex-shrink:0;transition:all .25s ease}
     .hero-pill:hover .hero-pill-icon{background:rgba(18,18,18,0.16);color:#121212}
     .hero-pill-icon svg{width:11px;height:11px}
+    @media (min-width: 1024px) {
+        #hero .hero-content-wrapper {display:flex;flex-direction:column;align-items:center;text-align:center;margin-left:auto;margin-right:auto;max-width:56rem}
+        #hero .hero-social-proof {margin-left:auto;margin-right:auto}
+        #hero .hero-heading {text-align:center;font-size:3.25rem;line-height:1.15;margin-left:auto;margin-right:auto;max-width:50rem}
+        #hero .hero-subheading {text-align:center;margin-left:auto;margin-right:auto;max-width:44rem;font-size:1.125rem;line-height:1.75}
+        #hero .hero-pills-row {justify-content:center;margin-left:auto;margin-right:auto}
+        #hero .hero-cta-group {justify-content:center;margin-left:auto;margin-right:auto;width:auto}
+        #hero .hero-trust-bar {justify-content:center;margin-left:auto;margin-right:auto;max-width:38rem}
+        .hero-overlay-v2 {
+            background: radial-gradient(ellipse at 50% 50%, rgba(14,14,14,0.65) 0%, rgba(10,10,10,0.85) 100%),
+                        linear-gradient(180deg, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.30) 45%, rgba(10,10,10,0.88) 100%) !important;
+        }
+    }
     </style>
 
     <!-- Open Graph / Social -->
@@ -255,17 +268,17 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 <picture class="block w-full h-full">
                     <source media="(max-width: 768px)" srcset="images/hero-banner-mobile.webp" type="image/webp">
                     <source media="(min-width: 769px)" srcset="images/hero-banner.webp" type="image/webp">
-                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover object-center lg:object-right" width="480" height="360" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/hero-banner-mobile.webp" alt="Luxury modern sofa set in elegant Pakistani living room - Best sofa set designs in Pakistan" class="w-full h-full object-cover object-center" width="480" height="360" fetchpriority="high" loading="eager" decoding="async">
                 </picture>
                 <!-- Dual Cinematic Gradient Overlay -->
                 <div class="hero-overlay-v2 absolute inset-0"></div>
             </div>
 
             <!-- Hero Content -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14 w-full">
-                <div class="max-w-2xl lg:max-w-3xl">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 w-full flex flex-col items-start lg:items-center">
+                <div class="max-w-2xl lg:max-w-4xl hero-content-wrapper">
                     <!-- Top Social Proof Pill -->
-                    <div class="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-3.5 py-1 rounded-full mb-3 sm:mb-4 shadow-lg shadow-black/30">
+                    <div class="hero-social-proof inline-flex items-center gap-2 bg-black/60 backdrop-blur-md border border-gold/40 text-amber-200 text-xs sm:text-sm font-medium px-3.5 py-1 rounded-full mb-3 sm:mb-4 shadow-lg shadow-black/30">
                         <span class="flex text-gold text-xs gap-0.5">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -278,19 +291,19 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- H1 Heading -->
-                    <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.12] mb-3 sm:mb-4 tracking-tight drop-shadow-md">
-                        Modern & Luxury <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br>
+                    <h1 class="hero-heading font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.14] mb-3 sm:mb-4 tracking-tight drop-shadow-md">
+                        Modern & Luxury <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-amber-400">Sofa Set Designs</span> <br class="hidden sm:inline">
                         in Pakistan
                     </h1>
 
                     <!-- Sub-headline -->
-                    <p class="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed mb-4 sm:mb-5 font-normal drop-shadow max-w-2xl">
+                    <p class="hero-subheading text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed mb-5 sm:mb-6 font-normal drop-shadow max-w-2xl">
                         Discover premium <strong class="text-white font-semibold">7 seater sofa sets</strong>, elegant <strong class="text-white font-semibold">sofa cum bed designs</strong> for modern living, and handcrafted luxury furniture — all at factory-direct prices.
                     </p>
 
                     <!-- Quick Popular Category Tags -->
-                    <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6">
+                    <div class="hero-pills-row flex flex-wrap items-center gap-1.5 sm:gap-2 mb-6 sm:mb-7">
                         <span class="text-[11px] sm:text-xs text-gold font-bold mr-1 uppercase tracking-wider">Popular:</span>
                         <a href="collection.php?id=drawingroom" class="hero-pill">
                             <span class="hero-pill-icon">
@@ -325,20 +338,20 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     </div>
 
                     <!-- CTA Button Group -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-5 sm:mb-6">
-                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
+                    <div class="hero-cta-group flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-7 w-full sm:w-auto">
+                        <a href="#collections" id="cta-explore" class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold via-amber-400 to-gold-dark text-charcoal-dark font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl shadow-gold/25 hover:shadow-2xl hover:shadow-gold/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 btn-shine">
                             <i class="fas fa-couch text-charcoal-dark text-base"></i>
                             <span>Explore 2026 Designs</span>
                             <i class="fas fa-arrow-right text-xs"></i>
                         </a>
-                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-sm sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl transition-all duration-300 shadow-lg">
+                        <a href="#contact" id="cta-prices" class="inline-flex items-center justify-center gap-2 bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/30 hover:border-gold text-white font-semibold text-sm sm:text-base px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl transition-all duration-300 shadow-lg">
                             <i class="fas fa-tags text-gold"></i>
                             <span>Get Factory Prices</span>
                         </a>
                     </div>
 
                     <!-- Horizontal Trust Signals Bar (Modern Glass Micro-Badges) -->
-                    <div class="grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:items-center sm:gap-6 pt-3.5 sm:pt-4 border-t border-white/15">
+                    <div class="hero-trust-bar grid grid-cols-3 gap-2 sm:flex sm:flex-wrap sm:items-center sm:gap-6 pt-4 border-t border-white/15 w-full">
                         <div class="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 bg-white/10 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none border border-white/15 sm:border-0 rounded-xl sm:rounded-none py-2 px-1 sm:p-0">
                             <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gold/25 flex items-center justify-center text-gold text-[10px] sm:text-xs flex-shrink-0">
                                 <i class="fas fa-truck-fast"></i>
