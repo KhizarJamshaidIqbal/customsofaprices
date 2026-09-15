@@ -518,8 +518,18 @@ if ($hasProducts) {
 
 // ---- SEO vars (mode-aware) ----
 if ($mode === 'listing') {
-    $pageTitle = $c['title'] . ' Sofa Set Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
-    $metaDesc  = 'Browse ' . count($c['products']) . '+ ' . $c['title'] . ' sofa designs with direct factory rates ' . strtolower($c['price_text']) . '. Solid Sheesham wood frames & Master MoltyFoam. Delivered nationwide from Gujrat.';
+    $cleanCategory = preg_replace('/\b(Sofa Sets|Sofas|Sofa)\b/i', '', $c['title']);
+    $cleanCategory = trim(preg_replace('/\s+/', ' ', $cleanCategory));
+    if ($parentId === 'drawingroom') {
+        $pageTitle = '7-Seater & Drawing Room Sofa Set Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
+    } elseif ($parentId === 'lshape') {
+        $pageTitle = 'L-Shape & Corner Sofa Set Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
+    } elseif ($cleanCategory !== '') {
+        $pageTitle = $cleanCategory . ' Sofa Set Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
+    } else {
+        $pageTitle = $c['title'] . ' Price in Pakistan (' . count($c['products']) . ' Styles) | Custom Sofa Prices';
+    }
+    $metaDesc  = 'Browse ' . count($c['products']) . '+ ' . $c['title'] . ' designs with direct factory rates ' . strtolower($c['price_text']) . '. Solid Sheesham wood frames & Master MoltyFoam. Delivered nationwide from Gujrat.';
     $canonical = 'https://cutomsofaprices.com/collection.php?id=' . $parentId;
     $ogImage   = 'https://cutomsofaprices.com/' . $c['image'];
 } else {

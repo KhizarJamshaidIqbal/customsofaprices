@@ -37,9 +37,15 @@ Custom Sofa Prices offers 13 primary sofa collections and 4 highly discounted li
 
 ## Main Navigation Maps
 - **Home**: https://cutomsofaprices.com/
+- **Bespoke Center Tables**: https://cutomsofaprices.com/tables
 - **Buying Guides & Blog**: https://cutomsofaprices.com/blogs/
 - **Contact & Location**: https://cutomsofaprices.com/contact
 - **Frequently Asked Questions**: https://cutomsofaprices.com/faq
+- **Warranty Policy (10-Yr Frame & 2-Yr Foam)**: https://cutomsofaprices.com/warranty
+- **Nationwide Shipping & Delivery**: https://cutomsofaprices.com/shipping-delivery
+- **Privacy Policy**: https://cutomsofaprices.com/privacy-policy
+- **Terms of Service**: https://cutomsofaprices.com/terms-of-service
+- **Returns & Refunds Policy**: https://cutomsofaprices.com/returns-refunds
 - **Category Detail Path**: `https://cutomsofaprices.com/collection?id=[category_id]`
   - IDs: `lshape`, `chinyoti`, `velvet`, `wooden`, `turkish`, `victorian`, `modular`, `dewan`, `drawingroom`, `accent`, `office`, `chaise`, `ottoman`.
 

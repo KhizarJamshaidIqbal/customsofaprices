@@ -100,6 +100,19 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 "closes": "18:00"
             }
         ],
+        "hasMap": "https://share.google/vWTLTD6slemi5nnGT",
+        "areaServed": [
+            { "@type": "Country", "name": "Pakistan" },
+            { "@type": "City", "name": "Gujrat" },
+            { "@type": "City", "name": "Lahore" },
+            { "@type": "City", "name": "Islamabad" },
+            { "@type": "City", "name": "Rawalpindi" },
+            { "@type": "City", "name": "Karachi" },
+            { "@type": "City", "name": "Faisalabad" },
+            { "@type": "City", "name": "Gujranwala" },
+            { "@type": "City", "name": "Sialkot" },
+            { "@type": "City", "name": "Multan" }
+        ],
         "sameAs": [
             "https://www.facebook.com/share/18cs6gZryW/",
             "https://www.instagram.com/customsofamaker",
@@ -227,17 +240,20 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                     <!-- Quick Popular Category Tags -->
                     <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6">
                         <span class="text-[11px] sm:text-xs text-gray-300 font-medium mr-1 uppercase tracking-wider">Popular:</span>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="collection.php?id=drawingroom" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             🛋️ 7-Seater Sets
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="collection.php?id=lshape" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             ✨ L-Shape Corner
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="collection.php?id=chinyoti" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             👑 Chinyoti Carved
                         </a>
-                        <a href="#collections" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                        <a href="collection.php?id=lshape&amp;p=sofa-bed" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
                             🛏️ Sofa Cum Bed
+                        </a>
+                        <a href="/tables" class="inline-flex items-center gap-1 bg-white/10 hover:bg-gold hover:text-charcoal-dark border border-white/20 text-white text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm transition-all duration-300">
+                            ☕ Center Tables
                         </a>
                     </div>
 
@@ -1447,6 +1463,120 @@ $F = embed_sanitize(file_get_contents(__DIR__ . '/embed/defaults/footer.html'), 
                 </div>
 
 
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- BUYING GUIDES & SOFA SELECTION ADVICE -->
+        <!-- ============================================ -->
+        <section id="buying-guides" class="py-20 lg:py-28 bg-white" aria-labelledby="guides-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16 reveal">
+                    <span class="inline-flex items-center gap-2 text-gold-dark font-semibold text-sm uppercase tracking-[0.2em] mb-4">
+                        <span class="w-8 h-px bg-gold"></span>
+                        Expert Advice &amp; Price Guides
+                        <span class="w-8 h-px bg-gold"></span>
+                    </span>
+                    <h2 id="guides-heading" class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+                        Sofa Buying <span class="text-gold-dark">Guides</span>
+                    </h2>
+                    <p class="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                        In-depth buying advice written by master craftsmen in Gujrat to help you make informed decisions for your home.
+                    </p>
+                </div>
+
+                <!-- 4-Card Guides Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
+                    <!-- Guide 1 -->
+                    <article class="bg-cream rounded-2xl p-6 flex flex-col justify-between border border-gold/15 card-hover reveal">
+                        <div>
+                            <div class="w-12 h-12 mb-4 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider text-gold-dark font-bold">Pricing Guide</span>
+                            <h3 class="font-display font-bold text-charcoal text-lg mt-1 mb-2">7 Seater Sofa Set Price in Pakistan: 2026 Guide</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                Complete breakdown of 3+2+1+1 formal setups, Sheesham framing costs, and Master MoltyFoam options.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200/60 flex items-center justify-between">
+                            <a href="collection.php?id=drawingroom" class="text-xs font-semibold text-gold-dark hover:underline flex items-center gap-1">
+                                View 7-Seaters <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                            <a href="/blogs/" class="text-xs text-gray-400 hover:text-charcoal">Read Guide &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 2 -->
+                    <article class="bg-cream rounded-2xl p-6 flex flex-col justify-between border border-gold/15 card-hover reveal" style="transition-delay: 0.08s;">
+                        <div>
+                            <div class="w-12 h-12 mb-4 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                                <i class="fas fa-arrows-split-up-and-left"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider text-gold-dark font-bold">Space Planning</span>
+                            <h3 class="font-display font-bold text-charcoal text-lg mt-1 mb-2">L-Shape Corner vs Traditional 3+2+1</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                Room dimension guidelines, left vs right chaise positioning, and open lounge flow comparisons.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200/60 flex items-center justify-between">
+                            <a href="collection.php?id=lshape" class="text-xs font-semibold text-gold-dark hover:underline flex items-center gap-1">
+                                Explore L-Shapes <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                            <a href="/blogs/" class="text-xs text-gray-400 hover:text-charcoal">Read Guide &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 3 -->
+                    <article class="bg-cream rounded-2xl p-6 flex flex-col justify-between border border-gold/15 card-hover reveal" style="transition-delay: 0.16s;">
+                        <div>
+                            <div class="w-12 h-12 mb-4 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                                <i class="fas fa-feather"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider text-gold-dark font-bold">Material Guide</span>
+                            <h3 class="font-display font-bold text-charcoal text-lg mt-1 mb-2">Best Sofa Fabrics for Pakistani Homes</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                Comparing luxury velvet, breathable linen, and heavy-duty jacquards for durability and easy cleaning.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200/60 flex items-center justify-between">
+                            <a href="collection.php?id=velvet" class="text-xs font-semibold text-gold-dark hover:underline flex items-center gap-1">
+                                Velvet Sofas <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                            <a href="/blogs/" class="text-xs text-gray-400 hover:text-charcoal">Read Guide &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 4 -->
+                    <article class="bg-cream rounded-2xl p-6 flex flex-col justify-between border border-gold/15 card-hover reveal" style="transition-delay: 0.24s;">
+                        <div>
+                            <div class="w-12 h-12 mb-4 bg-gold/15 rounded-xl flex items-center justify-center text-gold-dark text-xl">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider text-gold-dark font-bold">Construction</span>
+                            <h3 class="font-display font-bold text-charcoal text-lg mt-1 mb-2">Solid Sheesham Wood vs Treated Framing</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                                Why kiln-seasoned hardwood prevents joint fractures and sagging, backed by 10-year guarantees.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200/60 flex items-center justify-between">
+                            <a href="/warranty" class="text-xs font-semibold text-gold-dark hover:underline flex items-center gap-1">
+                                10-Yr Warranty <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                            <a href="/blogs/" class="text-xs text-gray-400 hover:text-charcoal">Read Guide &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="text-center reveal">
+                    <a href="/blogs/" class="inline-flex items-center gap-2.5 bg-charcoal hover:bg-gold-dark text-white font-semibold text-sm sm:text-base px-7 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg">
+                        <i class="fas fa-newspaper text-gold"></i>
+                        <span>Explore All Buying Guides &amp; Research</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
